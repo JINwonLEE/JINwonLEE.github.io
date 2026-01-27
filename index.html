@@ -158,6 +158,10 @@
           </li>
 
           <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
 
@@ -290,6 +294,10 @@
 
         <header>
           <h2 class="h2 article-title">Resume</h2>
+          <a href="./Jinwon_CV_260126.pdf" download class="form-btn" style="display: inline-flex; align-items: center; gap: 10px; margin-top: 15px;">
+            <ion-icon name="download-outline"></ion-icon>
+            <span>Download CV (PDF)</span>
+          </a>
         </header>
 
         <section class="timeline">
@@ -478,6 +486,192 @@
                 <div class="skill-progress-fill" style="width: 80%;"></div>
               </div>
 
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Infrastructure</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>AI/ML</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Automation</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Infrastructure</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>AI/ML</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Automation</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item active" data-filter-item data-category="infrastructure">
+              <a href="https://github.com/JINwonLEE" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="kubernetes platform" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Global AI Chatbot Platform</h3>
+
+                <p class="project-category">Infrastructure</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="infrastructure">
+              <a href="https://github.com/JINwonLEE" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="kubernetes automation" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Kubernetes Cluster Automation</h3>
+
+                <p class="project-category">Infrastructure</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="ai/ml">
+              <a href="https://github.com/JINwonLEE" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="llm evaluation" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">LLM Performance Evaluation Pipeline</h3>
+
+                <p class="project-category">AI/ML</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="automation">
+              <a href="https://github.com/JINwonLEE" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="cicd pipeline" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">CI/CD Pipeline with ArgoCD</h3>
+
+                <p class="project-category">Automation</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="infrastructure">
+              <a href="https://github.com/JINwonLEE" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="monitoring" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Centralized Monitoring Stack</h3>
+
+                <p class="project-category">Infrastructure</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="ai/ml">
+              <a href="https://github.com/JINwonLEE" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="distributed training" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Distributed CNN Training System</h3>
+
+                <p class="project-category">AI/ML</p>
+
+              </a>
             </li>
 
           </ul>
