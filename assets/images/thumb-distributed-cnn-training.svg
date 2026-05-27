@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#151515"/>
+      <stop offset="0.55" stop-color="#202022"/>
+      <stop offset="1" stop-color="#111114"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="800" height="500" rx="28" fill="url(#bg)"/>
+  <circle cx="680" cy="80" r="150" fill="#b69cff" opacity="0.07"/>
+  <circle cx="92" cy="430" r="180" fill="#ffffff" opacity="0.035"/>
+  <text x="44" y="70" fill="#fff8ea" font-size="30" font-weight="750" font-family="Inter, Arial, sans-serif">Distributed CNN Training</text>
+  <text x="44" y="104" fill="#b9b2a7" font-size="17" font-weight="500" font-family="Inter, Arial, sans-serif">Model parallelism · network bottleneck</text>
+  <rect x="70" y="154" width="145" height="220" rx="20" fill="#222226" stroke="#5d4b2e" stroke-width="2" opacity="1"/>
+  <text x="110" y="198" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">CNN</text>
+  <text x="103" y="230" fill="#d7d2c8" font-size="18" font-weight="500" font-family="Inter, Arial, sans-serif">Layers</text>
+  <line x1="112" y1="270" x2="176" y2="270" stroke="#d9ae59" stroke-width="5" stroke-linecap="round"/>
+  <line x1="112" y1="300" x2="168" y2="300" stroke="#d9ae59" stroke-width="5" stroke-linecap="round"/>
+  <line x1="112" y1="330" x2="184" y2="330" stroke="#d9ae59" stroke-width="5" stroke-linecap="round"/>
+  <rect x="332" y="136" width="132" height="92" rx="18" fill="#20272d" stroke="#4c7893" stroke-width="2" opacity="1"/>
+  <rect x="332" y="272" width="132" height="92" rx="18" fill="#20272d" stroke="#4c7893" stroke-width="2" opacity="1"/>
+  <rect x="584" y="204" width="132" height="92" rx="18" fill="#20272d" stroke="#4c7893" stroke-width="2" opacity="1"/>
+  <text x="367" y="175" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">GPU 1</text>
+  <text x="367" y="311" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">GPU 2</text>
+  <text x="619" y="243" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">GPU 3</text>
+  <path d="M215 254 C272 176 292 176 332 182" fill="none" stroke="#b69cff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M215 292 C282 318 292 318 332 318" fill="none" stroke="#b69cff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M464 182 C528 166 540 250 584 250" fill="none" stroke="#b69cff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M464 318 C528 336 540 250 584 250" fill="none" stroke="#b69cff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="309" y="420" fill="#d7d2c8" font-size="18" font-weight="500" font-family="Inter, Arial, sans-serif">resource-aware layer placement</text>
+</svg>
