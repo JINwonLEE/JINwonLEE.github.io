@@ -88,7 +88,7 @@ const filterFunc = function (selectedValue) {
 
   for (let i = 0; i < filterItems.length; i++) {
 
-    if (selectedValue === "all") {
+    if (selectedValue === "all" || selectedValue === "전체") {
       filterItems[i].classList.add("active");
     } else if (selectedValue === filterItems[i].dataset.category) {
       filterItems[i].classList.add("active");
@@ -163,3 +163,55 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+
+// project modal functionality
+const projectItems = document.querySelectorAll("[data-project-item]");
+const projectModal = document.querySelector("[data-project-modal]");
+const projectModalOverlay = document.querySelector("[data-project-modal-overlay]");
+const projectModalCloseBtn = document.querySelector("[data-project-modal-close]");
+const projectModalTitle = document.querySelector("[data-project-modal-title]");
+const projectModalImg = document.querySelector("[data-project-modal-img]");
+const projectModalDescription = document.querySelector("[data-project-modal-description]");
+const projectModalTechnologies = document.querySelector("[data-project-modal-technologies]");
+
+// modal toggle function
+const projectModalFunc = function () {
+  if (projectModal && projectModalOverlay) {
+    projectModal.classList.toggle("active");
+    projectModalOverlay.classList.toggle("active");
+  }
+}
+
+// add click event to all project items
+if (projectItems.length > 0) {
+  for (let i = 0; i < projectItems.length; i++) {
+    projectItems[i].addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const title = this.querySelector("[data-project-title]").textContent;
+      const description = this.getAttribute("data-project-description");
+      const technologies = this.getAttribute("data-project-technologies");
+      const detailedImage = this.getAttribute("data-project-detailed-image");
+
+      if (projectModalTitle) projectModalTitle.textContent = title;
+      if (projectModalDescription) projectModalDescription.textContent = description;
+      if (projectModalImg) {
+        projectModalImg.src = detailedImage || this.querySelector("img").src;
+        projectModalImg.alt = title;
+      }
+      if (projectModalTechnologies) {
+        projectModalTechnologies.innerHTML = technologies.split(',').map(tech =>
+          `<span class="tech-tag">${tech.trim()}</span>`
+        ).join('');
+      }
+
+      projectModalFunc();
+    });
+  }
+}
+
+// add click event to modal close button and overlay
+if (projectModalCloseBtn) projectModalCloseBtn.addEventListener("click", projectModalFunc);
+if (projectModalOverlay) projectModalOverlay.addEventListener("click", projectModalFunc);

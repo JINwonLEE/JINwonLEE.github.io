@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jinwon Lee - AI Platform Software & SRE Engineer</title>
+  <title>이진원 - AI 플랫폼 소프트웨어 & SRE 엔지니어</title>
 
   <!--
     - favicon
@@ -23,7 +23,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
+    body {
+      font-family: 'Noto Sans KR', 'Poppins', sans-serif;
+    }
     .lang-switch {
       position: fixed;
       top: 20px;
@@ -61,9 +65,9 @@
 <body>
 
   <!-- Language Toggle -->
-  <nav class="lang-switch" aria-label="Language">
-    <a href="./index.html" class="lang-option active" aria-current="page">EN</a>
-    <a href="./index-ko.html" class="lang-option">KO</a>
+  <nav class="lang-switch" aria-label="언어">
+    <a href="./index.html" class="lang-option">EN</a>
+    <a href="./index-ko.html" class="lang-option active" aria-current="page">KO</a>
   </nav>
 
   <!--
@@ -81,17 +85,17 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/profile-photo.jpg" alt="Jinwon Lee" width="80">
+          <img src="./assets/images/profile-photo.jpg" alt="이진원" width="80">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Jinwon Lee">Jinwon Lee</h1>
+          <h1 class="name" title="이진원">이진원</h1>
 
-          <p class="title">AI Platform SW · SRE</p>
+          <p class="title">AI 플랫폼 SW · SRE</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+          <span>연락처 보기</span>
 
           <ion-icon name="chevron-down"></ion-icon>
         </button>
@@ -111,7 +115,7 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Email</p>
+              <p class="contact-title">이메일</p>
 
               <a href="mailto:dlwlsdnjsehs1993@gmail.com" class="contact-link">dlwlsdnjsehs1993@gmail.com</a>
             </div>
@@ -125,7 +129,7 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Phone</p>
+              <p class="contact-title">전화번호</p>
 
               <a href="tel:+821024221429" class="contact-link">+82 10-2422-1429</a>
             </div>
@@ -139,9 +143,9 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Location</p>
+              <p class="contact-title">위치</p>
 
-              <address>Seoul, South Korea</address>
+              <address>서울, 대한민국</address>
             </div>
 
           </li>
@@ -189,19 +193,19 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link  active" data-nav-link>소개</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link>이력서</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link>포트폴리오</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+            <button class="navbar-link" data-nav-link>연락처</button>
           </li>
 
         </ul>
@@ -216,32 +220,32 @@
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+      <article class="about  active" data-page="소개">
 
         <header>
-          <h2 class="h2 article-title">About me</h2>
+          <h2 class="h2 article-title">소개</h2>
         </header>
 
         <section class="about-text">
           <p>
-            At Samsung Electronics, I work on SRE and platform engineering for generative AI services and internal LLM platforms.
-            For about eight years, I have built and operated Kubernetes-based services, cloud infrastructure automation, CI/CD, observability, and AI evaluation/serving workflows.
+            삼성전자에서 생성형 AI 서비스와 사내 LLM 플랫폼의 SRE/플랫폼 엔지니어링을 담당하고 있습니다.
+            약 8년 동안 Kubernetes 기반 서비스 운영, 클라우드 인프라 자동화, CI/CD, 관측 가능성, AI 평가/서빙 워크플로우를 다뤄왔습니다.
           </p>
 
           <p>
-            My strength is taking AI applications beyond "working code" and turning them into systems that real users can rely on.
-            I consider deployment, authentication, monitoring, incident response, and resource constraints together to build platforms where applications can run smoothly and reliably.
+            제가 잘하는 일은 AI 애플리케이션을 "동작하는 코드"에서 실제 사용자가 안정적으로 쓸 수 있는 운영 구조로 옮기는 것입니다.
+            배포, 인증, 모니터링, 장애 대응, 리소스 제약을 함께 고려해 애플리케이션이 원활하게 동작할 수 있는 플랫폼을 만듭니다.
           </p>
 
           <blockquote>
-            <p>"Build it first, then think it through."</p>
+            <p>"일단 만들고 그 다음에 생각하자."</p>
           </blockquote>
 
           <ul class="focus-list">
-            <li>AI Platform Software</li>
-            <li>MLOps & Model Serving</li>
-            <li>System Software & Performance</li>
-            <li>Cloud/Kubernetes Infrastructure</li>
+            <li>AI 플랫폼 소프트웨어</li>
+            <li>MLOps & 모델 서빙</li>
+            <li>시스템 소프트웨어 & 성능</li>
+            <li>클라우드/Kubernetes 인프라</li>
           </ul>
         </section>
 
@@ -252,7 +256,7 @@
 
         <section class="service">
 
-          <h3 class="h3 service-title">What I'm doing</h3>
+          <h3 class="h3 service-title">주요 업무</h3>
 
           <ul class="service-list">
 
@@ -263,10 +267,10 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">AI Service Reliability</h4>
+                <h4 class="h4 service-item-title">AI 서비스 신뢰성</h4>
 
                 <p class="service-item-text">
-                  Operating production AI services on Kubernetes with reliability, security, observability, and incident-aware delivery.
+                  Kubernetes 기반 프로덕션 AI 서비스를 운영하며 안정성, 보안, 관측 가능성, 장애 대응 가능한 배포에 중점을 둡니다.
                 </p>
               </div>
 
@@ -279,10 +283,10 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Platform Software</h4>
+                <h4 class="h4 service-item-title">플랫폼 소프트웨어</h4>
 
                 <p class="service-item-text">
-                  Building cloud-native AI platform foundations with AWS, Azure, OpenShift, Helm, and Infrastructure as Code.
+                  AWS, Azure, OpenShift, Helm, IaC를 활용해 클라우드 네이티브 AI 플랫폼 기반을 구축하고 관리합니다.
                 </p>
               </div>
 
@@ -295,10 +299,10 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">MLOps & Serving Delivery</h4>
+                <h4 class="h4 service-item-title">MLOps & 서빙 배포</h4>
 
                 <p class="service-item-text">
-                  Connecting evaluation, container delivery, GitOps, and serving operations for repeatable AI application releases.
+                  평가, 컨테이너 배포, GitOps, 서빙 운영을 연결해 AI 애플리케이션 릴리스를 반복 가능하게 만듭니다.
                 </p>
               </div>
 
@@ -311,10 +315,10 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">System Software & Performance</h4>
+                <h4 class="h4 service-item-title">시스템 소프트웨어 & 성능</h4>
 
                 <p class="service-item-text">
-                  Analyzing Linux-based runtime behavior, high-throughput data paths, and resource-aware operation for platform systems.
+                  Linux 기반 런타임 동작, 고성능 데이터 경로, 리소스 제약 환경의 운영 특성을 분석합니다.
                 </p>
               </div>
 
@@ -336,13 +340,13 @@
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+      <article class="resume" data-page="이력서">
 
         <header style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
-          <h2 class="h2 article-title">Resume</h2>
-          <a href="./CV-Eng.pdf" download="Jinwon_Lee_CV.pdf" class="form-btn" style="display: inline-flex; align-items: center; gap: 10px; padding: 10px 20px; text-decoration: none;">
+          <h2 class="h2 article-title">이력서</h2>
+          <a href="./CV-Kor.pdf" download="이진원_이력서.pdf" class="form-btn" style="display: inline-flex; align-items: center; gap: 10px; padding: 10px 20px; text-decoration: none;">
             <ion-icon name="download-outline"></ion-icon>
-            <span>Download CV (PDF)</span>
+            <span>이력서 다운로드 (PDF)</span>
           </a>
         </header>
 
@@ -353,66 +357,66 @@
               <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Experience</h3>
+            <h3 class="h3">경력</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">SRE (Site Reliability Engineer) — Samsung Electronics (AX Development Group)</h4>
+              <h4 class="h4 timeline-item-title">SRE (사이트 신뢰성 엔지니어) — 삼성전자 (AX Development Group)</h4>
 
-              <span>2026 — Present</span>
+              <span>2026 — 현재</span>
 
               <p class="timeline-text">
-                • Architected and managed a global-scale B2C generative AI service on Microsoft Azure with partner collaboration<br>
-                • Optimized production AI serving efficiency while designing security policy and infrastructure governance<br>
-                • Engineered GitOps-based CI/CD pipelines with ArgoCD and Python, integrating DevSecOps checks<br>
-                • Led Kubernetes-based MLOps and serving operations for browser-integrated AI and Document LLM platforms
+                • KT 및 Microsoft와의 협업을 통해 Microsoft Azure 상에서 글로벌 규모의 B2C 생성형 AI 서비스를 설계 및 운영<br>
+                • AI 서빙 성능 및 서비스 효율성을 최적화하는 한편, 포괄적인 보안 정책 및 인프라 거버넌스 설계를 주도<br>
+                • ArgoCD 및 Python을 활용하여 GitOps 기반의 CI/CD 파이프라인을 구축하고 DevSecOps 연동<br>
+                • 브라우저 통합 AI 및 Document LLM 플랫폼의 Kubernetes 기반 MLOps/서빙 운영 담당
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">SRE (Site Reliability Engineer) — Samsung Research</h4>
+              <h4 class="h4 timeline-item-title">SRE (사이트 신뢰성 엔지니어) — 삼성리서치 (Samsung Research)</h4>
 
               <span>2024 — 2025</span>
 
               <p class="timeline-text">
-                • Architected and operated a global chatbot service on Microsoft Azure for multi-region deployment<br>
-                • Led Kubernetes operations for a company-wide AI chatbot platform serving 30,000 employees<br>
-                • Built automated CI/CD pipelines with Docker, Kubernetes, GitHub Actions, and ArgoCD<br>
-                • Deployed centralized monitoring with Grafana, Prometheus, and OpenTelemetry
+                • Microsoft Azure 상에서 글로벌 규모의 챗봇 서비스를 설계 및 운영하며 다중 리전 배포 주도<br>
+                • 약 30,000명의 임직원이 사용하는 전사적 AI 챗봇 플랫폼의 Kubernetes 운영 전반을 총괄<br>
+                • Docker, Kubernetes, GitHub Actions, ArgoCD를 사용하여 완전 자동화된 CI/CD 파이프라인 구축<br>
+                • Grafana, Prometheus, OpenTelemetry를 활용한 중앙 집중식 모니터링 환경 배포
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">SRE & Software Engineer — Samsung Electronics</h4>
+              <h4 class="h4 timeline-item-title">SRE & 소프트웨어 엔지니어 — 삼성전자 (Network Dept.)</h4>
 
               <span>2021 — 2024</span>
 
               <p class="timeline-text">
-                • Deployed containerized applications using Docker, Helm, Kubernetes Operator, and AWS services<br>
-                • Managed diverse cloud platforms: OpenShift, Kubernetes, and EKS<br>
-                • Developed automated one-click Kubernetes cluster provisioning system<br>
-                • Built automated CI/CD systems with Jenkins and GitHub Actions
+                • Docker, Helm, Kubernetes Operator 및 다양한 AWS 서비스를 사용하여 컨테이너화된 애플리케이션 배포<br>
+                • OpenShift, Kubernetes, EKS 등 다양한 클라우드 플랫폼의 구축 및 관리<br>
+                • Kubernetes 클러스터를 위한 자동화된 원클릭 프로비저닝 시스템 개발<br>
+                • Jenkins 및 GitHub Actions를 활용한 자동화된 CI/CD 시스템 구축
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Software & Platform Engineer — TmaxOS & TmaxCloud</h4>
+              <h4 class="h4 timeline-item-title">소프트웨어 & 플랫폼 엔지니어 — 티맥스OS & 티맥스클라우드</h4>
 
               <span>2019 — 2020</span>
 
               <p class="timeline-text">
-                • Developed CI/CD and registry operators in Kubernetes for automated pipelines<br>
-                • Built Siri-like AI assistant on TmaxOS with system-level integration<br>
-                • Designed asynchronous architecture for natural user experiences
+                • Kubernetes 환경에서 CI/CD 및 레지스트리 오퍼레이터를 개발하여 완전 자동화된 파이프라인 구축<br>
+                • TmaxOS 상에서 시스템 수준 통합을 갖춘 Siri와 유사한 AI 어시스턴트 개발<br>
+                • 부드럽고 자연스러운 사용자 경험을 위한 비동기 아키텍처 설계
               </p>
 
             </li>
@@ -428,35 +432,35 @@
               <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Education</h3>
+            <h3 class="h3">학력</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">UNIST (Ulsan National Institute of Science and Technology)</h4>
+              <h4 class="h4 timeline-item-title">UNIST (울산과학기술원)</h4>
 
               <span>2017 — 2019</span>
 
               <p class="timeline-text">
-                M.S. in Computer Science and Engineering<br>
-                Master Thesis: Convergence Aware CNN Training<br>
-                Advisors: Jiwon Seo (HanYang University), Sam H. Noh (UNIST)
+                M.S. 컴퓨터 공학과<br>
+                석사 졸업 논문: Convergence Aware CNN Training<br>
+                지도교수: 서지원 (한양대학교), 노삼혁 (UNIST)
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">UNIST (Ulsan National Institute of Science and Technology)</h4>
+              <h4 class="h4 timeline-item-title">UNIST (울산과학기술원)</h4>
 
               <span>2012 — 2017</span>
 
               <p class="timeline-text">
-                B.S. in Computer Science and Engineering<br>
-                Minor: Mathematics<br>
-                Undergraduate Research: Distributed system in AI model training (TensorFlow)
+                B.S. 컴퓨터 공학과<br>
+                부전공: 수학과<br>
+                학부 연구: Distributed system in AI model training (TensorFlow)
               </p>
 
             </li>
@@ -467,7 +471,7 @@
 
         <section class="skill">
 
-          <h3 class="h3 skills-title">My skills</h3>
+          <h3 class="h3 skills-title">보유 기술</h3>
 
           <ul class="skills-list content-card">
 
@@ -487,7 +491,7 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">AI Platform Software & MLOps</h5>
+                <h5 class="h5">AI 플랫폼 소프트웨어 & MLOps</h5>
                 <data value="90">90%</data>
               </div>
 
@@ -500,7 +504,7 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Model Serving Delivery & GitOps</h5>
+                <h5 class="h5">모델 서빙 배포 & GitOps</h5>
                 <data value="90">90%</data>
               </div>
 
@@ -526,7 +530,7 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Python & Linux System Software</h5>
+                <h5 class="h5">Python & Linux 시스템 소프트웨어</h5>
                 <data value="85">85%</data>
               </div>
 
@@ -539,7 +543,7 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Monitoring & Observability (Grafana, Prometheus, OpenTelemetry)</h5>
+                <h5 class="h5">모니터링 & 관측 가능성 (Grafana, Prometheus, OpenTelemetry)</h5>
                 <data value="80">80%</data>
               </div>
 
@@ -563,10 +567,10 @@
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+      <article class="portfolio" data-page="포트폴리오">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">포트폴리오</h2>
         </header>
 
         <section class="projects">
@@ -574,11 +578,11 @@
           <ul class="filter-list">
 
             <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
+              <button class="active" data-filter-btn>전체</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Infrastructure</button>
+              <button data-filter-btn>인프라</button>
             </li>
 
             <li class="filter-item">
@@ -586,7 +590,7 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Automation</button>
+              <button data-filter-btn>자동화</button>
             </li>
 
           </ul>
@@ -595,7 +599,7 @@
 
             <button class="filter-select" data-select>
 
-              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-value" data-selecct-value>카테고리 선택</div>
 
               <div class="select-icon">
                 <ion-icon name="chevron-down"></ion-icon>
@@ -606,11 +610,11 @@
             <ul class="select-list">
 
               <li class="select-item">
-                <button data-select-item>All</button>
+                <button data-select-item>전체</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Infrastructure</button>
+                <button data-select-item>인프라</button>
               </li>
 
               <li class="select-item">
@@ -618,7 +622,7 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Automation</button>
+                <button data-select-item>자동화</button>
               </li>
 
             </ul>
@@ -627,7 +631,7 @@
 
           <ul class="project-list">
 
-            <li class="project-item active" data-filter-item data-category="infrastructure">
+            <li class="project-item active" data-filter-item data-category="인프라">
               <a href="https://github.com/JINwonLEE" target="_blank">
 
                 <figure class="project-img">
@@ -638,14 +642,14 @@
                   <img src="./assets/images/project-1.jpg" alt="kubernetes platform" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Global AI Chatbot Platform</h3>
+                <h3 class="project-title">글로벌 AI 챗봇 플랫폼</h3>
 
-                <p class="project-category">Infrastructure</p>
+                <p class="project-category">인프라</p>
 
               </a>
             </li>
 
-            <li class="project-item active" data-filter-item data-category="infrastructure">
+            <li class="project-item active" data-filter-item data-category="인프라">
               <a href="https://github.com/JINwonLEE" target="_blank">
 
                 <figure class="project-img">
@@ -656,9 +660,9 @@
                   <img src="./assets/images/project-2.png" alt="kubernetes automation" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Kubernetes Cluster Automation</h3>
+                <h3 class="project-title">Kubernetes 클러스터 자동화</h3>
 
-                <p class="project-category">Infrastructure</p>
+                <p class="project-category">인프라</p>
 
               </a>
             </li>
@@ -674,14 +678,14 @@
                   <img src="./assets/images/project-3.jpg" alt="llm evaluation" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">LLM Performance Evaluation Pipeline</h3>
+                <h3 class="project-title">LLM 성능 평가 파이프라인</h3>
 
                 <p class="project-category">AI/ML</p>
 
               </a>
             </li>
 
-            <li class="project-item active" data-filter-item data-category="automation">
+            <li class="project-item active" data-filter-item data-category="자동화">
               <a href="https://github.com/JINwonLEE" target="_blank">
 
                 <figure class="project-img">
@@ -692,14 +696,14 @@
                   <img src="./assets/images/project-4.png" alt="cicd pipeline" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">CI/CD Pipeline with ArgoCD</h3>
+                <h3 class="project-title">ArgoCD를 활용한 CI/CD 파이프라인</h3>
 
-                <p class="project-category">Automation</p>
+                <p class="project-category">자동화</p>
 
               </a>
             </li>
 
-            <li class="project-item active" data-filter-item data-category="infrastructure">
+            <li class="project-item active" data-filter-item data-category="인프라">
               <a href="https://github.com/JINwonLEE" target="_blank">
 
                 <figure class="project-img">
@@ -710,9 +714,9 @@
                   <img src="./assets/images/project-5.png" alt="monitoring" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Centralized Monitoring Stack</h3>
+                <h3 class="project-title">중앙 집중식 모니터링 스택</h3>
 
-                <p class="project-category">Infrastructure</p>
+                <p class="project-category">인프라</p>
 
               </a>
             </li>
@@ -728,7 +732,7 @@
                   <img src="./assets/images/project-6.png" alt="distributed training" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Distributed CNN Training System</h3>
+                <h3 class="project-title">분산 CNN 트레이닝 시스템</h3>
 
                 <p class="project-category">AI/ML</p>
 
@@ -749,15 +753,14 @@
 
 
 
-
       <!--
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
+      <article class="contact" data-page="연락처">
 
         <header>
-          <h2 class="h2 article-title">Contact</h2>
+          <h2 class="h2 article-title">연락처</h2>
         </header>
 
         <section class="mapbox" data-mapbox>
@@ -770,21 +773,21 @@
 
         <section class="contact-form">
 
-          <h3 class="h3 form-title">Contact Form</h3>
+          <h3 class="h3 form-title">연락하기</h3>
 
           <form action="#" class="form" data-form>
 
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="text" name="fullname" class="form-input" placeholder="이름" required data-form-input>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="이메일 주소" required data-form-input>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <textarea name="message" class="form-input" placeholder="메시지" required data-form-input></textarea>
 
             <button class="form-btn" type="submit" disabled data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
+              <span>메시지 보내기</span>
             </button>
 
           </form>
@@ -806,7 +809,7 @@
 
   <div class="project-modal" data-project-modal>
     <div class="project-modal-header">
-      <h3 class="project-modal-title" data-project-modal-title>Project Title</h3>
+      <h3 class="project-modal-title" data-project-modal-title>프로젝트 제목</h3>
       <button class="project-modal-close-btn" data-project-modal-close>
         <ion-icon name="close-outline"></ion-icon>
       </button>
@@ -814,18 +817,18 @@
 
     <div class="project-modal-content">
       <div class="project-modal-img-wrapper">
-        <img src="" alt="Project" class="project-modal-img" data-project-modal-img>
+        <img src="" alt="프로젝트" class="project-modal-img" data-project-modal-img>
       </div>
 
       <p class="project-modal-description" data-project-modal-description>
-        Project description will appear here...
+        프로젝트 설명이 여기에 표시됩니다...
       </p>
 
       <div class="project-modal-details" data-project-modal-details>
         <!-- Structured project details will be inserted here -->
       </div>
 
-      <h4 class="project-modal-tech-title">Technologies Used</h4>
+      <h4 class="project-modal-tech-title">사용 기술</h4>
       <div class="project-modal-technologies" data-project-modal-technologies>
         <!-- Technologies will be inserted here -->
       </div>
