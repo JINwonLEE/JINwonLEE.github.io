@@ -357,7 +357,7 @@ def build_english():
             "Jul. 2024 - Dec. 2025",
             "Seoul, South Korea",
             [
-                "Architected and operated a global chatbot service on Microsoft Azure, collaborating with external partners and preparing multi-region production deployments.",
+                "Operated a company-wide AI chatbot service on internal Kubernetes clusters, owning platform and application reliability for production use.",
                 "Led infrastructure, platform, and application operations for a company-wide AI chatbot platform serving 30,000 employees on Kubernetes.",
                 "Provisioned and operated development, staging, and production Kubernetes clusters using Helm and Helmfile.",
                 "Built automated CI/CD pipelines for containerized applications with Docker, Kubernetes, GitHub Actions, and ArgoCD.",
@@ -473,7 +473,7 @@ def build_korean():
             "2024.07 - 2025.12",
             "서울, 대한민국",
             [
-                "Microsoft Azure 기반 글로벌 챗봇 서비스를 설계 및 운영하고 외부 파트너와 협력하여 다중 리전 프로덕션 배포를 준비했습니다.",
+                "사내 Kubernetes 클러스터 기반 전사 AI 챗봇 서비스를 운영하며 프로덕션 사용을 위한 플랫폼 및 애플리케이션 신뢰성을 담당했습니다.",
                 "약 30,000명의 임직원이 사용하는 전사 AI 챗봇 플랫폼의 Kubernetes 기반 인프라, 플랫폼, 애플리케이션 운영을 담당했습니다.",
                 "Helm/Helmfile을 활용하여 개발, 스테이징, 프로덕션 Kubernetes 클러스터를 프로비저닝하고 운영했습니다.",
                 "Docker, Kubernetes, GitHub Actions, ArgoCD를 활용해 컨테이너화된 애플리케이션의 CI/CD 파이프라인을 구축했습니다.",
