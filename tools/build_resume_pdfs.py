@@ -73,7 +73,7 @@ class ResumeCanvas:
     def footer(self):
         self.c.setFont(FONT, 7)
         self.c.setFillColor(self.muted)
-        label = "Updated May 2026"
+        label = "Updated Jun 2026"
         self.c.drawString(self.left, 10 * mm, label)
         self.c.drawRightString(self.w - self.right, 10 * mm, f"{self.page}")
 
@@ -410,6 +410,9 @@ def build_english():
     ]:
         r.education(edu)
 
+    r.heading("Certifications & Language")
+    r.bullet_list(["OPIc IH (Intermediate High), Dec. 2025"], size=7.4, leading=9.8)
+
     r.heading("Publications")
     r.bullet_list(
         [
@@ -525,6 +528,9 @@ def build_korean():
         ),
     ]:
         r.education(edu)
+
+    r.heading("자격/어학")
+    r.bullet_list(["OPIc IH (Intermediate High), 2025.12 취득"], size=7.4, leading=9.8)
 
     r.heading("논문/발표")
     r.bullet_list(
