@@ -14,6 +14,7 @@ from reportlab.pdfgen import canvas
 
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+OUTPUT_DIR = os.path.join(ROOT, "output", "pdf")
 FONT_PATH = "/Library/Fonts/Arial Unicode.ttf"
 if not os.path.exists(FONT_PATH):
     FONT_PATH = "/System/Library/Fonts/Supplemental/Arial Unicode.ttf"
@@ -73,7 +74,7 @@ class ResumeCanvas:
     def footer(self):
         self.c.setFont(FONT, 7)
         self.c.setFillColor(self.muted)
-        label = "Updated Jun 2026"
+        label = "Updated Aug 2026"
         self.c.drawString(self.left, 10 * mm, label)
         self.c.drawRightString(self.w - self.right, 10 * mm, f"{self.page}")
 
@@ -308,7 +309,7 @@ class ResumeCanvas:
 
 
 def build_english():
-    r = ResumeCanvas(os.path.join(ROOT, "CV-Eng.pdf"), "en")
+    r = ResumeCanvas(os.path.join(OUTPUT_DIR, "Jinwon-Lee-CV-Eng-2026-08.pdf"), "en")
     r.header(
         "Jinwon Lee",
         "AI Platform Software & SRE Engineer",
@@ -319,7 +320,7 @@ def build_english():
     r.heading("Summary")
     r.summary_panel(
         [
-            "At Samsung Electronics, I work on SRE and platform engineering for generative AI services and internal LLM platforms. "
+            "At Samsung Electronics, I design and build an internal AX Agent Platform while working on SRE and platform engineering for generative AI services. "
             "For about eight years, I have built and operated Kubernetes-based services, cloud infrastructure automation, CI/CD, observability, and AI evaluation/serving workflows.",
             'My strength is taking AI applications beyond "working code" and turning them into systems that real users can rely on. '
             "I consider deployment, authentication, monitoring, incident response, and resource constraints together to build platforms where applications can run smoothly and reliably.",
@@ -331,9 +332,9 @@ def build_english():
     r.skill_block(
         [
             ("AI/MLOps", "LLM evaluation pipeline, MLflow metric tracking, AI serving operations, Document LLM platform, Langfuse observability"),
-            ("Platform", "Kubernetes, Azure, AWS, OpenShift, Docker, Helm/Helmfile, ArgoCD, GitOps, Terraform, Ansible"),
+            ("Platform", "Kubernetes, AWS EKS, Azure, OpenShift, Docker, Helm/Helmfile, ArgoCD, GitOps, Terraform, Ansible"),
             ("System", "Linux runtime behavior, Python automation, high-throughput packet mirroring, distributed systems, resource-aware optimization"),
-            ("Reliability", "Grafana, Prometheus, OpenTelemetry, Loki, Keycloak/OAuth, DevSecOps checks, incident-aware operations"),
+            ("Reliability", "Authentication/authorization, security governance, domain provisioning, Grafana, Prometheus, OpenTelemetry, incident response"),
         ]
     )
 
@@ -345,10 +346,10 @@ def build_english():
             "Jan. 2026 - Present",
             "Seoul, South Korea",
             [
-                "Architected and managed a global-scale B2C generative AI service on Microsoft Azure in collaboration with KT and Microsoft, covering network design and multi-region readiness.",
-                "Optimized AI serving performance and service efficiency while designing security policies and infrastructure governance for production AI workloads.",
-                "Engineered GitOps-based CI/CD pipelines using ArgoCD and Python, integrating static code analysis and container image scanning for DevSecOps.",
-                "Led Kubernetes-based MLOps and serving operations for browser-integrated AI and Document LLM platforms, including authentication and observability frameworks with Keycloak, OAuth, and Langfuse.",
+                "Global B2C Generative AI Service (Jan. 2026 - Jun. 2026): Supported the UK expansion, initial production operations, and incident response for a Microsoft Azure-based service in collaboration with Microsoft.",
+                "AX Agent Platform (Jul. 2026 - Present): Designed and built an internal platform on AWS EKS, adapting the agent runtime and deployment environment to internal platform standards.",
+                "Owned authentication, authorization, security, and internal governance while building self-service deployment with automatic domain provisioning and authorized-only access.",
+                "Enabled deployed AX applications to consume the existing enterprise LLM Gateway API through platform-side client compatibility and integration, without owning the Gateway design.",
             ],
         ),
         Experience(
@@ -427,7 +428,7 @@ def build_english():
 
 
 def build_korean():
-    r = ResumeCanvas(os.path.join(ROOT, "CV-Kor.pdf"), "ko")
+    r = ResumeCanvas(os.path.join(OUTPUT_DIR, "Jinwon-Lee-CV-Kor-2026-08.pdf"), "ko")
     r.header(
         "이진원",
         "AI 플랫폼 소프트웨어 & SRE 엔지니어",
@@ -438,7 +439,7 @@ def build_korean():
     r.heading("요약")
     r.summary_panel(
         [
-            "삼성전자에서 생성형 AI 서비스와 사내 LLM 플랫폼의 SRE/플랫폼 엔지니어링을 담당하고 있습니다. "
+            "삼성전자에서 사내 AX Agent Platform을 설계·구축하며 생성형 AI 서비스의 SRE/플랫폼 엔지니어링을 담당하고 있습니다. "
             "약 8년 동안 Kubernetes 기반 서비스 운영, 클라우드 인프라 자동화, CI/CD, 관측 가능성, AI 평가/서빙 워크플로우를 다뤄왔습니다.",
             '제가 잘하는 일은 AI 애플리케이션을 "동작하는 코드"에서 실제 사용자가 안정적으로 쓸 수 있는 운영 구조로 옮기는 것입니다. '
             "배포, 인증, 모니터링, 장애 대응, 리소스 제약을 함께 고려해 애플리케이션이 원활하게 동작할 수 있는 플랫폼을 만듭니다.",
@@ -450,9 +451,9 @@ def build_korean():
     r.skill_block(
         [
             ("AI/MLOps", "LLM 평가 파이프라인, MLflow 메트릭 추적, AI 서빙 운영, Document LLM 플랫폼, Langfuse 관측 가능성"),
-            ("플랫폼", "Kubernetes, Azure, AWS, OpenShift, Docker, Helm/Helmfile, ArgoCD, GitOps, Terraform, Ansible"),
+            ("플랫폼", "Kubernetes, AWS EKS, Azure, OpenShift, Docker, Helm/Helmfile, ArgoCD, GitOps, Terraform, Ansible"),
             ("시스템", "Linux 런타임 동작, Python 자동화, 고성능 패킷 미러링, 분산 시스템, 리소스 인식 최적화"),
-            ("신뢰성", "Grafana, Prometheus, OpenTelemetry, Loki, Keycloak/OAuth, DevSecOps 검증, 장애 대응형 운영"),
+            ("신뢰성", "인증·인가, 보안 거버넌스, 도메인 자동 발급, Grafana, Prometheus, OpenTelemetry, 장애 대응"),
         ]
     )
 
@@ -464,10 +465,10 @@ def build_korean():
             "2026.01 - 현재",
             "서울, 대한민국",
             [
-                "KT 및 Microsoft와 협업하여 Microsoft Azure 기반 글로벌 B2C 생성형 AI 서비스를 설계 및 관리하고, 네트워크 설계와 다중 리전 준비를 담당했습니다.",
-                "프로덕션 AI 워크로드를 위한 AI 서빙 성능과 서비스 효율을 최적화하고, 보안 정책과 인프라 거버넌스를 설계했습니다.",
-                "ArgoCD와 Python을 활용한 GitOps 기반 CI/CD 파이프라인을 구축하고 정적 코드 분석, 컨테이너 이미지 스캐닝 등 DevSecOps 검증을 연동했습니다.",
-                "브라우저 통합 AI 및 Document LLM 플랫폼의 Kubernetes 기반 MLOps/서빙 운영을 담당하고 Keycloak, OAuth, Langfuse 기반 인증/관측성 체계를 구축했습니다.",
+                "글로벌 B2C 생성형 AI 서비스 (2026.01 - 2026.06): Microsoft와 협업하여 Azure 기반 서비스의 UK 확장, 초기 프로덕션 운영 및 장애 대응을 수행했습니다.",
+                "AX Agent Platform (2026.07 - 현재): AWS EKS 기반 사내 플랫폼을 설계·구축하고, AX Agent의 실행·배포 환경을 사내 플랫폼 규격에 맞게 조정했습니다.",
+                "인증·인가·보안 및 사내 거버넌스를 담당하고, AX App 배포 시 도메인을 자동 발급하여 인가된 사용자만 접근할 수 있는 셀프서비스 구조를 구축했습니다.",
+                "배포된 AX App이 기존 사내 LLM Gateway API를 사용할 수 있도록 플랫폼 측 클라이언트 호환성과 연동을 제공했으며, Gateway 자체 설계는 담당하지 않았습니다.",
             ],
         ),
         Experience(
@@ -546,5 +547,6 @@ def build_korean():
 
 
 if __name__ == "__main__":
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
     build_english()
     build_korean()

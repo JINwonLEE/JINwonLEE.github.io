@@ -7,7 +7,7 @@
     "phone": "+82 10-2422-1429",
     "location": "서울, 대한민국",
     "avatar": "./assets/images/profile-photo.jpg",
-    "cv_file": "./CV-Kor.pdf"
+    "cv_file": "./output/pdf/Jinwon-Lee-CV-Kor-2026-08.pdf"
   },
 
   "social": {
@@ -17,7 +17,7 @@
 
   "about": {
     "summary": [
-      "삼성전자에서 생성형 AI 서비스와 사내 LLM 플랫폼의 SRE/플랫폼 엔지니어링을 담당하고 있습니다. 약 8년 동안 Kubernetes 기반 서비스 운영, 클라우드 인프라 자동화, CI/CD, 관측 가능성, AI 평가/서빙 워크플로우를 다뤄왔습니다.",
+      "삼성전자에서 사내 AX Agent Platform을 설계·구축하며 생성형 AI 서비스의 SRE/플랫폼 엔지니어링을 담당하고 있습니다. 약 8년 동안 Kubernetes 기반 서비스 운영, 클라우드 인프라 자동화, CI/CD, 관측 가능성, AI 평가/서빙 워크플로우를 다뤄왔습니다.",
       "제가 잘하는 일은 AI 애플리케이션을 \"동작하는 코드\"에서 실제 사용자가 안정적으로 쓸 수 있는 운영 구조로 옮기는 것입니다. 배포, 인증, 모니터링, 장애 대응, 리소스 제약을 함께 고려해 애플리케이션이 원활하게 동작할 수 있는 플랫폼을 만듭니다."
     ]
   },
@@ -52,10 +52,10 @@
       "period": "2026 — 현재",
       "location": "서울, 대한민국",
       "highlights": [
-        "KT 및 Microsoft와의 협업을 통해 Microsoft Azure 상에서 글로벌 규모의 B2C 생성형 AI 서비스를 설계 및 운영",
-        "AI 서빙 성능 및 서비스 효율성을 최적화하는 한편, 포괄적인 보안 정책 및 인프라 거버넌스 설계를 주도",
-        "ArgoCD 및 Python을 활용하여 GitOps 기반의 CI/CD 파이프라인을 구축하고 DevSecOps 연동",
-        "브라우저 통합 AI 및 Document LLM 플랫폼의 Kubernetes 기반 MLOps/서빙 운영 담당"
+        "글로벌 B2C 생성형 AI 서비스 | 2026.01 - 2026.06: Microsoft와 협업하여 Azure 기반 서비스의 UK 확장, 초기 프로덕션 운영 및 장애 대응 수행",
+        "AX Agent Platform | 2026.07 - 현재: AWS EKS 기반 사내 플랫폼을 설계·구축하고, AX Agent의 실행·배포 환경을 사내 플랫폼 규격에 맞게 조정하여 배포 및 운영",
+        "인증·인가·보안 및 사내 거버넌스를 담당하고, AX App 배포 시 도메인을 자동 발급하여 인가된 사용자만 접근할 수 있는 셀프서비스 배포 구조 구축",
+        "배포된 AX App이 기존 사내 LLM Gateway API를 사용할 수 있도록 플랫폼 측 클라이언트 연동 규격과 실행 환경의 호환성 확보"
       ]
     },
     {
@@ -147,16 +147,32 @@
 
   "projects": [
     {
+      "title": "사내 AX Agent Platform",
+      "category": "인프라",
+      "description": "자동 도메인, 접근 제어, 거버넌스, LLM Gateway 연동을 제공하는 AWS EKS 기반 AX App 배포·운영 플랫폼",
+      "detailedDescription": "2026년 7월부터 AWS EKS 기반 사내 AX Agent Platform을 설계·구축하고 있습니다. AX Agent의 실행·배포 환경을 사내 플랫폼 규격에 맞게 조정하고, 개발자가 AX App을 배포하면 도메인이 자동 발급되며 인가된 사용자만 접근할 수 있는 셀프서비스 구조를 구축했습니다. 또한 기존 사내 LLM Gateway API를 사용할 수 있도록 클라이언트 측 호환성과 연동을 제공하며, LLM Gateway 자체의 설계와 운영은 담당 범위에 포함되지 않습니다.",
+      "problem": "개발팀이 AX App을 빠르게 배포하면서도 사내 접근 제어, 보안, AI 거버넌스를 일관되게 적용할 수 있어야 했습니다.",
+      "role": "플랫폼 설계·구축·배포·운영과 인증·인가·보안 및 사내 거버넌스를 담당했습니다.",
+      "engineering": "AWS EKS, AX Agent 런타임 조정, 도메인 자동 발급, 접근 제어, 정책 적용, 기존 LLM Gateway 클라이언트 연동",
+      "outcome": "자동 도메인과 인가 사용자 전용 접근을 갖춘 AX App 셀프서비스 배포 경로를 구축했습니다.",
+      "relevance": "런타임 호환성, 배포 자동화, 보안, 거버넌스, 사내 LLM 활용을 아우르는 AI 플랫폼 엔지니어링 경험입니다.",
+      "technologies": ["AWS", "EKS", "Kubernetes", "인증/인가", "거버넌스", "LLM Gateway 연동"],
+      "image": "./assets/images/thumb-ax-agent-platform.svg",
+      "detailedImage": "./assets/images/thumb-ax-agent-platform.svg",
+      "url": "",
+      "featured": true
+    },
+    {
       "title": "글로벌 B2C 생성형 AI 서비스",
       "category": "인프라",
-      "description": "Azure 기반 프로덕션 생성형 AI 서비스의 모델 서빙 운영, 다중 리전 준비, Kubernetes 거버넌스",
-      "detailedDescription": "KT 및 Microsoft와 협업하여 Microsoft Azure 상의 글로벌 B2C 생성형 AI 서비스를 설계 및 관리했습니다. 네트워크 설계, 다중 리전 배포 준비, AI 서빙 효율, 보안 정책, Kubernetes 거버넌스를 함께 고려해 프로덕션 AI 워크로드 운영 구조를 만들었습니다.",
-      "problem": "소비자 대상 생성형 AI 서비스를 글로벌 프로덕션 환경으로 확장해야 했습니다.",
-      "role": "Azure, Kubernetes 운영, 모델 서빙 배포 흐름, 인프라 거버넌스를 아우르는 플랫폼/SRE 설계를 담당했습니다.",
-      "engineering": "AI 서빙 효율화, 다중 리전 배포, GitOps, 네트워크 설계, 보안 정책",
-      "outcome": "보안성과 확장성을 고려한 프로덕션 AI 서비스 운영 모델을 구축했습니다.",
-      "relevance": "대규모 AI 서비스를 구축하고 최적화하는 AI Platform Software 직무와 강하게 연결됩니다.",
-      "technologies": ["Kubernetes", "Azure", "AI Serving", "ArgoCD", "Python", "GitOps"],
+      "description": "Microsoft Azure 기반 B2C 생성형 AI 서비스의 UK 확장, 초기 프로덕션 운영 및 장애 대응",
+      "detailedDescription": "Microsoft와 협업하여 Microsoft Azure 기반 글로벌 B2C 생성형 AI 서비스의 UK 확장을 지원했습니다. 2026년 1월부터 6월까지 출시 준비, 초기 프로덕션 운영, 장애 대응을 수행하며 서비스 초기 안정화에 집중했습니다.",
+      "problem": "소비자 대상 생성형 AI 서비스를 UK로 확장하고 초기 프로덕션 운영을 안정화해야 했습니다.",
+      "role": "UK 출시를 위한 플랫폼/SRE 업무와 초기 프로덕션 운영 및 장애 대응을 담당했습니다.",
+      "engineering": "Azure 및 Kubernetes 운영, 출시 준비, 프로덕션 안정화, 장애 대응",
+      "outcome": "UK 출시와 초기 안정화를 지원하고 2026년 6월 해당 업무를 마무리했습니다.",
+      "relevance": "프로덕션 생성형 AI 서비스의 해외 확장과 초기 운영을 직접 지원한 경험입니다.",
+      "technologies": ["Azure", "Kubernetes", "생성형 AI", "SRE", "장애 대응"],
       "image": "./assets/images/thumb-ai-serving-global.svg",
       "detailedImage": "./assets/images/thumb-ai-serving-global.svg",
       "url": "",
@@ -175,22 +191,6 @@
       "technologies": ["Kubernetes", "사내 클러스터", "MLOps", "ArgoCD", "Helm", "Helmfile"],
       "image": "./assets/images/thumb-enterprise-chatbot.svg",
       "detailedImage": "./assets/images/thumb-enterprise-chatbot.svg",
-      "url": "",
-      "featured": true
-    },
-    {
-      "title": "사내 AI 서비스 인프라 운영",
-      "category": "ai/ml",
-      "description": "브라우저 통합 AI와 Document LLM 서비스의 MLOps/SRE 운영, 인증, AI 관측 가능성",
-      "detailedDescription": "Kubernetes 기반 사내 플랫폼에서 대규모 트래픽 엔터프라이즈 AI 서비스들의 SRE 운영을 주도했습니다. 수천 명의 임직원을 대상으로 브라우저 통합 AI 플랫폼과 Document LLM 플랫폼을 포함한 다수의 AI 서비스를 운영했습니다. Keycloak과 OAuth를 활용한 엔터프라이즈급 인증 프레임워크를 구현하고, Langfuse를 활용하여 AI 애플리케이션 모니터링 및 성능 추적을 위한 포괄적인 관측성 프레임워크를 설계했습니다.",
-      "problem": "여러 내부 AI 서비스를 엔터프라이즈 인증과 AI 동작 관측이 가능한 형태로 운영해야 했습니다.",
-      "role": "Kubernetes 기반 AI 애플리케이션의 MLOps/SRE 운영과 플랫폼 통합을 담당했습니다.",
-      "engineering": "Keycloak/OAuth 인증, Langfuse AI 관측 가능성, Kubernetes 런타임 운영, Python 자동화",
-      "outcome": "보안, 서빙 상태, 런타임 가시성이 중요한 AI 서비스의 운영 통제력을 높였습니다.",
-      "relevance": "LLM 애플리케이션 운영을 플랫폼 소프트웨어, 모델 서빙, 보안, 관측 가능성과 연결한 경험입니다.",
-      "technologies": ["Kubernetes", "MLOps", "Langfuse", "Keycloak", "OAuth", "Python"],
-      "image": "./assets/images/thumb-ai-services-observability.svg",
-      "detailedImage": "./assets/images/thumb-ai-services-observability.svg",
       "url": "",
       "featured": true
     },

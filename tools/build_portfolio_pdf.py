@@ -14,9 +14,10 @@ from reportlab.pdfgen import canvas
 
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+OUTPUT_DIR = os.path.join(ROOT, "output", "pdf")
 OUTPUTS = {
-    "ko": os.path.join(ROOT, "Portfolio-Kor.pdf"),
-    "en": os.path.join(ROOT, "Portfolio-Eng.pdf"),
+    "ko": os.path.join(OUTPUT_DIR, "Jinwon-Lee-Portfolio-Kor-2026-08.pdf"),
+    "en": os.path.join(OUTPUT_DIR, "Jinwon-Lee-Portfolio-Eng-2026-08.pdf"),
 }
 CONFIGS = {
     "ko": os.path.join(ROOT, "portfolio-config-ko.json"),
@@ -203,6 +204,8 @@ class PortfolioPDF:
 
     def diagram_labels(self, project: Project) -> Sequence[str]:
         title = project.title
+        if "AX Agent" in title:
+            return ["AX Apps\nDeploy", "EKS\nPlatform", "Domain/Auth\nLLM Gateway"]
         if "생성형 AI" in title or "Generative AI" in title:
             return ["Azure\nGlobal AI", "K8s\nServing", "Users\nB2C Traffic"]
         if "챗봇" in title or "Chatbot" in title:
@@ -226,8 +229,10 @@ class PortfolioPDF:
     def capability_point(self, project: Project) -> str:
         title = project.title
         if self.lang == "en":
+            if "AX Agent" in title:
+                return "Experience building a governed self-service agent platform with runtime compatibility, access control, and enterprise LLM integration."
             if "Generative AI" in title:
-                return "Experience designing serving, security, scalability, and multi-region operating structure for production AI services."
+                return "Experience supporting UK rollout, production stabilization, and incident response for a consumer generative AI service."
             if "Chatbot" in title:
                 return "Experience defining Kubernetes-based AI platform operations for tens of thousands of internal users."
             if "AI Services" in title:
@@ -246,8 +251,10 @@ class PortfolioPDF:
                 return "Research experience on network bottlenecks, resource placement, and performance improvement for distributed training workloads."
             return "Experience integrating AI functionality with OS-level behavior, asynchronous processing, and user interaction."
 
+        if "AX Agent" in title:
+            return "런타임 호환성, 셀프서비스 배포, 접근 제어, 사내 LLM 연동을 하나의 거버넌스 플랫폼으로 구현한 경험입니다."
         if "생성형 AI" in title:
-            return "프로덕션 AI 서비스의 서빙, 보안, 확장성, 다중 리전 운영 구조를 함께 설계한 경험입니다."
+            return "소비자 대상 생성형 AI 서비스의 UK 출시, 초기 안정화, 장애 대응을 지원한 경험입니다."
         if "챗봇" in title:
             return "수만 명 규모의 내부 사용자를 대상으로 Kubernetes 기반 AI 플랫폼 운영 기준을 다룬 경험입니다."
         if "인프라 운영" in title:
@@ -429,5 +436,6 @@ def build_pdf(lang: str) -> None:
 
 
 if __name__ == "__main__":
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
     build_pdf("ko")
     build_pdf("en")

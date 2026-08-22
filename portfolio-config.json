@@ -7,7 +7,7 @@
     "phone": "+82 10-2422-1429",
     "location": "Seoul, South Korea",
     "avatar": "./assets/images/profile-photo.jpg",
-    "cv_file": "./CV-Eng.pdf"
+    "cv_file": "./output/pdf/Jinwon-Lee-CV-Eng-2026-08.pdf"
   },
 
   "social": {
@@ -17,7 +17,7 @@
 
   "about": {
     "summary": [
-      "At Samsung Electronics, I work on SRE and platform engineering for generative AI services and internal LLM platforms. For about eight years, I have built and operated Kubernetes-based services, cloud infrastructure automation, CI/CD, observability, and AI evaluation/serving workflows.",
+      "At Samsung Electronics, I design and build an internal AX Agent Platform while working on SRE and platform engineering for generative AI services. For about eight years, I have built and operated Kubernetes-based services, cloud infrastructure automation, CI/CD, observability, and AI evaluation/serving workflows.",
       "My strength is taking AI applications beyond \"working code\" and turning them into systems that real users can rely on. I consider deployment, authentication, monitoring, incident response, and resource constraints together to build platforms where applications can run smoothly and reliably."
     ]
   },
@@ -52,10 +52,10 @@
       "period": "2026 — Present",
       "location": "Seoul, S.Korea",
       "highlights": [
-        "Architected and managed a global-scale B2C generative AI service on Microsoft Azure in collaboration with KT and Microsoft",
-        "Optimized AI serving performance and service efficiency while spearheading comprehensive security policies and infrastructure governance",
-        "Engineered GitOps-based CI/CD pipelines using ArgoCD and Python, integrating DevSecOps for secure software delivery",
-        "Led Kubernetes-based MLOps and serving operations for high-traffic AI services, including browser-integrated AI and Document LLM platforms"
+        "Global B2C Generative AI Service | Jan. 2026 - Jun. 2026: Supported the UK expansion, initial production operations, and incident response for a Microsoft Azure-based service in collaboration with Microsoft",
+        "AX Agent Platform | Jul. 2026 - Present: Designed and built an internal platform on AWS EKS, adapting the agent runtime and deployment environment to internal platform standards",
+        "Owned authentication, authorization, security, and internal governance while building self-service deployment with automatic domain provisioning and access control",
+        "Enabled deployed AX applications to consume the existing enterprise LLM Gateway API through platform-side client compatibility and integration"
       ]
     },
     {
@@ -147,16 +147,32 @@
 
   "projects": [
     {
+      "title": "Internal AX Agent Platform",
+      "category": "infrastructure",
+      "description": "AWS EKS-based platform for deploying and operating AX applications with automated domains, access control, governance, and LLM Gateway integration.",
+      "detailedDescription": "Designed and built an internal AX Agent Platform on AWS EKS from July 2026. Adapted the AX Agent runtime and deployment environment to internal platform standards, and established a self-service workflow where developers deploy AX applications, receive domains automatically, and restrict access to authorized users. The platform also enables applications to consume the existing enterprise LLM Gateway API through client-side compatibility and integration; LLM Gateway design and ownership are outside this role.",
+      "problem": "Enable teams to deploy AX applications quickly while enforcing enterprise access control, security, and AI governance.",
+      "role": "Designed, built, deployed, and operated the platform while owning authentication, authorization, security, and internal governance.",
+      "engineering": "AWS EKS, AX Agent runtime adaptation, automated domain provisioning, access control, policy enforcement, and client integration with the existing LLM Gateway.",
+      "outcome": "Created a self-service path for governed AX application deployment with automatic domains and authorized-only access.",
+      "relevance": "Demonstrates end-to-end AI platform engineering across runtime compatibility, deployment automation, security, governance, and enterprise LLM consumption.",
+      "technologies": ["AWS", "EKS", "Kubernetes", "AuthN/AuthZ", "Governance", "LLM Gateway Integration"],
+      "image": "./assets/images/thumb-ax-agent-platform.svg",
+      "detailedImage": "./assets/images/thumb-ax-agent-platform.svg",
+      "url": "",
+      "featured": true
+    },
+    {
       "title": "Global B2C Generative AI Service",
       "category": "infrastructure",
-      "description": "Production generative AI service on Azure with model-serving operations, multi-region readiness, and Kubernetes governance.",
-      "detailedDescription": "Architected and managed a global-scale B2C generative AI service on Microsoft Azure in collaboration with KT and Microsoft. The work covered network design, multi-region deployment readiness, AI serving efficiency, security policy, and Kubernetes governance for production AI workloads.",
-      "problem": "Prepare a consumer-facing generative AI service for global production rollout.",
-      "role": "Owned platform/SRE design across Azure, Kubernetes operations, model-serving delivery flow, and governance.",
-      "engineering": "AI serving efficiency, multi-region deployment, GitOps delivery, network design, and security policy.",
-      "outcome": "Built an operating model for secure and scalable production AI service delivery.",
-      "relevance": "Strong fit for AI Platform Software roles that build and optimize large-scale AI services.",
-      "technologies": ["Kubernetes", "Azure", "AI Serving", "ArgoCD", "Python", "GitOps"],
+      "description": "Microsoft Azure-based B2C generative AI service expanded to the UK with initial production operations and incident response.",
+      "detailedDescription": "Supported the UK expansion of a global B2C generative AI service on Microsoft Azure in collaboration with Microsoft. The work focused on rollout readiness, initial production operations, and incident response through the service's early stabilization period from January to June 2026.",
+      "problem": "Expand a consumer-facing generative AI service to the UK and stabilize its initial production operations.",
+      "role": "Supported platform/SRE work for the UK rollout, initial production operations, and incident response.",
+      "engineering": "Azure and Kubernetes operations, rollout readiness, production stabilization, and incident response.",
+      "outcome": "Supported the UK rollout through initial stabilization and completed the engagement in June 2026.",
+      "relevance": "Shows hands-on experience supporting the international rollout and early operation of a production generative AI service.",
+      "technologies": ["Azure", "Kubernetes", "Generative AI", "SRE", "Incident Response"],
       "image": "./assets/images/thumb-ai-serving-global.svg",
       "detailedImage": "./assets/images/thumb-ai-serving-global.svg",
       "url": "",
@@ -175,22 +191,6 @@
       "technologies": ["Kubernetes", "Internal Cluster", "MLOps", "ArgoCD", "Helm", "Helmfile"],
       "image": "./assets/images/thumb-enterprise-chatbot.svg",
       "detailedImage": "./assets/images/thumb-enterprise-chatbot.svg",
-      "url": "",
-      "featured": true
-    },
-    {
-      "title": "Enterprise AI Services Infrastructure",
-      "category": "ai/ml",
-      "description": "MLOps and SRE operations for browser-integrated AI and Document LLM services with auth and AI observability.",
-      "detailedDescription": "Led SRE operations for multiple high-traffic enterprise AI services on Kubernetes-based internal platforms. Services include browser-integrated AI platform and Document LLM platform serving thousands of employees. Implemented enterprise-grade authentication frameworks using Keycloak and OAuth, and designed comprehensive observability frameworks using Langfuse for AI application monitoring and performance tracking.",
-      "problem": "Operate multiple internal AI services with enterprise authentication and visibility into AI behavior.",
-      "role": "Handled MLOps/SRE operations and platform integration for AI applications running on Kubernetes-based environments.",
-      "engineering": "Keycloak/OAuth authentication, Langfuse AI observability, Kubernetes runtime operations, and Python automation.",
-      "outcome": "Improved operational control for AI services where security, serving health, and runtime visibility matter.",
-      "relevance": "Connects LLM application operations with platform software, model serving, security, and observability skills.",
-      "technologies": ["Kubernetes", "MLOps", "Langfuse", "Keycloak", "OAuth", "Python"],
-      "image": "./assets/images/thumb-ai-services-observability.svg",
-      "detailedImage": "./assets/images/thumb-ai-services-observability.svg",
       "url": "",
       "featured": true
     },
