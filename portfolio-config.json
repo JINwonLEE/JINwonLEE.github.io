@@ -7,7 +7,7 @@
     "phone": "+82 10-2422-1429",
     "location": "Seoul, South Korea",
     "avatar": "./assets/images/profile-photo.jpg",
-    "cv_file": "./output/pdf/Jinwon-Lee-CV-Eng-2026-08.pdf"
+    "cv_file": "./output/pdf/Jinwon-Lee-CV-Eng-2026-08-v2.pdf"
   },
 
   "social": {
@@ -150,7 +150,7 @@
       "title": "Internal AX Agent Platform",
       "category": "infrastructure",
       "description": "AWS EKS-based platform for deploying and operating AX applications with automated domains, access control, governance, and LLM Gateway integration.",
-      "detailedDescription": "Designed and built an internal AX Agent Platform on AWS EKS from July 2026. Adapted the AX Agent runtime and deployment environment to internal platform standards, and established a self-service workflow where developers deploy AX applications, receive domains automatically, and restrict access to authorized users. The platform also enables applications to consume the existing enterprise LLM Gateway API through client-side compatibility and integration; LLM Gateway design and ownership are outside this role.",
+      "detailedDescription": "Designed and built an internal AX Agent Platform on AWS EKS from July 2026. Adapted the AX Agent runtime and deployment environment to internal platform standards, and established a self-service workflow where developers deploy AX applications, receive domains automatically, and restrict access to authorized users. The platform also enables applications to consume the existing enterprise LLM Gateway API through client-side compatibility and integration.",
       "problem": "Enable teams to deploy AX applications quickly while enforcing enterprise access control, security, and AI governance.",
       "role": "Designed, built, deployed, and operated the platform while owning authentication, authorization, security, and internal governance.",
       "engineering": "AWS EKS, AX Agent runtime adaptation, automated domain provisioning, access control, policy enforcement, and client integration with the existing LLM Gateway.",

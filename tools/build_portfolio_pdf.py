@@ -16,8 +16,8 @@ from reportlab.pdfgen import canvas
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 OUTPUT_DIR = os.path.join(ROOT, "output", "pdf")
 OUTPUTS = {
-    "ko": os.path.join(OUTPUT_DIR, "Jinwon-Lee-Portfolio-Kor-2026-08.pdf"),
-    "en": os.path.join(OUTPUT_DIR, "Jinwon-Lee-Portfolio-Eng-2026-08.pdf"),
+    "ko": os.path.join(OUTPUT_DIR, "Jinwon-Lee-Portfolio-Kor-2026-08-v2.pdf"),
+    "en": os.path.join(OUTPUT_DIR, "Jinwon-Lee-Portfolio-Eng-2026-08-v2.pdf"),
 }
 CONFIGS = {
     "ko": os.path.join(ROOT, "portfolio-config-ko.json"),

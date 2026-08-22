@@ -309,7 +309,7 @@ class ResumeCanvas:
 
 
 def build_english():
-    r = ResumeCanvas(os.path.join(OUTPUT_DIR, "Jinwon-Lee-CV-Eng-2026-08.pdf"), "en")
+    r = ResumeCanvas(os.path.join(OUTPUT_DIR, "Jinwon-Lee-CV-Eng-2026-08-v2.pdf"), "en")
     r.header(
         "Jinwon Lee",
         "AI Platform Software & SRE Engineer",
@@ -349,7 +349,7 @@ def build_english():
                 "Global B2C Generative AI Service (Jan. 2026 - Jun. 2026): Supported the UK expansion, initial production operations, and incident response for a Microsoft Azure-based service in collaboration with Microsoft.",
                 "AX Agent Platform (Jul. 2026 - Present): Designed and built an internal platform on AWS EKS, adapting the agent runtime and deployment environment to internal platform standards.",
                 "Owned authentication, authorization, security, and internal governance while building self-service deployment with automatic domain provisioning and authorized-only access.",
-                "Enabled deployed AX applications to consume the existing enterprise LLM Gateway API through platform-side client compatibility and integration, without owning the Gateway design.",
+                "Enabled deployed AX applications to consume the existing enterprise LLM Gateway API through platform-side client compatibility and integration.",
             ],
         ),
         Experience(
@@ -428,7 +428,7 @@ def build_english():
 
 
 def build_korean():
-    r = ResumeCanvas(os.path.join(OUTPUT_DIR, "Jinwon-Lee-CV-Kor-2026-08.pdf"), "ko")
+    r = ResumeCanvas(os.path.join(OUTPUT_DIR, "Jinwon-Lee-CV-Kor-2026-08-v2.pdf"), "ko")
     r.header(
         "이진원",
         "AI 플랫폼 소프트웨어 & SRE 엔지니어",
@@ -468,7 +468,7 @@ def build_korean():
                 "글로벌 B2C 생성형 AI 서비스 (2026.01 - 2026.06): Microsoft와 협업하여 Azure 기반 서비스의 UK 확장, 초기 프로덕션 운영 및 장애 대응을 수행했습니다.",
                 "AX Agent Platform (2026.07 - 현재): AWS EKS 기반 사내 플랫폼을 설계·구축하고, AX Agent의 실행·배포 환경을 사내 플랫폼 규격에 맞게 조정했습니다.",
                 "인증·인가·보안 및 사내 거버넌스를 담당하고, AX App 배포 시 도메인을 자동 발급하여 인가된 사용자만 접근할 수 있는 셀프서비스 구조를 구축했습니다.",
-                "배포된 AX App이 기존 사내 LLM Gateway API를 사용할 수 있도록 플랫폼 측 클라이언트 호환성과 연동을 제공했으며, Gateway 자체 설계는 담당하지 않았습니다.",
+                "배포된 AX App이 기존 사내 LLM Gateway API를 사용할 수 있도록 플랫폼 측 클라이언트 호환성과 연동을 제공했습니다.",
             ],
         ),
         Experience(

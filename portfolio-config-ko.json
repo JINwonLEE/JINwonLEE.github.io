@@ -7,7 +7,7 @@
     "phone": "+82 10-2422-1429",
     "location": "서울, 대한민국",
     "avatar": "./assets/images/profile-photo.jpg",
-    "cv_file": "./output/pdf/Jinwon-Lee-CV-Kor-2026-08.pdf"
+    "cv_file": "./output/pdf/Jinwon-Lee-CV-Kor-2026-08-v2.pdf"
   },
 
   "social": {
@@ -150,7 +150,7 @@
       "title": "사내 AX Agent Platform",
       "category": "인프라",
       "description": "자동 도메인, 접근 제어, 거버넌스, LLM Gateway 연동을 제공하는 AWS EKS 기반 AX App 배포·운영 플랫폼",
-      "detailedDescription": "2026년 7월부터 AWS EKS 기반 사내 AX Agent Platform을 설계·구축하고 있습니다. AX Agent의 실행·배포 환경을 사내 플랫폼 규격에 맞게 조정하고, 개발자가 AX App을 배포하면 도메인이 자동 발급되며 인가된 사용자만 접근할 수 있는 셀프서비스 구조를 구축했습니다. 또한 기존 사내 LLM Gateway API를 사용할 수 있도록 클라이언트 측 호환성과 연동을 제공하며, LLM Gateway 자체의 설계와 운영은 담당 범위에 포함되지 않습니다.",
+      "detailedDescription": "2026년 7월부터 AWS EKS 기반 사내 AX Agent Platform을 설계·구축하고 있습니다. AX Agent의 실행·배포 환경을 사내 플랫폼 규격에 맞게 조정하고, 개발자가 AX App을 배포하면 도메인이 자동 발급되며 인가된 사용자만 접근할 수 있는 셀프서비스 구조를 구축했습니다. 또한 기존 사내 LLM Gateway API를 사용할 수 있도록 클라이언트 측 호환성과 연동을 제공했습니다.",
       "problem": "개발팀이 AX App을 빠르게 배포하면서도 사내 접근 제어, 보안, AI 거버넌스를 일관되게 적용할 수 있어야 했습니다.",
       "role": "플랫폼 설계·구축·배포·운영과 인증·인가·보안 및 사내 거버넌스를 담당했습니다.",
       "engineering": "AWS EKS, AX Agent 런타임 조정, 도메인 자동 발급, 접근 제어, 정책 적용, 기존 LLM Gateway 클라이언트 연동",
