@@ -44,7 +44,7 @@ These notes summarize issues found by comparing `CV-Eng.pdf`, `CV-Kor.pdf`, `ind
 English:
 
 ```text
-At Samsung Electronics, I work on SRE and platform engineering for generative AI services and internal LLM platforms. For about eight years, I have built and operated Kubernetes-based services, cloud infrastructure automation, CI/CD, observability, and AI evaluation/serving workflows. My strength is taking AI applications beyond "working code" and turning them into systems that real users can rely on.
+Software and AI platform engineer with about eight years of experience designing, developing, launching, and operating enterprise and user-facing applications. At Samsung Electronics, I build an internal AX Agent Platform and deliver reliable software from architecture and implementation through rollout and production stabilization.
 ```
 
 Korean:
@@ -65,13 +65,13 @@ Secondary target:
 
 Supporting angle:
 
-- MLOps, model serving operations, AI observability, and Kubernetes-based delivery.
+- AI application delivery, model evaluation, observability, and Kubernetes-based software delivery.
 
 Map the posting keywords to these evidence areas:
 
 - AI/LLM/RAG: LLM evaluation, Document LLM platform, Langfuse observability, AI serving operations.
 - Platform software: large-scale AI service operations, Kubernetes, Helm/Helmfile, ArgoCD, GitOps, cluster provisioning.
-- MLOps / serving: LLM evaluation pipeline, MLflow metric tracking, AI serving efficiency work, Document LLM operations, Langfuse observability.
+- AI delivery / evaluation: LLM evaluation pipeline, MLflow metric tracking, AI serving efficiency work, Document LLM delivery, Langfuse observability.
 - System software: Linux, high-throughput packet mirroring, resource-constrained runtime behavior.
 - Data/AI manufacturing fit: repeatable model evaluation, observability, data-sensitive enterprise AI operations, automation of reliable workflows.
 - Reliability/operations: monitoring, alerting, multi-region readiness, security governance, DevSecOps checks.

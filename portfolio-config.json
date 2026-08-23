@@ -1,13 +1,13 @@
 {
   "personal": {
     "name": "Jinwon Lee",
-    "title": "AI Platform SW · SRE",
+    "title": "Software · AI Platform · SRE",
     "motto": "Build it first, then think it through.",
     "email": "dlwlsdnjsehs1993@gmail.com",
     "phone": "+82 10-2422-1429",
     "location": "Seoul, South Korea",
     "avatar": "./assets/images/profile-photo.jpg",
-    "cv_file": "./output/pdf/Jinwon-Lee-CV-Eng-2026-08-v2.pdf"
+    "cv_file": "./output/pdf/Jinwon-Lee-CV-Eng-2026-08-v3.pdf"
   },
 
   "social": {
@@ -17,31 +17,31 @@
 
   "about": {
     "summary": [
-      "At Samsung Electronics, I design and build an internal AX Agent Platform while working on SRE and platform engineering for generative AI services. For about eight years, I have built and operated Kubernetes-based services, cloud infrastructure automation, CI/CD, observability, and AI evaluation/serving workflows.",
-      "My strength is taking AI applications beyond \"working code\" and turning them into systems that real users can rely on. I consider deployment, authentication, monitoring, incident response, and resource constraints together to build platforms where applications can run smoothly and reliably."
+      "Software and AI platform engineer with about eight years of experience designing, developing, launching, and operating enterprise and user-facing applications. At Samsung Electronics, I build an internal AX Agent Platform and have delivered Kubernetes-based services, cloud automation, CI/CD, observability, and AI application workflows.",
+      "My strength is translating application, security, and platform requirements into reliable software and carrying delivery from architecture and implementation through rollout and production stabilization. I work across application, cloud, security, and operations concerns so teams can release services that users can depend on."
     ]
   },
 
   "services": [
     {
       "icon": "./assets/images/icon-dev.svg",
-      "title": "AI Service Reliability",
-      "description": "Operating production AI services on Kubernetes with reliability, security, observability, and incident-aware delivery."
+      "title": "Application & Platform Architecture",
+      "description": "Turning enterprise application, security, and platform requirements into cloud-native software architectures."
     },
     {
       "icon": "./assets/images/icon-app.svg",
-      "title": "Platform Software",
-      "description": "Building cloud-native AI platform foundations with AWS, Azure, OpenShift, Helm, and Infrastructure as Code."
+      "title": "End-to-End Product Delivery",
+      "description": "Carrying applications from architecture and implementation through rollout, integration, and production stabilization."
     },
     {
       "icon": "./assets/images/icon-design.svg",
-      "title": "MLOps & Serving Delivery",
-      "description": "Connecting evaluation, container delivery, GitOps, and serving operations for repeatable AI application releases."
+      "title": "Cloud-Native Engineering",
+      "description": "Building application and platform foundations with AWS, Azure, Kubernetes, OpenShift, GitOps, and Infrastructure as Code."
     },
     {
       "icon": "./assets/images/icon-quote.svg",
-      "title": "System Software & Performance",
-      "description": "Analyzing Linux-based runtime behavior, high-throughput data paths, and resource-aware operation for platform systems."
+      "title": "Reliability & Performance",
+      "description": "Engineering observability, incident response, Linux runtime behavior, and resource-aware performance into production systems."
     }
   ],
 
@@ -52,9 +52,9 @@
       "period": "2026 — Present",
       "location": "Seoul, S.Korea",
       "highlights": [
-        "Global B2C Generative AI Service | Jan. 2026 - Jun. 2026: Supported the UK expansion, initial production operations, and incident response for a Microsoft Azure-based service in collaboration with Microsoft",
-        "AX Agent Platform | Jul. 2026 - Present: Designed and built an internal platform on AWS EKS, adapting the agent runtime and deployment environment to internal platform standards",
-        "Owned authentication, authorization, security, and internal governance while building self-service deployment with automatic domain provisioning and access control",
+        "Global B2C Generative AI Service | Jan. 2026 - Jun. 2026: Collaborated with Microsoft on UK rollout readiness, initial production operations, incident response, and early service stabilization for an Azure-based consumer service",
+        "AX Agent Platform | Jul. 2026 - Present: Own end-to-end design and delivery of an internal platform on AWS EKS, adapting the agent runtime and deployment environment to enterprise platform standards",
+        "Translate deployment, authentication, authorization, security, and governance requirements into a self-service workflow with automatic domain provisioning and authorized-only access",
         "Enabled deployed AX applications to consume the existing enterprise LLM Gateway API through platform-side client compatibility and integration"
       ]
     },
@@ -64,8 +64,8 @@
       "period": "2024 — 2025",
       "location": "Seoul, S.Korea",
       "highlights": [
-        "Operating a company-wide AI chatbot service on internal Kubernetes clusters with platform and application reliability ownership",
-        "Leading AI chatbot platform serving 30,000 employees with end-to-end Kubernetes operations",
+        "Led platform and application reliability for a company-wide AI chatbot service used by 30,000 employees on internal Kubernetes clusters",
+        "Owned production delivery across development, staging, and production environments, connecting application releases with security and operational requirements",
         "Built fully automated CI/CD pipelines with Docker, Kubernetes, GitHub Actions, and ArgoCD",
         "Deployed centralized monitoring with Grafana, Prometheus, and OpenTelemetry"
       ]
@@ -76,9 +76,9 @@
       "period": "2021 — 2024",
       "location": "Seoul, S.Korea",
       "highlights": [
-        "Deployed containerized applications using Docker, Helm, Kubernetes Operator, and AWS services",
-        "Managed diverse cloud platforms: OpenShift, Kubernetes, and EKS",
-        "Developed automated one-click Kubernetes cluster provisioning system",
+        "Designed and delivered containerized applications using Docker, Helm, Kubernetes Operator, and AWS services",
+        "Built and managed OpenShift, Kubernetes, and EKS environments for performance, reliability, high availability, and auto-scaling",
+        "Designed and developed an automated one-click Kubernetes cluster provisioning system for cloud developers",
         "Built automated CI/CD systems with Jenkins and GitHub Actions"
       ]
     },
@@ -88,9 +88,9 @@
       "period": "2019 — 2020",
       "location": "Gyeonggi, S.Korea",
       "highlights": [
-        "Developed CI/CD and registry operators in Kubernetes for automated pipelines",
-        "Built Siri-like AI assistant on TmaxOS with system-level integration",
-        "Designed asynchronous architecture for natural user experiences"
+        "Designed and developed CI/CD and registry operators in Kubernetes for automated software delivery",
+        "Built a Siri-like AI assistant on TmaxOS with system-level integration, model inference, and data preprocessing",
+        "Designed the asynchronous application architecture to deliver responsive user interactions"
       ]
     }
   ],
@@ -124,11 +124,11 @@
       "level": 95
     },
     {
-      "name": "AI Platform Software & MLOps",
+      "name": "Application & Platform Software",
       "level": 90
     },
     {
-      "name": "Model Serving Delivery & GitOps",
+      "name": "End-to-End Delivery & GitOps",
       "level": 90
     },
     {
@@ -150,12 +150,12 @@
       "title": "Internal AX Agent Platform",
       "category": "infrastructure",
       "description": "AWS EKS-based platform for deploying and operating AX applications with automated domains, access control, governance, and LLM Gateway integration.",
-      "detailedDescription": "Designed and built an internal AX Agent Platform on AWS EKS from July 2026. Adapted the AX Agent runtime and deployment environment to internal platform standards, and established a self-service workflow where developers deploy AX applications, receive domains automatically, and restrict access to authorized users. The platform also enables applications to consume the existing enterprise LLM Gateway API through client-side compatibility and integration.",
+      "detailedDescription": "Designed and built an internal AX Agent Platform on AWS EKS from July 2026, carrying the work from architecture and runtime adaptation through deployment and production operation. Translated enterprise deployment, access, security, and governance requirements into a self-service workflow where developers release AX applications, receive domains automatically, and restrict access to authorized users. The platform also enables applications to consume the existing enterprise LLM Gateway API through client-side compatibility and integration.",
       "problem": "Enable teams to deploy AX applications quickly while enforcing enterprise access control, security, and AI governance.",
-      "role": "Designed, built, deployed, and operated the platform while owning authentication, authorization, security, and internal governance.",
+      "role": "Owned end-to-end platform delivery from architecture and implementation through deployment and operation, including authentication, authorization, security, and internal governance.",
       "engineering": "AWS EKS, AX Agent runtime adaptation, automated domain provisioning, access control, policy enforcement, and client integration with the existing LLM Gateway.",
       "outcome": "Created a self-service path for governed AX application deployment with automatic domains and authorized-only access.",
-      "relevance": "Demonstrates end-to-end AI platform engineering across runtime compatibility, deployment automation, security, governance, and enterprise LLM consumption.",
+      "relevance": "Demonstrates end-to-end enterprise application platform delivery across requirements, architecture, runtime compatibility, deployment automation, security, governance, and LLM integration.",
       "technologies": ["AWS", "EKS", "Kubernetes", "AuthN/AuthZ", "Governance", "LLM Gateway Integration"],
       "image": "./assets/images/thumb-ax-agent-platform.svg",
       "detailedImage": "./assets/images/thumb-ax-agent-platform.svg",
@@ -166,12 +166,12 @@
       "title": "Global B2C Generative AI Service",
       "category": "infrastructure",
       "description": "Microsoft Azure-based B2C generative AI service expanded to the UK with initial production operations and incident response.",
-      "detailedDescription": "Supported the UK expansion of a global B2C generative AI service on Microsoft Azure in collaboration with Microsoft. The work focused on rollout readiness, initial production operations, and incident response through the service's early stabilization period from January to June 2026.",
+      "detailedDescription": "Collaborated with Microsoft on the UK expansion of a global B2C generative AI service on Azure. The work covered rollout readiness, initial production operations, incident response, and early service stabilization from January to June 2026.",
       "problem": "Expand a consumer-facing generative AI service to the UK and stabilize its initial production operations.",
-      "role": "Supported platform/SRE work for the UK rollout, initial production operations, and incident response.",
+      "role": "Delivered platform/SRE responsibilities for UK rollout readiness, initial production operations, incident response, and early stabilization.",
       "engineering": "Azure and Kubernetes operations, rollout readiness, production stabilization, and incident response.",
-      "outcome": "Supported the UK rollout through initial stabilization and completed the engagement in June 2026.",
-      "relevance": "Shows hands-on experience supporting the international rollout and early operation of a production generative AI service.",
+      "outcome": "Delivered UK rollout readiness and early production stabilization, completing the engagement in June 2026.",
+      "relevance": "Shows hands-on delivery experience for an international consumer application rollout and its transition into stable production operation.",
       "technologies": ["Azure", "Kubernetes", "Generative AI", "SRE", "Incident Response"],
       "image": "./assets/images/thumb-ai-serving-global.svg",
       "detailedImage": "./assets/images/thumb-ai-serving-global.svg",
@@ -181,14 +181,14 @@
     {
       "title": "Company-wide AI Chatbot Platform (30K Users)",
       "category": "infrastructure",
-      "description": "Enterprise AI chatbot platform serving 30,000 employees with Kubernetes, MLOps-style operations, and data protection.",
+      "description": "Enterprise AI chatbot platform serving 30,000 employees with Kubernetes-based application delivery, reliability, and data protection.",
       "detailedDescription": "Led the operation of a company-wide AI chatbot platform serving 30,000 employees on internal Kubernetes clusters. Responsibilities covered end-to-end infrastructure, platform, and application operations while meeting internal security, authentication, and data protection standards.",
       "problem": "Provide a reliable internal AI assistant platform for tens of thousands of employees.",
-      "role": "Led infrastructure, platform, and AI application operations across development, staging, and production clusters.",
+      "role": "Led platform and application reliability across development, staging, and production, connecting releases with security and operational requirements.",
       "engineering": "Kubernetes operations, Helm/Helmfile IaC, AI service delivery, authentication, and data protection compliance.",
       "outcome": "Supported a company-wide AI service with production-grade operating standards.",
-      "relevance": "Shows large-scale internal AI platform operation, a core requirement for Platform Software and MLOps-facing roles.",
-      "technologies": ["Kubernetes", "Internal Cluster", "MLOps", "ArgoCD", "Helm", "Helmfile"],
+      "relevance": "Shows enterprise application delivery and production ownership for a large internal user base.",
+      "technologies": ["Kubernetes", "Internal Cluster", "Application Delivery", "ArgoCD", "Helm", "Helmfile"],
       "image": "./assets/images/thumb-enterprise-chatbot.svg",
       "detailedImage": "./assets/images/thumb-enterprise-chatbot.svg",
       "url": "",
@@ -213,14 +213,14 @@
     {
       "title": "LLM Performance Evaluation Pipeline",
       "category": "ai/ml",
-      "description": "MLOps-style evaluation pipeline for LLM quality and performance across Machine Translation tasks.",
+      "description": "Automated evaluation pipeline for repeatable LLM quality and performance comparison across Machine Translation tasks.",
       "detailedDescription": "Built an automated pipeline for evaluating the performance and quality of LLM models across Machine Translation tasks. The pipeline tracked benchmark results and quality metrics with MLflow to support repeatable model comparison.",
       "problem": "LLM model quality needed repeatable evaluation rather than ad hoc manual checks.",
       "role": "Built the evaluation workflow and metric tracking path for Machine Translation model comparison.",
       "engineering": "Python evaluation automation, PyTorch-based workloads, MLflow metric tracking, and Kubernetes execution.",
       "outcome": "Made LLM evaluation results easier to compare and reproduce across model candidates.",
-      "relevance": "Maps directly to AI workload evaluation, model performance analysis, and MLOps pipeline needs.",
-      "technologies": ["Python", "PyTorch", "MLflow", "MLOps", "Kubernetes"],
+      "relevance": "Maps directly to AI workload evaluation, model performance analysis, and repeatable application quality workflows.",
+      "technologies": ["Python", "PyTorch", "MLflow", "Evaluation Automation", "Kubernetes"],
       "image": "./assets/images/thumb-llm-evaluation.svg",
       "detailedImage": "./assets/images/thumb-llm-evaluation.svg",
       "url": "",

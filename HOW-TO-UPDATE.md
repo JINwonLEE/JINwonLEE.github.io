@@ -63,7 +63,7 @@ Important: the About and Resume sections are still partly hardcoded in **`index.
 Before submitting to SK hynix or another target role, make sure the CV PDFs, HTML pages, and config files agree on:
 
 - Years of experience: use "around 8 years" / "약 8년 차" unless the CV source is intentionally changed.
-- Current title: keep "AI Platform · SRE Engineer" / "AI 플랫폼 · SRE 엔지니어" consistent.
+- Current positioning: keep "Software · AI Platform · SRE" / "소프트웨어 · AI 플랫폼 · SRE" consistent.
 - Latest role: Samsung Electronics (AX Development Group), 2026 — Present.
 - Samsung Research role: 2024 — 2025.
 - Verified metrics only: 30,000 employees, 130,000 packets/sec, and 2.3x speedup are supported by the current PDFs.

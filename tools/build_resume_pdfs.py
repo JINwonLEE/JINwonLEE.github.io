@@ -309,31 +309,31 @@ class ResumeCanvas:
 
 
 def build_english():
-    r = ResumeCanvas(os.path.join(OUTPUT_DIR, "Jinwon-Lee-CV-Eng-2026-08-v2.pdf"), "en")
+    r = ResumeCanvas(os.path.join(OUTPUT_DIR, "Jinwon-Lee-CV-Eng-2026-08-v3.pdf"), "en")
     r.header(
         "Jinwon Lee",
-        "AI Platform Software & SRE Engineer",
+        "Software & AI Platform Engineer",
         "Seoul, South Korea | +82 10-2422-1429 | dlwlsdnjsehs1993@gmail.com | github.com/JINwonLEE | linkedin.com/in/jwl1993",
         load_motto("en"),
-        ["AI Platform Software", "MLOps / Model Serving", "Kubernetes Infrastructure", "System Software"],
+        ["Application Software", "AI Platform", "End-to-End Delivery", "Reliability Engineering"],
     )
     r.heading("Summary")
     r.summary_panel(
         [
-            "At Samsung Electronics, I design and build an internal AX Agent Platform while working on SRE and platform engineering for generative AI services. "
-            "For about eight years, I have built and operated Kubernetes-based services, cloud infrastructure automation, CI/CD, observability, and AI evaluation/serving workflows.",
-            'My strength is taking AI applications beyond "working code" and turning them into systems that real users can rely on. '
-            "I consider deployment, authentication, monitoring, incident response, and resource constraints together to build platforms where applications can run smoothly and reliably.",
+            "Software and AI platform engineer with about eight years of experience designing, developing, launching, and operating enterprise and user-facing applications. "
+            "At Samsung Electronics, I build an internal AX Agent Platform and have delivered Kubernetes-based services, cloud automation, CI/CD, observability, and AI application workflows.",
+            "I translate application, security, and platform requirements into reliable software and carry delivery from architecture and implementation through rollout and production stabilization. "
+            "I work across application, cloud, security, and operations concerns so teams can release services that users can depend on.",
         ]
     )
-    r.chips(["AI Platform Software", "MLOps & Model Serving", "System Software & Performance", "Cloud/Kubernetes Infrastructure"])
+    r.chips(["Application & Platform Software", "End-to-End Product Delivery", "Cloud-Native Engineering", "Reliability & Performance"])
 
     r.heading("Core Skills")
     r.skill_block(
         [
-            ("AI/MLOps", "LLM evaluation pipeline, MLflow metric tracking, AI serving operations, Document LLM platform, Langfuse observability"),
-            ("Platform", "Kubernetes, AWS EKS, Azure, OpenShift, Docker, Helm/Helmfile, ArgoCD, GitOps, Terraform, Ansible"),
-            ("System", "Linux runtime behavior, Python automation, high-throughput packet mirroring, distributed systems, resource-aware optimization"),
+            ("Application Software", "Enterprise and user-facing applications, Kubernetes operators, Python automation, asynchronous architecture, API integration"),
+            ("Product Delivery", "Requirements translation, architecture, implementation, rollout readiness, release automation, production stabilization"),
+            ("Cloud Platform", "Kubernetes, AWS EKS, Azure, OpenShift, Docker, Helm/Helmfile, ArgoCD, GitOps, Terraform, Ansible"),
             ("Reliability", "Authentication/authorization, security governance, domain provisioning, Grafana, Prometheus, OpenTelemetry, incident response"),
         ]
     )
@@ -346,9 +346,9 @@ def build_english():
             "Jan. 2026 - Present",
             "Seoul, South Korea",
             [
-                "Global B2C Generative AI Service (Jan. 2026 - Jun. 2026): Supported the UK expansion, initial production operations, and incident response for a Microsoft Azure-based service in collaboration with Microsoft.",
-                "AX Agent Platform (Jul. 2026 - Present): Designed and built an internal platform on AWS EKS, adapting the agent runtime and deployment environment to internal platform standards.",
-                "Owned authentication, authorization, security, and internal governance while building self-service deployment with automatic domain provisioning and authorized-only access.",
+                "Global B2C Generative AI Service (Jan. 2026 - Jun. 2026): Collaborated with Microsoft on UK rollout readiness, initial production operations, incident response, and early stabilization for an Azure-based consumer service.",
+                "AX Agent Platform (Jul. 2026 - Present): Own end-to-end design and delivery of an internal platform on AWS EKS, adapting the agent runtime and deployment environment to enterprise platform standards.",
+                "Translate deployment, authentication, authorization, security, and governance requirements into a self-service workflow with automatic domain provisioning and authorized-only access.",
                 "Enabled deployed AX applications to consume the existing enterprise LLM Gateway API through platform-side client compatibility and integration.",
             ],
         ),
@@ -358,8 +358,8 @@ def build_english():
             "Jul. 2024 - Dec. 2025",
             "Seoul, South Korea",
             [
-                "Operated a company-wide AI chatbot service on internal Kubernetes clusters, owning platform and application reliability for production use.",
-                "Led infrastructure, platform, and application operations for a company-wide AI chatbot platform serving 30,000 employees on Kubernetes.",
+                "Led platform and application reliability for a company-wide AI chatbot service used by 30,000 employees on internal Kubernetes clusters.",
+                "Owned production delivery across development, staging, and production environments, connecting application releases with security and operational requirements.",
                 "Provisioned and operated development, staging, and production Kubernetes clusters using Helm and Helmfile.",
                 "Built automated CI/CD pipelines for containerized applications with Docker, Kubernetes, GitHub Actions, and ArgoCD.",
                 "Deployed centralized monitoring with Grafana, Prometheus, and OpenTelemetry, and built an automated LLM evaluation pipeline for Machine Translation tasks.",
@@ -371,9 +371,9 @@ def build_english():
             "Jan. 2021 - Jun. 2024",
             "Seoul, South Korea",
             [
-                "Deployed containerized applications using Docker, Helm, Kubernetes Operator, and AWS services including EKS, ECS, Route 53, RDS, and IAM.",
-                "Built and managed OpenShift, Kubernetes, and EKS environments with focus on performance, reliability, high availability, and auto-scaling.",
-                "Developed an automated one-click Kubernetes cluster provisioning system for cloud developers.",
+                "Designed and delivered containerized applications using Docker, Helm, Kubernetes Operator, and AWS services including EKS, ECS, Route 53, RDS, and IAM.",
+                "Built and managed OpenShift, Kubernetes, and EKS environments for performance, reliability, high availability, and auto-scaling.",
+                "Designed and developed an automated one-click Kubernetes cluster provisioning system for cloud developers.",
                 "Developed an application that mirrors up to 130,000 packets per second in real time under constrained system resources.",
             ],
         ),
@@ -383,8 +383,8 @@ def build_english():
             "Jan. 2019 - Dec. 2020",
             "Gyeonggi, South Korea",
             [
-                "Developed CI/CD and registry operators in Kubernetes and deployed a private container image registry.",
-                "Built a Siri-like AI assistant on TmaxOS with system-level integration, AI model inference, preprocessing, and asynchronous architecture.",
+                "Designed and developed CI/CD and registry operators in Kubernetes and deployed a private container image registry.",
+                "Built a Siri-like AI assistant on TmaxOS with system-level integration, model inference, data preprocessing, and asynchronous application architecture.",
             ],
         ),
     ]
@@ -428,31 +428,31 @@ def build_english():
 
 
 def build_korean():
-    r = ResumeCanvas(os.path.join(OUTPUT_DIR, "Jinwon-Lee-CV-Kor-2026-08-v2.pdf"), "ko")
+    r = ResumeCanvas(os.path.join(OUTPUT_DIR, "Jinwon-Lee-CV-Kor-2026-08-v3.pdf"), "ko")
     r.header(
         "이진원",
-        "AI 플랫폼 소프트웨어 & SRE 엔지니어",
+        "소프트웨어 & AI 플랫폼 엔지니어",
         "서울, 대한민국 | +82 10-2422-1429 | dlwlsdnjsehs1993@gmail.com | github.com/JINwonLEE | linkedin.com/in/jwl1993",
         load_motto("ko"),
-        ["AI 플랫폼 소프트웨어", "MLOps / 모델 서빙", "Kubernetes 인프라", "시스템 소프트웨어"],
+        ["애플리케이션 소프트웨어", "AI 플랫폼", "엔드투엔드 전달", "신뢰성 엔지니어링"],
     )
     r.heading("요약")
     r.summary_panel(
         [
-            "삼성전자에서 사내 AX Agent Platform을 설계·구축하며 생성형 AI 서비스의 SRE/플랫폼 엔지니어링을 담당하고 있습니다. "
-            "약 8년 동안 Kubernetes 기반 서비스 운영, 클라우드 인프라 자동화, CI/CD, 관측 가능성, AI 평가/서빙 워크플로우를 다뤄왔습니다.",
-            '제가 잘하는 일은 AI 애플리케이션을 "동작하는 코드"에서 실제 사용자가 안정적으로 쓸 수 있는 운영 구조로 옮기는 것입니다. '
-            "배포, 인증, 모니터링, 장애 대응, 리소스 제약을 함께 고려해 애플리케이션이 원활하게 동작할 수 있는 플랫폼을 만듭니다.",
+            "약 8년 동안 엔터프라이즈 및 사용자 대상 애플리케이션을 설계·개발하고 출시부터 프로덕션 운영까지 담당해 온 소프트웨어·AI 플랫폼 엔지니어입니다. "
+            "삼성전자에서 사내 AX Agent Platform을 구축하고 있으며 Kubernetes 기반 서비스, 클라우드 자동화, CI/CD, 관측 가능성, AI 애플리케이션 워크플로우를 다뤄왔습니다.",
+            "애플리케이션·보안·플랫폼 요구사항을 신뢰할 수 있는 소프트웨어로 구현하고, 아키텍처와 개발부터 출시 및 초기 안정화까지 이어가는 것이 강점입니다. "
+            "애플리케이션, 클라우드, 보안, 운영을 함께 고려해 실제 사용자가 의존할 수 있는 서비스를 만듭니다.",
         ]
     )
-    r.chips(["AI 플랫폼 소프트웨어", "MLOps & 모델 서빙", "시스템 소프트웨어 & 성능", "클라우드/Kubernetes 인프라"])
+    r.chips(["애플리케이션 & 플랫폼 소프트웨어", "엔드투엔드 제품 전달", "클라우드 네이티브 엔지니어링", "신뢰성 & 성능"])
 
     r.heading("핵심 역량")
     r.skill_block(
         [
-            ("AI/MLOps", "LLM 평가 파이프라인, MLflow 메트릭 추적, AI 서빙 운영, Document LLM 플랫폼, Langfuse 관측 가능성"),
-            ("플랫폼", "Kubernetes, AWS EKS, Azure, OpenShift, Docker, Helm/Helmfile, ArgoCD, GitOps, Terraform, Ansible"),
-            ("시스템", "Linux 런타임 동작, Python 자동화, 고성능 패킷 미러링, 분산 시스템, 리소스 인식 최적화"),
+            ("애플리케이션 SW", "엔터프라이즈·사용자 대상 애플리케이션, Kubernetes Operator, Python 자동화, 비동기 아키텍처, API 연동"),
+            ("제품 전달", "요구사항 구체화, 아키텍처, 구현, 출시 준비, 릴리스 자동화, 프로덕션 안정화"),
+            ("클라우드 플랫폼", "Kubernetes, AWS EKS, Azure, OpenShift, Docker, Helm/Helmfile, ArgoCD, GitOps, Terraform, Ansible"),
             ("신뢰성", "인증·인가, 보안 거버넌스, 도메인 자동 발급, Grafana, Prometheus, OpenTelemetry, 장애 대응"),
         ]
     )
@@ -465,9 +465,9 @@ def build_korean():
             "2026.01 - 현재",
             "서울, 대한민국",
             [
-                "글로벌 B2C 생성형 AI 서비스 (2026.01 - 2026.06): Microsoft와 협업하여 Azure 기반 서비스의 UK 확장, 초기 프로덕션 운영 및 장애 대응을 수행했습니다.",
-                "AX Agent Platform (2026.07 - 현재): AWS EKS 기반 사내 플랫폼을 설계·구축하고, AX Agent의 실행·배포 환경을 사내 플랫폼 규격에 맞게 조정했습니다.",
-                "인증·인가·보안 및 사내 거버넌스를 담당하고, AX App 배포 시 도메인을 자동 발급하여 인가된 사용자만 접근할 수 있는 셀프서비스 구조를 구축했습니다.",
+                "글로벌 B2C 생성형 AI 서비스 (2026.01 - 2026.06): Microsoft와 협업하여 Azure 기반 소비자 서비스의 UK 출시 준비, 초기 프로덕션 운영, 장애 대응 및 초기 안정화를 수행했습니다.",
+                "AX Agent Platform (2026.07 - 현재): AWS EKS 기반 사내 플랫폼의 설계부터 구축·배포·운영까지 엔드투엔드로 담당하고, AX Agent 실행·배포 환경을 사내 플랫폼 규격에 맞게 조정했습니다.",
+                "배포·인증·인가·보안·거버넌스 요구사항을 도메인 자동 발급과 인가된 사용자 전용 접근을 제공하는 셀프서비스 워크플로우로 구현했습니다.",
                 "배포된 AX App이 기존 사내 LLM Gateway API를 사용할 수 있도록 플랫폼 측 클라이언트 호환성과 연동을 제공했습니다.",
             ],
         ),
@@ -477,8 +477,8 @@ def build_korean():
             "2024.07 - 2025.12",
             "서울, 대한민국",
             [
-                "사내 Kubernetes 클러스터 기반 전사 AI 챗봇 서비스를 운영하며 프로덕션 사용을 위한 플랫폼 및 애플리케이션 신뢰성을 담당했습니다.",
-                "약 30,000명의 임직원이 사용하는 전사 AI 챗봇 플랫폼의 Kubernetes 기반 인프라, 플랫폼, 애플리케이션 운영을 담당했습니다.",
+                "약 30,000명의 임직원이 사용하는 사내 Kubernetes 기반 전사 AI 챗봇의 플랫폼 및 애플리케이션 신뢰성을 리딩했습니다.",
+                "개발·스테이징·프로덕션 환경의 전달 전 과정을 담당하며 애플리케이션 릴리스와 보안·운영 요구사항을 연결했습니다.",
                 "Helm/Helmfile을 활용하여 개발, 스테이징, 프로덕션 Kubernetes 클러스터를 프로비저닝하고 운영했습니다.",
                 "Docker, Kubernetes, GitHub Actions, ArgoCD를 활용해 컨테이너화된 애플리케이션의 CI/CD 파이프라인을 구축했습니다.",
                 "Grafana, Prometheus, OpenTelemetry 기반 중앙 모니터링을 배포하고, 기계 번역 태스크용 LLM 평가 자동화 파이프라인을 구축했습니다.",
@@ -490,9 +490,9 @@ def build_korean():
             "2021.01 - 2024.06",
             "서울, 대한민국",
             [
-                "Docker, Helm, Kubernetes Operator 및 AWS(EKS, ECS, Route 53, RDS, IAM 등)를 활용해 컨테이너화된 애플리케이션을 배포했습니다.",
-                "OpenShift, Kubernetes, EKS 환경을 구축/관리하며 성능, 안정성, 고가용성, 오토스케일링을 고려한 운영을 수행했습니다.",
-                "클라우드 개발자를 위한 Kubernetes 클러스터 원클릭 프로비저닝 시스템을 개발했습니다.",
+                "Docker, Helm, Kubernetes Operator 및 AWS(EKS, ECS, Route 53, RDS, IAM 등)를 활용해 컨테이너 애플리케이션을 설계하고 전달했습니다.",
+                "성능·안정성·고가용성·오토스케일링을 고려한 OpenShift, Kubernetes, EKS 환경을 구축·관리했습니다.",
+                "클라우드 개발자를 위한 Kubernetes 클러스터 원클릭 프로비저닝 시스템을 설계하고 개발했습니다.",
                 "제한된 시스템 리소스에서 초당 최대 130,000개의 패킷을 실시간으로 미러링해 타겟 서버로 전달하는 애플리케이션을 개발했습니다.",
             ],
         ),
@@ -502,8 +502,8 @@ def build_korean():
             "2019.01 - 2020.12",
             "경기, 대한민국",
             [
-                "Kubernetes 환경에서 CI/CD 및 레지스트리 오퍼레이터를 개발하고 프라이빗 컨테이너 이미지 레지스트리를 배포했습니다.",
-                "TmaxOS 기반 Siri형 AI 어시스턴트를 개발하며 시스템 수준 통합, AI 모델 추론, 데이터 전처리, 비동기 아키텍처를 담당했습니다.",
+                "Kubernetes 환경에서 CI/CD 및 레지스트리 오퍼레이터를 설계·개발하고 프라이빗 컨테이너 이미지 레지스트리를 배포했습니다.",
+                "TmaxOS 기반 Siri형 AI 어시스턴트를 개발하며 시스템 수준 통합, 모델 추론, 데이터 전처리, 비동기 애플리케이션 아키텍처를 담당했습니다.",
             ],
         ),
     ]

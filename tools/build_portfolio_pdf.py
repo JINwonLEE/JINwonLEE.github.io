@@ -16,8 +16,8 @@ from reportlab.pdfgen import canvas
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 OUTPUT_DIR = os.path.join(ROOT, "output", "pdf")
 OUTPUTS = {
-    "ko": os.path.join(OUTPUT_DIR, "Jinwon-Lee-Portfolio-Kor-2026-08-v2.pdf"),
-    "en": os.path.join(OUTPUT_DIR, "Jinwon-Lee-Portfolio-Eng-2026-08-v2.pdf"),
+    "ko": os.path.join(OUTPUT_DIR, "Jinwon-Lee-Portfolio-Kor-2026-08-v3.pdf"),
+    "en": os.path.join(OUTPUT_DIR, "Jinwon-Lee-Portfolio-Eng-2026-08-v3.pdf"),
 }
 CONFIGS = {
     "ko": os.path.join(ROOT, "portfolio-config-ko.json"),
@@ -232,15 +232,15 @@ class PortfolioPDF:
             if "AX Agent" in title:
                 return "Experience building a governed self-service agent platform with runtime compatibility, access control, and enterprise LLM integration."
             if "Generative AI" in title:
-                return "Experience supporting UK rollout, production stabilization, and incident response for a consumer generative AI service."
+                return "Experience delivering UK rollout readiness, production stabilization, and incident response for a consumer generative AI service."
             if "Chatbot" in title:
-                return "Experience defining Kubernetes-based AI platform operations for tens of thousands of internal users."
+                return "Experience leading application delivery and reliability for tens of thousands of internal users."
             if "AI Services" in title:
                 return "Experience connecting LLM application operations with authentication, observability, and runtime reliability."
             if "Cluster" in title:
                 return "Experience standardizing infrastructure and automating repeatable development and test environments."
             if "Evaluation" in title:
-                return "MLOps experience automating model quality comparison and making evaluation results traceable."
+                return "Experience automating model quality comparison and making evaluation results traceable and repeatable."
             if "GitOps" in title:
                 return "Experience connecting deployment consistency, security checks, and operations automation for containerized services."
             if "Monitoring" in title:
@@ -254,15 +254,15 @@ class PortfolioPDF:
         if "AX Agent" in title:
             return "런타임 호환성, 셀프서비스 배포, 접근 제어, 사내 LLM 연동을 하나의 거버넌스 플랫폼으로 구현한 경험입니다."
         if "생성형 AI" in title:
-            return "소비자 대상 생성형 AI 서비스의 UK 출시, 초기 안정화, 장애 대응을 지원한 경험입니다."
+            return "소비자 대상 생성형 AI 서비스의 UK 출시 준비, 초기 안정화, 장애 대응을 수행한 경험입니다."
         if "챗봇" in title:
-            return "수만 명 규모의 내부 사용자를 대상으로 Kubernetes 기반 AI 플랫폼 운영 기준을 다룬 경험입니다."
+            return "수만 명 규모의 내부 사용자를 위한 애플리케이션 전달과 신뢰성을 리딩한 경험입니다."
         if "인프라 운영" in title:
             return "LLM 애플리케이션 운영을 인증, 관측 가능성, 런타임 안정성과 연결한 경험입니다."
         if "클러스터" in title:
             return "반복 가능한 개발/테스트 환경을 만들기 위한 플랫폼 자동화와 인프라 표준화 경험입니다."
         if "평가" in title:
-            return "모델 품질 비교를 자동화하고 평가 결과를 추적 가능한 흐름으로 만든 MLOps 경험입니다."
+            return "모델 품질 비교를 자동화하고 평가 결과를 추적 가능하고 반복 가능한 흐름으로 만든 경험입니다."
         if "GitOps" in title:
             return "컨테이너 기반 서비스의 배포 일관성, 보안 검증, 운영 자동화를 연결한 경험입니다."
         if "모니터링" in title:
@@ -285,7 +285,7 @@ class PortfolioPDF:
             [
                 ("문제", project.problem),
                 ("역할", project.role),
-                ("설계/운영", project.engineering),
+                ("설계/전달", project.engineering),
                 ("결과", project.outcome),
                 ("역량 포인트", self.capability_point(project)),
             ]
@@ -293,7 +293,7 @@ class PortfolioPDF:
             else [
                 ("Problem", project.problem),
                 ("Role", project.role),
-                ("Design/Ops", project.engineering),
+                ("Engineering/Delivery", project.engineering),
                 ("Outcome", project.outcome),
                 ("Capability", self.capability_point(project)),
             ]
@@ -340,7 +340,7 @@ def build_pdf(lang: str) -> None:
     y = pdf.h - 35 * mm
     pdf.text_at(x, y, data["personal"]["name"], 34, pdf.text, 850)
     y -= 18
-    pdf.text_at(x, y, "AI Platform Software · MLOps/Serving · System Software", 11.5, pdf.body)
+    pdf.text_at(x, y, "Application Software · AI Platform · End-to-End Delivery", 11.5, pdf.body)
     y -= 20
     pdf.rounded_rect(x, y - 31 * mm, 142 * mm, 31 * mm, colors.HexColor("#202124"), colors.HexColor("#3A362D"), 5 * mm)
     pdf.text_at(x + 7 * mm, y - 10 * mm, "웹사이트" if is_ko else "Website", 9.5, pdf.accent, 750)
@@ -348,9 +348,9 @@ def build_pdf(lang: str) -> None:
     pdf.c.linkURL(PORTFOLIO_URL, (x + 7 * mm, y - 24 * mm, x + 72 * mm, y - 14 * mm), relative=0)
     y -= 46 * mm
     summary = (
-        "이 포트폴리오는 AI 애플리케이션을 실제 운영 가능한 서비스로 만들기 위해 수행한 플랫폼, 인프라, 서빙, 관측 가능성, 시스템 성능 관련 경험을 정리한 문서입니다. 각 프로젝트는 문제 상황, 담당 역할, 설계/운영 포인트, 결과 또는 배운 점을 중심으로 구성했습니다."
+        "이 포트폴리오는 엔터프라이즈 및 사용자 대상 애플리케이션을 요구사항과 아키텍처부터 구현, 출시, 프로덕션 안정화까지 전달한 경험을 정리한 문서입니다. 각 프로젝트는 문제 상황, 담당 역할, 설계와 전달 포인트, 결과를 중심으로 구성했습니다."
         if is_ko
-        else "This portfolio summarizes platform, infrastructure, serving, observability, and system performance work behind AI applications that need to run reliably in real operating environments. Each project is organized around the problem context, my role, design and operations focus, outcomes, and capability signals."
+        else "This portfolio summarizes end-to-end delivery of enterprise and user-facing applications from requirements and architecture through implementation, rollout, and production stabilization. Each project is organized around the problem context, my role, engineering and delivery focus, outcomes, and capability signals."
     )
     pdf.paragraph(x, y, summary, 170 * mm, 11, 16, pdf.body)
     card_y = 65 * mm
@@ -358,17 +358,17 @@ def build_pdf(lang: str) -> None:
     gap = 8 * mm
     cards = (
         [
-            ("AI Platform Software", "프로덕션 AI 서비스 운영, Kubernetes 기반 플랫폼, 인증/관측성 통합", pdf.blue),
-            ("MLOps & Serving", "LLM 평가, 모델 서빙 운영, GitOps 기반 반복 가능한 배포 흐름", pdf.green),
-            ("System Software", "Linux 런타임, 고성능 패킷 처리, 리소스 제약 기반 성능 작업", pdf.purple),
-            ("Cloud Infrastructure", "Azure/AWS/OpenShift, Helm/Helmfile, Terraform, Ansible 기반 자동화", pdf.accent),
+            ("Application Software", "엔터프라이즈·사용자 대상 앱, 비동기 아키텍처, API 및 시스템 통합", pdf.blue),
+            ("End-to-End Delivery", "요구사항, 아키텍처, 구현, 출시 준비, 프로덕션 안정화", pdf.green),
+            ("Reliability", "인증·인가, 관측 가능성, 장애 대응, 시스템 성능", pdf.purple),
+            ("Cloud Platform", "Azure/AWS/OpenShift, Kubernetes, GitOps, IaC 기반 자동화", pdf.accent),
         ]
         if is_ko
         else [
-            ("AI Platform Software", "Production AI service operations, Kubernetes platforms, authentication and observability integration", pdf.blue),
-            ("MLOps & Serving", "LLM evaluation, model-serving operations, and repeatable GitOps-based delivery flow", pdf.green),
-            ("System Software", "Linux runtime behavior, high-throughput packet processing, and resource-aware performance work", pdf.purple),
-            ("Cloud Infrastructure", "Automation with Azure/AWS/OpenShift, Helm/Helmfile, Terraform, and Ansible", pdf.accent),
+            ("Application Software", "Enterprise and user-facing apps, asynchronous architecture, API and system integration", pdf.blue),
+            ("End-to-End Delivery", "Requirements, architecture, implementation, rollout readiness, and production stabilization", pdf.green),
+            ("Reliability", "Authentication, authorization, observability, incident response, and system performance", pdf.purple),
+            ("Cloud Platform", "Automation with Azure, AWS, OpenShift, Kubernetes, GitOps, and Infrastructure as Code", pdf.accent),
         ]
     )
     for i, (title, body, accent) in enumerate(cards):
@@ -383,7 +383,7 @@ def build_pdf(lang: str) -> None:
             pdf.left,
             pdf.h - 31 * mm,
             "프로젝트 상세" if is_ko else "Project Details",
-            "문제 상황, 역할, 설계/운영 포인트, 결과, 역량 포인트" if is_ko else "Problem, role, design/operations focus, outcome, and capability point",
+            "문제 상황, 역할, 설계/전달 포인트, 결과, 역량 포인트" if is_ko else "Problem, role, engineering/delivery focus, outcome, and capability point",
         )
         card_w = (pdf.usable - 8 * mm) / 2
         card_h = 145 * mm

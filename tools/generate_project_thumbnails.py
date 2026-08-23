@@ -172,7 +172,7 @@ def llm_evaluation() -> str:
         line(206, 250, 319, 250, "#b69cff", 4),
         line(481, 250, 594, 250, "#b69cff", 4),
     ]
-    return base("LLM Evaluation Pipeline", "Quality metrics · MLflow · MLOps", "\n  ".join(items), "#b69cff")
+    return base("LLM Evaluation Pipeline", "Quality metrics · MLflow · Automation", "\n  ".join(items), "#b69cff")
 
 
 def gitops_cicd() -> str:
