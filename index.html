@@ -1,886 +1,208 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jinwon Lee - Software & AI Platform Engineer</title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css?v=20260823-delivery">
-
-  <!--
-    - google font link
-  -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jinwon Lee is a production AI and platform engineer building reliable cloud-native systems, AI application platforms, and developer delivery workflows.">
+  <meta property="og:title" content="Jinwon Lee | Production AI & Platform Engineer">
+  <meta property="og:description" content="Production AI, cloud platforms, application delivery, and site reliability engineering.">
+  <meta property="og:image" content="https://jinwonlee.github.io/assets/images/enterprise-ai-assistant.png">
+  <meta property="og:type" content="website">
+  <title>Jinwon Lee | Production AI & Platform Engineer</title>
+  <link rel="canonical" href="https://jinwonlee.github.io/">
+  <link rel="icon" href="./assets/images/logo.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <style>
-    .lang-switch {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      z-index: 1000;
-      display: inline-flex;
-      gap: 4px;
-      background: var(--bg-gradient-onyx);
-      border: 1px solid var(--jet);
-      border-radius: 14px;
-      padding: 4px;
-      box-shadow: var(--shadow-1);
-    }
-    .lang-option {
-      color: var(--white-2);
-      font-size: 13px;
-      font-weight: var(--fw-500);
-      line-height: 1;
-      padding: 8px 10px;
-      border-radius: 10px;
-      transition: all 0.25s ease;
-    }
-    .lang-option:hover {
-      background: var(--bg-gradient-jet);
-      color: var(--orange-yellow-crayola);
-    }
-    .lang-option.active {
-      color: var(--smoky-black);
-      background: var(--orange-yellow-crayola);
-      border-color: var(--orange-yellow-crayola);
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css?v=20260901">
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+  <script src="./assets/js/script.js?v=20260901" defer></script>
 </head>
-
 <body>
-
-  <!-- Language Toggle -->
-  <nav class="lang-switch" aria-label="Language">
-    <a href="./index.html" class="lang-option active" aria-current="page">EN</a>
-    <a href="./index-ko.html" class="lang-option">KO</a>
-  </nav>
-
-  <!--
-    - #MAIN
-  -->
+  <header class="site-header" id="top">
+    <a class="site-brand" href="#top" aria-label="Jinwon Lee home">
+      <span class="brand-initials">JL</span>
+      <span><strong>Jinwon Lee</strong><small>Production AI & Platform Engineer</small></span>
+    </a>
+    <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation">
+      <i data-lucide="menu"></i>
+    </button>
+    <nav class="site-navigation" id="site-navigation" aria-label="Primary navigation">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#research">Research</a>
+      <a href="#contact">Contact</a>
+      <a class="language-link" href="./index-ko.html" lang="ko">한국어</a>
+      <a class="header-cv" href="./CV-Eng.pdf" target="_blank" rel="noopener"><i data-lucide="download"></i>CV</a>
+    </nav>
+  </header>
 
   <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/profile-photo.jpg" alt="Jinwon Lee" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Jinwon Lee">Jinwon Lee</h1>
-
-          <p class="title">Software · AI Platform · SRE</p>
+    <section class="profile-band" aria-labelledby="profile-heading">
+      <div class="profile-inner">
+        <div class="profile-copy">
+          <p class="eyebrow">SEOUL · OPEN TO SELECT APAC OPPORTUNITIES</p>
+          <h1 id="profile-heading">Jinwon Lee</h1>
+          <p class="professional-title">Production AI & Platform Engineer</p>
+          <p class="profile-summary">I build the software and platform path that takes AI applications from enterprise requirements to reliable production: runtime integration, delivery automation, access control, observability, and incident response.</p>
+          <div class="profile-actions">
+            <a class="primary-action" href="#work">View engineering work <i data-lucide="arrow-down"></i></a>
+            <a class="secondary-action" href="./CV-Eng.pdf" target="_blank" rel="noopener"><i data-lucide="file-text"></i>Download CV</a>
+          </div>
         </div>
+        <figure class="profile-photo-wrap">
+          <img src="./assets/images/profile-photo.jpg" alt="Portrait of Jinwon Lee" width="300" height="385">
+        </figure>
+      </div>
+      <div class="proof-strip" aria-label="Selected engineering evidence">
+        <div><strong>~8 years</strong><span>Software, platform, and reliability engineering</span></div>
+        <div><strong>30,000 users</strong><span>Enterprise AI service production reliability</span></div>
+        <div><strong>130,000 pps</strong><span>Measured Linux packet processing workload</span></div>
+      </div>
+    </section>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
+    <section class="work-section" id="work" aria-labelledby="work-heading">
+      <div class="section-heading">
+        <div><p class="eyebrow">SELECTED WORK</p><h2 id="work-heading">Systems built for real operating constraints.</h2></div>
+        <p>Verified professional experience and a public reference implementation. Internal work is described without confidential code or architecture.</p>
       </div>
 
-      <div class="sidebar-info_more">
+      <article class="featured-case">
+        <div class="case-media"><img src="./assets/images/thumb-ax-agent-platform.svg" alt="AX Agent Platform architecture overview" loading="lazy"></div>
+        <div class="case-content">
+          <div class="case-meta"><span>2026 · SAMSUNG ELECTRONICS</span><span>PLATFORM / APPLIED AI</span></div>
+          <h3>Internal AX Agent Platform</h3>
+          <p>Designed and built an AWS EKS platform that adapts an agent runtime to enterprise deployment standards. Developers can release AX applications, receive domains automatically, restrict access to authorized users, and consume an existing enterprise LLM Gateway API through the platform integration.</p>
+          <dl class="case-facts">
+            <div><dt>Ownership</dt><dd>Architecture, implementation, deployment, and operation</dd></div>
+            <div><dt>Controls</dt><dd>Authentication, authorization, security, and governance</dd></div>
+            <div><dt>Stack</dt><dd>AWS EKS, Kubernetes, runtime and API integration</dd></div>
+          </dl>
+        </div>
+      </article>
 
-        <div class="separator"></div>
+      <article class="featured-case reverse">
+        <div class="case-media app-screenshot"><img src="./assets/images/enterprise-ai-assistant.png" alt="Enterprise AI Assistant evaluation and access-control interface" loading="lazy"></div>
+        <div class="case-content">
+          <div class="case-meta"><span>PUBLIC REFERENCE</span><span>APPLIED AI ENGINEERING</span></div>
+          <h3>Enterprise AI Assistant with Evaluation & Access Control</h3>
+          <p>A synthetic, inspectable assistant built to show more than a chat surface: SQLite FTS5 retrieval, role filtering before model context, grounded citations, audit events, runtime metadata, and repeatable evaluation cases. It runs offline and includes an optional OpenAI Responses API provider.</p>
+          <div class="case-actions">
+            <a class="primary-action compact" href="./projects/enterprise-ai-assistant/web/">Open live demo <i data-lucide="arrow-up-right"></i></a>
+            <a class="secondary-action compact" href="https://github.com/JINwonLEE/JINwonLEE.github.io/tree/main/projects/enterprise-ai-assistant" target="_blank" rel="noopener"><i data-lucide="code-2"></i>View source</a>
+          </div>
+        </div>
+      </article>
 
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:dlwlsdnjsehs1993@gmail.com" class="contact-link">dlwlsdnjsehs1993@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+821024221429" class="contact-link">+82 10-2422-1429</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Seoul, South Korea</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://github.com/JINwonLEE" class="social-link" target="_blank">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/jwl1993" class="social-link" target="_blank">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
+      <div class="case-grid">
+        <article class="case-card">
+          <img src="./assets/images/thumb-enterprise-chatbot.svg" alt="Enterprise AI chatbot platform overview" loading="lazy">
+          <div class="case-card-body">
+            <div class="case-meta"><span>2024–2025</span><span>30,000 EMPLOYEES</span></div>
+            <h3>Company-wide AI Chatbot Platform</h3>
+            <p>Led production delivery and application reliability across development, staging, and production Kubernetes environments, connecting releases with security and operational requirements.</p>
+            <p class="tech-line">Kubernetes · ArgoCD · Helm/Helmfile · OpenTelemetry</p>
+          </div>
+        </article>
+        <article class="case-card">
+          <img src="./assets/images/thumb-ai-serving-global.svg" alt="Global generative AI service rollout overview" loading="lazy">
+          <div class="case-card-body">
+            <div class="case-meta"><span>JAN.–JUN. 2026</span><span>GLOBAL B2C</span></div>
+            <h3>Generative AI Service UK Rollout</h3>
+            <p>Collaborated with Microsoft on rollout readiness, initial production operations, incident response, and early stabilization for an Azure-based consumer service.</p>
+            <p class="tech-line">Azure · Kubernetes · SRE · Incident response</p>
+          </div>
+        </article>
+        <article class="case-card">
+          <img src="./assets/images/thumb-llm-evaluation.svg" alt="LLM evaluation pipeline overview" loading="lazy">
+          <div class="case-card-body">
+            <div class="case-meta"><span>EVALUATION</span><span>MACHINE TRANSLATION</span></div>
+            <h3>LLM Performance Evaluation Pipeline</h3>
+            <p>Built a Python and MLflow workflow for repeatable evaluation and result comparison of LLM-based machine-translation workloads on Kubernetes.</p>
+            <p class="tech-line">Python · MLflow · Kubernetes · Evaluation automation</p>
+          </div>
+        </article>
+        <article class="case-card">
+          <img src="./assets/images/thumb-packet-mirroring.svg" alt="Packet mirroring system overview" loading="lazy">
+          <div class="case-card-body">
+            <div class="case-meta"><span>SYSTEM SOFTWARE</span><span>UP TO 130,000 PPS</span></div>
+            <h3>High-throughput Packet Mirroring</h3>
+            <p>Developed and tuned a Linux application that mirrors and forwards packets in real time under constrained system resources.</p>
+            <p class="tech-line">Linux · Networking · Performance · Resource constraints</p>
+          </div>
+        </article>
       </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            Software and AI platform engineer with about eight years of experience designing, developing, launching, and operating enterprise and user-facing applications.
-            At Samsung Electronics, I build an internal AX Agent Platform and have delivered Kubernetes-based services, cloud automation, CI/CD, observability, and AI application workflows.
-          </p>
-
-          <p>
-            My strength is translating application, security, and platform requirements into reliable software and carrying delivery from architecture and implementation through rollout and production stabilization.
-            I work across application, cloud, security, and operations concerns so teams can release services that users can depend on.
-          </p>
-
-          <blockquote>
-            <p>"Build it first, then think it through."</p>
-          </blockquote>
-
-          <ul class="focus-list">
-            <li>Application & Platform Software</li>
-            <li>End-to-End Product Delivery</li>
-            <li>Cloud-Native Engineering</li>
-            <li>Reliability & Performance</li>
-          </ul>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What I'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="SRE icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Application & Platform Architecture</h4>
-
-                <p class="service-item-text">
-                  Turning enterprise application, security, and platform requirements into cloud-native software architectures.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="cloud icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">End-to-End Product Delivery</h4>
-
-                <p class="service-item-text">
-                  Carrying applications from architecture and implementation through rollout, integration, and production stabilization.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg" alt="automation icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Cloud-Native Engineering</h4>
-
-                <p class="service-item-text">
-                  Building application and platform foundations with AWS, Azure, Kubernetes, OpenShift, GitOps, and Infrastructure as Code.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-quote.svg" alt="AI icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Reliability & Performance</h4>
-
-                <p class="service-item-text">
-                  Engineering observability, incident response, Linux runtime behavior, and resource-aware performance into production systems.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
-          <h2 class="h2 article-title">Resume</h2>
-          <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-            <a href="./output/pdf/Jinwon-Lee-CV-Eng-2026-08-v3.pdf" download="Jinwon-Lee-CV-Eng-2026-08-v3.pdf" class="form-btn" style="display: inline-flex; align-items: center; gap: 10px; padding: 10px 20px; text-decoration: none;">
-              <ion-icon name="download-outline"></ion-icon>
-              <span>Download CV (PDF)</span>
-            </a>
-            <a href="./output/pdf/Jinwon-Lee-Portfolio-Eng-2026-08-v3.pdf" download="Jinwon-Lee-Portfolio-Eng-2026-08-v3.pdf" class="form-btn" style="display: inline-flex; align-items: center; gap: 10px; padding: 10px 20px; text-decoration: none;">
-              <ion-icon name="download-outline"></ion-icon>
-              <span>Download Portfolio (PDF)</span>
-            </a>
-          </div>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">SRE (Site Reliability Engineer) — Samsung Electronics (AX Development Group)</h4>
-
-              <span>2026 — Present</span>
-
-              <p class="timeline-text">
-                • <strong>Global B2C Generative AI Service | Jan. 2026 - Jun. 2026:</strong> Collaborated with Microsoft on UK rollout readiness, initial production operations, incident response, and early service stabilization for an Azure-based consumer service<br>
-                • <strong>AX Agent Platform | Jul. 2026 - Present:</strong> Own end-to-end design and delivery of an internal platform on AWS EKS, adapting the agent runtime and deployment environment to enterprise platform standards<br>
-                • Translate deployment, authentication, authorization, security, and governance requirements into a self-service workflow with automatic domain provisioning and authorized-only access<br>
-                • Enabled deployed AX applications to consume the existing enterprise LLM Gateway API through platform-side client compatibility and integration
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">SRE (Site Reliability Engineer) — Samsung Research</h4>
-
-              <span>2024 — 2025</span>
-
-              <p class="timeline-text">
-                • Led platform and application reliability for a company-wide AI chatbot service used by 30,000 employees on internal Kubernetes clusters<br>
-                • Owned production delivery across development, staging, and production environments, connecting application releases with security and operational requirements<br>
-                • Built automated CI/CD pipelines with Docker, Kubernetes, GitHub Actions, and ArgoCD<br>
-                • Deployed centralized monitoring with Grafana, Prometheus, and OpenTelemetry
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">SRE & Software Engineer — Samsung Electronics</h4>
-
-              <span>2021 — 2024</span>
-
-              <p class="timeline-text">
-                • Designed and delivered containerized applications using Docker, Helm, Kubernetes Operator, and AWS services<br>
-                • Built and managed OpenShift, Kubernetes, and EKS environments for performance, reliability, high availability, and auto-scaling<br>
-                • Designed and developed an automated one-click Kubernetes cluster provisioning system for cloud developers<br>
-                • Built automated CI/CD systems with Jenkins and GitHub Actions
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Software & Platform Engineer — TmaxOS & TmaxCloud</h4>
-
-              <span>2019 — 2020</span>
-
-              <p class="timeline-text">
-                • Designed and developed CI/CD and registry operators in Kubernetes for automated software delivery<br>
-                • Built a Siri-like AI assistant on TmaxOS with system-level integration, model inference, and data preprocessing<br>
-                • Designed the asynchronous application architecture to deliver responsive user interactions
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">UNIST (Ulsan National Institute of Science and Technology)</h4>
-
-              <span>2017 — 2019</span>
-
-              <p class="timeline-text">
-                M.S. in Computer Science and Engineering<br>
-                Master Thesis: Convergence Aware CNN Training<br>
-                Advisors: Jiwon Seo (HanYang University), Sam H. Noh (UNIST)
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">UNIST (Ulsan National Institute of Science and Technology)</h4>
-
-              <span>2012 — 2017</span>
-
-              <p class="timeline-text">
-                B.S. in Computer Science and Engineering<br>
-                Minor: Mathematics<br>
-                Undergraduate Research: Distributed system in AI model training (TensorFlow)
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="ribbon-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Certifications & Language</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">OPIc IH (Intermediate High)</h4>
-
-              <span>Dec. 2025</span>
-
-              <p class="timeline-text">
-                English speaking proficiency certification
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Kubernetes & Docker</h5>
-                <data value="95">95%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 95%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Application & Platform Software</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">End-to-End Delivery & GitOps</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Infrastructure as Code (Helm, Terraform)</h5>
-                <data value="85">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Python & Linux System Software</h5>
-                <data value="85">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Monitoring & Observability (Grafana, Prometheus, OpenTelemetry)</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Infrastructure</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>AI/ML</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Automation</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Infrastructure</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>AI/ML</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Automation</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item active" data-filter-item data-category="infrastructure">
-              <a href="https://github.com/JINwonLEE" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="kubernetes platform" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Global AI Chatbot Platform</h3>
-
-                <p class="project-category">Infrastructure</p>
-
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="infrastructure">
-              <a href="https://github.com/JINwonLEE" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="kubernetes automation" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Kubernetes Cluster Automation</h3>
-
-                <p class="project-category">Infrastructure</p>
-
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="ai/ml">
-              <a href="https://github.com/JINwonLEE" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="llm evaluation" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">LLM Performance Evaluation Pipeline</h3>
-
-                <p class="project-category">AI/ML</p>
-
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="automation">
-              <a href="https://github.com/JINwonLEE" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="cicd pipeline" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">CI/CD Pipeline with ArgoCD</h3>
-
-                <p class="project-category">Automation</p>
-
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="infrastructure">
-              <a href="https://github.com/JINwonLEE" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="monitoring" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Centralized Monitoring Stack</h3>
-
-                <p class="project-category">Infrastructure</p>
-
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="ai/ml">
-              <a href="https://github.com/JINwonLEE" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="distributed training" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Distributed CNN Training System</h3>
-
-                <p class="project-category">AI/ML</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202428.78490616192!2d126.83421345!3d37.5663245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2ebcb024d93%3A0xe227e5997db5c95e!2sSeoul%2C%20South%20Korea!5e0!3m2!1sen!2sus!4v1643847900000!5m2!1sen!2sus"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
-    </div>
-
+    </section>
+
+    <section class="experience-section" id="experience" aria-labelledby="experience-heading">
+      <div class="section-heading compact-heading">
+        <div><p class="eyebrow">EXPERIENCE</p><h2 id="experience-heading">Application, platform, and production ownership.</h2></div>
+      </div>
+      <div class="timeline">
+        <article>
+          <div class="timeline-period">2026 – PRESENT</div>
+          <div><h3>Samsung Electronics · AX Development Group</h3><p class="timeline-role">SRE / AI Platform Engineer</p><p>AX Agent Platform on AWS EKS; governed self-service application delivery; existing LLM Gateway API integration; global B2C generative AI rollout and stabilization.</p></div>
+        </article>
+        <article>
+          <div class="timeline-period">2024 – 2025</div>
+          <div><h3>Samsung Research</h3><p class="timeline-role">SRE / AI Platform Engineer</p><p>Production delivery and reliability for a 30,000-employee AI chatbot; Kubernetes delivery pipelines; observability; Python/MLflow LLM evaluation.</p></div>
+        </article>
+        <article>
+          <div class="timeline-period">2021 – 2024</div>
+          <div><h3>Samsung Electronics · Network Division</h3><p class="timeline-role">SRE & Software Engineer</p><p>Containerized application delivery, OpenShift/Kubernetes/EKS, Bash-based one-click Kubernetes provisioning, and high-throughput Linux packet processing.</p></div>
+        </article>
+        <article>
+          <div class="timeline-period">2019 – 2020</div>
+          <div><h3>TmaxOS & TmaxCloud</h3><p class="timeline-role">Software & Platform Engineer</p><p>OS-level AI assistant inference and integration; asynchronous application flows; Kubernetes CI/CD and registry operators.</p></div>
+        </article>
+      </div>
+      <div class="toolkit-band" aria-label="Engineering toolkit">
+        <div><h3>Cloud & Runtime</h3><p>AWS EKS, Azure, Kubernetes, OpenShift, Docker, Helm/Helmfile</p></div>
+        <div><h3>Software & Delivery</h3><p>Python, Bash, Linux, Kubernetes Operators, ArgoCD, GitHub Actions, GitOps</p></div>
+        <div><h3>Reliability & Security</h3><p>Grafana, Prometheus, OpenTelemetry, incident response, authentication, authorization, governance</p></div>
+      </div>
+    </section>
+
+    <section class="research-section" id="research" aria-labelledby="research-heading">
+      <div class="section-heading">
+        <div><p class="eyebrow">EDUCATION & RESEARCH</p><h2 id="research-heading">Distributed AI systems, before they were fashionable.</h2></div>
+        <p>UNIST M.S. and B.S. in Computer Science and Engineering, with a Mathematics minor and research in distributed deep-learning performance.</p>
+      </div>
+      <div class="research-grid">
+        <article class="thesis-panel">
+          <span class="research-type">MASTER'S THESIS · 2019</span>
+          <h3>Convergence Aware CNN Training</h3>
+          <p>Research on resource-aware distributed CNN training and network-bottleneck alleviation.</p>
+          <strong>Reported up to 2.3× training speedup</strong>
+        </article>
+        <div class="publication-list">
+          <article><span>USENIX NSDI 2019 · POSTER</span><h3>Alleviating the Network Bottleneck for CNN Distributed Training through Automatic Resource-Aware Layer Placement</h3></article>
+          <article><span>ARXIV 2019 · PAPER</span><h3>Accelerated Training for CNN Distributed Deep Learning through Automatic Resource-Aware Layer Placement</h3></article>
+          <article><span>ACM EUROSYS 2018 · POSTER</span><h3>Improving Performance of Distributed TensorFlow using CNN Characteristics Exploiting Model Parallelism</h3></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+      <div>
+        <p class="eyebrow">CONTACT</p>
+        <h2 id="contact-heading">Building AI systems that survive contact with production.</h2>
+        <p>I am based in Seoul and open to selected engineering opportunities across South Korea and APAC.</p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:dlwlsdnjsehs1993@gmail.com"><i data-lucide="mail"></i>Email</a>
+        <a href="https://www.linkedin.com/in/jwl1993" target="_blank" rel="noopener"><i data-lucide="briefcase-business"></i>LinkedIn</a>
+        <a href="https://github.com/JINwonLEE" target="_blank" rel="noopener"><i data-lucide="code-2"></i>GitHub</a>
+      </div>
+      <div class="cv-links" aria-label="CV downloads">
+        <a href="./CV-Eng.pdf" target="_blank" rel="noopener">General CV</a>
+        <a href="./CV-Platform-SRE.pdf" target="_blank" rel="noopener">Platform/SRE CV</a>
+        <a href="./CV-Applied-AI.pdf" target="_blank" rel="noopener">Applied AI CV</a>
+        <a href="./CV-Kor.pdf" target="_blank" rel="noopener">Korean CV</a>
+      </div>
+    </section>
   </main>
 
-
-  <!--
-    - #PROJECT MODAL
-  -->
-
-  <div class="project-modal-overlay" data-project-modal-overlay></div>
-
-  <div class="project-modal" data-project-modal>
-    <div class="project-modal-header">
-      <h3 class="project-modal-title" data-project-modal-title>Project Title</h3>
-      <button class="project-modal-close-btn" data-project-modal-close>
-        <ion-icon name="close-outline"></ion-icon>
-      </button>
-    </div>
-
-    <div class="project-modal-content">
-      <div class="project-modal-img-wrapper">
-        <img src="" alt="Project" class="project-modal-img" data-project-modal-img>
-      </div>
-
-      <p class="project-modal-description" data-project-modal-description>
-        Project description will appear here...
-      </p>
-
-      <div class="project-modal-details" data-project-modal-details>
-        <!-- Structured project details will be inserted here -->
-      </div>
-
-      <h4 class="project-modal-tech-title">Technologies Used</h4>
-      <div class="project-modal-technologies" data-project-modal-technologies>
-        <!-- Technologies will be inserted here -->
-      </div>
-    </div>
-  </div>
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-  <script src="./assets/js/portfolio-loader.js?v=20260823-delivery"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+  <footer class="site-footer"><span>© 2026 Jinwon Lee</span><a href="#top">Back to top <i data-lucide="arrow-up"></i></a></footer>
 </body>
-
 </html>

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import os
+import shutil
 from dataclasses import dataclass
 from typing import Iterable, List, Sequence
 
@@ -16,8 +17,8 @@ from reportlab.pdfgen import canvas
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 OUTPUT_DIR = os.path.join(ROOT, "output", "pdf")
 OUTPUTS = {
-    "ko": os.path.join(OUTPUT_DIR, "Jinwon-Lee-Portfolio-Kor-2026-08-v3.pdf"),
-    "en": os.path.join(OUTPUT_DIR, "Jinwon-Lee-Portfolio-Eng-2026-08-v3.pdf"),
+    "ko": os.path.join(OUTPUT_DIR, "Jinwon-Lee-Portfolio-Kor-2026-09.pdf"),
+    "en": os.path.join(OUTPUT_DIR, "Jinwon-Lee-Portfolio-Eng-2026-09.pdf"),
 }
 CONFIGS = {
     "ko": os.path.join(ROOT, "portfolio-config-ko.json"),
@@ -213,7 +214,7 @@ class PortfolioPDF:
         if "인프라 운영" in title or "AI Services" in title:
             return ["Keycloak\nOAuth", "AI Apps\nSRE", "Langfuse\nTraces"]
         if "클러스터" in title or "Cluster" in title:
-            return ["Input\nOne click", "IaC\nProvision", "Dev/Stage\nProd"]
+            return ["Input\nOne click", "Bash\nProvision", "Dev/Stage\nProd"]
         if "평가" in title or "Evaluation" in title:
             return ["Dataset\nMT tasks", "Evaluate\nLLM", "MLflow\nMetrics"]
         if "GitOps" in title:
@@ -277,8 +278,11 @@ class PortfolioPDF:
         self.rounded_rect(x, y - h, w, h, self.panel, colors.HexColor("#39352E"), 5 * mm)
         self.simple_diagram(x + 6 * mm, y - 8 * mm, w - 12 * mm, 37 * mm, project, accent)
         top = y - 53 * mm
-        self.text_at(x + 6 * mm, top, f"{index:02d}. {project.title}", 14, self.text, 800)
-        top -= 10
+        title_lines = self.wrap(f"{index:02d}. {project.title}", 13.2, w - 12 * mm)
+        for title_line in title_lines:
+            self.text_at(x + 6 * mm, top, title_line, 13.2, self.text, 800)
+            top -= 14.5
+        top += 4
         top = self.paragraph(x + 6 * mm, top, project.description, w - 12 * mm, 8.3, 10.8, self.muted)
         top -= 4
         fields = (
@@ -293,7 +297,7 @@ class PortfolioPDF:
             else [
                 ("Problem", project.problem),
                 ("Role", project.role),
-                ("Engineering/Delivery", project.engineering),
+                ("Engineering", project.engineering),
                 ("Outcome", project.outcome),
                 ("Capability", self.capability_point(project)),
             ]
@@ -340,7 +344,7 @@ def build_pdf(lang: str) -> None:
     y = pdf.h - 35 * mm
     pdf.text_at(x, y, data["personal"]["name"], 34, pdf.text, 850)
     y -= 18
-    pdf.text_at(x, y, "Application Software · AI Platform · End-to-End Delivery", 11.5, pdf.body)
+    pdf.text_at(x, y, "Production AI · Platform Engineering · Reliability", 11.5, pdf.body)
     y -= 20
     pdf.rounded_rect(x, y - 31 * mm, 142 * mm, 31 * mm, colors.HexColor("#202124"), colors.HexColor("#3A362D"), 5 * mm)
     pdf.text_at(x + 7 * mm, y - 10 * mm, "웹사이트" if is_ko else "Website", 9.5, pdf.accent, 750)
@@ -361,14 +365,14 @@ def build_pdf(lang: str) -> None:
             ("Application Software", "엔터프라이즈·사용자 대상 앱, 비동기 아키텍처, API 및 시스템 통합", pdf.blue),
             ("End-to-End Delivery", "요구사항, 아키텍처, 구현, 출시 준비, 프로덕션 안정화", pdf.green),
             ("Reliability", "인증·인가, 관측 가능성, 장애 대응, 시스템 성능", pdf.purple),
-            ("Cloud Platform", "Azure/AWS/OpenShift, Kubernetes, GitOps, IaC 기반 자동화", pdf.accent),
+            ("Cloud Platform", "Azure/AWS/OpenShift, Kubernetes, Helm, ArgoCD, GitOps 자동화", pdf.accent),
         ]
         if is_ko
         else [
             ("Application Software", "Enterprise and user-facing apps, asynchronous architecture, API and system integration", pdf.blue),
             ("End-to-End Delivery", "Requirements, architecture, implementation, rollout readiness, and production stabilization", pdf.green),
             ("Reliability", "Authentication, authorization, observability, incident response, and system performance", pdf.purple),
-            ("Cloud Platform", "Automation with Azure, AWS, OpenShift, Kubernetes, GitOps, and Infrastructure as Code", pdf.accent),
+            ("Cloud Platform", "Delivery automation with Azure, AWS, OpenShift, Kubernetes, Helm, ArgoCD, and GitOps", pdf.accent),
         ]
     )
     for i, (title, body, accent) in enumerate(cards):
@@ -433,6 +437,10 @@ def build_pdf(lang: str) -> None:
         pdf.muted,
     )
     pdf.save()
+    shutil.copyfile(
+        OUTPUTS[lang],
+        os.path.join(ROOT, "Portfolio-Kor.pdf" if is_ko else "Portfolio-Eng.pdf"),
+    )
 
 
 if __name__ == "__main__":

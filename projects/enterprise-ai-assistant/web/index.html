@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Access-aware enterprise AI assistant reference implementation">
+  <title>Atlas | Enterprise AI Assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css?v=20260901">
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+  <script src="./app.js?v=20260901b" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Atlas home">
+      <span class="brand-mark">A</span>
+      <span><strong>Atlas</strong><small>Enterprise AI Assistant</small></span>
+    </a>
+    <div class="runtime-status"><span class="status-dot"></span> Browser demo</div>
+    <a class="icon-link" href="https://github.com/JINwonLEE/JINwonLEE.github.io/tree/main/projects/enterprise-ai-assistant" title="View source code" aria-label="View source code">
+      <i data-lucide="code-2"></i>
+    </a>
+  </header>
+
+  <nav class="tabs" aria-label="Workspace views">
+    <button class="tab is-active" data-view="assistant"><i data-lucide="message-square"></i>Assistant</button>
+    <button class="tab" data-view="evaluations"><i data-lucide="flask-conical"></i>Evaluations</button>
+    <button class="tab" data-view="audit"><i data-lucide="scroll-text"></i>Audit</button>
+  </nav>
+
+  <main>
+    <section class="view is-active" id="assistant-view">
+      <div class="workspace-grid">
+        <section class="assistant-pane" aria-labelledby="assistant-heading">
+          <div class="pane-heading">
+            <div>
+              <p class="eyebrow">AUTHORIZED KNOWLEDGE</p>
+              <h1 id="assistant-heading">Ask company policy with evidence.</h1>
+            </div>
+            <div class="segmented" role="group" aria-label="Access role">
+              <button class="segment is-active" data-role="engineer">Engineer</button>
+              <button class="segment" data-role="manager">Manager</button>
+              <button class="segment" data-role="contractor">Contractor</button>
+            </div>
+          </div>
+
+          <div class="conversation" aria-live="polite">
+            <div class="message assistant-message">
+              <span class="message-icon"><i data-lucide="sparkles"></i></span>
+              <div>
+                <strong>Atlas</strong>
+                <p>I answer from sources your selected role can access. Every answer includes citations and an audit decision.</p>
+              </div>
+            </div>
+            <div class="message user-message is-hidden" id="user-message">
+              <span class="message-icon"><i data-lucide="user"></i></span>
+              <div><strong id="user-role-label">Engineer</strong><p id="user-query"></p></div>
+            </div>
+            <div class="message assistant-message is-hidden" id="answer-message">
+              <span class="message-icon"><i data-lucide="sparkles"></i></span>
+              <div>
+                <div class="answer-heading"><strong>Atlas</strong><span id="answer-decision"></span></div>
+                <p id="answer-text"></p>
+                <div class="runtime-metadata" id="runtime-metadata"></div>
+              </div>
+            </div>
+          </div>
+
+          <form class="composer" id="assistant-form">
+            <label for="query">Question</label>
+            <textarea id="query" rows="3" maxlength="500">How do I deploy an application and enable production traffic?</textarea>
+            <div class="composer-actions">
+              <button type="button" class="text-button" id="suggestion-button"><i data-lucide="shuffle"></i>Try another</button>
+              <button type="submit" class="primary-button"><i data-lucide="send"></i>Ask Atlas</button>
+            </div>
+          </form>
+        </section>
+
+        <aside class="evidence-pane" aria-labelledby="evidence-heading">
+          <div class="evidence-header">
+            <div><p class="eyebrow">REQUEST TRACE</p><h2 id="evidence-heading">Evidence & policy</h2></div>
+            <span class="policy-state" id="policy-state">Ready</span>
+          </div>
+          <div class="trace-steps">
+            <div class="trace-step"><span>1</span><div><strong>Retrieve</strong><small>SQLite FTS5 / BM25</small></div></div>
+            <div class="trace-step"><span>2</span><div><strong>Authorize</strong><small>Policy filter before context</small></div></div>
+            <div class="trace-step"><span>3</span><div><strong>Generate</strong><small>Grounded, cited answer</small></div></div>
+          </div>
+          <div class="sources" id="sources">
+            <div class="empty-state"><i data-lucide="file-search"></i><p>Sources used for an answer will appear here.</p></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="view" id="evaluations-view">
+      <div class="section-heading">
+        <div><p class="eyebrow">QUALITY GATE</p><h1>Evaluation suite</h1><p>Representative cases check retrieval, grounding, access safety, and latency.</p></div>
+        <button class="primary-button" id="run-evals"><i data-lucide="play"></i>Run 4 cases</button>
+      </div>
+      <div class="metric-strip">
+        <div><span id="retrieval-metric">--</span><small>Retrieval hit rate</small></div>
+        <div><span id="access-metric">--</span><small>Access safety</small></div>
+        <div><span id="grounding-metric">--</span><small>Grounding checks</small></div>
+        <div><span id="latency-metric">--</span><small>Median latency</small></div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Case</th><th>Persona</th><th>Retrieval</th><th>Access</th><th>Grounding</th><th>Latency</th></tr></thead>
+          <tbody id="eval-table"><tr><td colspan="6" class="table-empty">Run the suite to inspect case-level results.</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="view" id="audit-view">
+      <div class="section-heading">
+        <div><p class="eyebrow">OPERATIONAL VISIBILITY</p><h1>Audit events</h1><p>Queries, access outcomes, source counts, and runtime metadata from this browser session.</p></div>
+        <button class="text-button" id="clear-audit"><i data-lucide="trash-2"></i>Clear</button>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Time</th><th>Persona</th><th>Question</th><th>Decision</th><th>Sources</th><th>Latency</th></tr></thead>
+          <tbody id="audit-table"><tr><td colspan="6" class="table-empty">Ask a question to create an audit event.</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

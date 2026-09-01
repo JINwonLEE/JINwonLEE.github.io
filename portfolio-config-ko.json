@@ -1,13 +1,13 @@
 {
   "personal": {
     "name": "이진원",
-    "title": "소프트웨어 · AI 플랫폼 · SRE",
+    "title": "프로덕션 AI & 플랫폼 엔지니어",
     "motto": "일단 만들고 그 다음에 생각하자.",
     "email": "dlwlsdnjsehs1993@gmail.com",
     "phone": "+82 10-2422-1429",
     "location": "서울, 대한민국",
     "avatar": "./assets/images/profile-photo.jpg",
-    "cv_file": "./output/pdf/Jinwon-Lee-CV-Kor-2026-08-v3.pdf"
+    "cv_file": "./CV-Kor.pdf"
   },
 
   "social": {
@@ -17,21 +17,21 @@
 
   "about": {
     "summary": [
-      "약 8년 동안 엔터프라이즈 및 사용자 대상 애플리케이션을 설계·개발하고 출시부터 프로덕션 운영까지 담당해 온 소프트웨어·AI 플랫폼 엔지니어입니다. 삼성전자에서 사내 AX Agent Platform을 구축하고 있으며 Kubernetes 기반 서비스, 클라우드 자동화, CI/CD, 관측 가능성, AI 애플리케이션 워크플로우를 다뤄왔습니다.",
-      "애플리케이션·보안·플랫폼 요구사항을 신뢰할 수 있는 소프트웨어로 구현하고, 아키텍처와 개발부터 출시 및 초기 안정화까지 이어가는 것이 강점입니다. 애플리케이션, 클라우드, 보안, 운영을 함께 고려해 실제 사용자가 의존할 수 있는 서비스를 만듭니다."
+      "약 8년 동안 엔터프라이즈 요구사항을 애플리케이션·플랫폼·보안·운영 전반의 프로덕션 시스템으로 구현해 온 응용 AI·클라우드 플랫폼 엔지니어입니다. 삼성전자에서 AWS EKS 기반 사내 AX Agent Platform을 설계·구축하고 있으며 Azure 기반 글로벌 B2C 생성형 AI 서비스의 UK 출시와 초기 안정화를 지원했습니다.",
+      "Python, Kubernetes, 클라우드 네이티브 아키텍처, API·런타임 연동, CI/CD, 관측 가능성, 인증·인가, 장애 대응을 다뤄왔습니다. 아키텍처와 구현부터 엔터프라이즈 연동, 출시, 프로덕션 운영까지 전달 전 과정을 담당합니다."
     ]
   },
 
   "services": [
     {
       "icon": "./assets/images/icon-dev.svg",
-      "title": "애플리케이션·플랫폼 아키텍처",
-      "description": "엔터프라이즈 애플리케이션, 보안, 플랫폼 요구사항을 클라우드 네이티브 소프트웨어 아키텍처로 구현합니다."
+      "title": "응용 AI·플랫폼 아키텍처",
+      "description": "Agent 런타임, 엔터프라이즈 제어, 클라우드 네이티브 인프라를 연결하는 AI 애플리케이션·플랫폼 아키텍처를 설계합니다."
     },
     {
       "icon": "./assets/images/icon-app.svg",
-      "title": "엔드투엔드 제품 전달",
-      "description": "아키텍처와 구현부터 출시, 연동, 프로덕션 안정화까지 애플리케이션 전달 전 과정을 담당합니다."
+      "title": "엔터프라이즈 연동",
+      "description": "AI 애플리케이션을 기존 API, 런타임 표준, 접근 제어, 보안, 거버넌스와 연결합니다."
     },
     {
       "icon": "./assets/images/icon-design.svg",
@@ -40,26 +40,26 @@
     },
     {
       "icon": "./assets/images/icon-quote.svg",
-      "title": "신뢰성·성능 엔지니어링",
-      "description": "관측 가능성, 장애 대응, Linux 런타임, 리소스 제약을 고려한 성능을 프로덕션 시스템에 구현합니다."
+      "title": "프로덕션 신뢰성",
+      "description": "관측 가능성, 장애 대응, 프로덕션 오너십을 바탕으로 출시부터 초기 안정화까지 책임집니다."
     }
   ],
 
   "experience": [
     {
-      "title": "SRE (사이트 신뢰성 엔지니어)",
+      "title": "SRE / AI 플랫폼 엔지니어",
       "company": "삼성전자 (AX Development Group)",
       "period": "2026 — 현재",
       "location": "서울, 대한민국",
       "highlights": [
-        "글로벌 B2C 생성형 AI 서비스 | 2026.01 - 2026.06: Microsoft와 협업하여 Azure 기반 소비자 서비스의 UK 출시 준비, 초기 프로덕션 운영, 장애 대응 및 초기 안정화 수행",
-        "AX Agent Platform | 2026.07 - 현재: AWS EKS 기반 사내 플랫폼의 설계부터 구축·배포·운영까지 엔드투엔드로 담당하고, AX Agent 실행·배포 환경을 사내 플랫폼 규격에 맞게 조정",
-        "배포·인증·인가·보안·거버넌스 요구사항을 도메인 자동 발급과 인가된 사용자 전용 접근을 제공하는 셀프서비스 워크플로우로 구현",
-        "배포된 AX App이 기존 사내 LLM Gateway API를 사용할 수 있도록 플랫폼 측 클라이언트 연동 규격과 실행 환경의 호환성 확보"
+        "AX Agent Platform | 2026.07 - 현재: AWS EKS 기반 사내 플랫폼을 설계·구축하고, Agent 런타임과 배포 환경을 엔터프라이즈 플랫폼 표준에 맞게 조정",
+        "도메인 자동 발급, 인가된 사용자 전용 접근, 인증·인가·보안·거버넌스 제어를 제공하는 셀프서비스 애플리케이션 전달 워크플로우 구현",
+        "배포된 AX App이 기존 사내 LLM Gateway API를 사용할 수 있도록 플랫폼 측 클라이언트 호환성과 런타임 연동 제공",
+        "글로벌 B2C 생성형 AI 서비스 | 2026.01 - 2026.06: Microsoft와 협업하여 Azure 기반 소비자 서비스의 UK 출시 준비, 초기 프로덕션 운영, 장애 대응 및 초기 안정화 수행"
       ]
     },
     {
-      "title": "SRE (사이트 신뢰성 엔지니어)",
+      "title": "SRE / AI 플랫폼 엔지니어",
       "company": "삼성리서치 (Samsung Research)",
       "period": "2024 — 2025",
       "location": "서울, 대한민국",
@@ -78,7 +78,7 @@
       "highlights": [
         "Docker, Helm, Kubernetes Operator 및 AWS 서비스를 활용한 컨테이너 애플리케이션 설계 및 전달",
         "성능·안정성·고가용성·오토스케일링을 고려한 OpenShift, Kubernetes, EKS 환경 구축 및 관리",
-        "클라우드 개발자를 위한 Kubernetes 클러스터 원클릭 프로비저닝 자동화 시스템 설계 및 개발",
+        "Bash 스크립트 기반 Kubernetes 클러스터 원클릭 프로비저닝 자동화 시스템 설계 및 개발",
         "Jenkins 및 GitHub Actions를 활용한 자동화된 CI/CD 시스템 구축"
       ]
     },
@@ -124,15 +124,15 @@
       "level": 95
     },
     {
-      "name": "애플리케이션 & 플랫폼 소프트웨어",
+      "name": "응용 AI & 플랫폼 소프트웨어",
       "level": 90
     },
     {
-      "name": "엔드투엔드 전달 & GitOps",
+      "name": "엔터프라이즈 전달 & GitOps",
       "level": 90
     },
     {
-      "name": "Infrastructure as Code (Helm, Terraform)",
+      "name": "배포 자동화 (Helm, ArgoCD, GitHub Actions)",
       "level": 85
     },
     {
@@ -146,6 +146,22 @@
   ],
 
   "projects": [
+    {
+      "title": "평가·접근 제어를 포함한 Enterprise AI Assistant",
+      "category": "ai/ml",
+      "description": "권한 인지 검색, 근거 인용, 감사 이벤트 및 반복 평가를 포함한 공개 레퍼런스 구현입니다.",
+      "detailedDescription": "사내 데이터나 상세 아키텍처를 사용하지 않고 애플리케이션 코드와 프로덕션 품질 통제를 보여주기 위해 합성 데이터 기반 엔터프라이즈 어시스턴트를 구현했습니다. SQLite FTS5 검색, 모델 컨텍스트 구성 전 역할 필터, 근거 인용, 감사 이벤트, 런타임 메타데이터, 평가 케이스, FastAPI, 오프라인 결정론적 Provider 및 선택적 OpenAI Responses API Provider를 포함합니다.",
+      "problem": "채팅 프로토타입을 넘어 권한을 강제하고 동작을 평가하는 엔터프라이즈 AI 어시스턴트의 구현 방식을 보여주는 것이 목표였습니다.",
+      "role": "레퍼런스 애플리케이션, 접근 정책, 검색 경로, Provider 인터페이스, 감사 모델, 평가 스위트, 테스트 및 브라우저 경험을 설계·구현했습니다.",
+      "engineering": "Python, FastAPI, SQLite FTS5/BM25, 생성 전 역할 필터, 근거 인용, 감사 이벤트, 평가 케이스 및 선택적 OpenAI Responses API 연동.",
+      "outcome": "인터랙티브 브라우저 데모와 자동화된 접근 안전성·검색 테스트를 포함한 백엔드 레퍼런스를 공개했습니다.",
+      "relevance": "애플리케이션 로직, 평가, 실패 처리, 접근 제어, 관측 및 모델 Provider 연동을 아우르는 직접적인 Applied AI 엔지니어링 근거입니다.",
+      "technologies": ["Python", "FastAPI", "SQLite FTS5", "RBAC", "Evaluations", "OpenAI Responses API"],
+      "image": "./assets/images/enterprise-ai-assistant.png",
+      "detailedImage": "./assets/images/enterprise-ai-assistant.png",
+      "url": "./projects/enterprise-ai-assistant/web/",
+      "featured": true
+    },
     {
       "title": "사내 AX Agent Platform",
       "category": "인프라",
@@ -201,10 +217,10 @@
       "detailedDescription": "Kubernetes 클러스터를 위한 자동화된 원클릭 프로비저닝 시스템을 개발하여, 클라우드 개발자들에게 즉시 사용 가능한 개발 환경을 제공했습니다. 수동 설정을 줄이고 개발 및 실험 환경의 반복 가능성을 높이는 데 집중했습니다.",
       "problem": "클라우드 개발자가 Kubernetes 환경을 매번 수동으로 준비해야 하는 부담이 있었습니다.",
       "role": "Kubernetes 클러스터와 공통 플랫폼 모듈의 프로비저닝 자동화를 설계하고 구현했습니다.",
-      "engineering": "IaC 기반 프로비저닝, Python 자동화, 재사용 가능한 클러스터 모듈, 개발 환경 표준화",
+      "engineering": "Bash 기반 프로비저닝 자동화, 재사용 가능한 클러스터 모듈, 개발 환경 표준화",
       "outcome": "수동 운영을 줄이고 클라우드 개발 환경의 일관성을 높였습니다.",
       "relevance": "대규모 엔지니어링 조직에 필요한 플랫폼 자동화와 인프라 반복 가능성을 보여줍니다.",
-      "technologies": ["Kubernetes", "Terraform", "Ansible", "Python"],
+      "technologies": ["Kubernetes", "Bash"],
       "image": "./assets/images/thumb-k8s-automation.svg",
       "detailedImage": "./assets/images/thumb-k8s-automation.svg",
       "url": "",

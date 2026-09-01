@@ -1,77 +1,54 @@
-# CV Revision Notes for SK hynix Targeting
+# CV Revision Notes | September 2026
 
-These notes summarize issues found by comparing `CV-Eng.pdf`, `CV-Kor.pdf`, `index.html`, `index-ko.html`, `portfolio-config.json`, and `portfolio-config-ko.json`.
+## Positioning
 
-## Must Fix in CV Source
+The shared portfolio position is:
 
-- Align years of experience.
-  - English CV: "8 years of experience"
-  - Korean CV: "10년 차 개발자"
-  - Portfolio site/config now uses "around 8 years" / "약 8년 차"
-  - Recommended Korean CV text: `삼성전자에서 생성형 AI 서비스와 사내 LLM 플랫폼의 SRE/플랫폼 엔지니어링을 담당하고 있습니다. 약 8년 동안 Kubernetes 기반 서비스 운영, 클라우드 인프라 자동화, CI/CD, 관측 가능성, AI 평가/서빙 워크플로우를 다뤄왔습니다.`
+`Production AI & Platform Engineer`
 
-- Fix Korean CV teaching assistant period.
-  - Current extracted text: `2018.03 - 2018.01`
-  - Likely inconsistent because the end date is earlier than the start date.
-  - Verify against the original record before editing.
+This preserves the strongest verified career signal, production platform engineering, while making direct Applied AI work easier to inspect.
 
-- Align the professional title.
-  - Current PDFs: `SRE Engineer · Platform Engineer`
-  - Portfolio site/config: `AI Platform · SRE Engineer` / `AI 플랫폼 · SRE 엔지니어`
-  - Recommended direction: keep SRE visible, but move AI platform closer to the front for SK hynix AI/software/platform roles.
+Role-specific CV variants change emphasis without changing career facts:
 
-- Check address/privacy consistency.
-  - English CV and Korean CV expose different address levels.
-  - Website only shows Seoul, South Korea / 서울, 대한민국.
-  - For public GitHub Pages PDFs, consider using city-level location only.
+- General: production AI, platform, software, and reliability
+- Platform/SRE: cloud runtime, delivery automation, observability, incident response, and security controls
+- Applied AI: agent application delivery, evaluation, retrieval, access control, model/provider integration, and production operation
 
-## Keep Because It Is Supported by the PDFs
+## September changes
 
-- Company-wide AI chatbot platform serving 30,000 employees.
-- Real-time packet mirroring up to 130,000 packets/sec.
-- Distributed CNN training research reporting up to 2.3x speedup.
-- Kubernetes, Azure, ArgoCD, Helm/Helmfile, GitHub Actions, Grafana, Prometheus, OpenTelemetry.
-- Keycloak, OAuth, Langfuse for enterprise AI authentication and observability.
+- Removed the decorative `Target Fit` block, skill chips, and arbitrary percentage bars.
+- Moved to an ATS-readable two-page layout with a white background and restrained green, blue, and coral accents.
+- Added the UNIST master's thesis: `Convergence Aware CNN Training`.
+- Kept one-click Kubernetes provisioning as Bash-based work only.
+- Removed Terraform, Ansible, standalone MLOps wording, and LLM Gateway design ownership.
+- Added the public Enterprise AI Assistant as a clearly labeled reference implementation.
+- Added stable public files for General, Platform/SRE, Applied AI, and Korean CVs.
+- Refreshed old tracked PDF URLs with the latest content so historical links no longer serve stale versions.
 
-## Avoid Unless You Add Evidence
+## Verified evidence
 
-- Deployment-time reduction percentages.
-- Unverified cost reduction, latency reduction, availability/SLA, or throughput numbers.
-- Direct semiconductor/manufacturing claims unless a specific project or job description supports the connection.
+- About eight years of software, platform, and reliability engineering
+- AWS EKS AX Agent Platform design and delivery
+- Automatic domains and authorized-only access for self-service AX application deployment
+- Authentication, authorization, security, and governance responsibility
+- Client compatibility with an existing enterprise LLM Gateway API
+- Microsoft collaboration for UK rollout readiness, initial operation, incident response, and stabilization of a B2C generative AI service
+- Production delivery and reliability for a 30,000-employee AI chatbot
+- Python/MLflow LLM evaluation for machine translation
+- Linux packet processing measured at up to 130,000 packets per second
+- Distributed CNN research reporting up to 2.3x training speedup
+- AI assistant inference, preprocessing, system integration, and asynchronous flows at TmaxOS
 
-## Suggested SK hynix-Oriented Summary
+## Public reference boundary
 
-English:
+The Enterprise AI Assistant is a personal/public reference implementation using synthetic documents. It is evidence of hands-on implementation in Python, FastAPI, SQLite FTS5, access policy, citations, audit events, evaluations, and optional OpenAI Responses API integration.
 
-```text
-Software and AI platform engineer with about eight years of experience designing, developing, launching, and operating enterprise and user-facing applications. At Samsung Electronics, I build an internal AX Agent Platform and deliver reliable software from architecture and implementation through rollout and production stabilization.
-```
+It must not be described as a Samsung production deployment or as evidence of external customer ownership.
 
-Korean:
+## Claims to avoid
 
-```text
-삼성전자에서 생성형 AI 서비스와 사내 LLM 플랫폼의 SRE/플랫폼 엔지니어링을 담당하고 있습니다. 약 8년 동안 Kubernetes 기반 서비스 운영, 클라우드 인프라 자동화, CI/CD, 관측 가능성, AI 평가/서빙 워크플로우를 다뤄왔습니다. 제가 잘하는 일은 AI 애플리케이션을 "동작하는 코드"에서 실제 사용자가 안정적으로 쓸 수 있는 운영 구조로 옮기는 것입니다. 배포, 인증, 모니터링, 장애 대응, 리소스 제약을 함께 고려해 애플리케이션이 원활하게 동작할 수 있는 플랫폼을 만듭니다.
-```
-
-## SK hynix JD Target
-
-Primary target:
-
-- `선행 AI Software Solution - Platform Software`
-
-Secondary target:
-
-- `선행 AI Software Solution - System Software`
-
-Supporting angle:
-
-- AI application delivery, model evaluation, observability, and Kubernetes-based software delivery.
-
-Map the posting keywords to these evidence areas:
-
-- AI/LLM/RAG: LLM evaluation, Document LLM platform, Langfuse observability, AI serving operations.
-- Platform software: large-scale AI service operations, Kubernetes, Helm/Helmfile, ArgoCD, GitOps, cluster provisioning.
-- AI delivery / evaluation: LLM evaluation pipeline, MLflow metric tracking, AI serving efficiency work, Document LLM delivery, Langfuse observability.
-- System software: Linux, high-throughput packet mirroring, resource-constrained runtime behavior.
-- Data/AI manufacturing fit: repeatable model evaluation, observability, data-sensitive enterprise AI operations, automation of reliable workflows.
-- Reliability/operations: monitoring, alerting, multi-region readiness, security governance, DevSecOps checks.
+- Terraform or Ansible experience without a new source
+- Ownership of LLM Gateway architecture or design
+- Unmeasured availability, latency, cost, MTTR, adoption, or deployment-time metrics
+- General claims of customer leadership that are not tied to a verified engagement
+- Production-use claims for the public reference project

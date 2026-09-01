@@ -1,13 +1,13 @@
 {
   "personal": {
     "name": "Jinwon Lee",
-    "title": "Software · AI Platform · SRE",
+    "title": "Production AI & Platform Engineer",
     "motto": "Build it first, then think it through.",
     "email": "dlwlsdnjsehs1993@gmail.com",
     "phone": "+82 10-2422-1429",
     "location": "Seoul, South Korea",
     "avatar": "./assets/images/profile-photo.jpg",
-    "cv_file": "./output/pdf/Jinwon-Lee-CV-Eng-2026-08-v3.pdf"
+    "cv_file": "./CV-Eng.pdf"
   },
 
   "social": {
@@ -17,49 +17,49 @@
 
   "about": {
     "summary": [
-      "Software and AI platform engineer with about eight years of experience designing, developing, launching, and operating enterprise and user-facing applications. At Samsung Electronics, I build an internal AX Agent Platform and have delivered Kubernetes-based services, cloud automation, CI/CD, observability, and AI application workflows.",
-      "My strength is translating application, security, and platform requirements into reliable software and carrying delivery from architecture and implementation through rollout and production stabilization. I work across application, cloud, security, and operations concerns so teams can release services that users can depend on."
+      "Applied AI and cloud platform engineer with about eight years of experience turning enterprise requirements into production systems across application, platform, security, and operations. At Samsung Electronics, I design and deliver an internal AX Agent Platform on AWS EKS and have supported a global B2C generative AI service on Azure through UK rollout and early production stabilization.",
+      "Hands-on with Python, Kubernetes, cloud-native architecture, API and runtime integration, CI/CD, observability, authentication and authorization, and incident response. I carry delivery from architecture and implementation through enterprise integration, rollout, and production operation."
     ]
   },
 
   "services": [
     {
       "icon": "./assets/images/icon-dev.svg",
-      "title": "Application & Platform Architecture",
-      "description": "Turning enterprise application, security, and platform requirements into cloud-native software architectures."
+      "title": "Applied AI & Platform Architecture",
+      "description": "Designing AI application and platform architectures that connect agent runtimes, enterprise controls, and cloud-native infrastructure."
     },
     {
       "icon": "./assets/images/icon-app.svg",
-      "title": "End-to-End Product Delivery",
-      "description": "Carrying applications from architecture and implementation through rollout, integration, and production stabilization."
+      "title": "Enterprise Integration",
+      "description": "Connecting AI applications with existing APIs, runtime standards, access controls, security, and governance."
     },
     {
       "icon": "./assets/images/icon-design.svg",
       "title": "Cloud-Native Engineering",
-      "description": "Building application and platform foundations with AWS, Azure, Kubernetes, OpenShift, GitOps, and Infrastructure as Code."
+      "description": "Building application and platform foundations with AWS, Azure, Kubernetes, OpenShift, Helm, ArgoCD, and GitOps."
     },
     {
       "icon": "./assets/images/icon-quote.svg",
-      "title": "Reliability & Performance",
-      "description": "Engineering observability, incident response, Linux runtime behavior, and resource-aware performance into production systems."
+      "title": "Production Reliability",
+      "description": "Carrying systems through rollout and stabilization with observability, incident response, and production ownership."
     }
   ],
 
   "experience": [
     {
-      "title": "SRE (Site Reliability Engineer)",
+      "title": "SRE / AI Platform Engineer",
       "company": "Samsung Electronics (AX Development Group)",
       "period": "2026 — Present",
       "location": "Seoul, S.Korea",
       "highlights": [
-        "Global B2C Generative AI Service | Jan. 2026 - Jun. 2026: Collaborated with Microsoft on UK rollout readiness, initial production operations, incident response, and early service stabilization for an Azure-based consumer service",
-        "AX Agent Platform | Jul. 2026 - Present: Own end-to-end design and delivery of an internal platform on AWS EKS, adapting the agent runtime and deployment environment to enterprise platform standards",
-        "Translate deployment, authentication, authorization, security, and governance requirements into a self-service workflow with automatic domain provisioning and authorized-only access",
-        "Enabled deployed AX applications to consume the existing enterprise LLM Gateway API through platform-side client compatibility and integration"
+        "AX Agent Platform | Jul. 2026 - Present: Design and deliver an internal platform on AWS EKS, adapting the agent runtime and deployment environment to enterprise platform standards",
+        "Implemented a self-service application delivery workflow with automatic domain provisioning, authorized-only access, and consistent authentication, authorization, security, and governance controls",
+        "Enabled deployed AX applications to use the existing enterprise LLM Gateway API through platform-side client compatibility and runtime integration",
+        "Global B2C Generative AI Service | Jan. 2026 - Jun. 2026: Collaborated with Microsoft on UK rollout readiness, initial production operations, incident response, and early stabilization for an Azure-based consumer service"
       ]
     },
     {
-      "title": "SRE (Site Reliability Engineer)",
+      "title": "SRE / AI Platform Engineer",
       "company": "Samsung Research",
       "period": "2024 — 2025",
       "location": "Seoul, S.Korea",
@@ -78,7 +78,7 @@
       "highlights": [
         "Designed and delivered containerized applications using Docker, Helm, Kubernetes Operator, and AWS services",
         "Built and managed OpenShift, Kubernetes, and EKS environments for performance, reliability, high availability, and auto-scaling",
-        "Designed and developed an automated one-click Kubernetes cluster provisioning system for cloud developers",
+        "Designed and developed a Bash-based one-click Kubernetes cluster provisioning system for cloud developers",
         "Built automated CI/CD systems with Jenkins and GitHub Actions"
       ]
     },
@@ -124,15 +124,15 @@
       "level": 95
     },
     {
-      "name": "Application & Platform Software",
+      "name": "Applied AI & Platform Software",
       "level": 90
     },
     {
-      "name": "End-to-End Delivery & GitOps",
+      "name": "Enterprise Delivery & GitOps",
       "level": 90
     },
     {
-      "name": "Infrastructure as Code (Helm, Terraform)",
+      "name": "Delivery Automation (Helm, ArgoCD, GitHub Actions)",
       "level": 85
     },
     {
@@ -146,6 +146,22 @@
   ],
 
   "projects": [
+    {
+      "title": "Enterprise AI Assistant with Evaluation & Access Control",
+      "category": "ai/ml",
+      "description": "Public reference implementation with access-aware retrieval, grounded citations, audit events, and repeatable evaluations.",
+      "detailedDescription": "Built a synthetic, inspectable enterprise assistant to demonstrate application code and production-quality controls without using internal company data or architecture. The implementation includes SQLite FTS5 retrieval, role filtering before model context is assembled, grounded citations, audit events, runtime metadata, evaluation cases, a FastAPI surface, an offline deterministic provider, and an optional OpenAI Responses API provider.",
+      "problem": "Show how an enterprise AI assistant can enforce authorization and evaluate behavior instead of stopping at a chat prototype.",
+      "role": "Designed and implemented the reference application, access policy, retrieval path, provider interface, audit model, evaluation suite, tests, and browser experience.",
+      "engineering": "Python, FastAPI, SQLite FTS5/BM25, pre-generation role filtering, grounded citations, audit events, evaluation cases, and optional OpenAI Responses API integration.",
+      "outcome": "Published an interactive browser demo and inspectable backend reference with automated access-safety and retrieval tests.",
+      "relevance": "Provides direct evidence of hands-on Applied AI engineering across application logic, evaluation, failure handling, access control, observability, and model-provider integration.",
+      "technologies": ["Python", "FastAPI", "SQLite FTS5", "RBAC", "Evaluations", "OpenAI Responses API"],
+      "image": "./assets/images/enterprise-ai-assistant.png",
+      "detailedImage": "./assets/images/enterprise-ai-assistant.png",
+      "url": "./projects/enterprise-ai-assistant/web/",
+      "featured": true
+    },
     {
       "title": "Internal AX Agent Platform",
       "category": "infrastructure",
@@ -201,10 +217,10 @@
       "detailedDescription": "Developed an automated one-click provisioning system for Kubernetes clusters, providing cloud developers with streamlined, ready-to-use development environments. The work reduced manual setup and made cluster creation more repeatable for development and experimentation.",
       "problem": "Cloud developers needed repeatable Kubernetes environments without manual setup overhead.",
       "role": "Designed and implemented provisioning automation for Kubernetes clusters and shared platform modules.",
-      "engineering": "IaC-driven provisioning, Python automation, reusable cluster modules, and developer environment standardization.",
+      "engineering": "Bash-based provisioning and automation, reusable cluster modules, and developer environment standardization.",
       "outcome": "Reduced manual operations and improved environment consistency for cloud development workflows.",
       "relevance": "Highlights platform automation and infrastructure repeatability needed in large engineering organizations.",
-      "technologies": ["Kubernetes", "Terraform", "Ansible", "Python"],
+      "technologies": ["Kubernetes", "Bash"],
       "image": "./assets/images/thumb-k8s-automation.svg",
       "detailedImage": "./assets/images/thumb-k8s-automation.svg",
       "url": "",

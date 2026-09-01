@@ -1,0 +1,37 @@
+[
+  {
+    "id": "platform-deployment",
+    "title": "Application Deployment Handbook",
+    "department": "Platform Engineering",
+    "allowed_roles": ["engineer", "manager"],
+    "content": "Deployments start from an approved repository and a signed container image. The platform creates a service domain after the release policy passes. Application owners assign an access group before production traffic is enabled. Rollback uses the previous signed release and must be recorded in the change log."
+  },
+  {
+    "id": "incident-response",
+    "title": "Production Incident Response",
+    "department": "Site Reliability Engineering",
+    "allowed_roles": ["engineer", "manager"],
+    "content": "For a severity-one incident, page the on-call engineer, open an incident channel, and assign an incident commander. Stabilize customer impact before investigating root cause. Record the timeline, mitigation, and follow-up actions in the incident review."
+  },
+  {
+    "id": "financial-plan",
+    "title": "Confidential Annual Financial Plan",
+    "department": "Finance",
+    "allowed_roles": ["manager"],
+    "content": "The annual planning document contains confidential revenue scenarios, cost envelopes, and investment priorities. It may be viewed only by managers who are members of the finance planning access group."
+  },
+  {
+    "id": "vendor-onboarding",
+    "title": "Vendor Onboarding Guide",
+    "department": "Operations",
+    "allowed_roles": ["engineer", "manager", "contractor"],
+    "content": "Vendors must complete identity verification and security training before receiving temporary access. Contractor access expires automatically at the end of the engagement and requires a sponsoring employee for renewal."
+  },
+  {
+    "id": "ai-usage-policy",
+    "title": "Responsible AI Usage Policy",
+    "department": "AI Governance",
+    "allowed_roles": ["engineer", "manager", "contractor"],
+    "content": "Do not submit secrets, personal data, or restricted source code to an AI system. Use only approved models and gateways. Human review is required before generated content is used for customer-facing, legal, security, or financial decisions."
+  }
+]

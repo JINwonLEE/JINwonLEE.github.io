@@ -136,9 +136,7 @@ def k8s_automation() -> str:
         text(111, 252, "One click", 19, "#f6f4ee", 700),
         rect(324, 145, 154, 184, "#202a26", "#58805a", 24),
         label(355, 190, "Provision"),
-        text(356, 225, "Terraform", 18, "#d7d2c8"),
-        text(356, 256, "Ansible", 18, "#d7d2c8"),
-        text(356, 287, "Python", 18, "#d7d2c8"),
+        text(356, 245, "Bash", 18, "#d7d2c8"),
         rect(572, 132, 120, 72, "#222226", "#4f795f", 16),
         rect(572, 228, 120, 72, "#222226", "#4f795f", 16),
         rect(572, 324, 120, 72, "#222226", "#4f795f", 16),
@@ -150,7 +148,7 @@ def k8s_automation() -> str:
         line(478, 237, 572, 264, "#65d6a4", 4),
         line(478, 263, 572, 360, "#65d6a4", 4),
     ]
-    return base("Kubernetes Cluster Automation", "Repeatable environments · IaC", "\n  ".join(items), "#65d6a4")
+    return base("Kubernetes Cluster Automation", "Repeatable environments · Bash", "\n  ".join(items), "#65d6a4")
 
 
 def llm_evaluation() -> str:

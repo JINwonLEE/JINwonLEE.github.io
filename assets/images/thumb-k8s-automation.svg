@@ -13,15 +13,13 @@
   <circle cx="680" cy="80" r="150" fill="#65d6a4" opacity="0.07"/>
   <circle cx="92" cy="430" r="180" fill="#ffffff" opacity="0.035"/>
   <text x="44" y="70" fill="#fff8ea" font-size="30" font-weight="750" font-family="Inter, Arial, sans-serif">Kubernetes Cluster Automation</text>
-  <text x="44" y="104" fill="#b9b2a7" font-size="17" font-weight="500" font-family="Inter, Arial, sans-serif">Repeatable environments · IaC</text>
+  <text x="44" y="104" fill="#b9b2a7" font-size="17" font-weight="500" font-family="Inter, Arial, sans-serif">Repeatable environments · Bash</text>
   <rect x="76" y="182" width="150" height="110" rx="20" fill="#222226" stroke="#5d4b2e" stroke-width="2" opacity="1"/>
   <text x="113" y="222" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">Input</text>
   <text x="111" y="252" fill="#f6f4ee" font-size="19" font-weight="700" font-family="Inter, Arial, sans-serif">One click</text>
   <rect x="324" y="145" width="154" height="184" rx="24" fill="#202a26" stroke="#58805a" stroke-width="2" opacity="1"/>
   <text x="355" y="190" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">Provision</text>
-  <text x="356" y="225" fill="#d7d2c8" font-size="18" font-weight="500" font-family="Inter, Arial, sans-serif">Terraform</text>
-  <text x="356" y="256" fill="#d7d2c8" font-size="18" font-weight="500" font-family="Inter, Arial, sans-serif">Ansible</text>
-  <text x="356" y="287" fill="#d7d2c8" font-size="18" font-weight="500" font-family="Inter, Arial, sans-serif">Python</text>
+  <text x="356" y="245" fill="#d7d2c8" font-size="18" font-weight="500" font-family="Inter, Arial, sans-serif">Bash</text>
   <rect x="572" y="132" width="120" height="72" rx="16" fill="#222226" stroke="#4f795f" stroke-width="2" opacity="1"/>
   <rect x="572" y="228" width="120" height="72" rx="16" fill="#222226" stroke="#4f795f" stroke-width="2" opacity="1"/>
   <rect x="572" y="324" width="120" height="72" rx="16" fill="#222226" stroke="#4f795f" stroke-width="2" opacity="1"/>
