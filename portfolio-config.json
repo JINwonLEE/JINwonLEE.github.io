@@ -17,7 +17,7 @@
 
   "about": {
     "summary": [
-      "Applied AI and cloud platform engineer with about eight years of experience turning enterprise requirements into production systems across application, platform, security, and operations. At Samsung Electronics, I design and deliver an internal AX Agent Platform on AWS EKS and have supported a global B2C generative AI service on Azure through UK rollout and early production stabilization.",
+      "Applied AI and cloud platform engineer with about eight years of experience turning enterprise requirements into production systems across application, platform, security, and operations. At Samsung Electronics, I design and deliver an internal AX Agent Platform on AWS EKS and operate an Azure-based generative AI service through global rollout and production stabilization.",
       "Hands-on with Python, Kubernetes, cloud-native architecture, API and runtime integration, CI/CD, observability, authentication and authorization, and incident response. I carry delivery from architecture and implementation through enterprise integration, rollout, and production operation."
     ]
   },
@@ -55,7 +55,7 @@
         "AX Agent Platform | Jul. 2026 - Present: Design and deliver an internal platform on AWS EKS, adapting the agent runtime and deployment environment to enterprise platform standards",
         "Implemented a self-service application delivery workflow with automatic domain provisioning, authorized-only access, and consistent authentication, authorization, security, and governance controls",
         "Enabled deployed AX applications to use the existing enterprise LLM Gateway API through platform-side client compatibility and runtime integration",
-        "Global B2C Generative AI Service | Jan. 2026 - Jun. 2026: Collaborated with Microsoft on UK rollout readiness, initial production operations, incident response, and early stabilization for an Azure-based consumer service"
+        "Global B2C Generative AI Service | Operated an Azure-based generative AI service and drove its global rollout, covering production readiness, incident response, and post-launch stabilization"
       ]
     },
     {
@@ -181,13 +181,13 @@
     {
       "title": "Global B2C Generative AI Service",
       "category": "infrastructure",
-      "description": "Microsoft Azure-based B2C generative AI service expanded to the UK with initial production operations and incident response.",
-      "detailedDescription": "Collaborated with Microsoft on the UK expansion of a global B2C generative AI service on Azure. The work covered rollout readiness, initial production operations, incident response, and early service stabilization from January to June 2026.",
-      "problem": "Expand a consumer-facing generative AI service to the UK and stabilize its initial production operations.",
-      "role": "Delivered platform/SRE responsibilities for UK rollout readiness, initial production operations, incident response, and early stabilization.",
-      "engineering": "Azure and Kubernetes operations, rollout readiness, production stabilization, and incident response.",
-      "outcome": "Delivered UK rollout readiness and early production stabilization, completing the engagement in June 2026.",
-      "relevance": "Shows hands-on delivery experience for an international consumer application rollout and its transition into stable production operation.",
+      "description": "Operated an Azure-based B2C generative AI service and supported its global rollout, production readiness, incident response, and stabilization.",
+      "detailedDescription": "Operated an Azure-based global B2C generative AI service and drove its expansion across target markets. The work covered rollout readiness, production operations, incident response, and post-launch stabilization.",
+      "problem": "Expand a consumer-facing generative AI service globally while maintaining reliable production operations.",
+      "role": "Delivered platform and SRE responsibilities for global rollout readiness, production operations, incident response, and stabilization.",
+      "engineering": "Azure and Kubernetes operations, global rollout readiness, production stabilization, and incident response.",
+      "outcome": "Supported the service's global expansion and its transition into stable production operation.",
+      "relevance": "Shows hands-on experience operating an international consumer application through global rollout and production stabilization.",
       "technologies": ["Azure", "Kubernetes", "Generative AI", "SRE", "Incident Response"],
       "image": "./assets/images/thumb-ai-serving-global.svg",
       "detailedImage": "./assets/images/thumb-ai-serving-global.svg",
@@ -223,22 +223,6 @@
       "technologies": ["Kubernetes", "Bash"],
       "image": "./assets/images/thumb-k8s-automation.svg",
       "detailedImage": "./assets/images/thumb-k8s-automation.svg",
-      "url": "",
-      "featured": true
-    },
-    {
-      "title": "LLM Performance Evaluation Pipeline",
-      "category": "ai/ml",
-      "description": "Automated evaluation pipeline for repeatable LLM quality and performance comparison across Machine Translation tasks.",
-      "detailedDescription": "Built an automated pipeline for evaluating the performance and quality of LLM models across Machine Translation tasks. The pipeline tracked benchmark results and quality metrics with MLflow to support repeatable model comparison.",
-      "problem": "LLM model quality needed repeatable evaluation rather than ad hoc manual checks.",
-      "role": "Built the evaluation workflow and metric tracking path for Machine Translation model comparison.",
-      "engineering": "Python evaluation automation, PyTorch-based workloads, MLflow metric tracking, and Kubernetes execution.",
-      "outcome": "Made LLM evaluation results easier to compare and reproduce across model candidates.",
-      "relevance": "Maps directly to AI workload evaluation, model performance analysis, and repeatable application quality workflows.",
-      "technologies": ["Python", "PyTorch", "MLflow", "Evaluation Automation", "Kubernetes"],
-      "image": "./assets/images/thumb-llm-evaluation.svg",
-      "detailedImage": "./assets/images/thumb-llm-evaluation.svg",
       "url": "",
       "featured": true
     },

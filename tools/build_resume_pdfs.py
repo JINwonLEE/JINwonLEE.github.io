@@ -318,7 +318,7 @@ def english_experiences() -> tuple[Experience, ...]:
                 "Design and build an internal AX Agent Platform on AWS EKS, adapting the agent runtime and deployment path to enterprise platform standards.",
                 "Implemented self-service AX application delivery with automatic domain issuance, authorized-only access, and platform controls for authentication, authorization, security, and governance.",
                 "Enabled AX applications to call the existing enterprise LLM Gateway API through platform-side client compatibility and runtime integration.",
-                "Supported a Microsoft-collaborative B2C generative AI service through UK rollout readiness, initial production operations, incident response, and stabilization from Jan. to Jun. 2026.",
+                "Operated an Azure-based generative AI service and drove its global rollout, covering production readiness, incident response, and post-launch stabilization.",
             ),
         ),
         Experience(
@@ -330,7 +330,7 @@ def english_experiences() -> tuple[Experience, ...]:
                 "Led production delivery and application reliability for a company-wide AI chatbot serving 30,000 employees on internal Kubernetes clusters.",
                 "Owned releases across development, staging, and production while integrating application delivery with security and operational requirements.",
                 "Built container delivery pipelines with Docker, Kubernetes, GitHub Actions, ArgoCD, Helm, and Helmfile.",
-                "Deployed Grafana, Prometheus, and OpenTelemetry observability and built a Python/MLflow evaluation workflow for LLM-based machine translation.",
+                "Deployed Grafana, Prometheus, and OpenTelemetry observability for shared service visibility and operational diagnosis.",
             ),
         ),
         Experience(
@@ -369,7 +369,7 @@ def korean_experiences() -> tuple[Experience, ...]:
                 "AWS EKS 기반 사내 AX Agent Platform을 설계·구축하고, 에이전트 런타임과 배포 경로를 사내 플랫폼 표준에 맞게 조정했습니다.",
                 "도메인 자동 발급과 인가된 사용자 전용 접근을 포함한 AX App 셀프서비스 배포 흐름을 구현하고 인증·인가·보안·거버넌스 통제를 담당했습니다.",
                 "AX App이 기존 사내 LLM Gateway API를 호출할 수 있도록 플랫폼 측 클라이언트 호환성과 런타임 연동을 제공했습니다.",
-                "2026.01~06 Microsoft와 협업한 B2C 생성형 AI 서비스의 UK 출시 준비, 초기 운영, 장애 대응 및 안정화를 수행했습니다.",
+                "Azure 기반 생성형 AI 서비스를 운영하고 글로벌 확장을 추진하며 프로덕션 준비, 장애 대응 및 출시 후 안정화를 수행했습니다.",
             ),
         ),
         Experience(
@@ -381,7 +381,7 @@ def korean_experiences() -> tuple[Experience, ...]:
                 "30,000명의 임직원이 사용하는 전사 AI 챗봇의 프로덕션 전달과 애플리케이션 신뢰성을 리딩했습니다.",
                 "개발·스테이징·프로덕션 릴리스를 담당하며 애플리케이션 전달을 보안 및 운영 요구사항과 연결했습니다.",
                 "Docker, Kubernetes, GitHub Actions, ArgoCD, Helm, Helmfile 기반 컨테이너 전달 파이프라인을 구축했습니다.",
-                "Grafana, Prometheus, OpenTelemetry 관측 환경과 Python/MLflow 기반 기계 번역 LLM 평가 워크플로우를 구축했습니다.",
+                "Grafana, Prometheus, OpenTelemetry 관측 환경을 구축해 서비스 가시성과 운영 진단 체계를 강화했습니다.",
             ),
         ),
         Experience(
@@ -422,7 +422,7 @@ def variants() -> tuple[ResumeVariant, ...]:
         ("Cloud & Platform", "AWS EKS, Azure, Kubernetes, OpenShift, Docker, Helm/Helmfile, ArgoCD, GitOps"),
         ("Software", "Python, Bash, Linux, Kubernetes Operators, API and runtime integration, asynchronous flows"),
         ("Reliability & Security", "Grafana, Prometheus, OpenTelemetry, incident response, authentication, authorization, security governance"),
-        ("Applied AI Systems", "Agent application delivery, LLM evaluation with MLflow, existing LLM Gateway API integration, model inference"),
+        ("Applied AI Systems", "Agent application delivery, existing LLM Gateway API integration, generative AI service operations, model inference"),
     )
     return (
         ResumeVariant(
@@ -443,10 +443,6 @@ def variants() -> tuple[ResumeVariant, ...]:
             experiences=experiences,
             projects=(
                 PUBLIC_AI_PROJECT,
-                Project(
-                    "LLM Performance Evaluation Pipeline",
-                    "Built a Python and MLflow workflow for repeatable machine-translation model evaluation and result comparison on Kubernetes.",
-                ),
                 Project(
                     "Distributed CNN Training Research",
                     "Contributed to resource-aware layer placement for distributed TensorFlow training, reporting up to 2.3x training speedup in published research artifacts.",
@@ -503,13 +499,13 @@ def variants() -> tuple[ResumeVariant, ...]:
             language="en",
             professional_title="Applied AI & Platform Engineer",
             summary=(
-                "Applied AI and platform engineer with about eight years of experience turning enterprise requirements into production systems, including agent application delivery, LLM evaluation, model integration, access control, and reliability engineering.",
-                "Builds hands-on across Python application logic, cloud-native runtime integration, evaluation, security controls, rollout, and production operations.",
+                "Applied AI and platform engineer with about eight years of experience turning enterprise requirements into production systems, including agent application delivery, model integration, access control, global rollout, and reliability engineering.",
+                "Builds hands-on across Python application logic, cloud-native runtime integration, security controls, rollout, and production operations.",
             ),
             evidence=(
                 "Governed AX application delivery with existing enterprise LLM Gateway integration",
                 "Public assistant reference with retrieval, RBAC, citations, audit, and evals",
-                "Python/MLflow LLM evaluation plus production operation of enterprise AI services",
+                "Azure-based generative AI service operations and global rollout",
             ),
             skills=(
                 ("Applied AI", "Agent application delivery, retrieval, grounded citations, evaluation cases, model inference, LLM Gateway API integration"),
@@ -520,10 +516,6 @@ def variants() -> tuple[ResumeVariant, ...]:
             experiences=experiences,
             projects=(
                 PUBLIC_AI_PROJECT,
-                Project(
-                    "LLM Performance Evaluation Pipeline",
-                    "Built a Python and MLflow workflow for repeatable machine-translation LLM evaluation and result comparison on Kubernetes.",
-                ),
                 Project(
                     "TmaxOS AI Assistant",
                     "Built model inference, preprocessing, system integration, and asynchronous interaction flows for an OS-level AI assistant.",
@@ -552,7 +544,7 @@ def variants() -> tuple[ResumeVariant, ...]:
                 ("클라우드 & 플랫폼", "AWS EKS, Azure, Kubernetes, OpenShift, Docker, Helm/Helmfile, ArgoCD, GitOps"),
                 ("소프트웨어", "Python, Bash, Linux, Kubernetes Operator, API·런타임 연동, 비동기 흐름"),
                 ("신뢰성 & 보안", "Grafana, Prometheus, OpenTelemetry, 장애 대응, 인증·인가, 보안 거버넌스"),
-                ("Applied AI", "Agent App 전달, MLflow 기반 LLM 평가, 기존 LLM Gateway API 연동, 모델 추론"),
+                ("Applied AI", "Agent App 전달, 기존 LLM Gateway API 연동, 생성형 AI 서비스 운영·글로벌 확장, 모델 추론"),
             ),
             experiences=korean_experiences(),
             projects=(
@@ -560,10 +552,6 @@ def variants() -> tuple[ResumeVariant, ...]:
                     "Enterprise AI Assistant | 공개 레퍼런스 구현",
                     "SQLite FTS5 검색, 생성 전 역할 기반 권한 필터, 근거 인용, 감사 이벤트, 평가 케이스, FastAPI 및 선택적 OpenAI Responses API 연동을 구현했습니다.",
                     "jinwonlee.github.io/projects/enterprise-ai-assistant/web/",
-                ),
-                Project(
-                    "LLM 성능 평가 파이프라인",
-                    "Kubernetes에서 기계 번역 모델을 반복 평가·비교할 수 있도록 Python/MLflow 워크플로우를 구축했습니다.",
                 ),
                 Project(
                     "분산 CNN 학습 연구",

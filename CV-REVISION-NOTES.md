@@ -12,7 +12,7 @@ Role-specific CV variants change emphasis without changing career facts:
 
 - General: production AI, platform, software, and reliability
 - Platform/SRE: cloud runtime, delivery automation, observability, incident response, and security controls
-- Applied AI: agent application delivery, evaluation, retrieval, access control, model/provider integration, and production operation
+- Applied AI: agent application delivery, retrieval, access control, model/provider integration, global rollout, and production operation
 
 ## September changes
 
@@ -32,9 +32,8 @@ Role-specific CV variants change emphasis without changing career facts:
 - Automatic domains and authorized-only access for self-service AX application deployment
 - Authentication, authorization, security, and governance responsibility
 - Client compatibility with an existing enterprise LLM Gateway API
-- Microsoft collaboration for UK rollout readiness, initial operation, incident response, and stabilization of a B2C generative AI service
+- Azure-based generative AI service operation, global rollout, incident response, and post-launch stabilization
 - Production delivery and reliability for a 30,000-employee AI chatbot
-- Python/MLflow LLM evaluation for machine translation
 - Linux packet processing measured at up to 130,000 packets per second
 - Distributed CNN research reporting up to 2.3x training speedup
 - AI assistant inference, preprocessing, system integration, and asynchronous flows at TmaxOS
