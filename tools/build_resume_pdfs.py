@@ -411,7 +411,7 @@ def korean_experiences() -> tuple[Experience, ...]:
 
 PUBLIC_AI_PROJECT = Project(
     "Enterprise AI Assistant | Public reference implementation",
-    "Built an access-aware Python assistant with SQLite FTS5 retrieval, pre-generation role filtering, grounded citations, audit events, evaluation cases, a FastAPI surface, and an optional OpenAI Responses API provider.",
+    "Personal reference application combining SQLite FTS5 retrieval, role-based access filtering, grounded citations, audit events, FastAPI, and optional OpenAI Responses API integration.",
     "jinwonlee.github.io/projects/enterprise-ai-assistant/web/",
 )
 
@@ -455,11 +455,11 @@ def variants() -> tuple[ResumeVariant, ...]:
                     "Observability & Release Reliability",
                     "Deployed Grafana, Prometheus, and OpenTelemetry and connected Kubernetes releases across development, staging, and production with security and operational requirements.",
                 ),
-                PUBLIC_AI_PROJECT,
                 Project(
                     "Global B2C Generative AI Service",
                     "Supported UK rollout readiness, initial production operations, incident response, and early stabilization for a Microsoft-collaborative consumer AI service on Azure.",
                 ),
+                PUBLIC_AI_PROJECT,
             ),
         ),
         ResumeVariant(
@@ -513,26 +513,26 @@ def variants() -> tuple[ResumeVariant, ...]:
             ),
             evidence=(
                 "Governed AX application delivery with existing enterprise LLM Gateway integration",
-                "Public assistant reference with retrieval, RBAC, citations, audit, and evals",
+                "Production delivery and reliability for an enterprise AI service used by 30,000 employees",
                 "UK rollout and production stabilization for an Azure-based generative AI service",
             ),
             skills=(
-                ("Applied AI", "Agent application delivery, retrieval, grounded citations, evaluation cases, model inference, LLM Gateway API integration"),
+                ("Applied AI", "Agent application delivery, retrieval, grounded citations, model inference, LLM Gateway API integration"),
                 ("Software", "Python, FastAPI, SQLite FTS5, Bash, Linux, API and runtime integration, asynchronous flows"),
                 ("Cloud Platform", "AWS EKS, Azure, Kubernetes, OpenShift, Docker, Helm/Helmfile, ArgoCD"),
                 ("Production Quality", "Authentication, authorization, governance, observability, incident response, rollout stabilization"),
             ),
             experiences=experiences,
             projects=(
-                PUBLIC_AI_PROJECT,
+                Project(
+                    "Internal AX Agent Platform",
+                    "Built an AWS EKS platform for governed AX application delivery with runtime adaptation, automatic domains, authorized-only access, and integration with an existing enterprise LLM Gateway API.",
+                ),
                 Project(
                     "TmaxOS AI Assistant",
                     "Built model inference, preprocessing, system integration, and asynchronous interaction flows for an OS-level AI assistant.",
                 ),
-                Project(
-                    "Distributed CNN Training Research",
-                    "Studied resource-aware placement for distributed TensorFlow training and contributed to research artifacts reporting up to 2.3x training speedup.",
-                ),
+                PUBLIC_AI_PROJECT,
             ),
         ),
         ResumeVariant(
@@ -566,13 +566,13 @@ def variants() -> tuple[ResumeVariant, ...]:
                     "Grafana, Prometheus, OpenTelemetry를 구축하고 개발·스테이징·프로덕션 Kubernetes 릴리스를 보안 및 운영 요구사항과 연결했습니다.",
                 ),
                 Project(
-                    "Enterprise AI Assistant | 공개 레퍼런스 구현",
-                    "SQLite FTS5 검색, 생성 전 역할 기반 권한 필터, 근거 인용, 감사 이벤트, 평가 케이스, FastAPI 및 선택적 OpenAI Responses API 연동을 구현했습니다.",
-                    "jinwonlee.github.io/projects/enterprise-ai-assistant/web/",
-                ),
-                Project(
                     "글로벌 B2C 생성형 AI 서비스",
                     "Microsoft와 협업한 Azure 기반 소비자 AI 서비스의 UK 출시 준비, 초기 프로덕션 운영, 장애 대응 및 안정화를 수행했습니다.",
+                ),
+                Project(
+                    "Enterprise AI Assistant | 개인 레퍼런스 구현",
+                    "SQLite FTS5 검색, 역할 기반 접근 필터, 근거 인용, 감사 이벤트, FastAPI 및 선택적 OpenAI Responses API 연동을 포함한 개인 레퍼런스 애플리케이션입니다.",
+                    "jinwonlee.github.io/projects/enterprise-ai-assistant/web/",
                 ),
             ),
         ),

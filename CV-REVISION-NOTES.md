@@ -40,9 +40,18 @@ Role-specific CV variants change emphasis without changing career facts:
 
 ## Public reference boundary
 
-The Enterprise AI Assistant is a personal/public reference implementation using synthetic documents. It is evidence of hands-on implementation in Python, FastAPI, SQLite FTS5, access policy, citations, audit events, evaluations, and optional OpenAI Responses API integration.
+The Enterprise AI Assistant is a supporting personal/public reference implementation using synthetic documents. Describe retrieval, access policy, citations, audit events, FastAPI, and optional model API integration. Place it after professional platform and production work.
 
 It must not be described as a Samsung production deployment or as evidence of external customer ownership.
+
+## Evaluation emphasis correction | September 15
+
+The user clarified that their contribution to evaluation work was limited. Evaluation is not a primary strength or a headline project. Do not claim ownership of an evaluation pipeline, benchmark design, evaluation strategy, or measurable model-quality improvements.
+
+- Remove evaluation from CV summaries, selected evidence, and core skills.
+- Remove the standalone LLM evaluation case from featured website projects and detailed portfolio PDF cases.
+- Retain only a short supporting statement in both portfolio languages: "Contributed to LLM evaluation work for machine translation" / "기계 번역을 위한 LLM 평가 작업에 참여했습니다."
+- Keep AX Agent Platform, governed delivery, observability, release automation, and production reliability as the primary evidence.
 
 ## Claims to avoid
 

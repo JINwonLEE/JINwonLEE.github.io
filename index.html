@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/style.css?v=20260915">
+  <link rel="stylesheet" href="./assets/css/style.css?v=20260915-2">
   <script src="https://unpkg.com/lucide@latest" defer></script>
   <script src="./assets/js/script.js?v=20260901" defer></script>
 </head>
@@ -33,7 +33,7 @@
       <a href="#research">Research</a>
       <a href="#contact">Contact</a>
       <a class="language-link" href="./index-ko.html" lang="ko">한국어</a>
-      <a class="header-cv" href="./CV-Eng.pdf" target="_blank" rel="noopener"><i data-lucide="download"></i>CV</a>
+      <a class="header-cv" href="./CV-Eng.pdf?v=20260915-2" target="_blank" rel="noopener"><i data-lucide="download"></i>CV</a>
     </nav>
   </header>
 
@@ -47,7 +47,7 @@
           <p class="profile-summary">I build and operate the platform path that takes agent applications from enterprise requirements to reliable production: runtime integration, governed delivery, access control, observability, and incident response.</p>
           <div class="profile-actions">
             <a class="primary-action" href="#work">View engineering work <i data-lucide="arrow-down"></i></a>
-            <a class="secondary-action" href="./CV-Eng.pdf" target="_blank" rel="noopener"><i data-lucide="file-text"></i>Download AI Platform CV</a>
+            <a class="secondary-action" href="./CV-Eng.pdf?v=20260915-2" target="_blank" rel="noopener"><i data-lucide="file-text"></i>Download AI Platform CV</a>
           </div>
         </div>
         <figure class="profile-photo-wrap">
@@ -81,19 +81,6 @@
         </div>
       </article>
 
-      <article class="featured-case reverse">
-        <div class="case-media app-screenshot"><img src="./assets/images/enterprise-ai-assistant.png" alt="Enterprise AI Assistant evaluation and access-control interface" loading="lazy"></div>
-        <div class="case-content">
-          <div class="case-meta"><span>PUBLIC REFERENCE</span><span>APPLIED AI ENGINEERING</span></div>
-          <h3>Enterprise AI Assistant with Evaluation & Access Control</h3>
-          <p>A synthetic, inspectable assistant built to show more than a chat surface: SQLite FTS5 retrieval, role filtering before model context, grounded citations, audit events, runtime metadata, and repeatable evaluation cases. It runs offline and includes an optional OpenAI Responses API provider.</p>
-          <div class="case-actions">
-            <a class="primary-action compact" href="./projects/enterprise-ai-assistant/web/">Open live demo <i data-lucide="arrow-up-right"></i></a>
-            <a class="secondary-action compact" href="https://github.com/JINwonLEE/JINwonLEE.github.io/tree/main/projects/enterprise-ai-assistant" target="_blank" rel="noopener"><i data-lucide="code-2"></i>View source</a>
-          </div>
-        </div>
-      </article>
-
       <div class="case-grid">
         <article class="case-card">
           <img src="./assets/images/thumb-observability-stack.svg" alt="Centralized observability stack overview">
@@ -123,15 +110,38 @@
           </div>
         </article>
         <article class="case-card">
-          <img src="./assets/images/thumb-llm-evaluation.svg" alt="LLM evaluation pipeline overview">
+          <img src="./assets/images/thumb-k8s-automation.svg" alt="Bash-based Kubernetes cluster provisioning overview">
           <div class="case-card-body">
-            <div class="case-meta"><span>EVALUATION</span><span>MACHINE TRANSLATION</span></div>
-            <h3>LLM Performance Evaluation Pipeline</h3>
-            <p>Built a Python and MLflow workflow for repeatable evaluation and result comparison of LLM-based machine-translation workloads on Kubernetes.</p>
-            <p class="tech-line">Python · MLflow · Kubernetes · Evaluation automation</p>
+            <div class="case-meta"><span>PLATFORM AUTOMATION</span><span>DEVELOPER ENVIRONMENTS</span></div>
+            <h3>One-click Kubernetes Provisioning</h3>
+            <p>Designed and developed a Bash-based one-click Kubernetes cluster provisioning system for repeatable cloud developer environments.</p>
+            <p class="tech-line">Bash · Kubernetes · Linux</p>
+          </div>
+        </article>
+        <article class="case-card">
+          <img src="./assets/images/thumb-gitops-cicd.svg" alt="GitOps application delivery overview">
+          <div class="case-card-body">
+            <div class="case-meta"><span>GITOPS</span><span>APPLICATION DELIVERY</span></div>
+            <h3>GitOps CI/CD with ArgoCD</h3>
+            <p>Built container delivery pipelines connecting source changes, application releases, and Kubernetes environments across development, staging, and production.</p>
+            <p class="tech-line">GitHub Actions · ArgoCD · Helm/Helmfile · Kubernetes</p>
+          </div>
+        </article>
+        <article class="case-card">
+          <img src="./assets/images/enterprise-ai-assistant.png" alt="Enterprise AI Assistant retrieval and access-control interface" loading="lazy">
+          <div class="case-card-body">
+            <div class="case-meta"><span>PERSONAL PROJECT</span><span>PUBLIC REFERENCE</span></div>
+            <h3>Enterprise AI Assistant</h3>
+            <p>A synthetic-data reference application combining document retrieval, role-based access filtering, grounded citations, audit events, and an optional model API integration.</p>
+            <p class="tech-line">Python · FastAPI · SQLite FTS5 · RBAC</p>
+            <div class="case-actions">
+              <a class="secondary-action compact" href="./projects/enterprise-ai-assistant/web/">Open demo <i data-lucide="arrow-up-right"></i></a>
+              <a class="secondary-action compact" href="https://github.com/JINwonLEE/JINwonLEE.github.io/tree/main/projects/enterprise-ai-assistant" target="_blank" rel="noopener"><i data-lucide="code-2"></i>Source</a>
+            </div>
           </div>
         </article>
       </div>
+      <p class="additional-work">Additional experience: contributed to LLM evaluation work for machine translation.</p>
     </section>
 
     <section class="experience-section" id="experience" aria-labelledby="experience-heading">
@@ -194,11 +204,13 @@
         <a href="https://www.linkedin.com/in/jwl1993" target="_blank" rel="noopener"><i data-lucide="briefcase-business"></i>LinkedIn</a>
         <a href="https://github.com/JINwonLEE" target="_blank" rel="noopener"><i data-lucide="code-2"></i>GitHub</a>
       </div>
-      <div class="cv-links" aria-label="CV downloads">
-        <a href="./CV-Eng.pdf" target="_blank" rel="noopener">AI Platform & Reliability CV</a>
-        <a href="./CV-Platform-SRE.pdf" target="_blank" rel="noopener">Platform/SRE CV</a>
-        <a href="./CV-Applied-AI.pdf" target="_blank" rel="noopener">Applied AI CV</a>
-        <a href="./CV-Kor.pdf" target="_blank" rel="noopener">Korean CV</a>
+      <div class="cv-links" aria-label="CV and portfolio downloads">
+        <a href="./CV-Eng.pdf?v=20260915-2" target="_blank" rel="noopener">AI Platform & Reliability CV</a>
+        <a href="./CV-Platform-SRE.pdf?v=20260915-2" target="_blank" rel="noopener">Platform/SRE CV</a>
+        <a href="./CV-Applied-AI.pdf?v=20260915-2" target="_blank" rel="noopener">Applied AI CV</a>
+        <a href="./CV-Kor.pdf?v=20260915-2" target="_blank" rel="noopener">Korean CV</a>
+        <a href="./Portfolio-Eng.pdf?v=20260915-2" target="_blank" rel="noopener">English portfolio</a>
+        <a href="./Portfolio-Kor.pdf?v=20260915-2" target="_blank" rel="noopener">Korean portfolio</a>
       </div>
     </section>
   </main>

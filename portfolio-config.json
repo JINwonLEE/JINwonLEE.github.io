@@ -7,7 +7,7 @@
     "phone": "+82 10-2422-1429",
     "location": "Seoul, South Korea",
     "avatar": "./assets/images/profile-photo.jpg",
-    "cv_file": "./CV-Eng.pdf"
+    "cv_file": "./CV-Eng.pdf?v=20260915-2"
   },
 
   "social": {
@@ -147,20 +147,20 @@
 
   "projects": [
     {
-      "title": "Enterprise AI Assistant with Evaluation & Access Control",
+      "title": "Enterprise AI Assistant",
       "category": "ai/ml",
-      "description": "Public reference implementation with access-aware retrieval, grounded citations, audit events, and repeatable evaluations.",
-      "detailedDescription": "Built a synthetic, inspectable enterprise assistant to demonstrate application code and production-quality controls without using internal company data or architecture. The implementation includes SQLite FTS5 retrieval, role filtering before model context is assembled, grounded citations, audit events, runtime metadata, evaluation cases, a FastAPI surface, an offline deterministic provider, and an optional OpenAI Responses API provider.",
-      "problem": "Show how an enterprise AI assistant can enforce authorization and evaluate behavior instead of stopping at a chat prototype.",
-      "role": "Designed and implemented the reference application, access policy, retrieval path, provider interface, audit model, evaluation suite, tests, and browser experience.",
-      "engineering": "Python, FastAPI, SQLite FTS5/BM25, pre-generation role filtering, grounded citations, audit events, evaluation cases, and optional OpenAI Responses API integration.",
+      "description": "Personal reference application with access-aware retrieval, grounded citations, audit events, and model API integration.",
+      "detailedDescription": "Built a synthetic-data reference assistant combining SQLite FTS5 retrieval, role filtering before model context is assembled, grounded citations, audit events, a FastAPI interface, an offline provider, and optional OpenAI Responses API integration.",
+      "problem": "Explore document retrieval and role-based access control in a personal AI application.",
+      "role": "Implemented the reference application's retrieval path, access policy, provider interface, audit events, and browser demo.",
+      "engineering": "Python, FastAPI, SQLite FTS5/BM25, role-based filtering, citations, audit events, and optional OpenAI Responses API integration.",
       "outcome": "Published an interactive browser demo and inspectable backend reference with automated access-safety and retrieval tests.",
-      "relevance": "Provides direct evidence of hands-on Applied AI engineering across application logic, evaluation, failure handling, access control, observability, and model-provider integration.",
-      "technologies": ["Python", "FastAPI", "SQLite FTS5", "RBAC", "Evaluations", "OpenAI Responses API"],
+      "relevance": "A supporting personal project demonstrating retrieval, access control, and API integration.",
+      "technologies": ["Python", "FastAPI", "SQLite FTS5", "RBAC", "OpenAI Responses API"],
       "image": "./assets/images/enterprise-ai-assistant.png",
       "detailedImage": "./assets/images/enterprise-ai-assistant.png",
       "url": "./projects/enterprise-ai-assistant/web/",
-      "featured": true
+      "featured": false
     },
     {
       "title": "Internal AX Agent Platform",
@@ -227,20 +227,20 @@
       "featured": true
     },
     {
-      "title": "LLM Performance Evaluation Pipeline",
+      "title": "LLM Evaluation Contribution",
       "category": "ai/ml",
-      "description": "Automated evaluation pipeline for repeatable LLM quality and performance comparison across Machine Translation tasks.",
-      "detailedDescription": "Built an automated pipeline for evaluating the performance and quality of LLM models across Machine Translation tasks. The pipeline tracked benchmark results and quality metrics with MLflow to support repeatable model comparison.",
-      "problem": "LLM model quality needed repeatable evaluation rather than ad hoc manual checks.",
-      "role": "Built the evaluation workflow and metric tracking path for Machine Translation model comparison.",
-      "engineering": "Python evaluation automation, PyTorch-based workloads, MLflow metric tracking, and Kubernetes execution.",
-      "outcome": "Made LLM evaluation results easier to compare and reproduce across model candidates.",
-      "relevance": "Maps directly to AI workload evaluation, model performance analysis, and repeatable application quality workflows.",
-      "technologies": ["Python", "PyTorch", "MLflow", "Evaluation Automation", "Kubernetes"],
+      "description": "Contributed to LLM evaluation work for machine translation.",
+      "detailedDescription": "Contributed to LLM evaluation work for machine translation.",
+      "problem": "Compare LLM outputs for machine translation tasks.",
+      "role": "Contributed to the evaluation work.",
+      "engineering": "Machine translation evaluation workflows.",
+      "outcome": "Participated in model comparison activities.",
+      "relevance": "Additional experience alongside platform engineering and production operations.",
+      "technologies": [],
       "image": "./assets/images/thumb-llm-evaluation.svg",
       "detailedImage": "./assets/images/thumb-llm-evaluation.svg",
       "url": "",
-      "featured": true
+      "featured": false
     },
     {
       "title": "GitOps CI/CD Pipeline with ArgoCD",

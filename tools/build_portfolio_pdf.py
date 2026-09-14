@@ -232,6 +232,8 @@ class PortfolioPDF:
     def capability_point(self, project: Project) -> str:
         title = project.title
         if self.lang == "en":
+            if "Enterprise AI Assistant" in title:
+                return "A supporting personal project demonstrating document retrieval, access control, and model API integration."
             if "AX Agent" in title:
                 return "Experience building a governed self-service agent platform with runtime compatibility, access control, and enterprise LLM integration."
             if "Generative AI" in title:
@@ -243,7 +245,7 @@ class PortfolioPDF:
             if "Cluster" in title:
                 return "Experience standardizing infrastructure and automating repeatable development and test environments."
             if "Evaluation" in title:
-                return "Experience automating model quality comparison and making evaluation results traceable and repeatable."
+                return "Additional experience contributing to LLM evaluation work for machine translation."
             if "GitOps" in title:
                 return "Experience connecting deployment consistency, security checks, and operations automation for containerized services."
             if "Monitoring" in title:
@@ -254,6 +256,8 @@ class PortfolioPDF:
                 return "Research experience on network bottlenecks, resource placement, and performance improvement for distributed training workloads."
             return "Experience integrating AI functionality with OS-level behavior, asynchronous processing, and user interaction."
 
+        if "Enterprise AI Assistant" in title:
+            return "문서 검색, 접근 제어 및 모델 API 연동 경험을 보완하는 개인 프로젝트입니다."
         if "AX Agent" in title:
             return "런타임 호환성, 셀프서비스 배포, 접근 제어, 사내 LLM 연동을 하나의 거버넌스 플랫폼으로 구현한 경험입니다."
         if "생성형 AI" in title:
@@ -265,7 +269,7 @@ class PortfolioPDF:
         if "클러스터" in title:
             return "반복 가능한 개발/테스트 환경을 만들기 위한 플랫폼 자동화와 인프라 표준화 경험입니다."
         if "평가" in title:
-            return "모델 품질 비교를 자동화하고 평가 결과를 추적 가능하고 반복 가능한 흐름으로 만든 경험입니다."
+            return "기계 번역을 위한 LLM 평가 작업에 참여한 추가 경험입니다."
         if "GitOps" in title:
             return "컨테이너 기반 서비스의 배포 일관성, 보안 검증, 운영 자동화를 연결한 경험입니다."
         if "모니터링" in title:
@@ -392,27 +396,27 @@ def build_pdf(lang: str) -> None:
         [
             "사내 AX Agent Platform",
             "중앙 집중식 모니터링 & 관측성 스택",
-            "평가·접근 제어를 포함한 Enterprise AI Assistant",
             "글로벌 B2C 생성형 AI 서비스",
             "전사 AI 챗봇 플랫폼 (약 3만 사용자)",
             "GitOps CI/CD 파이프라인 with ArgoCD",
-            "LLM 성능 평가 파이프라인",
             "Kubernetes 클러스터 자동화",
             "고성능 패킷 미러링 애플리케이션",
             "분산 CNN 트레이닝 시스템",
+            "TmaxOS 기반 Siri형 AI 어시스턴트",
+            "Enterprise AI Assistant",
         ]
         if is_ko
         else [
             "Internal AX Agent Platform",
             "Centralized Monitoring & Observability Stack",
-            "Enterprise AI Assistant with Evaluation & Access Control",
             "Global B2C Generative AI Service",
             "Company-wide AI Chatbot Platform (30K Users)",
             "GitOps CI/CD Pipeline with ArgoCD",
-            "LLM Performance Evaluation Pipeline",
             "Kubernetes Cluster Automation",
             "High-throughput Packet Mirroring Application",
             "Distributed CNN Training System",
+            "Siri-like AI Assistant on TmaxOS",
+            "Enterprise AI Assistant",
         ]
     )
     by_title = {project.title: project for project in projects}
@@ -460,6 +464,18 @@ def build_pdf(lang: str) -> None:
     for pub in data["publications"]:
         line = f"{pub['title']} — {pub['venue']} ({pub['year']})"
         y = pdf.bullet(pdf.left, y, line, pdf.usable, 8.4, 11.5)
+    y -= 8
+    y = pdf.paragraph(
+        pdf.left,
+        y,
+        "추가 경험: 기계 번역을 위한 LLM 평가 작업에 참여했습니다."
+        if is_ko
+        else "Additional experience: contributed to LLM evaluation work for machine translation.",
+        pdf.usable,
+        8.4,
+        11.5,
+        pdf.muted,
+    )
     y -= 8
     pdf.paragraph(
         pdf.left,
