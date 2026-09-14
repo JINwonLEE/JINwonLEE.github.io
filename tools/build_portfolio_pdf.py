@@ -205,6 +205,8 @@ class PortfolioPDF:
 
     def diagram_labels(self, project: Project) -> Sequence[str]:
         title = project.title
+        if "Enterprise AI Assistant" in title:
+            return ["Docs\nRetrieval", "RBAC\nFilter", "Citations\nAudit"]
         if "AX Agent" in title:
             return ["AX Apps\nDeploy", "EKS\nPlatform", "Domain/Auth\nLLM Gateway"]
         if "생성형 AI" in title or "Generative AI" in title:
@@ -233,7 +235,7 @@ class PortfolioPDF:
             if "AX Agent" in title:
                 return "Experience building a governed self-service agent platform with runtime compatibility, access control, and enterprise LLM integration."
             if "Generative AI" in title:
-                return "Experience delivering UK rollout readiness, production stabilization, and incident response for a consumer generative AI service."
+                return "Experience operating a consumer generative AI service through global rollout, production stabilization, and incident response."
             if "Chatbot" in title:
                 return "Experience leading application delivery and reliability for tens of thousands of internal users."
             if "AI Services" in title:
@@ -255,7 +257,7 @@ class PortfolioPDF:
         if "AX Agent" in title:
             return "런타임 호환성, 셀프서비스 배포, 접근 제어, 사내 LLM 연동을 하나의 거버넌스 플랫폼으로 구현한 경험입니다."
         if "생성형 AI" in title:
-            return "소비자 대상 생성형 AI 서비스의 UK 출시 준비, 초기 안정화, 장애 대응을 수행한 경험입니다."
+            return "소비자 대상 생성형 AI 서비스의 글로벌 확장, 프로덕션 안정화, 장애 대응을 수행한 경험입니다."
         if "챗봇" in title:
             return "수만 명 규모의 내부 사용자를 위한 애플리케이션 전달과 신뢰성을 리딩한 경험입니다."
         if "인프라 운영" in title:
