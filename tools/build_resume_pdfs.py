@@ -318,7 +318,7 @@ def english_experiences() -> tuple[Experience, ...]:
                 "Design and build an internal AX Agent Platform on AWS EKS, adapting the agent runtime and deployment path to enterprise platform standards.",
                 "Implemented self-service AX application delivery with automatic domain issuance, authorized-only access, and platform controls for authentication, authorization, security, and governance.",
                 "Enabled AX applications to call the existing enterprise LLM Gateway API through platform-side client compatibility and runtime integration.",
-                "Operated an Azure-based generative AI service and drove its global rollout, covering production readiness, incident response, and post-launch stabilization.",
+                "Supported a Microsoft-collaborative B2C generative AI service through UK rollout readiness, initial production operations, incident response, and stabilization from Jan. to Jun. 2026.",
             ),
         ),
         Experience(
@@ -369,7 +369,7 @@ def korean_experiences() -> tuple[Experience, ...]:
                 "AWS EKS 기반 사내 AX Agent Platform을 설계·구축하고, 에이전트 런타임과 배포 경로를 사내 플랫폼 표준에 맞게 조정했습니다.",
                 "도메인 자동 발급과 인가된 사용자 전용 접근을 포함한 AX App 셀프서비스 배포 흐름을 구현하고 인증·인가·보안·거버넌스 통제를 담당했습니다.",
                 "AX App이 기존 사내 LLM Gateway API를 호출할 수 있도록 플랫폼 측 클라이언트 호환성과 런타임 연동을 제공했습니다.",
-                "Azure 기반 생성형 AI 서비스를 운영하고 글로벌 확장을 추진하며 프로덕션 준비, 장애 대응 및 출시 후 안정화를 수행했습니다.",
+                "2026.01~06 Microsoft와 협업한 B2C 생성형 AI 서비스의 UK 출시 준비, 초기 운영, 장애 대응 및 안정화를 수행했습니다.",
             ),
         ),
         Experience(
@@ -508,13 +508,13 @@ def variants() -> tuple[ResumeVariant, ...]:
             language="en",
             professional_title="Applied AI & Platform Engineer",
             summary=(
-                "Applied AI and platform engineer with about eight years of experience turning enterprise requirements into production systems, including agent application delivery, model integration, access control, global rollout, and reliability engineering.",
+                "Applied AI and platform engineer with about eight years of experience turning enterprise requirements into production systems, including agent application delivery, model integration, access control, rollout, and reliability engineering.",
                 "Builds hands-on across Python application logic, cloud-native runtime integration, security controls, rollout, and production operations.",
             ),
             evidence=(
                 "Governed AX application delivery with existing enterprise LLM Gateway integration",
                 "Public assistant reference with retrieval, RBAC, citations, audit, and evals",
-                "Azure-based generative AI service operations and global rollout",
+                "UK rollout and production stabilization for an Azure-based generative AI service",
             ),
             skills=(
                 ("Applied AI", "Agent application delivery, retrieval, grounded citations, evaluation cases, model inference, LLM Gateway API integration"),
