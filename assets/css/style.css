@@ -196,7 +196,7 @@ button { font: inherit; }
 .case-media { min-height: 430px; padding: 34px; display: grid; place-items: center; background: var(--soft); border-right: 1px solid var(--line); }
 .case-media img { width: 100%; max-height: 370px; object-fit: contain; }
 .case-media.app-screenshot { padding: 0; overflow: hidden; background: #edf3f0; }
-.case-media.app-screenshot img { width: 100%; height: 100%; max-height: none; object-fit: cover; object-position: 37% center; }
+.case-media.app-screenshot img { width: 100%; height: 100%; max-height: none; object-fit: contain; object-position: center; }
 .case-content { padding: 48px; display: grid; align-content: center; }
 .reverse .case-media { order: 2; border-right: 0; border-left: 1px solid var(--line); }
 .reverse .case-content { order: 1; }
@@ -211,7 +211,7 @@ button { font: inherit; }
 
 .case-grid { margin-top: 34px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
 .case-card { min-width: 0; overflow: hidden; background: var(--white); border: 1px solid var(--line); border-radius: 6px; }
-.case-card > img { width: 100%; aspect-ratio: 16 / 8; padding: 22px; object-fit: contain; background: var(--soft); border-bottom: 1px solid var(--line); }
+.case-card > img { width: 100%; aspect-ratio: 8 / 5; padding: 22px; object-fit: contain; background: var(--soft); border-bottom: 1px solid var(--line); }
 .case-card-body { padding: 24px; }
 .case-card h3 { margin: 11px 0 0; font-size: 20px; line-height: 1.3; letter-spacing: 0; }
 .case-card p { margin: 12px 0 0; color: var(--body); font-size: 13px; line-height: 1.6; letter-spacing: 0; }
