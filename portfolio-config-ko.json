@@ -1,7 +1,7 @@
 {
   "personal": {
     "name": "이진원",
-    "title": "프로덕션 AI & 플랫폼 엔지니어",
+    "title": "AI 플랫폼 & 신뢰성 엔지니어",
     "motto": "일단 만들고 그 다음에 생각하자.",
     "email": "dlwlsdnjsehs1993@gmail.com",
     "phone": "+82 10-2422-1429",
@@ -17,21 +17,21 @@
 
   "about": {
     "summary": [
-      "약 8년 동안 엔터프라이즈 요구사항을 애플리케이션·플랫폼·보안·운영 전반의 프로덕션 시스템으로 구현해 온 응용 AI·클라우드 플랫폼 엔지니어입니다. 삼성전자에서 AWS EKS 기반 사내 AX Agent Platform을 설계·구축하고 있으며 Azure 기반 글로벌 B2C 생성형 AI 서비스의 UK 출시와 초기 안정화를 지원했습니다.",
-      "Python, Kubernetes, 클라우드 네이티브 아키텍처, API·런타임 연동, CI/CD, 관측 가능성, 인증·인가, 장애 대응을 다뤄왔습니다. 아키텍처와 구현부터 엔터프라이즈 연동, 출시, 프로덕션 운영까지 전달 전 과정을 담당합니다."
+      "약 8년 동안 거버넌스형 Agent App, 클라우드 플랫폼 및 사용자 대상 서비스를 프로덕션까지 전달해 온 AI 플랫폼·신뢰성 엔지니어입니다. 삼성전자에서 AWS EKS 기반 사내 AX Agent Platform을 설계·구축하고 있으며 Azure 기반 글로벌 B2C 생성형 AI 서비스의 UK 출시와 초기 안정화를 지원했습니다.",
+      "Python, Kubernetes, 클라우드 네이티브 아키텍처, Agent 런타임·API 연동, 배포 자동화, 관측 가능성, 인증·인가 및 장애 대응을 다뤄왔습니다. 아키텍처와 구현부터 엔터프라이즈 연동, 출시 및 프로덕션 운영까지 전달 전 과정을 담당합니다."
     ]
   },
 
   "services": [
     {
       "icon": "./assets/images/icon-dev.svg",
-      "title": "응용 AI·플랫폼 아키텍처",
-      "description": "Agent 런타임, 엔터프라이즈 제어, 클라우드 네이티브 인프라를 연결하는 AI 애플리케이션·플랫폼 아키텍처를 설계합니다."
+      "title": "Agent 플랫폼 & 신뢰성",
+      "description": "Agent 런타임, 거버넌스형 배포, 프로덕션 통제 및 클라우드 네이티브 인프라를 연결하는 플랫폼을 설계·운영합니다."
     },
     {
       "icon": "./assets/images/icon-app.svg",
-      "title": "엔터프라이즈 연동",
-      "description": "AI 애플리케이션을 기존 API, 런타임 표준, 접근 제어, 보안, 거버넌스와 연결합니다."
+      "title": "거버넌스형 엔터프라이즈 배포",
+      "description": "Agent App을 기존 API, 런타임 표준, 접근 제어, 보안 및 거버넌스와 연결합니다."
     },
     {
       "icon": "./assets/images/icon-design.svg",
@@ -267,7 +267,7 @@
       "role": "플랫폼 및 서비스 운영에 쓰이는 모니터링 경로와 대시보드를 구축했습니다.",
       "engineering": "Prometheus 메트릭, Grafana 대시보드, OpenTelemetry 신호, Loki 로그, 알림 규칙",
       "outcome": "인시던트 탐지와 런타임 분석을 위한 운영 가시성을 높였습니다.",
-      "relevance": "관측 가능성은 신뢰성 있는 AI/플랫폼 시스템과 제조 수준 서비스 운영의 핵심 역량입니다.",
+      "relevance": "관측 가능성은 신뢰성 있는 AI/플랫폼 시스템과 프로덕션 서비스 운영의 핵심 역량입니다.",
       "technologies": ["Grafana", "Prometheus", "OpenTelemetry", "Loki"],
       "image": "./assets/images/thumb-observability-stack.svg",
       "detailedImage": "./assets/images/thumb-observability-stack.svg",

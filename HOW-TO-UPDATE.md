@@ -17,11 +17,11 @@ The website is intentionally static and does not fetch the JSON configs. When ca
 
 Keep the shared website position broad enough for both role families:
 
-`Production AI & Platform Engineer`
+`AI Platform & Reliability Engineer`
 
 Use the role-specific CVs for application emphasis:
 
-- `CV-Eng.pdf`: general/master CV
+- `CV-Eng.pdf`: AI platform and reliability master CV
 - `CV-Platform-SRE.pdf`: platform and reliability emphasis
 - `CV-Applied-AI.pdf`: Applied AI and AI application emphasis
 - `CV-Kor.pdf`: Korean master CV

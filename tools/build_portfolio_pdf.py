@@ -344,7 +344,13 @@ def build_pdf(lang: str) -> None:
     y = pdf.h - 35 * mm
     pdf.text_at(x, y, data["personal"]["name"], 34, pdf.text, 850)
     y -= 18
-    pdf.text_at(x, y, "Production AI · Platform Engineering · Reliability", 11.5, pdf.body)
+    pdf.text_at(
+        x,
+        y,
+        "Agent 플랫폼 · Applied AI · 신뢰성" if is_ko else "Agent Platforms · Applied AI · Reliability",
+        11.5,
+        pdf.body,
+    )
     y -= 20
     pdf.rounded_rect(x, y - 31 * mm, 142 * mm, 31 * mm, colors.HexColor("#202124"), colors.HexColor("#3A362D"), 5 * mm)
     pdf.text_at(x + 7 * mm, y - 10 * mm, "웹사이트" if is_ko else "Website", 9.5, pdf.accent, 750)
@@ -352,9 +358,9 @@ def build_pdf(lang: str) -> None:
     pdf.c.linkURL(PORTFOLIO_URL, (x + 7 * mm, y - 24 * mm, x + 72 * mm, y - 14 * mm), relative=0)
     y -= 46 * mm
     summary = (
-        "이 포트폴리오는 엔터프라이즈 및 사용자 대상 애플리케이션을 요구사항과 아키텍처부터 구현, 출시, 프로덕션 안정화까지 전달한 경험을 정리한 문서입니다. 각 프로젝트는 문제 상황, 담당 역할, 설계와 전달 포인트, 결과를 중심으로 구성했습니다."
+        "이 포트폴리오는 Agent App을 엔터프라이즈 요구사항에서 안정적인 프로덕션까지 전달하는 플랫폼과 신뢰성 엔지니어링 경험을 정리한 문서입니다. 각 프로젝트는 문제 상황, 담당 역할, 설계와 전달 포인트, 결과를 중심으로 구성했습니다."
         if is_ko
-        else "This portfolio summarizes end-to-end delivery of enterprise and user-facing applications from requirements and architecture through implementation, rollout, and production stabilization. Each project is organized around the problem context, my role, engineering and delivery focus, outcomes, and capability signals."
+        else "This portfolio summarizes the agent platform and reliability engineering work that takes enterprise and user-facing applications from requirements through implementation, rollout, and production stabilization. Each project is organized around the problem context, my role, engineering and delivery focus, outcomes, and capability signals."
     )
     pdf.paragraph(x, y, summary, 170 * mm, 11, 16, pdf.body)
     card_y = 65 * mm
@@ -362,17 +368,17 @@ def build_pdf(lang: str) -> None:
     gap = 8 * mm
     cards = (
         [
-            ("Application Software", "엔터프라이즈·사용자 대상 앱, 비동기 아키텍처, API 및 시스템 통합", pdf.blue),
-            ("End-to-End Delivery", "요구사항, 아키텍처, 구현, 출시 준비, 프로덕션 안정화", pdf.green),
-            ("Reliability", "인증·인가, 관측 가능성, 장애 대응, 시스템 성능", pdf.purple),
-            ("Cloud Platform", "Azure/AWS/OpenShift, Kubernetes, Helm, ArgoCD, GitOps 자동화", pdf.accent),
+            ("Agent 플랫폼", "Agent 런타임 연동, 셀프서비스 App 배포, 기존 LLM Gateway API 연결", pdf.blue),
+            ("거버넌스형 배포", "인증·인가, 보안 통제, 자동 도메인 및 엔터프라이즈 거버넌스", pdf.green),
+            ("신뢰성", "관측 가능성, 장애 대응, 출시 준비 및 프로덕션 안정화", pdf.purple),
+            ("클라우드 런타임", "AWS EKS, Azure, OpenShift, Kubernetes, Helm 및 ArgoCD", pdf.accent),
         ]
         if is_ko
         else [
-            ("Application Software", "Enterprise and user-facing apps, asynchronous architecture, API and system integration", pdf.blue),
-            ("End-to-End Delivery", "Requirements, architecture, implementation, rollout readiness, and production stabilization", pdf.green),
-            ("Reliability", "Authentication, authorization, observability, incident response, and system performance", pdf.purple),
-            ("Cloud Platform", "Delivery automation with Azure, AWS, OpenShift, Kubernetes, Helm, ArgoCD, and GitOps", pdf.accent),
+            ("Agent Platforms", "Agent runtime integration, self-service application delivery, and existing LLM Gateway API connectivity", pdf.blue),
+            ("Governed Delivery", "Authentication, authorization, security controls, automatic domains, and enterprise governance", pdf.green),
+            ("Reliability", "Observability, incident response, rollout readiness, and production stabilization", pdf.purple),
+            ("Cloud Runtime", "AWS EKS, Azure, OpenShift, Kubernetes, Helm, ArgoCD, and GitOps", pdf.accent),
         ]
     )
     for i, (title, body, accent) in enumerate(cards):
@@ -380,7 +386,35 @@ def build_pdf(lang: str) -> None:
 
     # Project pages, two cards per page
     accents = [pdf.blue, pdf.green, pdf.blue, pdf.green, pdf.purple, pdf.accent, pdf.blue, pdf.green, pdf.purple, pdf.green]
-    selected = projects[:10]
+    preferred_titles = (
+        [
+            "사내 AX Agent Platform",
+            "중앙 집중식 모니터링 & 관측성 스택",
+            "평가·접근 제어를 포함한 Enterprise AI Assistant",
+            "글로벌 B2C 생성형 AI 서비스",
+            "전사 AI 챗봇 플랫폼 (약 3만 사용자)",
+            "GitOps CI/CD 파이프라인 with ArgoCD",
+            "LLM 성능 평가 파이프라인",
+            "Kubernetes 클러스터 자동화",
+            "고성능 패킷 미러링 애플리케이션",
+            "분산 CNN 트레이닝 시스템",
+        ]
+        if is_ko
+        else [
+            "Internal AX Agent Platform",
+            "Centralized Monitoring & Observability Stack",
+            "Enterprise AI Assistant with Evaluation & Access Control",
+            "Global B2C Generative AI Service",
+            "Company-wide AI Chatbot Platform (30K Users)",
+            "GitOps CI/CD Pipeline with ArgoCD",
+            "LLM Performance Evaluation Pipeline",
+            "Kubernetes Cluster Automation",
+            "High-throughput Packet Mirroring Application",
+            "Distributed CNN Training System",
+        ]
+    )
+    by_title = {project.title: project for project in projects}
+    selected = [by_title[title] for title in preferred_titles]
     for page_index in range(0, len(selected), 2):
         pdf.new_page(f"{1 + page_index // 2:02d} / {'프로젝트 사례' if is_ko else 'Project Cases'}")
         y = pdf.section_title(

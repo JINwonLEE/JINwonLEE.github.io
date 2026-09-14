@@ -4,13 +4,13 @@
 
 The shared portfolio position is:
 
-`Production AI & Platform Engineer`
+`AI Platform & Reliability Engineer`
 
 This preserves the strongest verified career signal, production platform engineering, while making direct Applied AI work easier to inspect.
 
 Role-specific CV variants change emphasis without changing career facts:
 
-- General: production AI, platform, software, and reliability
+- AI Platform & Reliability: agent platform delivery, governed runtime integration, observability, incident response, and production stabilization
 - Platform/SRE: cloud runtime, delivery automation, observability, incident response, and security controls
 - Applied AI: agent application delivery, evaluation, retrieval, access control, model/provider integration, and production operation
 
@@ -22,7 +22,7 @@ Role-specific CV variants change emphasis without changing career facts:
 - Kept one-click Kubernetes provisioning as Bash-based work only.
 - Removed Terraform, Ansible, standalone MLOps wording, and LLM Gateway design ownership.
 - Added the public Enterprise AI Assistant as a clearly labeled reference implementation.
-- Added stable public files for General, Platform/SRE, Applied AI, and Korean CVs.
+- Added stable public files for AI Platform & Reliability, Platform/SRE, Applied AI, and Korean CVs.
 - Refreshed old tracked PDF URLs with the latest content so historical links no longer serve stale versions.
 
 ## Verified evidence

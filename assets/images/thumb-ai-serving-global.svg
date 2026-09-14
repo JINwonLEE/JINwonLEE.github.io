@@ -27,6 +27,6 @@
   <line x1="216" y1="231" x2="333" y2="231" stroke="#56c1d8" stroke-width="4" stroke-linecap="round"/>
   <line x1="471" y1="231" x2="586" y2="231" stroke="#56c1d8" stroke-width="4" stroke-linecap="round"/>
   <path d="M400 330 C340 330 306 360 306 396 C306 426 330 444 400 444 C470 444 494 426 494 396 C494 360 460 330 400 330Z" fill="#211c14" stroke="#d9ae59" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="346" y="392" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">Multi-region</text>
+  <text x="354" y="392" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">UK rollout</text>
   <text x="344" y="420" fill="#d7d2c8" font-size="17" font-weight="500" font-family="Inter, Arial, sans-serif">readiness</text>
 </svg>

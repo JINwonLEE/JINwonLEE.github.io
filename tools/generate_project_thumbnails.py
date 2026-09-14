@@ -77,7 +77,7 @@ def ai_serving_global() -> str:
         line(216, 231, 333, 231, "#56c1d8", 4),
         line(471, 231, 586, 231, "#56c1d8", 4),
         path("M400 330 C340 330 306 360 306 396 C306 426 330 444 400 444 C470 444 494 426 494 396 C494 360 460 330 400 330Z", "#d9ae59", 3, "#211c14"),
-        label(346, 392, "Multi-region"),
+        label(354, 392, "UK rollout"),
         text(344, 420, "readiness", 17, "#d7d2c8"),
     ]
     return base("Global Generative AI Service", "Azure · Kubernetes · Model Serving", "\n  ".join(nodes), "#48c7e8")

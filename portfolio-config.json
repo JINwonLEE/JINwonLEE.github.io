@@ -1,7 +1,7 @@
 {
   "personal": {
     "name": "Jinwon Lee",
-    "title": "Production AI & Platform Engineer",
+    "title": "AI Platform & Reliability Engineer",
     "motto": "Build it first, then think it through.",
     "email": "dlwlsdnjsehs1993@gmail.com",
     "phone": "+82 10-2422-1429",
@@ -17,21 +17,21 @@
 
   "about": {
     "summary": [
-      "Applied AI and cloud platform engineer with about eight years of experience turning enterprise requirements into production systems across application, platform, security, and operations. At Samsung Electronics, I design and deliver an internal AX Agent Platform on AWS EKS and have supported a global B2C generative AI service on Azure through UK rollout and early production stabilization.",
-      "Hands-on with Python, Kubernetes, cloud-native architecture, API and runtime integration, CI/CD, observability, authentication and authorization, and incident response. I carry delivery from architecture and implementation through enterprise integration, rollout, and production operation."
+      "AI platform and reliability engineer with about eight years of experience delivering governed agent applications, cloud platforms, and user-facing services into production. At Samsung Electronics, I design and deliver an internal AX Agent Platform on AWS EKS and supported a global B2C generative AI service on Azure through UK rollout and early production stabilization.",
+      "Hands-on with Python, Kubernetes, cloud-native architecture, agent runtime and API integration, delivery automation, observability, authentication and authorization, and incident response. I carry work from architecture and implementation through enterprise integration, rollout, and production operation."
     ]
   },
 
   "services": [
     {
       "icon": "./assets/images/icon-dev.svg",
-      "title": "Applied AI & Platform Architecture",
-      "description": "Designing AI application and platform architectures that connect agent runtimes, enterprise controls, and cloud-native infrastructure."
+      "title": "Agent Platform & Reliability",
+      "description": "Designing and operating agent platforms that connect runtimes, governed delivery, production controls, and cloud-native infrastructure."
     },
     {
       "icon": "./assets/images/icon-app.svg",
-      "title": "Enterprise Integration",
-      "description": "Connecting AI applications with existing APIs, runtime standards, access controls, security, and governance."
+      "title": "Governed Enterprise Delivery",
+      "description": "Connecting agent applications with existing APIs, runtime standards, access controls, security, and governance."
     },
     {
       "icon": "./assets/images/icon-design.svg",
@@ -267,7 +267,7 @@
       "role": "Built the monitoring path and dashboards used for platform and service operations.",
       "engineering": "Prometheus metrics, Grafana dashboards, OpenTelemetry signals, Loki logging, and alert rules.",
       "outcome": "Improved operational visibility for incident detection and runtime analysis.",
-      "relevance": "Observability is central to reliable AI/platform systems and manufacturing-grade service operations.",
+      "relevance": "Observability is central to reliable AI/platform systems and production-grade service operations.",
       "technologies": ["Grafana", "Prometheus", "OpenTelemetry", "Loki"],
       "image": "./assets/images/thumb-observability-stack.svg",
       "detailedImage": "./assets/images/thumb-observability-stack.svg",
