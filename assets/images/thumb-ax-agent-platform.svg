@@ -13,23 +13,23 @@
   <text x="44" y="104" fill="#b9b2a7" font-size="17" font-weight="500" font-family="Inter, Arial, sans-serif">AWS EKS · Self-service deployment · Governance</text>
 
   <rect x="64" y="177" width="152" height="92" rx="18" fill="#23262b" stroke="#5d4b2e" stroke-width="2"/>
-  <text x="101" y="214" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">AX App</text>
-  <text x="91" y="242" fill="#d7d2c8" font-size="17" font-weight="500" font-family="Inter, Arial, sans-serif">Deploy</text>
+  <text x="140" y="209" text-anchor="middle" dominant-baseline="central" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">AX App</text>
+  <text x="140" y="237" text-anchor="middle" dominant-baseline="central" fill="#d7d2c8" font-size="17" font-weight="500" font-family="Inter, Arial, sans-serif">Deploy</text>
 
   <rect x="323" y="157" width="154" height="132" rx="22" fill="#202a2f" stroke="#4b7180" stroke-width="2"/>
-  <text x="370" y="198" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">EKS</text>
-  <text x="352" y="228" fill="#e7f8ff" font-size="19" font-weight="650" font-family="Inter, Arial, sans-serif">Agent Runtime</text>
-  <text x="356" y="257" fill="#9fc9d6" font-size="16" font-weight="500" font-family="Inter, Arial, sans-serif">Platform Fit</text>
+  <text x="400" y="193" text-anchor="middle" dominant-baseline="central" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">EKS</text>
+  <text x="400" y="223" text-anchor="middle" dominant-baseline="central" fill="#e7f8ff" font-size="17" font-weight="650" font-family="Inter, Arial, sans-serif">Agent Runtime</text>
+  <text x="400" y="253" text-anchor="middle" dominant-baseline="central" fill="#9fc9d6" font-size="16" font-weight="500" font-family="Inter, Arial, sans-serif">Platform Fit</text>
 
   <rect x="584" y="177" width="152" height="92" rx="18" fill="#23262b" stroke="#5d4b2e" stroke-width="2"/>
-  <text x="606" y="214" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">Domain + Auth</text>
-  <text x="605" y="242" fill="#d7d2c8" font-size="17" font-weight="500" font-family="Inter, Arial, sans-serif">Authorized users</text>
+  <text x="660" y="209" text-anchor="middle" dominant-baseline="central" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">Domain + Auth</text>
+  <text x="660" y="237" text-anchor="middle" dominant-baseline="central" fill="#d7d2c8" font-size="15" font-weight="500" font-family="Inter, Arial, sans-serif">Authorized users</text>
 
   <line x1="216" y1="223" x2="323" y2="223" stroke="#56c1d8" stroke-width="4" stroke-linecap="round"/>
   <line x1="477" y1="223" x2="584" y2="223" stroke="#56c1d8" stroke-width="4" stroke-linecap="round"/>
 
   <rect x="256" y="354" width="288" height="76" rx="18" fill="#211c14" stroke="#d9ae59" stroke-width="2" stroke-dasharray="8 6"/>
-  <text x="330" y="385" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">Existing LLM Gateway</text>
-  <text x="313" y="413" fill="#d7d2c8" font-size="16" font-weight="500" font-family="Inter, Arial, sans-serif">Client-compatible API integration</text>
+  <text x="400" y="378" text-anchor="middle" dominant-baseline="central" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">Existing LLM Gateway</text>
+  <text x="400" y="406" text-anchor="middle" dominant-baseline="central" fill="#d7d2c8" font-size="15" font-weight="500" font-family="Inter, Arial, sans-serif">Client-compatible API integration</text>
   <line x1="400" y1="289" x2="400" y2="354" stroke="#d9ae59" stroke-width="4" stroke-linecap="round"/>
 </svg>

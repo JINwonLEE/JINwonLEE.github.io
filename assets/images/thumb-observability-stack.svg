@@ -19,13 +19,13 @@
   <rect x="174" y="270" width="34" height="116" rx="8" fill="#72b7ff" stroke="#72b7ff" stroke-width="2" opacity="1"/>
   <rect x="230" y="222" width="34" height="164" rx="8" fill="#65d6a4" stroke="#65d6a4" stroke-width="2" opacity="1"/>
   <rect x="286" y="296" width="34" height="90" rx="8" fill="#b69cff" stroke="#b69cff" stroke-width="2" opacity="1"/>
-  <text x="130" y="195" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">Metrics</text>
+  <text x="218" y="187" text-anchor="middle" dominant-baseline="central" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">Metrics</text>
   <rect x="452" y="156" width="248" height="62" rx="16" fill="#222226" stroke="#4c7893" stroke-width="2" opacity="1"/>
   <rect x="452" y="246" width="248" height="62" rx="16" fill="#222226" stroke="#4f795f" stroke-width="2" opacity="1"/>
   <rect x="452" y="336" width="248" height="62" rx="16" fill="#222226" stroke="#66538d" stroke-width="2" opacity="1"/>
-  <text x="489" y="194" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">Prometheus</text>
-  <text x="502" y="284" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">Grafana</text>
-  <text x="520" y="374" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">Loki / OTel</text>
+  <text x="576" y="187" text-anchor="middle" dominant-baseline="central" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">Prometheus</text>
+  <text x="576" y="277" text-anchor="middle" dominant-baseline="central" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">Grafana</text>
+  <text x="576" y="367" text-anchor="middle" dominant-baseline="central" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">Loki / OTel</text>
   <line x1="358" y1="286" x2="452" y2="187" stroke="#d9ae59" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 8"/>
   <line x1="358" y1="286" x2="452" y2="277" stroke="#d9ae59" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 8"/>
   <line x1="358" y1="286" x2="452" y2="367" stroke="#d9ae59" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 8"/>

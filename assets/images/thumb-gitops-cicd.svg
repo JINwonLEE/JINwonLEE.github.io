@@ -15,20 +15,20 @@
   <text x="44" y="70" fill="#fff8ea" font-size="30" font-weight="750" font-family="Inter, Arial, sans-serif">GitOps CI/CD Pipeline</text>
   <text x="44" y="104" fill="#b9b2a7" font-size="17" font-weight="500" font-family="Inter, Arial, sans-serif">ArgoCD · Python automation · security checks</text>
   <rect x="64" y="172" width="126" height="100" rx="18" fill="#222226" stroke="#5d4b2e" stroke-width="2" opacity="1"/>
-  <text x="97" y="213" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">Git</text>
-  <text x="92" y="243" fill="#d7d2c8" font-size="17" font-weight="500" font-family="Inter, Arial, sans-serif">Source</text>
+  <text x="127" y="207" text-anchor="middle" dominant-baseline="central" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">Git</text>
+  <text x="127" y="237" text-anchor="middle" dominant-baseline="central" fill="#d7d2c8" font-size="17" font-weight="500" font-family="Inter, Arial, sans-serif">Source</text>
   <rect x="250" y="172" width="126" height="100" rx="18" fill="#20262a" stroke="#4c7893" stroke-width="2" opacity="1"/>
-  <text x="280" y="213" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">Scan</text>
-  <text x="278" y="243" fill="#d7d2c8" font-size="17" font-weight="500" font-family="Inter, Arial, sans-serif">DevSecOps</text>
+  <text x="313" y="207" text-anchor="middle" dominant-baseline="central" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">Scan</text>
+  <text x="313" y="237" text-anchor="middle" dominant-baseline="central" fill="#d7d2c8" font-size="17" font-weight="500" font-family="Inter, Arial, sans-serif">DevSecOps</text>
   <rect x="436" y="172" width="126" height="100" rx="18" fill="#25232b" stroke="#66538d" stroke-width="2" opacity="1"/>
-  <text x="465" y="213" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">ArgoCD</text>
-  <text x="466" y="243" fill="#d7d2c8" font-size="17" font-weight="500" font-family="Inter, Arial, sans-serif">GitOps</text>
+  <text x="499" y="207" text-anchor="middle" dominant-baseline="central" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">ArgoCD</text>
+  <text x="499" y="237" text-anchor="middle" dominant-baseline="central" fill="#d7d2c8" font-size="17" font-weight="500" font-family="Inter, Arial, sans-serif">GitOps</text>
   <rect x="622" y="172" width="126" height="100" rx="18" fill="#202a26" stroke="#58805a" stroke-width="2" opacity="1"/>
-  <text x="647" y="213" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">K8s</text>
-  <text x="646" y="243" fill="#d7d2c8" font-size="17" font-weight="500" font-family="Inter, Arial, sans-serif">Deploy</text>
+  <text x="685" y="207" text-anchor="middle" dominant-baseline="central" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">K8s</text>
+  <text x="685" y="237" text-anchor="middle" dominant-baseline="central" fill="#d7d2c8" font-size="17" font-weight="500" font-family="Inter, Arial, sans-serif">Deploy</text>
   <line x1="190" y1="222" x2="250" y2="222" stroke="#d9ae59" stroke-width="4" stroke-linecap="round"/>
   <line x1="376" y1="222" x2="436" y2="222" stroke="#d9ae59" stroke-width="4" stroke-linecap="round"/>
   <line x1="562" y1="222" x2="622" y2="222" stroke="#d9ae59" stroke-width="4" stroke-linecap="round"/>
   <rect x="260" y="338" width="280" height="50" rx="14" fill="#211c14" stroke="#d9ae59" stroke-width="2" opacity="1"/>
-  <text x="321" y="371" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">Repeatable release flow</text>
+  <text x="400" y="363" text-anchor="middle" dominant-baseline="central" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">Repeatable release flow</text>
 </svg>

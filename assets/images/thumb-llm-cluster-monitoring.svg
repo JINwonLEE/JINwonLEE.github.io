@@ -13,18 +13,18 @@
     <g fill="none" stroke="#9caba4" stroke-width="2">
       <path d="M256 254h30m-8-7 8 7-8 7M506 254h30m-8-7 8 7-8 7"/>
     </g>
-    <text x="66" y="210" fill="#e88069" font-size="14" font-weight="700">01 / DETECT</text>
-    <text x="316" y="210" fill="#67c7e8" font-size="14" font-weight="700">02 / ANALYZE</text>
-    <text x="566" y="210" fill="#70d79e" font-size="14" font-weight="700">03 / REPORT</text>
-    <g fill="#f7f9f8" font-size="24" font-weight="700">
-      <text x="66" y="255">Cluster errors</text>
-      <text x="316" y="255">LLM analysis</text>
-      <text x="566" y="255">Email report</text>
+    <text x="150" y="214" text-anchor="middle" dominant-baseline="central" fill="#e88069" font-size="14" font-weight="700">01 / DETECT</text>
+    <text x="400" y="214" text-anchor="middle" dominant-baseline="central" fill="#67c7e8" font-size="14" font-weight="700">02 / ANALYZE</text>
+    <text x="650" y="214" text-anchor="middle" dominant-baseline="central" fill="#70d79e" font-size="14" font-weight="700">03 / REPORT</text>
+    <g fill="#f7f9f8" font-size="24" font-weight="700" text-anchor="middle" dominant-baseline="central">
+      <text x="150" y="254">Cluster errors</text>
+      <text x="400" y="254">LLM analysis</text>
+      <text x="650" y="254">Email report</text>
     </g>
-    <g fill="#b8c6c0" font-size="16">
-      <text x="66" y="294">Internal cluster</text>
-      <text x="316" y="294">Issue interpretation</text>
-      <text x="566" y="294">Suggested next steps</text>
+    <g fill="#b8c6c0" font-size="16" text-anchor="middle" dominant-baseline="central">
+      <text x="150" y="294">Internal cluster</text>
+      <text x="400" y="294">Issue interpretation</text>
+      <text x="650" y="294">Suggested next steps</text>
     </g>
     <path d="M44 378h712" stroke="#39453e"/>
     <text x="44" y="416" fill="#d9e3de" font-size="18">Problem summary + analysis + remediation suggestions</text>

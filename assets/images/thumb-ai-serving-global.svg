@@ -15,18 +15,18 @@
   <text x="44" y="70" fill="#fff8ea" font-size="30" font-weight="750" font-family="Inter, Arial, sans-serif">Global Generative AI Service</text>
   <text x="44" y="104" fill="#b9b2a7" font-size="17" font-weight="500" font-family="Inter, Arial, sans-serif">Azure · Kubernetes · Model Serving</text>
   <rect x="86" y="188" width="130" height="86" rx="18" fill="#23262b" stroke="#5d4b2e" stroke-width="2" opacity="1"/>
-  <text x="119" y="220" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">Azure</text>
-  <text x="114" y="247" fill="#d7d2c8" font-size="17" font-weight="500" font-family="Inter, Arial, sans-serif">Global AI</text>
+  <text x="151" y="217" text-anchor="middle" dominant-baseline="central" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">Azure</text>
+  <text x="151" y="245" text-anchor="middle" dominant-baseline="central" fill="#d7d2c8" font-size="17" font-weight="500" font-family="Inter, Arial, sans-serif">Global AI</text>
   <rect x="333" y="163" width="138" height="132" rx="22" fill="#202a2f" stroke="#4b7180" stroke-width="2" opacity="1"/>
-  <text x="361" y="205" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">K8s</text>
-  <text x="360" y="233" fill="#e7f8ff" font-size="19" font-weight="650" font-family="Inter, Arial, sans-serif">Serving</text>
-  <text x="371" y="260" fill="#9fc9d6" font-size="16" font-weight="500" font-family="Inter, Arial, sans-serif">Pods</text>
+  <text x="402" y="201" text-anchor="middle" dominant-baseline="central" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">K8s</text>
+  <text x="402" y="229" text-anchor="middle" dominant-baseline="central" fill="#e7f8ff" font-size="19" font-weight="650" font-family="Inter, Arial, sans-serif">Serving</text>
+  <text x="402" y="257" text-anchor="middle" dominant-baseline="central" fill="#9fc9d6" font-size="16" font-weight="500" font-family="Inter, Arial, sans-serif">Pods</text>
   <rect x="586" y="188" width="128" height="86" rx="18" fill="#23262b" stroke="#5d4b2e" stroke-width="2" opacity="1"/>
-  <text x="611" y="220" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">Users</text>
-  <text x="608" y="247" fill="#d7d2c8" font-size="17" font-weight="500" font-family="Inter, Arial, sans-serif">B2C Traffic</text>
+  <text x="650" y="217" text-anchor="middle" dominant-baseline="central" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">Users</text>
+  <text x="650" y="245" text-anchor="middle" dominant-baseline="central" fill="#d7d2c8" font-size="17" font-weight="500" font-family="Inter, Arial, sans-serif">B2C Traffic</text>
   <line x1="216" y1="231" x2="333" y2="231" stroke="#56c1d8" stroke-width="4" stroke-linecap="round"/>
   <line x1="471" y1="231" x2="586" y2="231" stroke="#56c1d8" stroke-width="4" stroke-linecap="round"/>
   <path d="M400 330 C340 330 306 360 306 396 C306 426 330 444 400 444 C470 444 494 426 494 396 C494 360 460 330 400 330Z" fill="#211c14" stroke="#d9ae59" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="354" y="392" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">UK rollout</text>
-  <text x="344" y="420" fill="#d7d2c8" font-size="17" font-weight="500" font-family="Inter, Arial, sans-serif">readiness</text>
+  <text x="400" y="373" text-anchor="middle" dominant-baseline="central" fill="#f2c46d" font-size="18" font-weight="650" font-family="Inter, Arial, sans-serif">UK rollout</text>
+  <text x="400" y="401" text-anchor="middle" dominant-baseline="central" fill="#d7d2c8" font-size="17" font-weight="500" font-family="Inter, Arial, sans-serif">readiness</text>
 </svg>
