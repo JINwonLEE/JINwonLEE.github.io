@@ -14,6 +14,8 @@ Role-specific CV variants change emphasis without changing career facts:
 - Platform/SRE: cloud runtime, delivery automation, observability, incident response, and security controls
 - Applied AI: agent application delivery, LLM-assisted incident analysis, access control, model integration, rollout, and production operation
 
+The public website lists only **English CV** (`CV-Eng.pdf`) and **Korean CV** (`CV-Kor.pdf`). Do not add role-specific variants to the navigation, hero, or download list. Existing variant files remain available at their historical URLs but are not advertised on the website.
+
 ## September changes
 
 - Removed the decorative `Target Fit` block, skill chips, and arbitrary percentage bars.

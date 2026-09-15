@@ -71,8 +71,12 @@ class PublicClaimsTest(unittest.TestCase):
             (ROOT / filename).read_text(encoding="utf-8")
             for filename in ("index.html", "index-ko.html")
         )
-        for filename in STABLE_CVS:
+        for filename in ("CV-Eng.pdf", "CV-Kor.pdf"):
             self.assertIn(filename, combined)
+        for filename in ("CV-Platform-SRE.pdf", "CV-Applied-AI.pdf"):
+            self.assertNotIn(filename, combined)
+        self.assertIn(">English CV</a>", combined)
+        self.assertIn(">Korean CV</a>", combined)
         for tool in EXCLUDED_TOOLS:
             self.assertNotIn(tool, combined)
         self.assertIn("Bash-based one-click Kubernetes", combined)
