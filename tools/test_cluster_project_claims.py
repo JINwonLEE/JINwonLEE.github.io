@@ -61,7 +61,8 @@ class PublicClaimsTest(unittest.TestCase):
             with self.subTest(pdf=filename):
                 self.assertIn("130,000", text)
                 self.assertIn("Bash", text)
-                self.assertIn("Enterprise AI Assistant", text)
+                self.assertIn("LLM", text)
+                self.assertNotIn("Enterprise AI Assistant", text)
                 for tool in EXCLUDED_TOOLS:
                     self.assertNotIn(tool, text)
 
@@ -76,6 +77,34 @@ class PublicClaimsTest(unittest.TestCase):
             self.assertNotIn(tool, combined)
         self.assertIn("Bash-based one-click Kubernetes", combined)
         self.assertIn("Bash 기반 원클릭 Kubernetes", combined)
+
+    def test_monitoring_project_replaces_assistant_across_public_outputs(self):
+        for language, title, email in (
+            ("en", "LLM-Assisted Cluster Monitoring", "email"),
+            ("ko", "LLM 기반 클러스터 모니터링", "이메일"),
+        ):
+            config = "portfolio-config.json" if language == "en" else "portfolio-config-ko.json"
+            data = json.loads((ROOT / config).read_text(encoding="utf-8"))
+            project = next(p for p in data["projects"] if p["title"] == title)
+            self.assertFalse(project["url"])
+            self.assertIn(email, project["detailedDescription"].lower())
+            self.assertNotIn("Enterprise AI Assistant", json.dumps(data))
+            self.assertEqual(["LLM", "Cluster Monitoring", "Email Alerts"], project["technologies"])
+            html = "index.html" if language == "en" else "index-ko.html"
+            content = (ROOT / html).read_text(encoding="utf-8")
+            self.assertIn(title, content)
+            self.assertNotIn("enterprise-ai-assistant", content)
+            outputs = (
+                ("CV-Eng.pdf", "CV-Applied-AI.pdf", "CV-Platform-SRE.pdf", "Portfolio-Eng.pdf")
+                if language == "en" else ("CV-Kor.pdf", "Portfolio-Kor.pdf")
+            )
+            for filename in outputs:
+                text = pdf_text(ROOT / filename)
+                with self.subTest(pdf=filename):
+                    self.assertIn(title, text)
+                    self.assertIn(email, text.lower())
+                    self.assertNotIn("Enterprise AI Assistant", text)
+                    self.assertNotIn("projects/enterprise-ai-assistant", text)
 
 
 if __name__ == "__main__":

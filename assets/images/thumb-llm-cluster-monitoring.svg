@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">LLM-Assisted Cluster Monitoring</title>
+  <desc id="desc">Conceptual workflow from cluster error detection to LLM analysis and email reports containing problems, analysis, and suggested remediation.</desc>
+  <rect width="800" height="500" fill="#191c20"/>
+  <g font-family="Arial, sans-serif">
+    <text x="44" y="70" fill="#f7f9f8" font-size="30" font-weight="700">LLM-Assisted Cluster Monitoring</text>
+    <text x="44" y="104" fill="#b8c6c0" font-size="17">Error detection / Issue analysis / Email reporting</text>
+    <g fill="#23282d" stroke-width="2">
+      <rect x="44" y="174" width="212" height="160" rx="8" stroke="#d95f45"/>
+      <rect x="294" y="174" width="212" height="160" rx="8" stroke="#67c7e8"/>
+      <rect x="544" y="174" width="212" height="160" rx="8" stroke="#70d79e"/>
+    </g>
+    <g fill="none" stroke="#9caba4" stroke-width="2">
+      <path d="M256 254h30m-8-7 8 7-8 7M506 254h30m-8-7 8 7-8 7"/>
+    </g>
+    <text x="66" y="210" fill="#e88069" font-size="14" font-weight="700">01 / DETECT</text>
+    <text x="316" y="210" fill="#67c7e8" font-size="14" font-weight="700">02 / ANALYZE</text>
+    <text x="566" y="210" fill="#70d79e" font-size="14" font-weight="700">03 / REPORT</text>
+    <g fill="#f7f9f8" font-size="24" font-weight="700">
+      <text x="66" y="255">Cluster errors</text>
+      <text x="316" y="255">LLM analysis</text>
+      <text x="566" y="255">Email report</text>
+    </g>
+    <g fill="#b8c6c0" font-size="16">
+      <text x="66" y="294">Internal cluster</text>
+      <text x="316" y="294">Issue interpretation</text>
+      <text x="566" y="294">Suggested next steps</text>
+    </g>
+    <path d="M44 378h712" stroke="#39453e"/>
+    <text x="44" y="416" fill="#d9e3de" font-size="18">Problem summary + analysis + remediation suggestions</text>
+    <text x="44" y="449" fill="#9caba4" font-size="15">Personal project for internal cluster operations</text>
+  </g>
+</svg>

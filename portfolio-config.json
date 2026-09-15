@@ -147,19 +147,19 @@
 
   "projects": [
     {
-      "title": "Enterprise AI Assistant",
+      "title": "LLM-Assisted Cluster Monitoring",
       "category": "ai/ml",
-      "description": "Personal reference application with access-aware retrieval, grounded citations, audit events, and model API integration.",
-      "detailedDescription": "Built a synthetic-data reference assistant combining SQLite FTS5 retrieval, role filtering before model context is assembled, grounded citations, audit events, a FastAPI interface, an offline provider, and optional OpenAI Responses API integration.",
-      "problem": "Explore document retrieval and role-based access control in a personal AI application.",
-      "role": "Implemented the reference application's retrieval path, access policy, provider interface, audit events, and browser demo.",
-      "engineering": "Python, FastAPI, SQLite FTS5/BM25, role-based filtering, citations, audit events, and optional OpenAI Responses API integration.",
-      "outcome": "Published an interactive browser demo and inspectable backend reference with automated access-safety and retrieval tests.",
-      "relevance": "A supporting personal project demonstrating retrieval, access control, and API integration.",
-      "technologies": ["Python", "FastAPI", "SQLite FTS5", "RBAC", "OpenAI Responses API"],
-      "image": "./assets/images/enterprise-ai-assistant.png",
-      "detailedImage": "./assets/images/enterprise-ai-assistant.png",
-      "url": "./projects/enterprise-ai-assistant/web/",
+      "description": "Personal project for internal cluster operations: error detection, LLM analysis, and email reports with suggested remediation steps.",
+      "detailedDescription": "Built a monitoring system for internal clusters that detects errors, uses an LLM to analyze issues, and emails problem summaries, analysis, and suggested remediation steps to the operator.",
+      "problem": "Cluster errors need interpretation and practical troubleshooting guidance, beyond a basic alert.",
+      "role": "Built the monitoring and reporting workflow as a personal project for internal cluster operations.",
+      "engineering": "Connected error detection, LLM-based issue analysis, and email delivery of problem summaries and remediation suggestions.",
+      "outcome": "Delivered email reports containing the detected problem, LLM analysis, and suggested steps for the operator to review.",
+      "relevance": "Applies LLM analysis to cluster operations and operator-facing incident reporting.",
+      "technologies": ["LLM", "Cluster Monitoring", "Email Alerts"],
+      "image": "./assets/images/thumb-llm-cluster-monitoring.svg",
+      "detailedImage": "./assets/images/thumb-llm-cluster-monitoring.svg",
+      "url": "",
       "featured": false
     },
     {

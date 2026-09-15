@@ -409,10 +409,9 @@ def korean_experiences() -> tuple[Experience, ...]:
     )
 
 
-PUBLIC_AI_PROJECT = Project(
-    "Enterprise AI Assistant | Public reference implementation",
-    "Personal reference application combining SQLite FTS5 retrieval, role-based access filtering, grounded citations, audit events, FastAPI, and optional OpenAI Responses API integration.",
-    "jinwonlee.github.io/projects/enterprise-ai-assistant/web/",
+CLUSTER_MONITORING_PROJECT = Project(
+    "LLM-Assisted Cluster Monitoring | Personal project",
+    "Built a monitoring system for internal clusters that detects errors, uses an LLM to analyze issues, and emails problem summaries, analysis, and suggested remediation steps.",
 )
 
 
@@ -459,7 +458,7 @@ def variants() -> tuple[ResumeVariant, ...]:
                     "Global B2C Generative AI Service",
                     "Supported UK rollout readiness, initial production operations, incident response, and early stabilization for a Microsoft-collaborative consumer AI service on Azure.",
                 ),
-                PUBLIC_AI_PROJECT,
+                CLUSTER_MONITORING_PROJECT,
             ),
         ),
         ResumeVariant(
@@ -488,10 +487,7 @@ def variants() -> tuple[ResumeVariant, ...]:
                     "Kubernetes Cluster Automation",
                     "Designed and developed a Bash-based one-click provisioning system for repeatable developer Kubernetes environments.",
                 ),
-                Project(
-                    "Centralized Observability Stack",
-                    "Deployed Grafana, Prometheus, and OpenTelemetry for shared service visibility, dashboards, and operational diagnosis.",
-                ),
+                CLUSTER_MONITORING_PROJECT,
                 Project(
                     "High-throughput Packet Mirroring",
                     "Developed a resource-aware Linux application measured at up to 130,000 packets per second.",
@@ -517,8 +513,8 @@ def variants() -> tuple[ResumeVariant, ...]:
                 "UK rollout and production stabilization for an Azure-based generative AI service",
             ),
             skills=(
-                ("Applied AI", "Agent application delivery, retrieval, grounded citations, model inference, LLM Gateway API integration"),
-                ("Software", "Python, FastAPI, SQLite FTS5, Bash, Linux, API and runtime integration, asynchronous flows"),
+                ("Applied AI", "Agent application delivery, LLM-assisted incident analysis, model inference, LLM Gateway API integration"),
+                ("Software", "Python, Bash, Linux, API and runtime integration, asynchronous flows"),
                 ("Cloud Platform", "AWS EKS, Azure, Kubernetes, OpenShift, Docker, Helm/Helmfile, ArgoCD"),
                 ("Production Quality", "Authentication, authorization, governance, observability, incident response, rollout stabilization"),
             ),
@@ -532,7 +528,7 @@ def variants() -> tuple[ResumeVariant, ...]:
                     "TmaxOS AI Assistant",
                     "Built model inference, preprocessing, system integration, and asynchronous interaction flows for an OS-level AI assistant.",
                 ),
-                PUBLIC_AI_PROJECT,
+                CLUSTER_MONITORING_PROJECT,
             ),
         ),
         ResumeVariant(
@@ -570,9 +566,8 @@ def variants() -> tuple[ResumeVariant, ...]:
                     "Microsoft와 협업한 Azure 기반 소비자 AI 서비스의 UK 출시 준비, 초기 프로덕션 운영, 장애 대응 및 안정화를 수행했습니다.",
                 ),
                 Project(
-                    "Enterprise AI Assistant | 개인 레퍼런스 구현",
-                    "SQLite FTS5 검색, 역할 기반 접근 필터, 근거 인용, 감사 이벤트, FastAPI 및 선택적 OpenAI Responses API 연동을 포함한 개인 레퍼런스 애플리케이션입니다.",
-                    "jinwonlee.github.io/projects/enterprise-ai-assistant/web/",
+                    "LLM 기반 클러스터 모니터링 | 개인 프로젝트",
+                    "사내 클러스터의 오류를 감지하고 LLM으로 분석해, 문제 요약·분석 내용·해결 방법을 이메일로 전달하는 모니터링 시스템을 만들었습니다.",
                 ),
             ),
         ),

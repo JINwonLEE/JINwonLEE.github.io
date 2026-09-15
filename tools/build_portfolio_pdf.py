@@ -205,8 +205,8 @@ class PortfolioPDF:
 
     def diagram_labels(self, project: Project) -> Sequence[str]:
         title = project.title
-        if "Enterprise AI Assistant" in title:
-            return ["Docs\nRetrieval", "RBAC\nFilter", "Citations\nAudit"]
+        if "LLM-Assisted Cluster" in title or "LLM 기반 클러스터" in title:
+            return ["Cluster\nErrors", "LLM\nAnalysis", "Email\nNext steps"]
         if "AX Agent" in title:
             return ["AX Apps\nDeploy", "EKS\nPlatform", "Domain/Auth\nLLM Gateway"]
         if "생성형 AI" in title or "Generative AI" in title:
@@ -232,8 +232,8 @@ class PortfolioPDF:
     def capability_point(self, project: Project) -> str:
         title = project.title
         if self.lang == "en":
-            if "Enterprise AI Assistant" in title:
-                return "A supporting personal project demonstrating document retrieval, access control, and model API integration."
+            if "LLM-Assisted Cluster" in title:
+                return "Applies LLM analysis to cluster operations and operator-facing incident reporting."
             if "AX Agent" in title:
                 return "Experience building a governed self-service agent platform with runtime compatibility, access control, and enterprise LLM integration."
             if "Generative AI" in title:
@@ -256,8 +256,8 @@ class PortfolioPDF:
                 return "Research experience on network bottlenecks, resource placement, and performance improvement for distributed training workloads."
             return "Experience integrating AI functionality with OS-level behavior, asynchronous processing, and user interaction."
 
-        if "Enterprise AI Assistant" in title:
-            return "문서 검색, 접근 제어 및 모델 API 연동 경험을 보완하는 개인 프로젝트입니다."
+        if "LLM 기반 클러스터" in title:
+            return "LLM을 클러스터 운영과 운영자 대상 오류 분석·보고에 적용한 경험입니다."
         if "AX Agent" in title:
             return "런타임 호환성, 셀프서비스 배포, 접근 제어, 사내 LLM 연동을 하나의 거버넌스 플랫폼으로 구현한 경험입니다."
         if "생성형 AI" in title:
@@ -403,7 +403,7 @@ def build_pdf(lang: str) -> None:
             "고성능 패킷 미러링 애플리케이션",
             "분산 CNN 트레이닝 시스템",
             "TmaxOS 기반 Siri형 AI 어시스턴트",
-            "Enterprise AI Assistant",
+            "LLM 기반 클러스터 모니터링",
         ]
         if is_ko
         else [
@@ -416,7 +416,7 @@ def build_pdf(lang: str) -> None:
             "High-throughput Packet Mirroring Application",
             "Distributed CNN Training System",
             "Siri-like AI Assistant on TmaxOS",
-            "Enterprise AI Assistant",
+            "LLM-Assisted Cluster Monitoring",
         ]
     )
     by_title = {project.title: project for project in projects}

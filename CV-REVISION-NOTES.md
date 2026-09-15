@@ -12,7 +12,7 @@ Role-specific CV variants change emphasis without changing career facts:
 
 - AI Platform & Reliability: agent platform delivery, governed runtime integration, observability, incident response, and production stabilization
 - Platform/SRE: cloud runtime, delivery automation, observability, incident response, and security controls
-- Applied AI: agent application delivery, retrieval, access control, model/provider integration, rollout, and production operation
+- Applied AI: agent application delivery, LLM-assisted incident analysis, access control, model integration, rollout, and production operation
 
 ## September changes
 
@@ -21,7 +21,7 @@ Role-specific CV variants change emphasis without changing career facts:
 - Added the UNIST master's thesis: `Convergence Aware CNN Training`.
 - Kept one-click Kubernetes provisioning as Bash-based work only.
 - Removed Terraform, Ansible, standalone MLOps wording, and LLM Gateway design ownership.
-- Added the public Enterprise AI Assistant as a clearly labeled reference implementation.
+- Replaced the public Enterprise AI Assistant reference with the user's LLM-assisted cluster monitoring project.
 - Added stable public files for AI Platform & Reliability, Platform/SRE, Applied AI, and Korean CVs.
 - Refreshed old tracked PDF URLs with the latest content so historical links no longer serve stale versions.
 
@@ -37,12 +37,13 @@ Role-specific CV variants change emphasis without changing career facts:
 - Linux packet processing measured at up to 130,000 packets per second
 - Distributed CNN research reporting up to 2.3x training speedup
 - AI assistant inference, preprocessing, system integration, and asynchronous flows at TmaxOS
+- Personal LLM-assisted monitoring system for internal clusters: error detection, LLM analysis, and email reports containing problems, analysis, and suggested remediation steps
 
-## Public reference boundary
+## Personal project boundary | September 15
 
-The Enterprise AI Assistant is a supporting personal/public reference implementation using synthetic documents. Describe retrieval, access policy, citations, audit events, FastAPI, and optional model API integration. Place it after professional platform and production work.
+The user described a personal monitoring project for internal cluster operations. It detects errors, uses an LLM to analyze them, and emails the problem, analysis, and suggested solutions to the operator. Use this project in the website, both portfolio languages, and all current CV variants instead of Enterprise AI Assistant. Keep professional AX Agent Platform and production reliability work as the primary evidence.
 
-It must not be described as a Samsung production deployment or as evidence of external customer ownership.
+Do not infer the model/provider, programming language, monitoring stack, scale, measured impact, or automatic remediation. Do not attach the old assistant's demo/source links to this project. The old reference code may remain in the repository but is no longer a featured CV or portfolio claim.
 
 ## Evaluation emphasis correction | September 15
 

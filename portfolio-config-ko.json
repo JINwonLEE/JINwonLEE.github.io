@@ -147,19 +147,19 @@
 
   "projects": [
     {
-      "title": "Enterprise AI Assistant",
+      "title": "LLM 기반 클러스터 모니터링",
       "category": "ai/ml",
-      "description": "권한 인지 검색, 근거 인용, 감사 이벤트 및 모델 API 연동을 포함한 개인 레퍼런스 애플리케이션입니다.",
-      "detailedDescription": "합성 데이터 기반 레퍼런스 어시스턴트에 SQLite FTS5 검색, 모델 컨텍스트 구성 전 역할 필터, 근거 인용, 감사 이벤트, FastAPI 인터페이스, 오프라인 Provider 및 선택적 OpenAI Responses API 연동을 구현했습니다.",
-      "problem": "개인 AI 애플리케이션에서 문서 검색과 역할 기반 접근 제어를 구현하는 것이 목표였습니다.",
-      "role": "레퍼런스 애플리케이션의 검색 경로, 접근 정책, Provider 인터페이스, 감사 이벤트 및 브라우저 데모를 구현했습니다.",
-      "engineering": "Python, FastAPI, SQLite FTS5/BM25, 역할 기반 필터, 근거 인용, 감사 이벤트 및 선택적 OpenAI Responses API 연동.",
-      "outcome": "인터랙티브 브라우저 데모와 자동화된 접근 안전성·검색 테스트를 포함한 백엔드 레퍼런스를 공개했습니다.",
-      "relevance": "검색, 접근 제어 및 API 연동 경험을 보완하는 개인 프로젝트입니다.",
-      "technologies": ["Python", "FastAPI", "SQLite FTS5", "RBAC", "OpenAI Responses API"],
-      "image": "./assets/images/enterprise-ai-assistant.png",
-      "detailedImage": "./assets/images/enterprise-ai-assistant.png",
-      "url": "./projects/enterprise-ai-assistant/web/",
+      "description": "사내 클러스터 오류 감지, LLM 분석, 해결 방법의 이메일 보고를 연결한 개인 프로젝트입니다.",
+      "detailedDescription": "사내 클러스터의 오류를 감지하고 LLM으로 분석해, 문제 요약·분석 내용·해결 방법을 운영자에게 이메일로 전달하는 모니터링 시스템을 만들었습니다.",
+      "problem": "클러스터 오류에 대한 단순 알림을 넘어, 문제 해석과 대응 방법을 함께 확인할 수 있어야 했습니다.",
+      "role": "사내 클러스터 운영을 위한 모니터링·보고 흐름을 개인 프로젝트로 구현했습니다.",
+      "engineering": "오류 감지, LLM 기반 문제 분석, 문제 요약과 해결 방법의 이메일 전달을 연결했습니다.",
+      "outcome": "감지된 문제, LLM 분석 내용, 운영자가 검토할 해결 방법을 담은 이메일 보고를 구현했습니다.",
+      "relevance": "LLM을 클러스터 운영과 운영자 대상 오류 분석·보고에 적용한 경험입니다.",
+      "technologies": ["LLM", "Cluster Monitoring", "Email Alerts"],
+      "image": "./assets/images/thumb-llm-cluster-monitoring.svg",
+      "detailedImage": "./assets/images/thumb-llm-cluster-monitoring.svg",
+      "url": "",
       "featured": false
     },
     {
