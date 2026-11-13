@@ -20,9 +20,9 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/style.css?v=20261113-3">
+  <link rel="stylesheet" href="./assets/css/style.css?v=20261113-4">
   <script>document.documentElement.classList.add("js");</script>
-  <script src="./assets/js/script.js?v=20261113-3" defer></script>
+  <script src="./assets/js/script.js?v=20261113-4" defer></script>
 </head>
 <body id="top">
   <canvas id="field" aria-hidden="true"></canvas>
@@ -48,10 +48,10 @@
       </div>
       <div class="rail-actions">
         <div class="cv-links" aria-label="CV and portfolio downloads">
-            <a href="./CV-Eng.pdf?v=20261113-3" target="_blank" rel="noopener">English CV</a>
-            <a href="./CV-Kor.pdf?v=20261113-3" target="_blank" rel="noopener">Korean CV</a>
-            <a href="./Portfolio-Eng.pdf?v=20261113-3" target="_blank" rel="noopener">English portfolio</a>
-            <a href="./Portfolio-Kor.pdf?v=20261113-3" target="_blank" rel="noopener">Korean portfolio</a>
+            <a href="./CV-Eng.pdf?v=20261113-4" target="_blank" rel="noopener">English CV</a>
+            <a href="./CV-Kor.pdf?v=20261113-4" target="_blank" rel="noopener">Korean CV</a>
+            <a href="./Portfolio-Eng.pdf?v=20261113-4" target="_blank" rel="noopener">English portfolio</a>
+            <a href="./Portfolio-Kor.pdf?v=20261113-4" target="_blank" rel="noopener">Korean portfolio</a>
         </div>
         <div class="rail-links">
           <a href="https://github.com/JINwonLEE" target="_blank" rel="noopener">GitHub</a>
@@ -129,16 +129,16 @@
             </dl>
           </div>
         </article>
-        <article class="project-feature glow offernow-case">
-          <div class="project-media"><img src="./assets/images/thumb-offernow.svg?v=20261113" alt="OfferNow workflow from CV upload to evidence-linked job matches" width="800" height="500" loading="lazy"></div>
+        <article class="project-feature glow">
+          <div class="project-media"><img src="./assets/images/thumb-enterprise-chatbot.svg?v=20260915-align1" alt="Enterprise AI chatbot platform overview" width="800" height="500" loading="lazy"></div>
           <div class="project-body">
-            <div class="project-meta"><span>Sep. 2026 – Present</span><span>Personal project</span></div>
-            <h3>OfferNow</h3>
-            <p>A CV-based job recommendation service for Korean IT roles. Job seekers upload a PDF or DOCX CV without signing up, the service turns it into an evidence-linked career profile, and every recommended official posting shows its requirements next to the CV evidence that supports them. Postings are collected daily from 50+ companies&#x27; official career sites, reading robots.txt before every request.</p>
+            <div class="project-meta"><span>2024–2025</span><span>Samsung Research</span><span>30,000 employees</span></div>
+            <h3>Company-wide AI Chatbot Platform</h3>
+            <p>Led production delivery and application reliability for a company-wide AI chatbot serving 30,000 employees on internal Kubernetes clusters. Owned releases across development, staging, and production, connected them with security and operational requirements, and deployed the observability used for shared service visibility and operational diagnosis.</p>
             <dl class="case-facts">
-                <div><dt>Ownership</dt><dd>Product, backend, mobile and web client, data collection, and deployment</dd></div>
-                <div><dt>Controls</dt><dd>PostgreSQL row-level security, anonymous sessions, per-user LLM limits and cost logging</dd></div>
-                <div><dt>Stack</dt><dd>Expo/React Native, FastAPI, PostgreSQL, Docker Compose, nginx</dd></div>
+                <div><dt>Ownership</dt><dd>Production delivery, releases, and application reliability</dd></div>
+                <div><dt>Scale</dt><dd>30,000 employees on internal Kubernetes clusters</dd></div>
+                <div><dt>Stack</dt><dd>Kubernetes, ArgoCD, Helm/Helmfile, GitHub Actions, OpenTelemetry</dd></div>
             </dl>
           </div>
         </article>
@@ -154,12 +154,6 @@
             <h3>Generative AI Service UK Rollout</h3>
             <p>Collaborated with Microsoft on rollout readiness, initial production operations, incident response, and early stabilization for an Azure-based consumer service.</p>
             <p class="tech-line">Azure · Kubernetes · SRE · Incident response</p>
-          </article>
-          <article class="project-card glow">
-            <div class="project-meta"><span>2024–2025</span><span>30,000 employees</span></div>
-            <h3>Company-wide AI Chatbot Platform</h3>
-            <p>Led production delivery and application reliability across development, staging, and production Kubernetes environments, connecting releases with security and operational requirements.</p>
-            <p class="tech-line">Kubernetes · ArgoCD · Helm/Helmfile · OpenTelemetry</p>
           </article>
           <article class="project-card glow">
             <div class="project-meta"><span>Platform automation</span><span>Developer environments</span></div>
@@ -178,6 +172,12 @@
             <h3>LLM-Assisted Cluster Monitoring</h3>
             <p>Built a monitoring system for internal clusters that detects errors, uses an LLM to analyze issues, and emails problem summaries, analysis, and suggested remediation steps.</p>
             <p class="tech-line">LLM · Cluster Monitoring · Incident Analysis · Email Alerts</p>
+          </article>
+          <article class="project-card glow offernow-case">
+            <div class="project-meta"><span>Sep. 2026 – Present</span><span>Personal project</span></div>
+            <h3>OfferNow</h3>
+            <p>A CV-based job recommendation service for Korean IT roles. It turns an uploaded CV into an evidence-linked profile and shows the CV evidence behind every recommended official posting, collected from 50+ companies&#x27; career sites.</p>
+            <p class="tech-line">Expo · FastAPI · PostgreSQL · LLM · Docker</p>
           </article>
         </div>
         <p class="additional-work">Additional experience: contributed to LLM evaluation work for machine translation. Internal work is described without confidential code or architecture.</p>
