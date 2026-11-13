@@ -248,7 +248,7 @@ class PortfolioPDF:
             if "AX Agent" in title:
                 return "Experience building a governed self-service agent platform with runtime compatibility, access control, and enterprise LLM integration."
             if "Generative AI" in title:
-                return "Experience delivering UK rollout readiness, production stabilization, and incident response for a consumer generative AI service."
+                return "Experience delivering Korea and UK launch readiness, production stabilization, and incident response for a consumer generative AI service."
             if "Chatbot" in title:
                 return "Experience leading application delivery and reliability for tens of thousands of internal users."
             if "AI Services" in title:
@@ -274,7 +274,7 @@ class PortfolioPDF:
         if "AX Agent" in title:
             return "런타임 호환성, 셀프서비스 배포, 접근 제어, 사내 LLM 연동을 하나의 거버넌스 플랫폼으로 구현한 경험입니다."
         if "생성형 AI" in title:
-            return "소비자 대상 생성형 AI 서비스의 UK 출시 준비, 초기 안정화, 장애 대응을 수행한 경험입니다."
+            return "소비자 대상 생성형 AI 서비스의 한국·UK 출시 준비, 초기 안정화, 장애 대응을 수행한 경험입니다."
         if "챗봇" in title:
             return "수만 명 규모의 내부 사용자를 위한 애플리케이션 전달과 신뢰성을 리딩한 경험입니다."
         if "인프라 운영" in title:
@@ -408,30 +408,30 @@ def build_pdf(lang: str) -> None:
     preferred_titles = (
         [
             "사내 AX Agent Platform",
-            "중앙 집중식 모니터링 & 관측성 스택",
-            "글로벌 B2C 생성형 AI 서비스",
+            "B2C 생성형 AI 서비스 (한국·UK)",
             "전사 AI 챗봇 플랫폼 (약 3만 사용자)",
+            "고성능 패킷 미러링 애플리케이션",
+            "TmaxOS 기반 Siri형 AI 어시스턴트",
+            "오퍼나우 (OfferNow)",
+            "LLM 기반 클러스터 모니터링",
+            "중앙 집중식 모니터링 & 관측성 스택",
             "GitOps CI/CD 파이프라인 with ArgoCD",
             "Kubernetes 클러스터 자동화",
-            "고성능 패킷 미러링 애플리케이션",
             "분산 CNN 트레이닝 시스템",
-            "TmaxOS 기반 Siri형 AI 어시스턴트",
-            "LLM 기반 클러스터 모니터링",
-            "오퍼나우 (OfferNow)",
         ]
         if is_ko
         else [
             "Internal AX Agent Platform",
-            "Centralized Monitoring & Observability Stack",
-            "Global B2C Generative AI Service",
+            "B2C Generative AI Service (Korea & UK)",
             "Company-wide AI Chatbot Platform (30K Users)",
+            "High-throughput Packet Mirroring Application",
+            "Siri-like AI Assistant on TmaxOS",
+            "OfferNow",
+            "LLM-Assisted Cluster Monitoring",
+            "Centralized Monitoring & Observability Stack",
             "GitOps CI/CD Pipeline with ArgoCD",
             "Kubernetes Cluster Automation",
-            "High-throughput Packet Mirroring Application",
             "Distributed CNN Training System",
-            "Siri-like AI Assistant on TmaxOS",
-            "LLM-Assisted Cluster Monitoring",
-            "OfferNow",
         ]
     )
     by_title = {project.title: project for project in projects}

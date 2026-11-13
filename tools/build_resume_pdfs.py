@@ -363,7 +363,7 @@ def english_experiences() -> tuple[Experience, ...]:
                 "Design and build an internal AX Agent Platform on AWS EKS, adapting the agent runtime and deployment path to enterprise platform standards.",
                 "Implemented self-service AX application delivery with automatic domain issuance, authorized-only access, and platform controls for authentication, authorization, security, and governance.",
                 "Enabled AX applications to call the existing enterprise LLM Gateway API through platform-side client compatibility and runtime integration.",
-                "Supported a Microsoft-collaborative B2C generative AI service through UK rollout readiness, initial production operations, incident response, and stabilization from Jan. to Jun. 2026.",
+                "Supported a Microsoft-collaborative B2C generative AI service through Korea and UK launch readiness, initial production operations, incident response, and stabilization from Jan. to Jun. 2026.",
             ),
         ),
         Experience(
@@ -414,7 +414,7 @@ def korean_experiences() -> tuple[Experience, ...]:
                 "AWS EKS 기반 사내 AX Agent Platform을 설계·구축하고, 에이전트 런타임과 배포 경로를 사내 플랫폼 표준에 맞게 조정했습니다.",
                 "도메인 자동 발급과 인가된 사용자 전용 접근을 포함한 AX App 셀프서비스 배포 흐름을 구현하고 인증·인가·보안·거버넌스 통제를 담당했습니다.",
                 "AX App이 기존 사내 LLM Gateway API를 호출할 수 있도록 플랫폼 측 클라이언트 호환성과 런타임 연동을 제공했습니다.",
-                "2026.01~06 Microsoft와 협업한 B2C 생성형 AI 서비스의 UK 출시 준비, 초기 운영, 장애 대응 및 안정화를 수행했습니다.",
+                "2026.01~06 Microsoft와 협업한 B2C 생성형 AI 서비스의 한국·UK 출시 준비, 초기 운영, 장애 대응 및 안정화를 수행했습니다.",
             ),
         ),
         Experience(
@@ -470,6 +470,53 @@ OFFERNOW_PROJECT_KO = Project(
 )
 
 
+CORE_PROJECTS_EN = (
+    Project(
+        "Internal AX Agent Platform | Samsung Electronics, 2026 - Present",
+        "Built an AWS EKS platform for governed AX application delivery with runtime adaptation, automatic domains, authorized-only access, and integration with an existing enterprise LLM Gateway API.",
+    ),
+    Project(
+        "B2C Generative AI Service, Korea & UK | Samsung Electronics, Jan. - Jun. 2026",
+        "Ran Korea and UK launch readiness, initial production operations, incident response, and stabilization for a Microsoft-collaborative consumer AI service on Azure.",
+    ),
+    Project(
+        "Company-wide AI Chatbot | Samsung Research, 2024 - 2025",
+        "Led production delivery and reliability for an AI chatbot used by 30,000 employees, with development, staging, and production Kubernetes releases tied to security requirements and Grafana, Prometheus, and OpenTelemetry observability.",
+    ),
+    Project(
+        "High-throughput Packet Mirroring | Samsung Electronics Network Division, 2021 - 2024",
+        "Developed a Linux application that mirrors and forwards up to 130,000 packets per second under constrained system resources.",
+    ),
+    Project(
+        "Siri-like AI Assistant on TmaxOS | TmaxOS, 2019 - 2020",
+        "Built model inference, data preprocessing, system integration, and asynchronous application flows for an OS-level AI assistant.",
+    ),
+)
+
+CORE_PROJECTS_KO = (
+    Project(
+        "사내 AX Agent Platform | 삼성전자, 2026 - 현재",
+        "AWS EKS에서 런타임 조정, 도메인 자동 발급, 인가된 사용자 전용 접근 및 기존 사내 LLM Gateway API 연동을 제공하는 거버넌스형 AX App 배포 플랫폼을 구축했습니다.",
+    ),
+    Project(
+        "B2C 생성형 AI 서비스 한국·UK 출시 | 삼성전자, 2026.01 - 06",
+        "Microsoft와 협업한 Azure 기반 소비자 AI 서비스의 한국·UK 출시 준비, 초기 프로덕션 운영, 장애 대응 및 안정화를 수행했습니다.",
+    ),
+    Project(
+        "전사 AI 챗봇 | Samsung Research, 2024 - 2025",
+        "30,000명의 임직원이 사용하는 전사 AI 챗봇의 프로덕션 전달과 신뢰성을 리딩했습니다. 개발·스테이징·프로덕션 Kubernetes 릴리스를 보안 요구사항과 연결하고 Grafana, Prometheus, OpenTelemetry 관측 환경을 구축했습니다.",
+    ),
+    Project(
+        "고성능 패킷 미러링 | 삼성전자 네트워크사업부, 2021 - 2024",
+        "제한된 시스템 리소스에서 초당 최대 130,000개 패킷을 미러링·전달하는 Linux 애플리케이션을 개발했습니다.",
+    ),
+    Project(
+        "TmaxOS AI 어시스턴트 | TmaxOS, 2019 - 2020",
+        "TmaxOS 기반 Siri형 AI 어시스턴트의 모델 추론, 데이터 전처리, 시스템 연동 및 비동기 애플리케이션 흐름을 개발했습니다.",
+    ),
+)
+
+
 def variants() -> tuple[ResumeVariant, ...]:
     experiences = english_experiences()
     common_skills = (
@@ -491,7 +538,7 @@ def variants() -> tuple[ResumeVariant, ...]:
             evidence=(
                 "AWS EKS platform for governed, self-service AX application delivery",
                 "Production reliability for an enterprise AI service used by 30,000 employees",
-                "UK rollout, incident response, and stabilization for a global B2C generative AI service",
+                "Korea and UK launches, incident response, and stabilization for a B2C generative AI service",
             ),
             skills=(
                 ("Agent Platform", "AWS EKS, agent runtime integration, self-service delivery, automatic domains, existing LLM Gateway API integration"),
@@ -501,20 +548,9 @@ def variants() -> tuple[ResumeVariant, ...]:
             ),
             experiences=experiences,
             projects=(
-                Project(
-                    "Internal AX Agent Platform",
-                    "Built an AWS EKS platform for governed AX application delivery with runtime adaptation, automatic domains, authorized-only access, and integration with an existing enterprise LLM Gateway API.",
-                ),
-                Project(
-                    "Observability & Release Reliability",
-                    "Deployed Grafana, Prometheus, and OpenTelemetry and connected Kubernetes releases across development, staging, and production with security and operational requirements.",
-                ),
-                Project(
-                    "Global B2C Generative AI Service",
-                    "Supported UK rollout readiness, initial production operations, incident response, and early stabilization for a Microsoft-collaborative consumer AI service on Azure.",
-                ),
-                CLUSTER_MONITORING_PROJECT,
+                *CORE_PROJECTS_EN,
                 OFFERNOW_PROJECT,
+                CLUSTER_MONITORING_PROJECT,
             ),
         ),
         ResumeVariant(
@@ -567,7 +603,7 @@ def variants() -> tuple[ResumeVariant, ...]:
             evidence=(
                 "Governed AX application delivery with existing enterprise LLM Gateway integration",
                 "Production delivery and reliability for an enterprise AI service used by 30,000 employees",
-                "UK rollout and production stabilization for an Azure-based generative AI service",
+                "Korea and UK launches and production stabilization for an Azure-based generative AI service",
             ),
             skills=(
                 ("Applied AI", "Agent application delivery, LLM-assisted incident analysis, model inference, LLM Gateway API integration"),
@@ -601,7 +637,7 @@ def variants() -> tuple[ResumeVariant, ...]:
             evidence=(
                 "AWS EKS 기반 거버넌스·셀프서비스 AX App 배포 플랫폼",
                 "30,000명 임직원 대상 전사 AI 서비스 프로덕션 신뢰성",
-                "글로벌 B2C 생성형 AI 서비스 UK 출시·장애 대응·초기 안정화",
+                "B2C 생성형 AI 서비스 한국·UK 출시·장애 대응·초기 안정화",
             ),
             skills=(
                 ("Agent 플랫폼", "AWS EKS, Agent 런타임 연동, 셀프서비스 배포, 도메인 자동 발급, 기존 LLM Gateway API 연동"),
@@ -611,23 +647,12 @@ def variants() -> tuple[ResumeVariant, ...]:
             ),
             experiences=korean_experiences(),
             projects=(
-                Project(
-                    "사내 AX Agent Platform",
-                    "AWS EKS에서 런타임 조정, 도메인 자동 발급, 인가된 사용자 전용 접근 및 기존 사내 LLM Gateway API 연동을 제공하는 거버넌스형 AX App 배포 플랫폼을 구축했습니다.",
-                ),
-                Project(
-                    "관측 환경 & 릴리스 신뢰성",
-                    "Grafana, Prometheus, OpenTelemetry를 구축하고 개발·스테이징·프로덕션 Kubernetes 릴리스를 보안 및 운영 요구사항과 연결했습니다.",
-                ),
-                Project(
-                    "글로벌 B2C 생성형 AI 서비스",
-                    "Microsoft와 협업한 Azure 기반 소비자 AI 서비스의 UK 출시 준비, 초기 프로덕션 운영, 장애 대응 및 안정화를 수행했습니다.",
-                ),
+                *CORE_PROJECTS_KO,
+                OFFERNOW_PROJECT_KO,
                 Project(
                     "LLM 기반 클러스터 모니터링 | 개인 프로젝트",
                     "사내 클러스터의 오류를 감지하고 LLM으로 분석해, 문제 요약·분석 내용·해결 방법을 이메일로 전달하는 모니터링 시스템을 만들었습니다.",
                 ),
-                OFFERNOW_PROJECT_KO,
             ),
         ),
     )
