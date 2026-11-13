@@ -63,6 +63,11 @@ The user clarified that their contribution to evaluation work was limited. Evalu
 - Do not claim users, adoption, or recommendation-quality metrics for OfferNow until they are measured.
 - Footer and dated filenames moved to November 2026. Older dated PDF URLs are refreshed with the latest content by the builders.
 
+## Layout changes | November 13
+
+- CV page 1 now holds all four experience entries; page 2 starts at `Selected Engineering Work`. The builder measures each page's free space and spreads it between sections, entries, and lines, so page 1 no longer ends with a large empty block.
+- On the website the hackathon moved out of `Education & Research` into its own `Awards & Activities` section above the contact block.
+
 ## Claims to avoid
 
 - Terraform or Ansible experience without a new source

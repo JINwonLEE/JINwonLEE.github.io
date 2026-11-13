@@ -103,6 +103,7 @@ for (const [name, width] of [['desktop', 1440], ['mobile', 390], ['small mobile'
         assert.deepEqual(overflow, { page: false, text: [] });
         await page.screenshot({ path: path.join(output, `${filename}-${width}-hero.png`) });
         await page.locator('.featured-case').first().screenshot({ path: path.join(output, `${filename}-${width}-ax.png`) });
+        await page.locator('.awards-section').screenshot({ path: path.join(output, `${filename}-${width}-awards.png`) });
         await page.locator('.offernow-case').screenshot({ path: path.join(output, `${filename}-${width}-offernow.png`) });
         await page.locator('.case-grid').screenshot({ path: path.join(output, `${filename}-${width}-projects.png`) });
       } finally {

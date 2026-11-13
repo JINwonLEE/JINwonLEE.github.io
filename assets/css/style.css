@@ -244,6 +244,8 @@ button { font: inherit; }
 .publication-list span { color: var(--coral); }
 .publication-list h3 { margin: 7px 0 0; font-size: 14px; line-height: 1.45; letter-spacing: 0; }
 
+.awards-section { max-width: var(--max-width); margin: 0 auto; padding: 0 28px 88px; }
+
 .contact-section {
   padding: 70px max(28px, calc((100vw - var(--max-width)) / 2));
   display: grid;
@@ -331,6 +333,7 @@ button { font: inherit; }
 
   .work-section, .research-section { padding: 66px 20px; }
   .experience-section { padding: 66px 20px; }
+  .awards-section { padding: 0 20px 66px; }
   .section-heading { margin-bottom: 28px; }
   .section-heading h2, .contact-section h2 { font-size: 27px; }
   .case-media, .reverse .case-media { min-height: 260px; padding: 20px; }
