@@ -75,6 +75,10 @@ The user clarified that their contribution to evaluation work was limited. Evalu
 - Copy was carried over from the previous pages. The About paragraphs restate existing verified claims in first person; no new claims were added.
 - Only the AX Agent Platform and OfferNow keep diagrams. Replace the OfferNow diagram with a real product screenshot when one is available.
 
+## Default language | November 13
+
+- The user asked for Korean to be the default. `index.html` is now the Korean page, the English page moved to `index-en.html`, and `index-ko.html` redirects to the root so older links keep working. The portfolio PDFs still link to the root URL.
+
 ## Claims to avoid
 
 - Terraform or Ansible experience without a new source

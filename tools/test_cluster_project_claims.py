@@ -69,7 +69,7 @@ class PublicClaimsTest(unittest.TestCase):
     def test_public_html_uses_stable_cv_links_and_no_removed_tool_claims(self):
         combined = "\n".join(
             (ROOT / filename).read_text(encoding="utf-8")
-            for filename in ("index.html", "index-ko.html")
+            for filename in ("index.html", "index-en.html")
         )
         for filename in ("CV-Eng.pdf", "CV-Kor.pdf"):
             self.assertIn(filename, combined)
@@ -94,7 +94,7 @@ class PublicClaimsTest(unittest.TestCase):
             self.assertIn(email, project["detailedDescription"].lower())
             self.assertNotIn("Enterprise AI Assistant", json.dumps(data))
             self.assertEqual(["LLM", "Cluster Monitoring", "Email Alerts"], project["technologies"])
-            html = "index.html" if language == "en" else "index-ko.html"
+            html = "index-en.html" if language == "en" else "index.html"
             content = (ROOT / html).read_text(encoding="utf-8")
             self.assertIn(title, content)
             self.assertNotIn("enterprise-ai-assistant", content)
@@ -119,7 +119,7 @@ class PublicClaimsTest(unittest.TestCase):
             data = json.loads((ROOT / config).read_text(encoding="utf-8"))
             self.assertTrue(any(project in p["title"] for p in data["projects"]))
             self.assertTrue(any(award in a["title"] for a in data["awards"]))
-            html = "index.html" if language == "en" else "index-ko.html"
+            html = "index-en.html" if language == "en" else "index.html"
             content = (ROOT / html).read_text(encoding="utf-8")
             self.assertIn(project, content)
             self.assertIn(award, content)
