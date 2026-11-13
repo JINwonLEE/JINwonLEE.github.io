@@ -17,8 +17,8 @@ from reportlab.pdfgen import canvas
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 OUTPUT_DIR = os.path.join(ROOT, "output", "pdf")
 OUTPUTS = {
-    "ko": os.path.join(OUTPUT_DIR, "Jinwon-Lee-Portfolio-Kor-2026-09.pdf"),
-    "en": os.path.join(OUTPUT_DIR, "Jinwon-Lee-Portfolio-Eng-2026-09.pdf"),
+    "ko": os.path.join(OUTPUT_DIR, "Jinwon-Lee-Portfolio-Kor-2026-11.pdf"),
+    "en": os.path.join(OUTPUT_DIR, "Jinwon-Lee-Portfolio-Eng-2026-11.pdf"),
 }
 CONFIGS = {
     "ko": os.path.join(ROOT, "portfolio-config-ko.json"),
@@ -26,9 +26,16 @@ CONFIGS = {
 }
 PORTFOLIO_URL = "https://jinwonlee.github.io/"
 
-FONT_PATH = "/Library/Fonts/Arial Unicode.ttf"
-if not os.path.exists(FONT_PATH):
-    FONT_PATH = "/System/Library/Fonts/Supplemental/Arial Unicode.ttf"
+FONT_PATHS = (
+    "/Library/Fonts/Arial Unicode.ttf",
+    "/System/Library/Fonts/Supplemental/Arial Unicode.ttf",
+    os.environ.get("PDF_FONT_PATH", ""),
+)
+FONT_PATH = next(path for path in FONT_PATHS if path and os.path.exists(path))
+LEGACY_FILENAMES = {
+    "ko": ("Jinwon-Lee-Portfolio-Kor-2026-08.pdf", "Jinwon-Lee-Portfolio-Kor-2026-08-v2.pdf", "Jinwon-Lee-Portfolio-Kor-2026-08-v3.pdf", "Jinwon-Lee-Portfolio-Kor-2026-09.pdf"),
+    "en": ("Jinwon-Lee-Portfolio-Eng-2026-08.pdf", "Jinwon-Lee-Portfolio-Eng-2026-08-v2.pdf", "Jinwon-Lee-Portfolio-Eng-2026-08-v3.pdf", "Jinwon-Lee-Portfolio-Eng-2026-09.pdf"),
+}
 
 FONT = "ArialUnicode"
 pdfmetrics.registerFont(TTFont(FONT, FONT_PATH))
@@ -205,6 +212,8 @@ class PortfolioPDF:
 
     def diagram_labels(self, project: Project) -> Sequence[str]:
         title = project.title
+        if "OfferNow" in title:
+            return ["CV\nPDF/DOCX", "Evidence\nProfile", "Official\nPostings"]
         if "LLM-Assisted Cluster" in title or "LLM 기반 클러스터" in title:
             return ["Cluster\nErrors", "LLM\nAnalysis", "Email\nNext steps"]
         if "AX Agent" in title:
@@ -232,6 +241,8 @@ class PortfolioPDF:
     def capability_point(self, project: Project) -> str:
         title = project.title
         if self.lang == "en":
+            if "OfferNow" in title:
+                return "Builds a full AI product end to end, from data collection and privacy controls to LLM integration, cost limits, and deployment."
             if "LLM-Assisted Cluster" in title:
                 return "Applies LLM analysis to cluster operations and operator-facing incident reporting."
             if "AX Agent" in title:
@@ -256,6 +267,8 @@ class PortfolioPDF:
                 return "Research experience on network bottlenecks, resource placement, and performance improvement for distributed training workloads."
             return "Experience integrating AI functionality with OS-level behavior, asynchronous processing, and user interaction."
 
+        if "OfferNow" in title:
+            return "데이터 수집과 개인정보 보호부터 LLM 연동, 비용 한도, 배포까지 AI 제품 전체를 직접 만든 경험입니다."
         if "LLM 기반 클러스터" in title:
             return "LLM을 클러스터 운영과 운영자 대상 오류 분석·보고에 적용한 경험입니다."
         if "AX Agent" in title:
@@ -391,7 +404,7 @@ def build_pdf(lang: str) -> None:
         pdf.capability_card(x + i * (card_w + gap), card_y, card_w, 30 * mm, title, body, accent)
 
     # Project pages, two cards per page
-    accents = [pdf.blue, pdf.green, pdf.blue, pdf.green, pdf.purple, pdf.accent, pdf.blue, pdf.green, pdf.purple, pdf.green]
+    accents = [pdf.blue, pdf.green, pdf.blue, pdf.green, pdf.purple, pdf.accent, pdf.blue, pdf.green, pdf.purple, pdf.green, pdf.blue]
     preferred_titles = (
         [
             "사내 AX Agent Platform",
@@ -404,6 +417,7 @@ def build_pdf(lang: str) -> None:
             "분산 CNN 트레이닝 시스템",
             "TmaxOS 기반 Siri형 AI 어시스턴트",
             "LLM 기반 클러스터 모니터링",
+            "오퍼나우 (OfferNow)",
         ]
         if is_ko
         else [
@@ -417,6 +431,7 @@ def build_pdf(lang: str) -> None:
             "Distributed CNN Training System",
             "Siri-like AI Assistant on TmaxOS",
             "LLM-Assisted Cluster Monitoring",
+            "OfferNow",
         ]
     )
     by_title = {project.title: project for project in projects}
@@ -436,7 +451,8 @@ def build_pdf(lang: str) -> None:
             pdf.project_card(pdf.left + card_w + 8 * mm, y, card_w, card_h, selected[page_index + 1], page_index + 2, accents[page_index + 1])
 
     # Closing
-    pdf.new_page(f"06 / {'추가 정보' if is_ko else 'Additional Info'}")
+    closing_index = (len(selected) + 1) // 2 + 1
+    pdf.new_page(f"{closing_index:02d} / {'추가 정보' if is_ko else 'Additional Info'}")
     y = pdf.section_title(
         pdf.left,
         pdf.h - 31 * mm,
@@ -459,6 +475,11 @@ def build_pdf(lang: str) -> None:
         if value.startswith("http"):
             pdf.c.linkURL(value, (bx + 6 * mm, by - 20 * mm, bx + box_w - 6 * mm, by - 12 * mm), relative=0)
     y -= 78 * mm
+    pdf.text_at(pdf.left, y, "수상 및 활동" if is_ko else "Awards & Activities", 16, pdf.text, 800)
+    y -= 12
+    for award in data.get("awards", []):
+        y = pdf.bullet(pdf.left, y, f"{award['title']} ({award['date']}): {award['detail']}", pdf.usable, 8.4, 11.5)
+    y -= 16
     pdf.text_at(pdf.left, y, "논문/발표" if is_ko else "Publications", 16, pdf.text, 800)
     y -= 12
     for pub in data["publications"]:
@@ -493,6 +514,8 @@ def build_pdf(lang: str) -> None:
         OUTPUTS[lang],
         os.path.join(ROOT, "Portfolio-Kor.pdf" if is_ko else "Portfolio-Eng.pdf"),
     )
+    for legacy in LEGACY_FILENAMES[lang]:
+        shutil.copyfile(OUTPUTS[lang], os.path.join(OUTPUT_DIR, legacy))
 
 
 if __name__ == "__main__":

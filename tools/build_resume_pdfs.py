@@ -18,8 +18,9 @@ OUTPUT_DIR = os.path.join(ROOT, "output", "pdf")
 FONT_PATHS = (
     "/Library/Fonts/Arial Unicode.ttf",
     "/System/Library/Fonts/Supplemental/Arial Unicode.ttf",
+    os.environ.get("PDF_FONT_PATH", ""),
 )
-FONT_PATH = next(path for path in FONT_PATHS if os.path.exists(path))
+FONT_PATH = next(path for path in FONT_PATHS if path and os.path.exists(path))
 FONT = "ResumeSans"
 pdfmetrics.registerFont(TTFont(FONT, FONT_PATH))
 
@@ -111,7 +112,7 @@ class ResumeDocument:
     def footer(self) -> None:
         self.canvas.setFillColor(MUTED)
         self.canvas.setFont(FONT, 6.8)
-        updated = "Updated Sep. 2026" if self.language == "en" else "2026.09 업데이트"
+        updated = "Updated Nov. 2026" if self.language == "en" else "2026.11 업데이트"
         self.canvas.drawString(self.left, 7.2 * mm, updated)
         self.canvas.drawRightString(
             self.width - self.right,
@@ -414,6 +415,16 @@ CLUSTER_MONITORING_PROJECT = Project(
     "Built a monitoring system for internal clusters that detects errors, uses an LLM to analyze issues, and emails problem summaries, analysis, and suggested remediation steps.",
 )
 
+OFFERNOW_PROJECT = Project(
+    "OfferNow | Personal project, Sep. 2026 - Present",
+    "Building a CV-based job recommendation service for Korean IT roles: it turns PDF/DOCX CVs into evidence-linked profiles, collects official postings from 50+ companies while honoring robots.txt, and shows the CV evidence behind every match. Expo (web, iOS, Android), FastAPI, PostgreSQL with row-level security, and provider-neutral LLM calls with per-user limits and cost logging, deployed with Docker Compose and nginx.",
+)
+
+OFFERNOW_PROJECT_KO = Project(
+    "오퍼나우 (OfferNow) | 개인 프로젝트, 2026.09 - 현재",
+    "CV(PDF/DOCX)를 근거 기반 경력 프로필로 바꾸고, robots.txt를 지키며 50여 개 기업의 공식 채용 공고를 수집해 추천마다 공고 요건과 CV 근거를 함께 보여주는 IT 채용 추천 서비스를 만들고 있습니다. Expo(웹·iOS·Android), FastAPI, PostgreSQL 행 수준 보안(RLS), 사용자별 한도와 비용 기록을 갖춘 공급자 중립 LLM 연동, Docker Compose·nginx 배포.",
+)
+
 
 def variants() -> tuple[ResumeVariant, ...]:
     experiences = english_experiences()
@@ -425,7 +436,7 @@ def variants() -> tuple[ResumeVariant, ...]:
     )
     return (
         ResumeVariant(
-            filename="Jinwon-Lee-CV-Master-2026-09.pdf",
+            filename="Jinwon-Lee-CV-Master-2026-11.pdf",
             root_filename="CV-Eng.pdf",
             language="en",
             professional_title="AI Platform & Reliability Engineer",
@@ -459,10 +470,11 @@ def variants() -> tuple[ResumeVariant, ...]:
                     "Supported UK rollout readiness, initial production operations, incident response, and early stabilization for a Microsoft-collaborative consumer AI service on Azure.",
                 ),
                 CLUSTER_MONITORING_PROJECT,
+                OFFERNOW_PROJECT,
             ),
         ),
         ResumeVariant(
-            filename="Jinwon-Lee-CV-Platform-SRE-2026-09.pdf",
+            filename="Jinwon-Lee-CV-Platform-SRE-2026-11.pdf",
             root_filename="CV-Platform-SRE.pdf",
             language="en",
             professional_title="Platform & Site Reliability Engineer",
@@ -488,6 +500,7 @@ def variants() -> tuple[ResumeVariant, ...]:
                     "Designed and developed a Bash-based one-click provisioning system for repeatable developer Kubernetes environments.",
                 ),
                 CLUSTER_MONITORING_PROJECT,
+                OFFERNOW_PROJECT,
                 Project(
                     "High-throughput Packet Mirroring",
                     "Developed a resource-aware Linux application measured at up to 130,000 packets per second.",
@@ -499,7 +512,7 @@ def variants() -> tuple[ResumeVariant, ...]:
             ),
         ),
         ResumeVariant(
-            filename="Jinwon-Lee-CV-Applied-AI-2026-09.pdf",
+            filename="Jinwon-Lee-CV-Applied-AI-2026-11.pdf",
             root_filename="CV-Applied-AI.pdf",
             language="en",
             professional_title="Applied AI & Platform Engineer",
@@ -529,10 +542,11 @@ def variants() -> tuple[ResumeVariant, ...]:
                     "Built model inference, preprocessing, system integration, and asynchronous interaction flows for an OS-level AI assistant.",
                 ),
                 CLUSTER_MONITORING_PROJECT,
+                OFFERNOW_PROJECT,
             ),
         ),
         ResumeVariant(
-            filename="Jinwon-Lee-CV-Kor-2026-09.pdf",
+            filename="Jinwon-Lee-CV-Kor-2026-11.pdf",
             root_filename="CV-Kor.pdf",
             language="ko",
             professional_title="AI 플랫폼 & 신뢰성 엔지니어",
@@ -569,6 +583,7 @@ def variants() -> tuple[ResumeVariant, ...]:
                     "LLM 기반 클러스터 모니터링 | 개인 프로젝트",
                     "사내 클러스터의 오류를 감지하고 LLM으로 분석해, 문제 요약·분석 내용·해결 방법을 이메일로 전달하는 모니터링 시스템을 만들었습니다.",
                 ),
+                OFFERNOW_PROJECT_KO,
             ),
         ),
     )
@@ -597,6 +612,20 @@ def build_resume(variant: ResumeVariant) -> str:
     doc.section("Selected Engineering Work" if variant.language == "en" else "주요 엔지니어링 작업")
     for project in variant.projects:
         doc.project(project)
+
+    doc.section("Awards & Activities" if variant.language == "en" else "수상 및 활동")
+    if variant.language == "en":
+        doc.compact_item(
+            "Finalist, SK hynix AI Hackathon 2026",
+            "Nov. 2026",
+            "Advanced through two online qualifying rounds to the offline finals (individual entry).",
+        )
+    else:
+        doc.compact_item(
+            "SK하이닉스 AI 해커톤 2026 본선 진출",
+            "2026.11",
+            "온라인 1·2차 예선(AI 기초·활용 역량, AI Native 역량 검증)을 통과해 오프라인 본선에 진출 (개인 참가)",
+        )
 
     doc.section("Education & Research" if variant.language == "en" else "학력 & 연구")
     if variant.language == "en":
@@ -637,7 +666,28 @@ def build_resume(variant: ResumeVariant) -> str:
     doc.bullets(publications, size=7.45, leading=10.1, gap=1.5)
     doc.save()
     shutil.copyfile(path, os.path.join(ROOT, variant.root_filename))
+    for legacy in LEGACY_FILENAMES.get(variant.root_filename, ()):
+        shutil.copyfile(path, os.path.join(OUTPUT_DIR, legacy))
     return path
+
+
+# Older dated URLs stay valid but serve the latest content.
+LEGACY_FILENAMES = {
+    "CV-Eng.pdf": (
+        "Jinwon-Lee-CV-Eng-2026-08.pdf",
+        "Jinwon-Lee-CV-Eng-2026-08-v2.pdf",
+        "Jinwon-Lee-CV-Eng-2026-08-v3.pdf",
+        "Jinwon-Lee-CV-Master-2026-09.pdf",
+    ),
+    "CV-Platform-SRE.pdf": ("Jinwon-Lee-CV-Platform-SRE-2026-09.pdf",),
+    "CV-Applied-AI.pdf": ("Jinwon-Lee-CV-Applied-AI-2026-09.pdf",),
+    "CV-Kor.pdf": (
+        "Jinwon-Lee-CV-Kor-2026-08.pdf",
+        "Jinwon-Lee-CV-Kor-2026-08-v2.pdf",
+        "Jinwon-Lee-CV-Kor-2026-08-v3.pdf",
+        "Jinwon-Lee-CV-Kor-2026-09.pdf",
+    ),
+}
 
 
 def main() -> None:

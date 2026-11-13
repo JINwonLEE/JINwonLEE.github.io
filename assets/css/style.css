@@ -193,6 +193,7 @@ button { font: inherit; }
   border-bottom: 1px solid var(--line);
 }
 .featured-case + .featured-case { border-top: 0; }
+.case-grid + .featured-case { margin-top: 34px; }
 .case-media { min-height: 430px; padding: 34px; display: grid; place-items: center; background: var(--soft); border-right: 1px solid var(--line); }
 .case-media img { width: 100%; max-height: 370px; object-fit: contain; }
 .case-media.app-screenshot { padding: 0; overflow: hidden; background: #edf3f0; }
