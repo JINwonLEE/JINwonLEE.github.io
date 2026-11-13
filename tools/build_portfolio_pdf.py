@@ -407,31 +407,31 @@ def build_pdf(lang: str) -> None:
     accents = [pdf.blue, pdf.green, pdf.blue, pdf.green, pdf.purple, pdf.accent, pdf.blue, pdf.green, pdf.purple, pdf.green, pdf.blue]
     preferred_titles = (
         [
-            "TmaxOS 기반 Siri형 AI 어시스턴트",
-            "고성능 패킷 미러링 애플리케이션",
-            "전사 AI 챗봇 플랫폼 (약 3만 사용자)",
-            "B2C 생성형 AI 서비스 (한국·UK)",
             "사내 AX Agent Platform",
+            "B2C 생성형 AI 서비스 (한국·UK)",
+            "전사 AI 챗봇 플랫폼 (약 3만 사용자)",
+            "고성능 패킷 미러링 애플리케이션",
+            "TmaxOS 기반 Siri형 AI 어시스턴트",
+            "오퍼나우 (OfferNow)",
+            "LLM 기반 클러스터 모니터링",
             "중앙 집중식 모니터링 & 관측성 스택",
             "GitOps CI/CD 파이프라인 with ArgoCD",
             "Kubernetes 클러스터 자동화",
             "분산 CNN 트레이닝 시스템",
-            "LLM 기반 클러스터 모니터링",
-            "오퍼나우 (OfferNow)",
         ]
         if is_ko
         else [
-            "Siri-like AI Assistant on TmaxOS",
-            "High-throughput Packet Mirroring Application",
-            "Company-wide AI Chatbot Platform (30K Users)",
-            "B2C Generative AI Service (Korea & UK)",
             "Internal AX Agent Platform",
+            "B2C Generative AI Service (Korea & UK)",
+            "Company-wide AI Chatbot Platform (30K Users)",
+            "High-throughput Packet Mirroring Application",
+            "Siri-like AI Assistant on TmaxOS",
+            "OfferNow",
+            "LLM-Assisted Cluster Monitoring",
             "Centralized Monitoring & Observability Stack",
             "GitOps CI/CD Pipeline with ArgoCD",
             "Kubernetes Cluster Automation",
             "Distributed CNN Training System",
-            "LLM-Assisted Cluster Monitoring",
-            "OfferNow",
         ]
     )
     by_title = {project.title: project for project in projects}

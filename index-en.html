@@ -20,9 +20,9 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/style.css?v=20261113-6">
+  <link rel="stylesheet" href="./assets/css/style.css?v=20261114-1">
   <script>document.documentElement.classList.add("js");</script>
-  <script src="./assets/js/script.js?v=20261113-6" defer></script>
+  <script src="./assets/js/script.js?v=20261114-1" defer></script>
 </head>
 <body id="top">
   <canvas id="field" aria-hidden="true"></canvas>
@@ -48,10 +48,10 @@
       </div>
       <div class="rail-actions">
         <div class="cv-links" aria-label="CV and portfolio downloads">
-            <a href="./CV-Eng.pdf?v=20261113-6" target="_blank" rel="noopener">English CV</a>
-            <a href="./CV-Kor.pdf?v=20261113-6" target="_blank" rel="noopener">Korean CV</a>
-            <a href="./Portfolio-Eng.pdf?v=20261113-6" target="_blank" rel="noopener">English portfolio</a>
-            <a href="./Portfolio-Kor.pdf?v=20261113-6" target="_blank" rel="noopener">Korean portfolio</a>
+            <a href="./CV-Eng.pdf?v=20261114-1" target="_blank" rel="noopener">English CV</a>
+            <a href="./CV-Kor.pdf?v=20261114-1" target="_blank" rel="noopener">Korean CV</a>
+            <a href="./Portfolio-Eng.pdf?v=20261114-1" target="_blank" rel="noopener">English portfolio</a>
+            <a href="./Portfolio-Kor.pdf?v=20261114-1" target="_blank" rel="noopener">Korean portfolio</a>
         </div>
         <div class="rail-links">
           <a href="https://github.com/JINwonLEE" target="_blank" rel="noopener">GitHub</a>
@@ -117,44 +117,16 @@
       <section class="section reveal" id="projects" aria-labelledby="projects-heading">
         <h2 class="section-title" id="projects-heading">Projects</h2>
         <article class="project-feature glow">
-          <div class="project-media"><img src="./assets/images/thumb-ai-assistant-os.svg?v=20260915-align1" alt="Siri-like AI Assistant on TmaxOS diagram" width="800" height="500" loading="lazy"></div>
+          <div class="project-media"><img src="./assets/images/thumb-ax-agent-platform.svg?v=20260915-align1" alt="AX Agent Platform architecture overview" width="800" height="500" loading="lazy"></div>
           <div class="project-body">
-            <div class="project-meta"><span>2019–2020</span><span>TmaxOS</span><span>AI assistant</span></div>
-            <h3>Siri-like AI Assistant on TmaxOS</h3>
-            <p>Built model inference, data preprocessing, system integration, and asynchronous application flows for an OS-level AI assistant on TmaxOS.</p>
-            <button type="button" class="card-open" data-open="tmax-assistant" aria-haspopup="dialog" aria-label="View details: Siri-like AI Assistant on TmaxOS">View details<span aria-hidden="true">→</span></button>
+            <div class="project-meta"><span>2026</span><span>Samsung Electronics</span><span>Platform / Applied AI</span></div>
+            <h3>Internal AX Agent Platform</h3>
+            <p>Designed and built an AWS EKS platform that adapts an agent runtime to enterprise deployment standards. Developers can release AX applications, receive domains automatically, restrict access to authorized users, and consume an existing enterprise LLM Gateway API through the platform integration.</p>
+            <button type="button" class="card-open" data-open="ax-agent-platform" aria-haspopup="dialog" aria-label="View details: Internal AX Agent Platform">View details<span aria-hidden="true">→</span></button>
             <dl class="case-facts">
-                <div><dt>Role</dt><dd>Model inference, preprocessing, system integration</dd></div>
-                <div><dt>Design</dt><dd>Asynchronous architecture for natural interaction</dd></div>
-                <div><dt>Platform</dt><dd>TmaxOS system-level integration</dd></div>
-            </dl>
-          </div>
-        </article>
-        <article class="project-feature glow">
-          <div class="project-media"><img src="./assets/images/thumb-packet-mirroring.svg?v=20260915-align1" alt="High-throughput Packet Mirroring diagram" width="800" height="500" loading="lazy"></div>
-          <div class="project-body">
-            <div class="project-meta"><span>2021–2024</span><span>Samsung Network Division</span><span>130K packets/s</span></div>
-            <h3>High-throughput Packet Mirroring</h3>
-            <p>Developed a Linux application that mirrors packets in real time and forwards them to a target server at up to 130,000 packets per second under constrained system resources.</p>
-            <button type="button" class="card-open" data-open="packet-mirroring" aria-haspopup="dialog" aria-label="View details: High-throughput Packet Mirroring">View details<span aria-hidden="true">→</span></button>
-            <dl class="case-facts">
-                <div><dt>Role</dt><dd>Implementation and tuning for constrained resources</dd></div>
-                <div><dt>Scale</dt><dd>Up to 130,000 packets per second</dd></div>
-                <div><dt>Tech</dt><dd>Linux, networking, high-performance I/O</dd></div>
-            </dl>
-          </div>
-        </article>
-        <article class="project-feature glow">
-          <div class="project-media"><img src="./assets/images/thumb-enterprise-chatbot.svg?v=20260915-align1" alt="Enterprise AI chatbot platform overview" width="800" height="500" loading="lazy"></div>
-          <div class="project-body">
-            <div class="project-meta"><span>2024–2025</span><span>Samsung Research</span><span>30,000 employees</span></div>
-            <h3>Company-wide AI Chatbot Platform</h3>
-            <p>Led production delivery and application reliability for a company-wide AI chatbot serving 30,000 employees on internal Kubernetes clusters. Owned releases across development, staging, and production, connected them with security and operational requirements, and deployed the observability used for shared service visibility and operational diagnosis.</p>
-            <button type="button" class="card-open" data-open="chatbot-platform" aria-haspopup="dialog" aria-label="View details: Company-wide AI Chatbot Platform">View details<span aria-hidden="true">→</span></button>
-            <dl class="case-facts">
-                <div><dt>Ownership</dt><dd>Production delivery, releases, and application reliability</dd></div>
-                <div><dt>Scale</dt><dd>30,000 employees on internal Kubernetes clusters</dd></div>
-                <div><dt>Stack</dt><dd>Kubernetes, ArgoCD, Helm/Helmfile, GitHub Actions, OpenTelemetry</dd></div>
+                <div><dt>Ownership</dt><dd>Architecture, implementation, deployment, and operation</dd></div>
+                <div><dt>Controls</dt><dd>Authentication, authorization, security, and governance</dd></div>
+                <div><dt>Stack</dt><dd>AWS EKS, Kubernetes, runtime and API integration</dd></div>
             </dl>
           </div>
         </article>
@@ -173,33 +145,68 @@
           </div>
         </article>
         <article class="project-feature glow">
-          <div class="project-media"><img src="./assets/images/thumb-ax-agent-platform.svg?v=20260915-align1" alt="AX Agent Platform architecture overview" width="800" height="500" loading="lazy"></div>
+          <div class="project-media"><img src="./assets/images/thumb-enterprise-chatbot.svg?v=20260915-align1" alt="Enterprise AI chatbot platform overview" width="800" height="500" loading="lazy"></div>
           <div class="project-body">
-            <div class="project-meta"><span>2026</span><span>Samsung Electronics</span><span>Platform / Applied AI</span></div>
-            <h3>Internal AX Agent Platform</h3>
-            <p>Designed and built an AWS EKS platform that adapts an agent runtime to enterprise deployment standards. Developers can release AX applications, receive domains automatically, restrict access to authorized users, and consume an existing enterprise LLM Gateway API through the platform integration.</p>
-            <button type="button" class="card-open" data-open="ax-agent-platform" aria-haspopup="dialog" aria-label="View details: Internal AX Agent Platform">View details<span aria-hidden="true">→</span></button>
+            <div class="project-meta"><span>2024–2025</span><span>Samsung Research</span><span>30,000 employees</span></div>
+            <h3>Company-wide AI Chatbot Platform</h3>
+            <p>Led production delivery and application reliability for a company-wide AI chatbot serving 30,000 employees on internal Kubernetes clusters. Owned releases across development, staging, and production, connected them with security and operational requirements, and deployed the observability used for shared service visibility and operational diagnosis.</p>
+            <button type="button" class="card-open" data-open="chatbot-platform" aria-haspopup="dialog" aria-label="View details: Company-wide AI Chatbot Platform">View details<span aria-hidden="true">→</span></button>
             <dl class="case-facts">
-                <div><dt>Ownership</dt><dd>Architecture, implementation, deployment, and operation</dd></div>
-                <div><dt>Controls</dt><dd>Authentication, authorization, security, and governance</dd></div>
-                <div><dt>Stack</dt><dd>AWS EKS, Kubernetes, runtime and API integration</dd></div>
+                <div><dt>Ownership</dt><dd>Production delivery, releases, and application reliability</dd></div>
+                <div><dt>Scale</dt><dd>30,000 employees on internal Kubernetes clusters</dd></div>
+                <div><dt>Stack</dt><dd>Kubernetes, ArgoCD, Helm/Helmfile, GitHub Actions, OpenTelemetry</dd></div>
+            </dl>
+          </div>
+        </article>
+        <article class="project-feature glow">
+          <div class="project-media"><img src="./assets/images/thumb-packet-mirroring.svg?v=20260915-align1" alt="High-throughput Packet Mirroring diagram" width="800" height="500" loading="lazy"></div>
+          <div class="project-body">
+            <div class="project-meta"><span>2021–2024</span><span>Samsung Network Division</span><span>130K packets/s</span></div>
+            <h3>High-throughput Packet Mirroring</h3>
+            <p>Developed a Linux application that mirrors packets in real time and forwards them to a target server at up to 130,000 packets per second under constrained system resources.</p>
+            <button type="button" class="card-open" data-open="packet-mirroring" aria-haspopup="dialog" aria-label="View details: High-throughput Packet Mirroring">View details<span aria-hidden="true">→</span></button>
+            <dl class="case-facts">
+                <div><dt>Role</dt><dd>Implementation and tuning for constrained resources</dd></div>
+                <div><dt>Scale</dt><dd>Up to 130,000 packets per second</dd></div>
+                <div><dt>Tech</dt><dd>Linux, networking, high-performance I/O</dd></div>
+            </dl>
+          </div>
+        </article>
+        <article class="project-feature glow">
+          <div class="project-media"><img src="./assets/images/thumb-ai-assistant-os.svg?v=20260915-align1" alt="Siri-like AI Assistant on TmaxOS diagram" width="800" height="500" loading="lazy"></div>
+          <div class="project-body">
+            <div class="project-meta"><span>2019–2020</span><span>TmaxOS</span><span>AI assistant</span></div>
+            <h3>Siri-like AI Assistant on TmaxOS</h3>
+            <p>Built model inference, data preprocessing, system integration, and asynchronous application flows for an OS-level AI assistant on TmaxOS.</p>
+            <button type="button" class="card-open" data-open="tmax-assistant" aria-haspopup="dialog" aria-label="View details: Siri-like AI Assistant on TmaxOS">View details<span aria-hidden="true">→</span></button>
+            <dl class="case-facts">
+                <div><dt>Role</dt><dd>Model inference, preprocessing, system integration</dd></div>
+                <div><dt>Design</dt><dd>Asynchronous architecture for natural interaction</dd></div>
+                <div><dt>Platform</dt><dd>TmaxOS system-level integration</dd></div>
             </dl>
           </div>
         </article>
         <div class="project-grid">
+          <article class="project-card glow offernow-case">
+            <div class="project-meta"><span>Sep. 2026 – Present</span><span>Personal project</span></div>
+            <h3>OfferNow</h3>
+            <p>A CV-based job recommendation service for Korean IT roles. It turns an uploaded CV into an evidence-linked profile and shows the CV evidence behind every recommended official posting, collected from 50+ companies&#x27; career sites.</p>
+            <p class="tech-line">Expo · FastAPI · PostgreSQL · LLM · Docker</p>
+            <button type="button" class="card-open" data-open="offernow" aria-haspopup="dialog" aria-label="View details: OfferNow">View details<span aria-hidden="true">→</span></button>
+          </article>
+          <article class="project-card glow">
+            <div class="project-meta"><span>Personal project</span><span>Cluster operations</span></div>
+            <h3>LLM-Assisted Cluster Monitoring</h3>
+            <p>Built a monitoring system for internal clusters that detects errors, uses an LLM to analyze issues, and emails problem summaries, analysis, and suggested remediation steps.</p>
+            <p class="tech-line">LLM · Cluster Monitoring · Incident Analysis · Email Alerts</p>
+            <button type="button" class="card-open" data-open="cluster-monitoring" aria-haspopup="dialog" aria-label="View details: LLM-Assisted Cluster Monitoring">View details<span aria-hidden="true">→</span></button>
+          </article>
           <article class="project-card glow">
             <div class="project-meta"><span>Observability</span><span>Production reliability</span></div>
             <h3>Centralized Monitoring &amp; Observability</h3>
             <p>Built shared monitoring paths, dashboards, and alerts for system and container runtime health to support incident detection and production analysis.</p>
             <p class="tech-line">Grafana · Prometheus · OpenTelemetry · Loki</p>
             <button type="button" class="card-open" data-open="observability" aria-haspopup="dialog" aria-label="View details: Centralized Monitoring &amp; Observability">View details<span aria-hidden="true">→</span></button>
-          </article>
-          <article class="project-card glow">
-            <div class="project-meta"><span>Platform automation</span><span>Developer environments</span></div>
-            <h3>One-click Kubernetes Provisioning</h3>
-            <p>Designed and developed a Bash-based one-click Kubernetes cluster provisioning system for repeatable cloud developer environments.</p>
-            <p class="tech-line">Bash · Kubernetes · Linux</p>
-            <button type="button" class="card-open" data-open="k8s-provisioning" aria-haspopup="dialog" aria-label="View details: One-click Kubernetes Provisioning">View details<span aria-hidden="true">→</span></button>
           </article>
           <article class="project-card glow">
             <div class="project-meta"><span>GitOps</span><span>Application delivery</span></div>
@@ -209,18 +216,11 @@
             <button type="button" class="card-open" data-open="gitops" aria-haspopup="dialog" aria-label="View details: GitOps CI/CD with ArgoCD">View details<span aria-hidden="true">→</span></button>
           </article>
           <article class="project-card glow">
-            <div class="project-meta"><span>Personal project</span><span>Cluster operations</span></div>
-            <h3>LLM-Assisted Cluster Monitoring</h3>
-            <p>Built a monitoring system for internal clusters that detects errors, uses an LLM to analyze issues, and emails problem summaries, analysis, and suggested remediation steps.</p>
-            <p class="tech-line">LLM · Cluster Monitoring · Incident Analysis · Email Alerts</p>
-            <button type="button" class="card-open" data-open="cluster-monitoring" aria-haspopup="dialog" aria-label="View details: LLM-Assisted Cluster Monitoring">View details<span aria-hidden="true">→</span></button>
-          </article>
-          <article class="project-card glow offernow-case">
-            <div class="project-meta"><span>Sep. 2026 – Present</span><span>Personal project</span></div>
-            <h3>OfferNow</h3>
-            <p>A CV-based job recommendation service for Korean IT roles. It turns an uploaded CV into an evidence-linked profile and shows the CV evidence behind every recommended official posting, collected from 50+ companies&#x27; career sites.</p>
-            <p class="tech-line">Expo · FastAPI · PostgreSQL · LLM · Docker</p>
-            <button type="button" class="card-open" data-open="offernow" aria-haspopup="dialog" aria-label="View details: OfferNow">View details<span aria-hidden="true">→</span></button>
+            <div class="project-meta"><span>Platform automation</span><span>Developer environments</span></div>
+            <h3>One-click Kubernetes Provisioning</h3>
+            <p>Designed and developed a Bash-based one-click Kubernetes cluster provisioning system for repeatable cloud developer environments.</p>
+            <p class="tech-line">Bash · Kubernetes · Linux</p>
+            <button type="button" class="card-open" data-open="k8s-provisioning" aria-haspopup="dialog" aria-label="View details: One-click Kubernetes Provisioning">View details<span aria-hidden="true">→</span></button>
           </article>
         </div>
         <p class="additional-work">Additional experience: contributed to LLM evaluation work for machine translation. Internal work is described without confidential code or architecture.</p>

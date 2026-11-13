@@ -87,7 +87,7 @@ The user clarified that their contribution to evaluation work was limited. Evalu
 ## Core projects and Korea launch | November 13
 
 - The user said the B2C generative AI service launched in Korea as well as the UK. Every mention of the UK rollout now reads Korea and UK (CVs, portfolio PDFs, website, configs). The 2026.01-06 window is unchanged.
-- The user named five core projects: the Tmax AI assistant, packet mirroring, the 30,000-user company chatbot, the B2C service (Korea and UK), and the AX Agent Platform. They appear in that order, oldest first, in the CV `Selected Engineering Work` section (followed by the two personal projects), as the five large cards in the website Projects section, and as the first five portfolio PDF cases. Their text reuses existing verified wording.
+- The user named five core projects: the Tmax AI assistant, packet mirroring, the 30,000-user company chatbot, the B2C service (Korea and UK), and the AX Agent Platform. The user asked for newest first: AX Agent Platform, B2C Korea/UK, company chatbot, packet mirroring, Tmax AI assistant. They lead the CV `Selected Engineering Work` section (followed by OfferNow and cluster monitoring), the website Projects section as the five large cards, and the portfolio PDF as cases 01-05; the remaining portfolio cases follow, newest first. Their text reuses existing verified wording.
 
 ## Claims to avoid
 

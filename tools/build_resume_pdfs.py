@@ -472,47 +472,47 @@ OFFERNOW_PROJECT_KO = Project(
 
 CORE_PROJECTS_EN = (
     Project(
-        "Siri-like AI Assistant on TmaxOS | TmaxOS, 2019 - 2020",
-        "Built model inference, data preprocessing, system integration, and asynchronous application flows for an OS-level AI assistant.",
-    ),
-    Project(
-        "High-throughput Packet Mirroring | Samsung Electronics Network Division, 2021 - 2024",
-        "Developed a Linux application that mirrors and forwards up to 130,000 packets per second under constrained system resources.",
-    ),
-    Project(
-        "Company-wide AI Chatbot | Samsung Research, 2024 - 2025",
-        "Led production delivery and reliability for an AI chatbot used by 30,000 employees, with development, staging, and production Kubernetes releases tied to security requirements and Grafana, Prometheus, and OpenTelemetry observability.",
+        "Internal AX Agent Platform | Samsung Electronics, 2026 - Present",
+        "Built an AWS EKS platform for governed AX application delivery with runtime adaptation, automatic domains, authorized-only access, and integration with an existing enterprise LLM Gateway API.",
     ),
     Project(
         "B2C Generative AI Service, Korea & UK | Samsung Electronics, Jan. - Jun. 2026",
         "Ran Korea and UK launch readiness, initial production operations, incident response, and stabilization for a Microsoft-collaborative consumer AI service on Azure.",
     ),
     Project(
-        "Internal AX Agent Platform | Samsung Electronics, 2026 - Present",
-        "Built an AWS EKS platform for governed AX application delivery with runtime adaptation, automatic domains, authorized-only access, and integration with an existing enterprise LLM Gateway API.",
+        "Company-wide AI Chatbot | Samsung Research, 2024 - 2025",
+        "Led production delivery and reliability for an AI chatbot used by 30,000 employees, with development, staging, and production Kubernetes releases tied to security requirements and Grafana, Prometheus, and OpenTelemetry observability.",
+    ),
+    Project(
+        "High-throughput Packet Mirroring | Samsung Electronics Network Division, 2021 - 2024",
+        "Developed a Linux application that mirrors and forwards up to 130,000 packets per second under constrained system resources.",
+    ),
+    Project(
+        "Siri-like AI Assistant on TmaxOS | TmaxOS, 2019 - 2020",
+        "Built model inference, data preprocessing, system integration, and asynchronous application flows for an OS-level AI assistant.",
     ),
 )
 
 CORE_PROJECTS_KO = (
     Project(
-        "TmaxOS AI 어시스턴트 | TmaxOS, 2019 - 2020",
-        "TmaxOS 기반 Siri형 AI 어시스턴트의 모델 추론, 데이터 전처리, 시스템 연동 및 비동기 애플리케이션 흐름을 개발했습니다.",
-    ),
-    Project(
-        "고성능 패킷 미러링 | 삼성전자 네트워크사업부, 2021 - 2024",
-        "제한된 시스템 리소스에서 초당 최대 130,000개 패킷을 미러링·전달하는 Linux 애플리케이션을 개발했습니다.",
-    ),
-    Project(
-        "전사 AI 챗봇 | Samsung Research, 2024 - 2025",
-        "30,000명의 임직원이 사용하는 전사 AI 챗봇의 프로덕션 전달과 신뢰성을 리딩했습니다. 개발·스테이징·프로덕션 Kubernetes 릴리스를 보안 요구사항과 연결하고 Grafana, Prometheus, OpenTelemetry 관측 환경을 구축했습니다.",
+        "사내 AX Agent Platform | 삼성전자, 2026 - 현재",
+        "AWS EKS에서 런타임 조정, 도메인 자동 발급, 인가된 사용자 전용 접근 및 기존 사내 LLM Gateway API 연동을 제공하는 거버넌스형 AX App 배포 플랫폼을 구축했습니다.",
     ),
     Project(
         "B2C 생성형 AI 서비스 한국·UK 출시 | 삼성전자, 2026.01 - 06",
         "Microsoft와 협업한 Azure 기반 소비자 AI 서비스의 한국·UK 출시 준비, 초기 프로덕션 운영, 장애 대응 및 안정화를 수행했습니다.",
     ),
     Project(
-        "사내 AX Agent Platform | 삼성전자, 2026 - 현재",
-        "AWS EKS에서 런타임 조정, 도메인 자동 발급, 인가된 사용자 전용 접근 및 기존 사내 LLM Gateway API 연동을 제공하는 거버넌스형 AX App 배포 플랫폼을 구축했습니다.",
+        "전사 AI 챗봇 | Samsung Research, 2024 - 2025",
+        "30,000명의 임직원이 사용하는 전사 AI 챗봇의 프로덕션 전달과 신뢰성을 리딩했습니다. 개발·스테이징·프로덕션 Kubernetes 릴리스를 보안 요구사항과 연결하고 Grafana, Prometheus, OpenTelemetry 관측 환경을 구축했습니다.",
+    ),
+    Project(
+        "고성능 패킷 미러링 | 삼성전자 네트워크사업부, 2021 - 2024",
+        "제한된 시스템 리소스에서 초당 최대 130,000개 패킷을 미러링·전달하는 Linux 애플리케이션을 개발했습니다.",
+    ),
+    Project(
+        "TmaxOS AI 어시스턴트 | TmaxOS, 2019 - 2020",
+        "TmaxOS 기반 Siri형 AI 어시스턴트의 모델 추론, 데이터 전처리, 시스템 연동 및 비동기 애플리케이션 흐름을 개발했습니다.",
     ),
 )
 
@@ -549,8 +549,8 @@ def variants() -> tuple[ResumeVariant, ...]:
             experiences=experiences,
             projects=(
                 *CORE_PROJECTS_EN,
-                CLUSTER_MONITORING_PROJECT,
                 OFFERNOW_PROJECT,
+                CLUSTER_MONITORING_PROJECT,
             ),
         ),
         ResumeVariant(
@@ -648,11 +648,11 @@ def variants() -> tuple[ResumeVariant, ...]:
             experiences=korean_experiences(),
             projects=(
                 *CORE_PROJECTS_KO,
+                OFFERNOW_PROJECT_KO,
                 Project(
                     "LLM 기반 클러스터 모니터링 | 개인 프로젝트",
                     "사내 클러스터의 오류를 감지하고 LLM으로 분석해, 문제 요약·분석 내용·해결 방법을 이메일로 전달하는 모니터링 시스템을 만들었습니다.",
                 ),
-                OFFERNOW_PROJECT_KO,
             ),
         ),
     )

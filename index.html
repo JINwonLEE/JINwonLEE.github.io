@@ -20,9 +20,9 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/style.css?v=20261113-6">
+  <link rel="stylesheet" href="./assets/css/style.css?v=20261114-1">
   <script>document.documentElement.classList.add("js");</script>
-  <script src="./assets/js/script.js?v=20261113-6" defer></script>
+  <script src="./assets/js/script.js?v=20261114-1" defer></script>
 </head>
 <body class="korean" id="top">
   <canvas id="field" aria-hidden="true"></canvas>
@@ -48,10 +48,10 @@
       </div>
       <div class="rail-actions">
         <div class="cv-links" aria-label="CV 및 포트폴리오 다운로드">
-            <a href="./CV-Eng.pdf?v=20261113-6" target="_blank" rel="noopener">English CV</a>
-            <a href="./CV-Kor.pdf?v=20261113-6" target="_blank" rel="noopener">Korean CV</a>
-            <a href="./Portfolio-Eng.pdf?v=20261113-6" target="_blank" rel="noopener">영문 포트폴리오</a>
-            <a href="./Portfolio-Kor.pdf?v=20261113-6" target="_blank" rel="noopener">국문 포트폴리오</a>
+            <a href="./CV-Eng.pdf?v=20261114-1" target="_blank" rel="noopener">English CV</a>
+            <a href="./CV-Kor.pdf?v=20261114-1" target="_blank" rel="noopener">Korean CV</a>
+            <a href="./Portfolio-Eng.pdf?v=20261114-1" target="_blank" rel="noopener">영문 포트폴리오</a>
+            <a href="./Portfolio-Kor.pdf?v=20261114-1" target="_blank" rel="noopener">국문 포트폴리오</a>
         </div>
         <div class="rail-links">
           <a href="https://github.com/JINwonLEE" target="_blank" rel="noopener">GitHub</a>
@@ -117,44 +117,16 @@
       <section class="section reveal" id="projects" aria-labelledby="projects-heading">
         <h2 class="section-title" id="projects-heading">프로젝트</h2>
         <article class="project-feature glow">
-          <div class="project-media"><img src="./assets/images/thumb-ai-assistant-os.svg?v=20260915-align1" alt="TmaxOS AI 어시스턴트 다이어그램" width="800" height="500" loading="lazy"></div>
+          <div class="project-media"><img src="./assets/images/thumb-ax-agent-platform.svg?v=20260915-align1" alt="AX Agent Platform 아키텍처 개요" width="800" height="500" loading="lazy"></div>
           <div class="project-body">
-            <div class="project-meta"><span>2019–2020</span><span>TmaxOS</span><span>AI 어시스턴트</span></div>
-            <h3>TmaxOS AI 어시스턴트</h3>
-            <p>TmaxOS에서 동작하는 Siri형 AI 어시스턴트의 모델 추론, 데이터 전처리, 시스템 연동, 비동기 애플리케이션 흐름을 개발했습니다.</p>
-            <button type="button" class="card-open" data-open="tmax-assistant" aria-haspopup="dialog" aria-label="자세히 보기: TmaxOS AI 어시스턴트">자세히 보기<span aria-hidden="true">→</span></button>
+            <div class="project-meta"><span>2026</span><span>Samsung Electronics</span><span>Platform / Applied AI</span></div>
+            <h3>사내 AX Agent Platform</h3>
+            <p>AWS EKS에서 에이전트 런타임을 사내 배포 표준에 맞게 조정하는 플랫폼을 설계·구축했습니다. 개발자는 AX App을 배포하면 도메인을 자동으로 발급받고, 인가된 사용자만 접근하도록 설정하며, 플랫폼 연동을 통해 기존 사내 LLM Gateway API를 사용할 수 있습니다.</p>
+            <button type="button" class="card-open" data-open="ax-agent-platform" aria-haspopup="dialog" aria-label="자세히 보기: 사내 AX Agent Platform">자세히 보기<span aria-hidden="true">→</span></button>
             <dl class="case-facts">
-                <div><dt>담당</dt><dd>모델 추론, 데이터 전처리, 시스템 연동</dd></div>
-                <div><dt>설계</dt><dd>자연스러운 상호작용을 위한 비동기 아키텍처</dd></div>
-                <div><dt>환경</dt><dd>TmaxOS 시스템 수준 통합</dd></div>
-            </dl>
-          </div>
-        </article>
-        <article class="project-feature glow">
-          <div class="project-media"><img src="./assets/images/thumb-packet-mirroring.svg?v=20260915-align1" alt="고성능 패킷 미러링 다이어그램" width="800" height="500" loading="lazy"></div>
-          <div class="project-body">
-            <div class="project-meta"><span>2021–2024</span><span>삼성전자 네트워크사업부</span><span>초당 130,000 패킷</span></div>
-            <h3>고성능 패킷 미러링</h3>
-            <p>제한된 시스템 리소스에서 초당 최대 130,000개 패킷을 실시간으로 미러링해 대상 서버로 전달하는 Linux 애플리케이션을 개발했습니다.</p>
-            <button type="button" class="card-open" data-open="packet-mirroring" aria-haspopup="dialog" aria-label="자세히 보기: 고성능 패킷 미러링">자세히 보기<span aria-hidden="true">→</span></button>
-            <dl class="case-facts">
-                <div><dt>담당</dt><dd>구현과 리소스 제약 환경에 맞춘 조정</dd></div>
-                <div><dt>규모</dt><dd>초당 최대 130,000개 패킷</dd></div>
-                <div><dt>기술</dt><dd>Linux, 네트워킹, 고성능 I/O</dd></div>
-            </dl>
-          </div>
-        </article>
-        <article class="project-feature glow">
-          <div class="project-media"><img src="./assets/images/thumb-enterprise-chatbot.svg?v=20260915-align1" alt="전사 AI 챗봇 플랫폼 개요" width="800" height="500" loading="lazy"></div>
-          <div class="project-body">
-            <div class="project-meta"><span>2024–2025</span><span>Samsung Research</span><span>30,000 employees</span></div>
-            <h3>전사 AI 챗봇 플랫폼</h3>
-            <p>사내 Kubernetes 클러스터에서 30,000명의 임직원이 사용하는 전사 AI 챗봇의 프로덕션 전달과 애플리케이션 신뢰성을 리딩했습니다. 개발·스테이징·프로덕션 릴리스를 담당하며 보안·운영 요구사항과 연결했고, 서비스 가시성과 운영 진단을 위한 관측 환경을 구축했습니다.</p>
-            <button type="button" class="card-open" data-open="chatbot-platform" aria-haspopup="dialog" aria-label="자세히 보기: 전사 AI 챗봇 플랫폼">자세히 보기<span aria-hidden="true">→</span></button>
-            <dl class="case-facts">
-                <div><dt>담당</dt><dd>프로덕션 전달, 릴리스, 애플리케이션 신뢰성</dd></div>
-                <div><dt>규모</dt><dd>임직원 30,000명, 사내 Kubernetes 클러스터</dd></div>
-                <div><dt>기술</dt><dd>Kubernetes, ArgoCD, Helm/Helmfile, GitHub Actions, OpenTelemetry</dd></div>
+                <div><dt>담당</dt><dd>아키텍처, 구현, 배포 및 운영</dd></div>
+                <div><dt>통제</dt><dd>인증, 인가, 보안 및 거버넌스</dd></div>
+                <div><dt>기술</dt><dd>AWS EKS, Kubernetes, 런타임·API 연동</dd></div>
             </dl>
           </div>
         </article>
@@ -173,33 +145,68 @@
           </div>
         </article>
         <article class="project-feature glow">
-          <div class="project-media"><img src="./assets/images/thumb-ax-agent-platform.svg?v=20260915-align1" alt="AX Agent Platform 아키텍처 개요" width="800" height="500" loading="lazy"></div>
+          <div class="project-media"><img src="./assets/images/thumb-enterprise-chatbot.svg?v=20260915-align1" alt="전사 AI 챗봇 플랫폼 개요" width="800" height="500" loading="lazy"></div>
           <div class="project-body">
-            <div class="project-meta"><span>2026</span><span>Samsung Electronics</span><span>Platform / Applied AI</span></div>
-            <h3>사내 AX Agent Platform</h3>
-            <p>AWS EKS에서 에이전트 런타임을 사내 배포 표준에 맞게 조정하는 플랫폼을 설계·구축했습니다. 개발자는 AX App을 배포하면 도메인을 자동으로 발급받고, 인가된 사용자만 접근하도록 설정하며, 플랫폼 연동을 통해 기존 사내 LLM Gateway API를 사용할 수 있습니다.</p>
-            <button type="button" class="card-open" data-open="ax-agent-platform" aria-haspopup="dialog" aria-label="자세히 보기: 사내 AX Agent Platform">자세히 보기<span aria-hidden="true">→</span></button>
+            <div class="project-meta"><span>2024–2025</span><span>Samsung Research</span><span>30,000 employees</span></div>
+            <h3>전사 AI 챗봇 플랫폼</h3>
+            <p>사내 Kubernetes 클러스터에서 30,000명의 임직원이 사용하는 전사 AI 챗봇의 프로덕션 전달과 애플리케이션 신뢰성을 리딩했습니다. 개발·스테이징·프로덕션 릴리스를 담당하며 보안·운영 요구사항과 연결했고, 서비스 가시성과 운영 진단을 위한 관측 환경을 구축했습니다.</p>
+            <button type="button" class="card-open" data-open="chatbot-platform" aria-haspopup="dialog" aria-label="자세히 보기: 전사 AI 챗봇 플랫폼">자세히 보기<span aria-hidden="true">→</span></button>
             <dl class="case-facts">
-                <div><dt>담당</dt><dd>아키텍처, 구현, 배포 및 운영</dd></div>
-                <div><dt>통제</dt><dd>인증, 인가, 보안 및 거버넌스</dd></div>
-                <div><dt>기술</dt><dd>AWS EKS, Kubernetes, 런타임·API 연동</dd></div>
+                <div><dt>담당</dt><dd>프로덕션 전달, 릴리스, 애플리케이션 신뢰성</dd></div>
+                <div><dt>규모</dt><dd>임직원 30,000명, 사내 Kubernetes 클러스터</dd></div>
+                <div><dt>기술</dt><dd>Kubernetes, ArgoCD, Helm/Helmfile, GitHub Actions, OpenTelemetry</dd></div>
+            </dl>
+          </div>
+        </article>
+        <article class="project-feature glow">
+          <div class="project-media"><img src="./assets/images/thumb-packet-mirroring.svg?v=20260915-align1" alt="고성능 패킷 미러링 다이어그램" width="800" height="500" loading="lazy"></div>
+          <div class="project-body">
+            <div class="project-meta"><span>2021–2024</span><span>삼성전자 네트워크사업부</span><span>초당 130,000 패킷</span></div>
+            <h3>고성능 패킷 미러링</h3>
+            <p>제한된 시스템 리소스에서 초당 최대 130,000개 패킷을 실시간으로 미러링해 대상 서버로 전달하는 Linux 애플리케이션을 개발했습니다.</p>
+            <button type="button" class="card-open" data-open="packet-mirroring" aria-haspopup="dialog" aria-label="자세히 보기: 고성능 패킷 미러링">자세히 보기<span aria-hidden="true">→</span></button>
+            <dl class="case-facts">
+                <div><dt>담당</dt><dd>구현과 리소스 제약 환경에 맞춘 조정</dd></div>
+                <div><dt>규모</dt><dd>초당 최대 130,000개 패킷</dd></div>
+                <div><dt>기술</dt><dd>Linux, 네트워킹, 고성능 I/O</dd></div>
+            </dl>
+          </div>
+        </article>
+        <article class="project-feature glow">
+          <div class="project-media"><img src="./assets/images/thumb-ai-assistant-os.svg?v=20260915-align1" alt="TmaxOS AI 어시스턴트 다이어그램" width="800" height="500" loading="lazy"></div>
+          <div class="project-body">
+            <div class="project-meta"><span>2019–2020</span><span>TmaxOS</span><span>AI 어시스턴트</span></div>
+            <h3>TmaxOS AI 어시스턴트</h3>
+            <p>TmaxOS에서 동작하는 Siri형 AI 어시스턴트의 모델 추론, 데이터 전처리, 시스템 연동, 비동기 애플리케이션 흐름을 개발했습니다.</p>
+            <button type="button" class="card-open" data-open="tmax-assistant" aria-haspopup="dialog" aria-label="자세히 보기: TmaxOS AI 어시스턴트">자세히 보기<span aria-hidden="true">→</span></button>
+            <dl class="case-facts">
+                <div><dt>담당</dt><dd>모델 추론, 데이터 전처리, 시스템 연동</dd></div>
+                <div><dt>설계</dt><dd>자연스러운 상호작용을 위한 비동기 아키텍처</dd></div>
+                <div><dt>환경</dt><dd>TmaxOS 시스템 수준 통합</dd></div>
             </dl>
           </div>
         </article>
         <div class="project-grid">
+          <article class="project-card glow offernow-case">
+            <div class="project-meta"><span>2026.09 – 현재</span><span>개인 프로젝트</span></div>
+            <h3>오퍼나우 (OfferNow)</h3>
+            <p>CV 기반 IT 채용 추천 서비스입니다. 올린 CV를 근거 기반 경력 프로필로 바꾸고, 50여 개 기업의 공식 채용 공고 중 추천마다 근거가 된 CV 내용을 함께 보여줍니다.</p>
+            <p class="tech-line">Expo · FastAPI · PostgreSQL · LLM · Docker</p>
+            <button type="button" class="card-open" data-open="offernow" aria-haspopup="dialog" aria-label="자세히 보기: 오퍼나우 (OfferNow)">자세히 보기<span aria-hidden="true">→</span></button>
+          </article>
+          <article class="project-card glow">
+            <div class="project-meta"><span>개인 프로젝트</span><span>사내 클러스터 운영</span></div>
+            <h3>LLM 기반 클러스터 모니터링</h3>
+            <p>사내 클러스터의 오류를 감지하고 LLM으로 분석해, 문제 요약·분석 내용·해결 방법을 이메일로 전달하는 모니터링 시스템을 만들었습니다.</p>
+            <p class="tech-line">LLM · 클러스터 모니터링 · 오류 분석 · 이메일 알림</p>
+            <button type="button" class="card-open" data-open="cluster-monitoring" aria-haspopup="dialog" aria-label="자세히 보기: LLM 기반 클러스터 모니터링">자세히 보기<span aria-hidden="true">→</span></button>
+          </article>
           <article class="project-card glow">
             <div class="project-meta"><span>Observability</span><span>Production reliability</span></div>
             <h3>중앙 집중식 모니터링 &amp; 관측성</h3>
             <p>시스템과 컨테이너 런타임 상태를 확인하는 공통 모니터링 경로, 대시보드 및 알림을 구축해 장애 탐지와 프로덕션 분석을 지원했습니다.</p>
             <p class="tech-line">Grafana · Prometheus · OpenTelemetry · Loki</p>
             <button type="button" class="card-open" data-open="observability" aria-haspopup="dialog" aria-label="자세히 보기: 중앙 집중식 모니터링 &amp; 관측성">자세히 보기<span aria-hidden="true">→</span></button>
-          </article>
-          <article class="project-card glow">
-            <div class="project-meta"><span>Platform automation</span><span>Developer environments</span></div>
-            <h3>원클릭 Kubernetes 프로비저닝</h3>
-            <p>클라우드 개발자가 반복 가능한 환경을 구성할 수 있도록 Bash 기반 원클릭 Kubernetes 클러스터 프로비저닝 시스템을 설계·개발했습니다.</p>
-            <p class="tech-line">Bash · Kubernetes · Linux</p>
-            <button type="button" class="card-open" data-open="k8s-provisioning" aria-haspopup="dialog" aria-label="자세히 보기: 원클릭 Kubernetes 프로비저닝">자세히 보기<span aria-hidden="true">→</span></button>
           </article>
           <article class="project-card glow">
             <div class="project-meta"><span>GitOps</span><span>Application delivery</span></div>
@@ -209,18 +216,11 @@
             <button type="button" class="card-open" data-open="gitops" aria-haspopup="dialog" aria-label="자세히 보기: ArgoCD 기반 GitOps CI/CD">자세히 보기<span aria-hidden="true">→</span></button>
           </article>
           <article class="project-card glow">
-            <div class="project-meta"><span>개인 프로젝트</span><span>사내 클러스터 운영</span></div>
-            <h3>LLM 기반 클러스터 모니터링</h3>
-            <p>사내 클러스터의 오류를 감지하고 LLM으로 분석해, 문제 요약·분석 내용·해결 방법을 이메일로 전달하는 모니터링 시스템을 만들었습니다.</p>
-            <p class="tech-line">LLM · 클러스터 모니터링 · 오류 분석 · 이메일 알림</p>
-            <button type="button" class="card-open" data-open="cluster-monitoring" aria-haspopup="dialog" aria-label="자세히 보기: LLM 기반 클러스터 모니터링">자세히 보기<span aria-hidden="true">→</span></button>
-          </article>
-          <article class="project-card glow offernow-case">
-            <div class="project-meta"><span>2026.09 – 현재</span><span>개인 프로젝트</span></div>
-            <h3>오퍼나우 (OfferNow)</h3>
-            <p>CV 기반 IT 채용 추천 서비스입니다. 올린 CV를 근거 기반 경력 프로필로 바꾸고, 50여 개 기업의 공식 채용 공고 중 추천마다 근거가 된 CV 내용을 함께 보여줍니다.</p>
-            <p class="tech-line">Expo · FastAPI · PostgreSQL · LLM · Docker</p>
-            <button type="button" class="card-open" data-open="offernow" aria-haspopup="dialog" aria-label="자세히 보기: 오퍼나우 (OfferNow)">자세히 보기<span aria-hidden="true">→</span></button>
+            <div class="project-meta"><span>Platform automation</span><span>Developer environments</span></div>
+            <h3>원클릭 Kubernetes 프로비저닝</h3>
+            <p>클라우드 개발자가 반복 가능한 환경을 구성할 수 있도록 Bash 기반 원클릭 Kubernetes 클러스터 프로비저닝 시스템을 설계·개발했습니다.</p>
+            <p class="tech-line">Bash · Kubernetes · Linux</p>
+            <button type="button" class="card-open" data-open="k8s-provisioning" aria-haspopup="dialog" aria-label="자세히 보기: 원클릭 Kubernetes 프로비저닝">자세히 보기<span aria-hidden="true">→</span></button>
           </article>
         </div>
         <p class="additional-work">추가 경험: 기계 번역을 위한 LLM 평가 작업에 참여했습니다. 사내 작업은 기밀 코드와 상세 아키텍처 없이 설명합니다.</p>
