@@ -33,6 +33,14 @@ BLUE = colors.HexColor("#2F5FA7")
 LINE = colors.HexColor("#D9E1DC")
 SOFT = colors.HexColor("#F3F7F5")
 
+# Spacing added per unit of a page's spacing factor (points).
+SECTION_GAP = 10.0
+ITEM_GAP = 6.0
+LINE_GAP = 1.5
+MAX_SPACING = 2.6
+GAP_SPACING_LIMIT = 2.0
+TARGET_FREE_SPACE = 6.0
+
 
 @dataclass(frozen=True)
 class Experience:
@@ -64,8 +72,19 @@ class ResumeVariant:
 
 
 class ResumeDocument:
-    def __init__(self, path: str, language: str, title: str):
+    def __init__(
+        self,
+        path: str,
+        language: str,
+        title: str,
+        spacing: dict[int, float] | None = None,
+    ):
         self.path = path
+        # Per-page spacing factor chosen by build_resume so each page's free
+        # space is spread between sections, entries and lines instead of
+        # collecting at the bottom of the page.
+        self.spacing = spacing or {}
+        self.free_space: dict[int, float] = {}
         self.language = language
         self.title = title
         self.canvas = canvas.Canvas(path, pagesize=A4)
@@ -76,6 +95,7 @@ class ResumeDocument:
         self.bottom = 13 * mm
         self.y = self.height - self.top
         self.page = 1
+        self.sections_on_page = 0
 
     @property
     def usable_width(self) -> float:
@@ -120,10 +140,23 @@ class ResumeDocument:
             f"Jinwon Lee  |  {self.page}" if self.language == "en" else f"이진원  |  {self.page}",
         )
 
+    def extra(self, unit: float) -> float:
+        factor = self.spacing.get(self.page, 0.0)
+        if unit != LINE_GAP:
+            # Section and entry gaps stop growing first; beyond that only
+            # line spacing opens up, so a sparse page does not look scattered.
+            factor = min(factor, GAP_SPACING_LIMIT)
+        return unit * factor
+
+    def item_gap(self) -> None:
+        self.y -= self.extra(ITEM_GAP)
+
     def new_page(self) -> None:
+        self.free_space[self.page] = self.y - self.bottom
         self.footer()
         self.canvas.showPage()
         self.page += 1
+        self.sections_on_page = 0
         self.y = self.height - self.top
         self.canvas.setFillColor(INK)
         self.canvas.setFont(FONT, 9.2)
@@ -162,7 +195,11 @@ class ResumeDocument:
         self.y -= 9
 
     def section(self, title: str) -> None:
-        self.ensure(22)
+        gap = self.extra(SECTION_GAP) if self.sections_on_page else 0.0
+        self.ensure(22 + gap)
+        if self.sections_on_page:
+            self.y -= self.extra(SECTION_GAP)
+        self.sections_on_page += 1
         self.y -= 4
         self.canvas.setFillColor(ACCENT)
         self.canvas.setFont(FONT, 8.6)
@@ -175,6 +212,7 @@ class ResumeDocument:
         self.y -= 12
 
     def paragraph(self, text: str, size: float = 8.45, leading: float = 12.0) -> None:
+        leading += self.extra(LINE_GAP)
         lines = self.wrap(text, size, self.usable_width)
         self.ensure(len(lines) * leading + 2)
         self.canvas.setFillColor(INK)
@@ -195,6 +233,7 @@ class ResumeDocument:
     ) -> None:
         x = self.left if x is None else x
         width = self.usable_width if width is None else width
+        leading += self.extra(LINE_GAP)
         indent = 10
         for item in items:
             lines = self.wrap(item, size, width - indent)
@@ -233,7 +272,8 @@ class ResumeDocument:
         label_width = 37 * mm
         for label, detail in rows:
             lines = self.wrap(detail, 7.75, self.usable_width - label_width - 8)
-            height = max(12.5, len(lines) * 10.7)
+            row_leading = 10.7 + self.extra(LINE_GAP)
+            height = max(12.5, len(lines) * row_leading) + self.extra(ITEM_GAP) / 2
             self.ensure(height + 2)
             self.canvas.setFillColor(ACCENT)
             self.canvas.setFont(FONT, 7.75)
@@ -242,7 +282,7 @@ class ResumeDocument:
             yy = self.y
             for line in lines:
                 self.canvas.drawString(self.left + label_width, yy, line)
-                yy -= 10.7
+                yy -= row_leading
             self.y -= height
 
     def experience(self, experience: Experience) -> None:
@@ -266,6 +306,7 @@ class ResumeDocument:
         self.y -= 11
         self.bullets(experience.bullets, x=self.left + 3, width=self.usable_width - 3)
         self.y -= 3
+        self.item_gap()
 
     def project(self, project: Project) -> None:
         title_size = 8.2
@@ -285,6 +326,7 @@ class ResumeDocument:
             self.canvas.drawString(self.left + 8, self.y, line)
             self.y -= 10.8
         self.y -= 4
+        self.item_gap()
 
     def compact_item(self, title: str, meta: str, detail: str = "") -> None:
         self.ensure(25)
@@ -302,8 +344,10 @@ class ResumeDocument:
                 self.canvas.drawString(self.left, self.y, line)
                 self.y -= 10.2
         self.y -= 4
+        self.item_gap()
 
     def save(self) -> None:
+        self.free_space[self.page] = self.y - self.bottom
         self.footer()
         self.canvas.save()
 
@@ -591,7 +635,27 @@ def variants() -> tuple[ResumeVariant, ...]:
 
 def build_resume(variant: ResumeVariant) -> str:
     path = os.path.join(OUTPUT_DIR, variant.filename)
-    doc = ResumeDocument(path, variant.language, variant.professional_title)
+    probe = path + ".layout.pdf"
+    spacing: dict[int, float] = {}
+    base = render_resume(variant, probe, spacing)
+    for page in sorted(base.free_space):
+        low, high = 0.0, MAX_SPACING
+        for _ in range(18):
+            mid = (low + high) / 2
+            trial = render_resume(variant, probe, {**spacing, page: mid})
+            fits = len(trial.free_space) == len(base.free_space) and trial.free_space[page] >= TARGET_FREE_SPACE
+            low, high = (mid, high) if fits else (low, mid)
+        spacing[page] = low
+    os.remove(probe)
+    render_resume(variant, path, spacing)
+    shutil.copyfile(path, os.path.join(ROOT, variant.root_filename))
+    for legacy in LEGACY_FILENAMES.get(variant.root_filename, ()):
+        shutil.copyfile(path, os.path.join(OUTPUT_DIR, legacy))
+    return path
+
+
+def render_resume(variant: ResumeVariant, path: str, spacing: dict[int, float]) -> ResumeDocument:
+    doc = ResumeDocument(path, variant.language, variant.professional_title, spacing)
     doc.header()
     doc.section("Profile" if variant.language == "en" else "프로필")
     for paragraph in variant.summary:
@@ -601,13 +665,10 @@ def build_resume(variant: ResumeVariant) -> str:
     doc.section("Core Skills" if variant.language == "en" else "핵심 역량")
     doc.skill_rows(variant.skills)
     doc.section("Experience" if variant.language == "en" else "경력")
-    for experience in variant.experiences[:3]:
+    for experience in variant.experiences:
         doc.experience(experience)
 
     doc.new_page()
-    doc.section("Experience (continued)" if variant.language == "en" else "경력 (계속)")
-    for experience in variant.experiences[3:]:
-        doc.experience(experience)
 
     doc.section("Selected Engineering Work" if variant.language == "en" else "주요 엔지니어링 작업")
     for project in variant.projects:
@@ -665,10 +726,7 @@ def build_resume(variant: ResumeVariant) -> str:
     )
     doc.bullets(publications, size=7.45, leading=10.1, gap=1.5)
     doc.save()
-    shutil.copyfile(path, os.path.join(ROOT, variant.root_filename))
-    for legacy in LEGACY_FILENAMES.get(variant.root_filename, ()):
-        shutil.copyfile(path, os.path.join(OUTPUT_DIR, legacy))
-    return path
+    return doc
 
 
 # Older dated URLs stay valid but serve the latest content.

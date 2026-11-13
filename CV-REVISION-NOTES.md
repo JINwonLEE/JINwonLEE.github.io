@@ -63,6 +63,18 @@ The user clarified that their contribution to evaluation work was limited. Evalu
 - Do not claim users, adoption, or recommendation-quality metrics for OfferNow until they are measured.
 - Footer and dated filenames moved to November 2026. Older dated PDF URLs are refreshed with the latest content by the builders.
 
+## Layout changes | November 13
+
+- CV page 1 now holds all four experience entries; page 2 starts at `Selected Engineering Work`. The builder measures each page's free space and spreads it between sections, entries, and lines, so page 1 no longer ends with a large empty block.
+- On the website the hackathon moved out of `Education & Research` into its own `Awards & Activities` section above the contact block.
+
+## Website redesign | November 13
+
+- The user asked for a less template-like site with visible interaction. Both pages now use a dark two-column layout: a fixed left rail (name, title, section navigation, CV links) and a scrolling right column (about, experience, projects, research, awards, contact).
+- Interaction lives in `assets/js/script.js`: a spotlight that follows the cursor, drifting background points that link up near the cursor, rows that highlight while their siblings dim, project cards whose border glows at the cursor, a character-by-character name reveal, and sections that fade in on scroll. All of it is skipped under `prefers-reduced-motion`, and the cursor effects only run on devices with a mouse.
+- Copy was carried over from the previous pages. The About paragraphs restate existing verified claims in first person; no new claims were added.
+- Only the AX Agent Platform and OfferNow keep diagrams. Replace the OfferNow diagram with a real product screenshot when one is available.
+
 ## Claims to avoid
 
 - Terraform or Ansible experience without a new source
