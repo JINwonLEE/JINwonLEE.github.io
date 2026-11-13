@@ -75,6 +75,11 @@ The user clarified that their contribution to evaluation work was limited. Evalu
 - Copy was carried over from the previous pages. The About paragraphs restate existing verified claims in first person; no new claims were added.
 - The two featured cards are professional work only: AX Agent Platform and the company-wide AI chatbot platform. The user asked that OfferNow, a personal project, not be featured; it sits in the smaller card grid next to the other personal project.
 
+## Project details | November 13
+
+- The user asked how to look at a project in more depth. Every project card (two featured, six small) now opens a details window with the project diagram, a longer description, problem, role, engineering, outcome, and technologies. Arrow keys or the header buttons move between projects, Esc or a click outside closes it, and `#project-<key>` in the URL opens one directly.
+- The detail text is copied from the matching entries in `portfolio-config.json` and `portfolio-config-ko.json` (the same text as the portfolio PDFs), stored in `<template id="detail-…">` blocks at the end of each page. No new claims were added.
+
 ## Default language | November 13
 
 - The user asked for Korean to be the default. `index.html` is now the Korean page, the English page moved to `index-en.html`, and `index-ko.html` redirects to the root so older links keep working. The portfolio PDFs still link to the root URL.

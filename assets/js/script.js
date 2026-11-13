@@ -57,6 +57,43 @@
     window.addEventListener("resize", setActive);
   }
 
+  // Project cards open a details dialog; arrows move between projects.
+  const dialog = document.getElementById("project-dialog");
+  const openers = [...document.querySelectorAll("[data-open]")];
+  if (dialog && typeof dialog.showModal === "function" && openers.length) {
+    const body = dialog.querySelector(".dialog-body");
+    const count = dialog.querySelector(".dialog-count");
+    const keys = openers.map((button) => button.dataset.open);
+    const baseUrl = () => window.location.pathname + window.location.search;
+    let index = 0;
+    const show = (next) => {
+      index = (next + keys.length) % keys.length;
+      const template = document.getElementById(`detail-${keys[index]}`);
+      if (!template) return;
+      body.replaceChildren(template.content.cloneNode(true));
+      body.scrollTop = 0;
+      count.textContent = `${String(index + 1).padStart(2, "0")} / ${String(keys.length).padStart(2, "0")}`;
+      if (!dialog.open) dialog.showModal();
+      window.history.replaceState(null, "", `${baseUrl()}#project-${keys[index]}`);
+    };
+    openers.forEach((button, position) => button.addEventListener("click", () => show(position)));
+    dialog.addEventListener("click", (event) => {
+      const step = event.target.closest("[data-step]");
+      if (step) show(index + Number(step.dataset.step));
+      else if (event.target === dialog || event.target.closest("[data-close]")) dialog.close();
+    });
+    dialog.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowRight") show(index + 1);
+      if (event.key === "ArrowLeft") show(index - 1);
+    });
+    dialog.addEventListener("close", () => {
+      body.replaceChildren();
+      window.history.replaceState(null, "", baseUrl());
+    });
+    const linked = keys.indexOf(window.location.hash.replace("#project-", ""));
+    if (window.location.hash.startsWith("#project-") && linked >= 0) show(linked);
+  }
+
   if (!finePointer || reduceMotion) return;
 
   // Spotlight that follows the cursor, and a glow that tracks it inside cards.
