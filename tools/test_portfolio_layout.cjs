@@ -121,7 +121,7 @@ for (const [name, width] of [['desktop', 1440], ['mobile', 390]]) {
         await page.goto(`file://${root}/${filename}`, { waitUntil: 'load' });
         const openers = page.locator('.project-feature .card-open, .project-card .card-open');
         const count = await openers.count();
-        assert.equal(count, 8);
+        assert.equal(count, 10);
         for (let index = 0; index < count; index += 1) {
           const opener = openers.nth(index);
           await opener.evaluate(el => el.closest('.glow').scrollIntoView({ block: 'center', behavior: 'instant' }));

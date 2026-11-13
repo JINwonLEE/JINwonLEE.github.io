@@ -7,7 +7,7 @@
     "phone": "+82 10-2422-1429",
     "location": "서울, 대한민국",
     "avatar": "./assets/images/profile-photo.jpg",
-    "cv_file": "./CV-Kor.pdf?v=20261113-5"
+    "cv_file": "./CV-Kor.pdf?v=20261113-6"
   },
 
   "social": {
@@ -17,7 +17,7 @@
 
   "about": {
     "summary": [
-      "약 8년 동안 거버넌스형 Agent App, 클라우드 플랫폼 및 사용자 대상 서비스를 프로덕션까지 전달해 온 AI 플랫폼·신뢰성 엔지니어입니다. 삼성전자에서 AWS EKS 기반 사내 AX Agent Platform을 설계·구축하고 있으며 Azure 기반 글로벌 B2C 생성형 AI 서비스의 UK 출시와 초기 안정화를 지원했습니다.",
+      "약 8년 동안 거버넌스형 Agent App, 클라우드 플랫폼 및 사용자 대상 서비스를 프로덕션까지 전달해 온 AI 플랫폼·신뢰성 엔지니어입니다. 삼성전자에서 AWS EKS 기반 사내 AX Agent Platform을 설계·구축하고 있으며 Azure 기반 B2C 생성형 AI 서비스의 한국·UK 출시와 초기 안정화를 지원했습니다.",
       "Python, Kubernetes, 클라우드 네이티브 아키텍처, Agent 런타임·API 연동, 배포 자동화, 관측 가능성, 인증·인가 및 장애 대응을 다뤄왔습니다. 아키텍처와 구현부터 엔터프라이즈 연동, 출시 및 프로덕션 운영까지 전달 전 과정을 담당합니다."
     ]
   },
@@ -55,7 +55,7 @@
         "AX Agent Platform | 2026.07 - 현재: AWS EKS 기반 사내 플랫폼을 설계·구축하고, Agent 런타임과 배포 환경을 엔터프라이즈 플랫폼 표준에 맞게 조정",
         "도메인 자동 발급, 인가된 사용자 전용 접근, 인증·인가·보안·거버넌스 제어를 제공하는 셀프서비스 애플리케이션 전달 워크플로우 구현",
         "배포된 AX App이 기존 사내 LLM Gateway API를 사용할 수 있도록 플랫폼 측 클라이언트 호환성과 런타임 연동 제공",
-        "글로벌 B2C 생성형 AI 서비스 | 2026.01 - 2026.06: Microsoft와 협업하여 Azure 기반 소비자 서비스의 UK 출시 준비, 초기 프로덕션 운영, 장애 대응 및 초기 안정화 수행"
+        "B2C 생성형 AI 서비스 (한국·UK) | 2026.01 - 2026.06: Microsoft와 협업하여 Azure 기반 소비자 서비스의 한국·UK 출시 준비, 초기 프로덕션 운영, 장애 대응 및 초기 안정화 수행"
       ]
     },
     {
@@ -195,14 +195,14 @@
       "featured": true
     },
     {
-      "title": "글로벌 B2C 생성형 AI 서비스",
+      "title": "B2C 생성형 AI 서비스 (한국·UK)",
       "category": "인프라",
-      "description": "Microsoft Azure 기반 B2C 생성형 AI 서비스의 UK 확장, 초기 프로덕션 운영 및 장애 대응",
-      "detailedDescription": "Microsoft와 협업하여 Azure 기반 글로벌 B2C 생성형 AI 서비스의 UK 확장을 진행했습니다. 2026년 1월부터 6월까지 출시 준비, 초기 프로덕션 운영, 장애 대응 및 서비스 초기 안정화를 수행했습니다.",
-      "problem": "소비자 대상 생성형 AI 서비스를 UK로 확장하고 초기 프로덕션 운영을 안정화해야 했습니다.",
-      "role": "UK 출시 준비, 초기 프로덕션 운영, 장애 대응 및 초기 안정화를 위한 플랫폼/SRE 업무를 수행했습니다.",
+      "description": "Microsoft Azure 기반 B2C 생성형 AI 서비스의 한국·UK 출시, 초기 프로덕션 운영 및 장애 대응",
+      "detailedDescription": "Microsoft와 협업하여 Azure 기반 B2C 생성형 AI 서비스의 한국·UK 출시를 진행했습니다. 2026년 1월부터 6월까지 출시 준비, 초기 프로덕션 운영, 장애 대응 및 서비스 초기 안정화를 수행했습니다.",
+      "problem": "소비자 대상 생성형 AI 서비스를 한국과 UK에 출시하고 초기 프로덕션 운영을 안정화해야 했습니다.",
+      "role": "한국·UK 출시 준비, 초기 프로덕션 운영, 장애 대응 및 초기 안정화를 위한 플랫폼/SRE 업무를 수행했습니다.",
       "engineering": "Azure 및 Kubernetes 운영, 출시 준비, 프로덕션 안정화, 장애 대응",
-      "outcome": "UK 출시와 초기 안정화를 지원하고 2026년 6월 해당 업무를 마무리했습니다.",
+      "outcome": "한국·UK 출시와 초기 안정화를 지원하고 2026년 6월 해당 업무를 마무리했습니다.",
       "relevance": "소비자 대상 애플리케이션의 해외 출시와 안정적인 프로덕션 전환을 수행한 실무 경험입니다.",
       "technologies": ["Azure", "Kubernetes", "생성형 AI", "SRE", "장애 대응"],
       "image": "./assets/images/thumb-ai-serving-global.svg",

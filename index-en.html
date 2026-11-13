@@ -20,9 +20,9 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/style.css?v=20261113-5">
+  <link rel="stylesheet" href="./assets/css/style.css?v=20261113-6">
   <script>document.documentElement.classList.add("js");</script>
-  <script src="./assets/js/script.js?v=20261113-5" defer></script>
+  <script src="./assets/js/script.js?v=20261113-6" defer></script>
 </head>
 <body id="top">
   <canvas id="field" aria-hidden="true"></canvas>
@@ -48,10 +48,10 @@
       </div>
       <div class="rail-actions">
         <div class="cv-links" aria-label="CV and portfolio downloads">
-            <a href="./CV-Eng.pdf?v=20261113-5" target="_blank" rel="noopener">English CV</a>
-            <a href="./CV-Kor.pdf?v=20261113-5" target="_blank" rel="noopener">Korean CV</a>
-            <a href="./Portfolio-Eng.pdf?v=20261113-5" target="_blank" rel="noopener">English portfolio</a>
-            <a href="./Portfolio-Kor.pdf?v=20261113-5" target="_blank" rel="noopener">Korean portfolio</a>
+            <a href="./CV-Eng.pdf?v=20261113-6" target="_blank" rel="noopener">English CV</a>
+            <a href="./CV-Kor.pdf?v=20261113-6" target="_blank" rel="noopener">Korean CV</a>
+            <a href="./Portfolio-Eng.pdf?v=20261113-6" target="_blank" rel="noopener">English portfolio</a>
+            <a href="./Portfolio-Kor.pdf?v=20261113-6" target="_blank" rel="noopener">Korean portfolio</a>
         </div>
         <div class="rail-links">
           <a href="https://github.com/JINwonLEE" target="_blank" rel="noopener">GitHub</a>
@@ -66,7 +66,7 @@
       <section class="section reveal" id="about" aria-labelledby="about-heading">
         <h2 class="section-title" id="about-heading">About</h2>
         <div class="prose">
-          <p>For about eight years I have been taking agent applications, cloud platforms, and user-facing services into production. At <strong>Samsung Electronics</strong> I design and build an internal <a href="#projects">AX Agent Platform</a> on AWS EKS, and I supported a global B2C generative AI service on Azure through its UK rollout and early stabilization.</p>
+          <p>For about eight years I have been taking agent applications, cloud platforms, and user-facing services into production. At <strong>Samsung Electronics</strong> I design and build an internal <a href="#projects">AX Agent Platform</a> on AWS EKS, and I supported a B2C generative AI service on Azure through its Korea and UK launches and early stabilization.</p>
           <p>Before that I led production delivery and application reliability for a company-wide AI chatbot used by <strong>30,000 employees</strong> at Samsung Research, built Kubernetes platforms and a Linux packet-mirroring application measured at up to <strong>130,000 packets per second</strong> in Samsung's Network Division, and worked on an OS-level AI assistant at TmaxOS.</p>
           <p>I started in research: my master's work at UNIST on <a href="#research">distributed CNN training</a> reported up to a 2.3× speedup. Outside work I am building <a href="#projects">OfferNow</a>, a job recommendation service that shows the CV evidence behind every match.</p>
         </div>
@@ -80,7 +80,7 @@
             <div class="row-body">
               <h3>Samsung Electronics · AX Development Group</h3>
               <p class="row-role">SRE / AI Platform Engineer</p>
-              <p>AX Agent Platform on AWS EKS; governed self-service application delivery; existing LLM Gateway API integration; global B2C generative AI rollout and stabilization.</p>
+              <p>AX Agent Platform on AWS EKS; governed self-service application delivery; existing LLM Gateway API integration; Korea and UK launches and stabilization of a B2C generative AI service.</p>
               <ul class="chips"><li>AWS EKS</li><li>Kubernetes</li><li>Azure</li><li>AuthN/AuthZ</li><li>LLM Gateway API</li></ul>
             </div>
           </li>
@@ -117,16 +117,30 @@
       <section class="section reveal" id="projects" aria-labelledby="projects-heading">
         <h2 class="section-title" id="projects-heading">Projects</h2>
         <article class="project-feature glow">
-          <div class="project-media"><img src="./assets/images/thumb-ax-agent-platform.svg?v=20260915-align1" alt="AX Agent Platform architecture overview" width="800" height="500" loading="lazy"></div>
+          <div class="project-media"><img src="./assets/images/thumb-ai-assistant-os.svg?v=20260915-align1" alt="Siri-like AI Assistant on TmaxOS diagram" width="800" height="500" loading="lazy"></div>
           <div class="project-body">
-            <div class="project-meta"><span>2026</span><span>Samsung Electronics</span><span>Platform / Applied AI</span></div>
-            <h3>Internal AX Agent Platform</h3>
-            <p>Designed and built an AWS EKS platform that adapts an agent runtime to enterprise deployment standards. Developers can release AX applications, receive domains automatically, restrict access to authorized users, and consume an existing enterprise LLM Gateway API through the platform integration.</p>
-            <button type="button" class="card-open" data-open="ax-agent-platform" aria-haspopup="dialog" aria-label="View details: Internal AX Agent Platform">View details<span aria-hidden="true">→</span></button>
+            <div class="project-meta"><span>2019–2020</span><span>TmaxOS</span><span>AI assistant</span></div>
+            <h3>Siri-like AI Assistant on TmaxOS</h3>
+            <p>Built model inference, data preprocessing, system integration, and asynchronous application flows for an OS-level AI assistant on TmaxOS.</p>
+            <button type="button" class="card-open" data-open="tmax-assistant" aria-haspopup="dialog" aria-label="View details: Siri-like AI Assistant on TmaxOS">View details<span aria-hidden="true">→</span></button>
             <dl class="case-facts">
-                <div><dt>Ownership</dt><dd>Architecture, implementation, deployment, and operation</dd></div>
-                <div><dt>Controls</dt><dd>Authentication, authorization, security, and governance</dd></div>
-                <div><dt>Stack</dt><dd>AWS EKS, Kubernetes, runtime and API integration</dd></div>
+                <div><dt>Role</dt><dd>Model inference, preprocessing, system integration</dd></div>
+                <div><dt>Design</dt><dd>Asynchronous architecture for natural interaction</dd></div>
+                <div><dt>Platform</dt><dd>TmaxOS system-level integration</dd></div>
+            </dl>
+          </div>
+        </article>
+        <article class="project-feature glow">
+          <div class="project-media"><img src="./assets/images/thumb-packet-mirroring.svg?v=20260915-align1" alt="High-throughput Packet Mirroring diagram" width="800" height="500" loading="lazy"></div>
+          <div class="project-body">
+            <div class="project-meta"><span>2021–2024</span><span>Samsung Network Division</span><span>130K packets/s</span></div>
+            <h3>High-throughput Packet Mirroring</h3>
+            <p>Developed a Linux application that mirrors packets in real time and forwards them to a target server at up to 130,000 packets per second under constrained system resources.</p>
+            <button type="button" class="card-open" data-open="packet-mirroring" aria-haspopup="dialog" aria-label="View details: High-throughput Packet Mirroring">View details<span aria-hidden="true">→</span></button>
+            <dl class="case-facts">
+                <div><dt>Role</dt><dd>Implementation and tuning for constrained resources</dd></div>
+                <div><dt>Scale</dt><dd>Up to 130,000 packets per second</dd></div>
+                <div><dt>Tech</dt><dd>Linux, networking, high-performance I/O</dd></div>
             </dl>
           </div>
         </article>
@@ -144,6 +158,34 @@
             </dl>
           </div>
         </article>
+        <article class="project-feature glow">
+          <div class="project-media"><img src="./assets/images/thumb-ai-serving-global.svg?v=20261113-kr" alt="B2C Generative AI Service: Korea &amp; UK Launch diagram" width="800" height="500" loading="lazy"></div>
+          <div class="project-body">
+            <div class="project-meta"><span>Jan.–Jun. 2026</span><span>Samsung Electronics</span><span>Korea &amp; UK</span></div>
+            <h3>B2C Generative AI Service: Korea &amp; UK Launch</h3>
+            <p>Collaborated with Microsoft on Korea and UK launch readiness, initial production operations, incident response, and stabilization for an Azure-based consumer generative AI service.</p>
+            <button type="button" class="card-open" data-open="uk-rollout" aria-haspopup="dialog" aria-label="View details: B2C Generative AI Service: Korea &amp; UK Launch">View details<span aria-hidden="true">→</span></button>
+            <dl class="case-facts">
+                <div><dt>Role</dt><dd>Launch readiness, initial operations, incident response</dd></div>
+                <div><dt>Partner</dt><dd>Microsoft</dd></div>
+                <div><dt>Tech</dt><dd>Azure, Kubernetes, SRE</dd></div>
+            </dl>
+          </div>
+        </article>
+        <article class="project-feature glow">
+          <div class="project-media"><img src="./assets/images/thumb-ax-agent-platform.svg?v=20260915-align1" alt="AX Agent Platform architecture overview" width="800" height="500" loading="lazy"></div>
+          <div class="project-body">
+            <div class="project-meta"><span>2026</span><span>Samsung Electronics</span><span>Platform / Applied AI</span></div>
+            <h3>Internal AX Agent Platform</h3>
+            <p>Designed and built an AWS EKS platform that adapts an agent runtime to enterprise deployment standards. Developers can release AX applications, receive domains automatically, restrict access to authorized users, and consume an existing enterprise LLM Gateway API through the platform integration.</p>
+            <button type="button" class="card-open" data-open="ax-agent-platform" aria-haspopup="dialog" aria-label="View details: Internal AX Agent Platform">View details<span aria-hidden="true">→</span></button>
+            <dl class="case-facts">
+                <div><dt>Ownership</dt><dd>Architecture, implementation, deployment, and operation</dd></div>
+                <div><dt>Controls</dt><dd>Authentication, authorization, security, and governance</dd></div>
+                <div><dt>Stack</dt><dd>AWS EKS, Kubernetes, runtime and API integration</dd></div>
+            </dl>
+          </div>
+        </article>
         <div class="project-grid">
           <article class="project-card glow">
             <div class="project-meta"><span>Observability</span><span>Production reliability</span></div>
@@ -151,13 +193,6 @@
             <p>Built shared monitoring paths, dashboards, and alerts for system and container runtime health to support incident detection and production analysis.</p>
             <p class="tech-line">Grafana · Prometheus · OpenTelemetry · Loki</p>
             <button type="button" class="card-open" data-open="observability" aria-haspopup="dialog" aria-label="View details: Centralized Monitoring &amp; Observability">View details<span aria-hidden="true">→</span></button>
-          </article>
-          <article class="project-card glow">
-            <div class="project-meta"><span>Jan.–Jun. 2026</span><span>Global B2C</span></div>
-            <h3>Generative AI Service UK Rollout</h3>
-            <p>Collaborated with Microsoft on rollout readiness, initial production operations, incident response, and early stabilization for an Azure-based consumer service.</p>
-            <p class="tech-line">Azure · Kubernetes · SRE · Incident response</p>
-            <button type="button" class="card-open" data-open="uk-rollout" aria-haspopup="dialog" aria-label="View details: Generative AI Service UK Rollout">View details<span aria-hidden="true">→</span></button>
           </article>
           <article class="project-card glow">
             <div class="project-meta"><span>Platform automation</span><span>Developer environments</span></div>
@@ -252,6 +287,40 @@
     </div>
     <div class="dialog-body"></div>
   </dialog>
+    <template id="detail-tmax-assistant">
+      <article class="detail">
+        <div class="detail-media"><img src="./assets/images/thumb-ai-assistant-os.svg?v=20260915-align1" alt="Siri-like AI Assistant on TmaxOS diagram" width="800" height="500"></div>
+        <div class="detail-text">
+          <div class="project-meta"><span>2019–2020</span><span>TmaxOS</span><span>AI assistant</span></div>
+          <h2 id="project-dialog-title">Siri-like AI Assistant on TmaxOS</h2>
+          <p class="detail-lead">Built a Siri-like AI assistant on TmaxOS, focusing on system-level integration, AI model inference, and data preprocessing. Designed an asynchronous architecture to enable smooth and natural user experiences.</p>
+          <dl class="detail-facts">
+            <div><dt>Problem</dt><dd>The OS environment needed an AI assistant that could connect user interaction with system-level capabilities.</dd></div>
+            <div><dt>Role</dt><dd>Built AI inference and preprocessing flows and integrated them with TmaxOS-level behavior.</dd></div>
+            <div><dt>Engineering</dt><dd>Async architecture, system integration, AI model inference, and data preprocessing.</dd></div>
+            <div><dt>Outcome</dt><dd>Delivered an AI assistant experience with smoother interaction through asynchronous design.</dd></div>
+          </dl>
+          <ul class="chips"><li>Python</li><li>AI/ML</li><li>TmaxOS</li><li>Async Programming</li></ul>
+        </div>
+      </article>
+    </template>
+    <template id="detail-packet-mirroring">
+      <article class="detail">
+        <div class="detail-media"><img src="./assets/images/thumb-packet-mirroring.svg?v=20260915-align1" alt="High-throughput Packet Mirroring diagram" width="800" height="500"></div>
+        <div class="detail-text">
+          <div class="project-meta"><span>2021–2024</span><span>Samsung Network Division</span><span>130K packets/s</span></div>
+          <h2 id="project-dialog-title">High-throughput Packet Mirroring</h2>
+          <p class="detail-lead">Developed an application that mirrors up to 130,000 packets per second in real time and forwards them to a target server within constrained system resources. This work emphasizes system-level performance, resource awareness, and reliable data movement.</p>
+          <dl class="detail-facts">
+            <div><dt>Problem</dt><dd>Network/application teams needed real-time packet forwarding under limited system resources.</dd></div>
+            <div><dt>Role</dt><dd>Implemented the packet mirroring application and tuned it for resource-constrained operation.</dd></div>
+            <div><dt>Engineering</dt><dd>High-throughput I/O, Linux runtime behavior, resource limits, and real-time data forwarding.</dd></div>
+            <div><dt>Outcome</dt><dd>Delivered a system component capable of forwarding up to 130,000 packets/sec.</dd></div>
+          </dl>
+          <ul class="chips"><li>Linux</li><li>Networking</li><li>System Software</li><li>Performance</li></ul>
+        </div>
+      </article>
+    </template>
     <template id="detail-ax-agent-platform">
       <article class="detail">
         <div class="detail-media"><img src="./assets/images/thumb-ax-agent-platform.svg?v=20260915-align1" alt="AX Agent Platform architecture overview" width="800" height="500"></div>
@@ -305,16 +374,16 @@
     </template>
     <template id="detail-uk-rollout">
       <article class="detail">
-        <div class="detail-media"><img src="./assets/images/thumb-ai-serving-global.svg?v=20260915-align1" alt="Generative AI Service UK Rollout diagram" width="800" height="500"></div>
+        <div class="detail-media"><img src="./assets/images/thumb-ai-serving-global.svg?v=20261113-kr" alt="B2C Generative AI Service: Korea &amp; UK Launch diagram" width="800" height="500"></div>
         <div class="detail-text">
-          <div class="project-meta"><span>Jan.–Jun. 2026</span><span>Global B2C</span></div>
-          <h2 id="project-dialog-title">Generative AI Service UK Rollout</h2>
-          <p class="detail-lead">Collaborated with Microsoft on the UK expansion of a global B2C generative AI service on Azure. The work covered rollout readiness, initial production operations, incident response, and early service stabilization from January to June 2026.</p>
+          <div class="project-meta"><span>Jan.–Jun. 2026</span><span>Samsung Electronics</span><span>Korea &amp; UK</span></div>
+          <h2 id="project-dialog-title">B2C Generative AI Service: Korea &amp; UK Launch</h2>
+          <p class="detail-lead">Collaborated with Microsoft on the Korea and UK launches of a B2C generative AI service on Azure. The work covered rollout readiness, initial production operations, incident response, and early service stabilization from January to June 2026.</p>
           <dl class="detail-facts">
-            <div><dt>Problem</dt><dd>Expand a consumer-facing generative AI service to the UK and stabilize its initial production operations.</dd></div>
-            <div><dt>Role</dt><dd>Delivered platform/SRE responsibilities for UK rollout readiness, initial production operations, incident response, and early stabilization.</dd></div>
+            <div><dt>Problem</dt><dd>Launch a consumer-facing generative AI service in Korea and the UK and stabilize its initial production operations.</dd></div>
+            <div><dt>Role</dt><dd>Delivered platform/SRE responsibilities for Korea and UK launch readiness, initial production operations, incident response, and early stabilization.</dd></div>
             <div><dt>Engineering</dt><dd>Azure and Kubernetes operations, rollout readiness, production stabilization, and incident response.</dd></div>
-            <div><dt>Outcome</dt><dd>Delivered UK rollout readiness and early production stabilization, completing the engagement in June 2026.</dd></div>
+            <div><dt>Outcome</dt><dd>Delivered Korea and UK launch readiness and early production stabilization, completing the engagement in June 2026.</dd></div>
           </dl>
           <ul class="chips"><li>Azure</li><li>Kubernetes</li><li>Generative AI</li><li>SRE</li><li>Incident Response</li></ul>
         </div>

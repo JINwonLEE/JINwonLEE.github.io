@@ -20,9 +20,9 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/style.css?v=20261113-5">
+  <link rel="stylesheet" href="./assets/css/style.css?v=20261113-6">
   <script>document.documentElement.classList.add("js");</script>
-  <script src="./assets/js/script.js?v=20261113-5" defer></script>
+  <script src="./assets/js/script.js?v=20261113-6" defer></script>
 </head>
 <body class="korean" id="top">
   <canvas id="field" aria-hidden="true"></canvas>
@@ -48,10 +48,10 @@
       </div>
       <div class="rail-actions">
         <div class="cv-links" aria-label="CV 및 포트폴리오 다운로드">
-            <a href="./CV-Eng.pdf?v=20261113-5" target="_blank" rel="noopener">English CV</a>
-            <a href="./CV-Kor.pdf?v=20261113-5" target="_blank" rel="noopener">Korean CV</a>
-            <a href="./Portfolio-Eng.pdf?v=20261113-5" target="_blank" rel="noopener">영문 포트폴리오</a>
-            <a href="./Portfolio-Kor.pdf?v=20261113-5" target="_blank" rel="noopener">국문 포트폴리오</a>
+            <a href="./CV-Eng.pdf?v=20261113-6" target="_blank" rel="noopener">English CV</a>
+            <a href="./CV-Kor.pdf?v=20261113-6" target="_blank" rel="noopener">Korean CV</a>
+            <a href="./Portfolio-Eng.pdf?v=20261113-6" target="_blank" rel="noopener">영문 포트폴리오</a>
+            <a href="./Portfolio-Kor.pdf?v=20261113-6" target="_blank" rel="noopener">국문 포트폴리오</a>
         </div>
         <div class="rail-links">
           <a href="https://github.com/JINwonLEE" target="_blank" rel="noopener">GitHub</a>
@@ -66,7 +66,7 @@
       <section class="section reveal" id="about" aria-labelledby="about-heading">
         <h2 class="section-title" id="about-heading">소개</h2>
         <div class="prose">
-          <p>약 8년 동안 Agent App, 클라우드 플랫폼, 사용자 대상 서비스를 프로덕션까지 전달해 왔습니다. 지금은 <strong>삼성전자</strong>에서 AWS EKS 기반 사내 <a href="#projects">AX Agent Platform</a>을 설계·구축하고 있고, Azure 기반 글로벌 B2C 생성형 AI 서비스의 UK 출시와 초기 안정화를 지원했습니다.</p>
+          <p>약 8년 동안 Agent App, 클라우드 플랫폼, 사용자 대상 서비스를 프로덕션까지 전달해 왔습니다. 지금은 <strong>삼성전자</strong>에서 AWS EKS 기반 사내 <a href="#projects">AX Agent Platform</a>을 설계·구축하고 있고, Azure 기반 B2C 생성형 AI 서비스의 한국·UK 출시와 초기 안정화를 지원했습니다.</p>
           <p>그 전에는 Samsung Research에서 <strong>30,000명의 임직원</strong>이 사용하는 전사 AI 챗봇의 프로덕션 전달과 애플리케이션 신뢰성을 리딩했습니다. 삼성전자 네트워크사업부에서는 Kubernetes 플랫폼과 초당 최대 <strong>130,000개 패킷</strong>을 처리하는 Linux 패킷 미러링 애플리케이션을 만들었고, TmaxOS에서는 OS 수준 AI 어시스턴트를 개발했습니다.</p>
           <p>출발점은 연구였습니다. UNIST 석사 과정에서 <a href="#research">분산 CNN 학습</a>을 연구해 최대 2.3배의 학습 속도 향상을 보고했습니다. 업무 밖에서는 추천마다 CV 근거를 함께 보여주는 채용 추천 서비스 <a href="#projects">오퍼나우</a>를 만들고 있습니다.</p>
         </div>
@@ -80,7 +80,7 @@
             <div class="row-body">
               <h3>삼성전자 · AX Development Group</h3>
               <p class="row-role">SRE / AI 플랫폼 엔지니어</p>
-              <p>AWS EKS 기반 AX Agent Platform, 거버넌스형 셀프서비스 배포, 기존 LLM Gateway API 연동, 글로벌 B2C 생성형 AI 출시·안정화.</p>
+              <p>AWS EKS 기반 AX Agent Platform, 거버넌스형 셀프서비스 배포, 기존 LLM Gateway API 연동, B2C 생성형 AI 서비스 한국·UK 출시·안정화.</p>
               <ul class="chips"><li>AWS EKS</li><li>Kubernetes</li><li>Azure</li><li>AuthN/AuthZ</li><li>LLM Gateway API</li></ul>
             </div>
           </li>
@@ -117,16 +117,30 @@
       <section class="section reveal" id="projects" aria-labelledby="projects-heading">
         <h2 class="section-title" id="projects-heading">프로젝트</h2>
         <article class="project-feature glow">
-          <div class="project-media"><img src="./assets/images/thumb-ax-agent-platform.svg?v=20260915-align1" alt="AX Agent Platform 아키텍처 개요" width="800" height="500" loading="lazy"></div>
+          <div class="project-media"><img src="./assets/images/thumb-ai-assistant-os.svg?v=20260915-align1" alt="TmaxOS AI 어시스턴트 다이어그램" width="800" height="500" loading="lazy"></div>
           <div class="project-body">
-            <div class="project-meta"><span>2026</span><span>Samsung Electronics</span><span>Platform / Applied AI</span></div>
-            <h3>사내 AX Agent Platform</h3>
-            <p>AWS EKS에서 에이전트 런타임을 사내 배포 표준에 맞게 조정하는 플랫폼을 설계·구축했습니다. 개발자는 AX App을 배포하면 도메인을 자동으로 발급받고, 인가된 사용자만 접근하도록 설정하며, 플랫폼 연동을 통해 기존 사내 LLM Gateway API를 사용할 수 있습니다.</p>
-            <button type="button" class="card-open" data-open="ax-agent-platform" aria-haspopup="dialog" aria-label="자세히 보기: 사내 AX Agent Platform">자세히 보기<span aria-hidden="true">→</span></button>
+            <div class="project-meta"><span>2019–2020</span><span>TmaxOS</span><span>AI 어시스턴트</span></div>
+            <h3>TmaxOS AI 어시스턴트</h3>
+            <p>TmaxOS에서 동작하는 Siri형 AI 어시스턴트의 모델 추론, 데이터 전처리, 시스템 연동, 비동기 애플리케이션 흐름을 개발했습니다.</p>
+            <button type="button" class="card-open" data-open="tmax-assistant" aria-haspopup="dialog" aria-label="자세히 보기: TmaxOS AI 어시스턴트">자세히 보기<span aria-hidden="true">→</span></button>
             <dl class="case-facts">
-                <div><dt>담당</dt><dd>아키텍처, 구현, 배포 및 운영</dd></div>
-                <div><dt>통제</dt><dd>인증, 인가, 보안 및 거버넌스</dd></div>
-                <div><dt>기술</dt><dd>AWS EKS, Kubernetes, 런타임·API 연동</dd></div>
+                <div><dt>담당</dt><dd>모델 추론, 데이터 전처리, 시스템 연동</dd></div>
+                <div><dt>설계</dt><dd>자연스러운 상호작용을 위한 비동기 아키텍처</dd></div>
+                <div><dt>환경</dt><dd>TmaxOS 시스템 수준 통합</dd></div>
+            </dl>
+          </div>
+        </article>
+        <article class="project-feature glow">
+          <div class="project-media"><img src="./assets/images/thumb-packet-mirroring.svg?v=20260915-align1" alt="고성능 패킷 미러링 다이어그램" width="800" height="500" loading="lazy"></div>
+          <div class="project-body">
+            <div class="project-meta"><span>2021–2024</span><span>삼성전자 네트워크사업부</span><span>초당 130,000 패킷</span></div>
+            <h3>고성능 패킷 미러링</h3>
+            <p>제한된 시스템 리소스에서 초당 최대 130,000개 패킷을 실시간으로 미러링해 대상 서버로 전달하는 Linux 애플리케이션을 개발했습니다.</p>
+            <button type="button" class="card-open" data-open="packet-mirroring" aria-haspopup="dialog" aria-label="자세히 보기: 고성능 패킷 미러링">자세히 보기<span aria-hidden="true">→</span></button>
+            <dl class="case-facts">
+                <div><dt>담당</dt><dd>구현과 리소스 제약 환경에 맞춘 조정</dd></div>
+                <div><dt>규모</dt><dd>초당 최대 130,000개 패킷</dd></div>
+                <div><dt>기술</dt><dd>Linux, 네트워킹, 고성능 I/O</dd></div>
             </dl>
           </div>
         </article>
@@ -144,6 +158,34 @@
             </dl>
           </div>
         </article>
+        <article class="project-feature glow">
+          <div class="project-media"><img src="./assets/images/thumb-ai-serving-global.svg?v=20261113-kr" alt="B2C 생성형 AI 서비스 한국·UK 출시 다이어그램" width="800" height="500" loading="lazy"></div>
+          <div class="project-body">
+            <div class="project-meta"><span>2026.01–06</span><span>삼성전자</span><span>한국·UK</span></div>
+            <h3>B2C 생성형 AI 서비스 한국·UK 출시</h3>
+            <p>Microsoft와 협업한 Azure 기반 소비자 생성형 AI 서비스의 한국·UK 출시 준비, 초기 프로덕션 운영, 장애 대응 및 안정화를 수행했습니다.</p>
+            <button type="button" class="card-open" data-open="uk-rollout" aria-haspopup="dialog" aria-label="자세히 보기: B2C 생성형 AI 서비스 한국·UK 출시">자세히 보기<span aria-hidden="true">→</span></button>
+            <dl class="case-facts">
+                <div><dt>담당</dt><dd>출시 준비, 초기 프로덕션 운영, 장애 대응</dd></div>
+                <div><dt>협업</dt><dd>Microsoft</dd></div>
+                <div><dt>기술</dt><dd>Azure, Kubernetes, SRE</dd></div>
+            </dl>
+          </div>
+        </article>
+        <article class="project-feature glow">
+          <div class="project-media"><img src="./assets/images/thumb-ax-agent-platform.svg?v=20260915-align1" alt="AX Agent Platform 아키텍처 개요" width="800" height="500" loading="lazy"></div>
+          <div class="project-body">
+            <div class="project-meta"><span>2026</span><span>Samsung Electronics</span><span>Platform / Applied AI</span></div>
+            <h3>사내 AX Agent Platform</h3>
+            <p>AWS EKS에서 에이전트 런타임을 사내 배포 표준에 맞게 조정하는 플랫폼을 설계·구축했습니다. 개발자는 AX App을 배포하면 도메인을 자동으로 발급받고, 인가된 사용자만 접근하도록 설정하며, 플랫폼 연동을 통해 기존 사내 LLM Gateway API를 사용할 수 있습니다.</p>
+            <button type="button" class="card-open" data-open="ax-agent-platform" aria-haspopup="dialog" aria-label="자세히 보기: 사내 AX Agent Platform">자세히 보기<span aria-hidden="true">→</span></button>
+            <dl class="case-facts">
+                <div><dt>담당</dt><dd>아키텍처, 구현, 배포 및 운영</dd></div>
+                <div><dt>통제</dt><dd>인증, 인가, 보안 및 거버넌스</dd></div>
+                <div><dt>기술</dt><dd>AWS EKS, Kubernetes, 런타임·API 연동</dd></div>
+            </dl>
+          </div>
+        </article>
         <div class="project-grid">
           <article class="project-card glow">
             <div class="project-meta"><span>Observability</span><span>Production reliability</span></div>
@@ -151,13 +193,6 @@
             <p>시스템과 컨테이너 런타임 상태를 확인하는 공통 모니터링 경로, 대시보드 및 알림을 구축해 장애 탐지와 프로덕션 분석을 지원했습니다.</p>
             <p class="tech-line">Grafana · Prometheus · OpenTelemetry · Loki</p>
             <button type="button" class="card-open" data-open="observability" aria-haspopup="dialog" aria-label="자세히 보기: 중앙 집중식 모니터링 &amp; 관측성">자세히 보기<span aria-hidden="true">→</span></button>
-          </article>
-          <article class="project-card glow">
-            <div class="project-meta"><span>2026.01–06</span><span>Global B2C</span></div>
-            <h3>생성형 AI 서비스 UK 출시</h3>
-            <p>Microsoft와 협업해 Azure 기반 소비자 서비스의 출시 준비, 초기 프로덕션 운영, 장애 대응 및 안정화를 수행했습니다.</p>
-            <p class="tech-line">Azure · Kubernetes · SRE · 장애 대응</p>
-            <button type="button" class="card-open" data-open="uk-rollout" aria-haspopup="dialog" aria-label="자세히 보기: 생성형 AI 서비스 UK 출시">자세히 보기<span aria-hidden="true">→</span></button>
           </article>
           <article class="project-card glow">
             <div class="project-meta"><span>Platform automation</span><span>Developer environments</span></div>
@@ -252,6 +287,40 @@
     </div>
     <div class="dialog-body"></div>
   </dialog>
+    <template id="detail-tmax-assistant">
+      <article class="detail">
+        <div class="detail-media"><img src="./assets/images/thumb-ai-assistant-os.svg?v=20260915-align1" alt="TmaxOS AI 어시스턴트 다이어그램" width="800" height="500"></div>
+        <div class="detail-text">
+          <div class="project-meta"><span>2019–2020</span><span>TmaxOS</span><span>AI 어시스턴트</span></div>
+          <h2 id="project-dialog-title">TmaxOS AI 어시스턴트</h2>
+          <p class="detail-lead">TmaxOS 상에서 시스템 수준 통합, AI 모델 추론, 데이터 전처리에 중점을 둔 Siri와 유사한 AI 어시스턴트를 개발했습니다. 부드럽고 자연스러운 사용자 경험을 제공하기 위해 비동기 아키텍처를 설계했습니다.</p>
+          <dl class="detail-facts">
+            <div><dt>문제</dt><dd>OS 환경에서 사용자 상호작용과 시스템 기능을 연결하는 AI 어시스턴트가 필요했습니다.</dd></div>
+            <div><dt>역할</dt><dd>AI 추론 및 전처리 흐름을 구축하고 TmaxOS 수준 동작과 통합했습니다.</dd></div>
+            <div><dt>설계·구현</dt><dd>비동기 아키텍처, 시스템 통합, AI 모델 추론, 데이터 전처리</dd></div>
+            <div><dt>결과</dt><dd>비동기 설계를 통해 더 자연스러운 상호작용을 제공하는 AI 어시스턴트 경험을 구현했습니다.</dd></div>
+          </dl>
+          <ul class="chips"><li>AI 모델 추론</li><li>시스템 통합</li><li>비동기 프로그래밍</li><li>TmaxOS</li></ul>
+        </div>
+      </article>
+    </template>
+    <template id="detail-packet-mirroring">
+      <article class="detail">
+        <div class="detail-media"><img src="./assets/images/thumb-packet-mirroring.svg?v=20260915-align1" alt="고성능 패킷 미러링 다이어그램" width="800" height="500"></div>
+        <div class="detail-text">
+          <div class="project-meta"><span>2021–2024</span><span>삼성전자 네트워크사업부</span><span>초당 130,000 패킷</span></div>
+          <h2 id="project-dialog-title">고성능 패킷 미러링</h2>
+          <p class="detail-lead">제한된 시스템 리소스 내에서 초당 최대 130,000개의 패킷을 실시간으로 미러링하여 타겟 서버로 전달하는 애플리케이션을 개발했습니다. 시스템 수준 성능, 리소스 제약, 안정적인 데이터 이동을 다룬 경험입니다.</p>
+          <dl class="detail-facts">
+            <div><dt>문제</dt><dd>제한된 시스템 리소스 안에서 실시간 패킷 전달이 필요했습니다.</dd></div>
+            <div><dt>역할</dt><dd>패킷 미러링 애플리케이션을 구현하고 리소스 제약 환경에서 동작하도록 조정했습니다.</dd></div>
+            <div><dt>설계·구현</dt><dd>고성능 I/O, Linux 런타임 동작, 리소스 제한, 실시간 데이터 전달</dd></div>
+            <div><dt>결과</dt><dd>초당 최대 130,000개 패킷을 전달할 수 있는 시스템 컴포넌트를 구현했습니다.</dd></div>
+          </dl>
+          <ul class="chips"><li>Linux</li><li>Networking</li><li>System Software</li><li>Performance</li></ul>
+        </div>
+      </article>
+    </template>
     <template id="detail-ax-agent-platform">
       <article class="detail">
         <div class="detail-media"><img src="./assets/images/thumb-ax-agent-platform.svg?v=20260915-align1" alt="AX Agent Platform 아키텍처 개요" width="800" height="500"></div>
@@ -305,16 +374,16 @@
     </template>
     <template id="detail-uk-rollout">
       <article class="detail">
-        <div class="detail-media"><img src="./assets/images/thumb-ai-serving-global.svg?v=20260915-align1" alt="생성형 AI 서비스 UK 출시 다이어그램" width="800" height="500"></div>
+        <div class="detail-media"><img src="./assets/images/thumb-ai-serving-global.svg?v=20261113-kr" alt="B2C 생성형 AI 서비스 한국·UK 출시 다이어그램" width="800" height="500"></div>
         <div class="detail-text">
-          <div class="project-meta"><span>2026.01–06</span><span>Global B2C</span></div>
-          <h2 id="project-dialog-title">생성형 AI 서비스 UK 출시</h2>
-          <p class="detail-lead">Microsoft와 협업하여 Azure 기반 글로벌 B2C 생성형 AI 서비스의 UK 확장을 진행했습니다. 2026년 1월부터 6월까지 출시 준비, 초기 프로덕션 운영, 장애 대응 및 서비스 초기 안정화를 수행했습니다.</p>
+          <div class="project-meta"><span>2026.01–06</span><span>삼성전자</span><span>한국·UK</span></div>
+          <h2 id="project-dialog-title">B2C 생성형 AI 서비스 한국·UK 출시</h2>
+          <p class="detail-lead">Microsoft와 협업하여 Azure 기반 B2C 생성형 AI 서비스의 한국·UK 출시를 진행했습니다. 2026년 1월부터 6월까지 출시 준비, 초기 프로덕션 운영, 장애 대응 및 서비스 초기 안정화를 수행했습니다.</p>
           <dl class="detail-facts">
-            <div><dt>문제</dt><dd>소비자 대상 생성형 AI 서비스를 UK로 확장하고 초기 프로덕션 운영을 안정화해야 했습니다.</dd></div>
-            <div><dt>역할</dt><dd>UK 출시 준비, 초기 프로덕션 운영, 장애 대응 및 초기 안정화를 위한 플랫폼/SRE 업무를 수행했습니다.</dd></div>
+            <div><dt>문제</dt><dd>소비자 대상 생성형 AI 서비스를 한국과 UK에 출시하고 초기 프로덕션 운영을 안정화해야 했습니다.</dd></div>
+            <div><dt>역할</dt><dd>한국·UK 출시 준비, 초기 프로덕션 운영, 장애 대응 및 초기 안정화를 위한 플랫폼/SRE 업무를 수행했습니다.</dd></div>
             <div><dt>설계·구현</dt><dd>Azure 및 Kubernetes 운영, 출시 준비, 프로덕션 안정화, 장애 대응</dd></div>
-            <div><dt>결과</dt><dd>UK 출시와 초기 안정화를 지원하고 2026년 6월 해당 업무를 마무리했습니다.</dd></div>
+            <div><dt>결과</dt><dd>한국·UK 출시와 초기 안정화를 지원하고 2026년 6월 해당 업무를 마무리했습니다.</dd></div>
           </dl>
           <ul class="chips"><li>Azure</li><li>Kubernetes</li><li>생성형 AI</li><li>SRE</li><li>장애 대응</li></ul>
         </div>
