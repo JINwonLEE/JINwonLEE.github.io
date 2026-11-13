@@ -35,6 +35,8 @@ python3 tools/build_resume_pdfs.py
 python3 tools/build_portfolio_pdf.py
 ```
 
+The builders prefer Arial Unicode on macOS. On another machine, point `PDF_FONT_PATH` at a TrueType font with Hangul glyphs (for example a static Noto Sans KR `.ttf`).
+
 The builders write dated copies under `output/pdf/` and refresh the stable root filenames linked by the website.
 
 Before publishing, render every PDF page and inspect it. At minimum, verify page count, text extraction, line wrapping, Korean glyphs, and working URLs.

@@ -7,7 +7,7 @@
     "phone": "+82 10-2422-1429",
     "location": "서울, 대한민국",
     "avatar": "./assets/images/profile-photo.jpg",
-    "cv_file": "./CV-Kor.pdf?v=20260915-3"
+    "cv_file": "./CV-Kor.pdf?v=20261113"
   },
 
   "social": {
@@ -146,6 +146,22 @@
   ],
 
   "projects": [
+    {
+      "title": "오퍼나우 (OfferNow)",
+      "category": "ai/ml",
+      "description": "개인 프로젝트: CV를 올리면 공식 채용 공고를 추천하고, 추천마다 근거가 된 CV 내용을 함께 보여주는 IT 채용 추천 서비스입니다.",
+      "detailedDescription": "2026년 9월부터 개인 프로젝트로 만들고 있습니다. 가입 없이 PDF나 DOCX CV를 올리면 근거 기반 경력 프로필로 바꾸고, 50여 개 국내 기업의 공식 채용 공고와 비교해 공고 요건과 그것을 뒷받침하는 CV 근거를 나란히 보여줍니다. 공고 수집은 요청마다 robots.txt를 먼저 확인하며 LLM을 쓰지 않습니다. CV 구조화와 요청 시 면접 질문 생성은 공급자 중립 LLM 계층을 거치며, 사용자별 일일 한도와 토큰·비용 기록을 둡니다. VM 한 대에 Docker Compose, nginx, Let's Encrypt로 배포했고, 베타 전까지 운영자만 접근할 수 있습니다.",
+      "problem": "구직자는 자기 경력에 실제로 맞는 공고를 찾으려고 많은 공고를 읽어야 하고, 키워드 매칭은 확인할 수 있는 근거를 주지 않습니다.",
+      "role": "개인 프로젝트로 제품 정의, 백엔드, 모바일·웹 클라이언트, 데이터 수집, 배포를 직접 맡았습니다.",
+      "engineering": "웹·iOS·Android용 Expo/React Native 클라이언트, FastAPI 백엔드, 행 수준 보안(RLS)과 익명 24시간 세션을 갖춘 PostgreSQL, 내구성 있는 작업 큐 기반 일일 수집기, 규칙 기반 매칭, 사용 한도와 비용 기록을 갖춘 공급자 중립 LLM 호출, GitHub Actions CI.",
+      "outcome": "베타 전 운영자 전용 입구 뒤로 heyoffernow.ai에 배포했고, 50여 개 기업의 공식 공고를 수집합니다.",
+      "relevance": "데이터 수집과 개인정보 보호부터 LLM 연동, 비용 한도, 배포까지 AI 제품 전체를 직접 만든 경험입니다.",
+      "technologies": ["Expo", "FastAPI", "PostgreSQL", "LLM", "Docker"],
+      "image": "./assets/images/thumb-offernow.svg",
+      "detailedImage": "./assets/images/thumb-offernow.svg",
+      "url": "",
+      "featured": false
+    },
     {
       "title": "LLM 기반 클러스터 모니터링",
       "category": "ai/ml",
@@ -321,6 +337,14 @@
       "detailedImage": "./assets/images/thumb-ai-assistant-os.svg",
       "url": "",
       "featured": false
+    }
+  ],
+
+  "awards": [
+    {
+      "title": "SK하이닉스 AI 해커톤 2026 본선 진출",
+      "date": "2026.11",
+      "detail": "온라인 1·2차 예선(AI 기초·활용 역량, AI Native 역량 검증)을 통과해 오프라인 본선에 진출 (개인 참가)"
     }
   ],
 

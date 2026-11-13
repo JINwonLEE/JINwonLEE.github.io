@@ -10,7 +10,7 @@ const diagrams = [
   'thumb-ax-agent-platform.svg', 'thumb-observability-stack.svg',
   'thumb-ai-serving-global.svg', 'thumb-enterprise-chatbot.svg',
   'thumb-k8s-automation.svg', 'thumb-gitops-cicd.svg',
-  'thumb-llm-cluster-monitoring.svg',
+  'thumb-llm-cluster-monitoring.svg', 'thumb-offernow.svg',
 ];
 let browser;
 const measured = [];
@@ -102,7 +102,8 @@ for (const [name, width] of [['desktop', 1440], ['mobile', 390], ['small mobile'
         }));
         assert.deepEqual(overflow, { page: false, text: [] });
         await page.screenshot({ path: path.join(output, `${filename}-${width}-hero.png`) });
-        await page.locator('.featured-case').screenshot({ path: path.join(output, `${filename}-${width}-ax.png`) });
+        await page.locator('.featured-case').first().screenshot({ path: path.join(output, `${filename}-${width}-ax.png`) });
+        await page.locator('.offernow-case').screenshot({ path: path.join(output, `${filename}-${width}-offernow.png`) });
         await page.locator('.case-grid').screenshot({ path: path.join(output, `${filename}-${width}-projects.png`) });
       } finally {
         await page.close();

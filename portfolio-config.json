@@ -7,7 +7,7 @@
     "phone": "+82 10-2422-1429",
     "location": "Seoul, South Korea",
     "avatar": "./assets/images/profile-photo.jpg",
-    "cv_file": "./CV-Eng.pdf?v=20260915-3"
+    "cv_file": "./CV-Eng.pdf?v=20261113"
   },
 
   "social": {
@@ -146,6 +146,22 @@
   ],
 
   "projects": [
+    {
+      "title": "OfferNow",
+      "category": "ai/ml",
+      "description": "Personal project: a CV-based job recommendation service for Korean IT roles that shows the CV evidence behind every recommended official posting.",
+      "detailedDescription": "Building OfferNow (Korean: 오퍼나우) since September 2026 as a personal project. Job seekers upload a PDF or DOCX CV without signing up; the service turns it into an evidence-linked career profile, matches it against official postings collected from 50+ Korean companies, and shows each posting's requirements next to the CV evidence that supports them. Collection reads robots.txt before every request and uses no LLM. CV structuring and on-demand interview questions go through a provider-neutral LLM layer with per-user daily limits and token and cost logging. Deployed on a single VM with Docker Compose, nginx, and Let's Encrypt behind an operator-only gate ahead of a beta.",
+      "problem": "Job seekers have to read many postings to see which ones actually fit their experience, and keyword matching gives no reason they can check.",
+      "role": "Personal project: product definition, backend, mobile and web client, data collection, and deployment.",
+      "engineering": "Expo/React Native client for web, iOS, and Android; FastAPI backend; PostgreSQL with row-level security and anonymous 24-hour sessions; a daily collector with a durable task queue; rule-based matching; provider-neutral LLM calls with usage limits and cost logging; GitHub Actions CI.",
+      "outcome": "Deployed at heyoffernow.ai behind an operator-only gate ahead of a beta; collects official postings from 50+ companies.",
+      "relevance": "Builds a full AI product end to end, from data collection and privacy controls to LLM integration, cost limits, and deployment.",
+      "technologies": ["Expo", "FastAPI", "PostgreSQL", "LLM", "Docker"],
+      "image": "./assets/images/thumb-offernow.svg",
+      "detailedImage": "./assets/images/thumb-offernow.svg",
+      "url": "",
+      "featured": false
+    },
     {
       "title": "LLM-Assisted Cluster Monitoring",
       "category": "ai/ml",
@@ -321,6 +337,14 @@
       "detailedImage": "./assets/images/thumb-ai-assistant-os.svg",
       "url": "",
       "featured": false
+    }
+  ],
+
+  "awards": [
+    {
+      "title": "Finalist, SK hynix AI Hackathon 2026",
+      "date": "Nov. 2026",
+      "detail": "Advanced through two online qualifying rounds to the offline finals (individual entry)."
     }
   ],
 

@@ -1,4 +1,4 @@
-# CV Revision Notes | September 2026
+# CV Revision Notes | November 2026
 
 ## Positioning
 
@@ -55,6 +55,13 @@ The user clarified that their contribution to evaluation work was limited. Evalu
 - Remove the standalone LLM evaluation case from featured website projects and detailed portfolio PDF cases.
 - Retain only a short supporting statement in both portfolio languages: "Contributed to LLM evaluation work for machine translation" / "기계 번역을 위한 LLM 평가 작업에 참여했습니다."
 - Keep AX Agent Platform, governed delivery, observability, release automation, and production reliability as the primary evidence.
+
+## November additions | November 13
+
+- Added **SK hynix AI Hackathon 2026 finalist** (본선 진출, Nov. 2026) under a new `Awards & Activities` / `수상 및 활동` section in every CV variant, both portfolio PDFs, and the website research list. Source: the user, and the official page `https://skhynix-hackathon.com/ai-2026` (Korean name `SK하이닉스 AI 해커톤 2026`; individual entry; two online qualifying rounds; offline finals on 2026-11-11 at COEX). The page gives no English name, so `SK hynix AI Hackathon 2026` is a translation. The user did not win a prize; do not call it an award win.
+- Added **OfferNow (오퍼나우)** as a personal project in every CV variant, both portfolio PDFs, and the website. Source: the user's `career-copilot` repository as of 2026-11-09. Verified facts: CV (PDF/DOCX) to evidence-linked profile; official postings from 50+ Korean companies (51 connected of 78 registered on 2026-11-08) collected with robots.txt checks and no LLM; rule-based matching; provider-neutral LLM calls with per-user daily limits and cost logging; Expo/React Native, FastAPI, PostgreSQL with RLS, anonymous 24-hour sessions; Docker Compose, nginx, Let's Encrypt; deployed 2026-11-04 at heyoffernow.ai behind an operator-only gate ahead of a beta.
+- Do not claim users, adoption, or recommendation-quality metrics for OfferNow until they are measured.
+- Footer and dated filenames moved to November 2026. Older dated PDF URLs are refreshed with the latest content by the builders.
 
 ## Claims to avoid
 

@@ -16,10 +16,10 @@ STABLE_CVS = (
     "CV-Kor.pdf",
 )
 DATED_CVS = (
-    "output/pdf/Jinwon-Lee-CV-Master-2026-09.pdf",
-    "output/pdf/Jinwon-Lee-CV-Platform-SRE-2026-09.pdf",
-    "output/pdf/Jinwon-Lee-CV-Applied-AI-2026-09.pdf",
-    "output/pdf/Jinwon-Lee-CV-Kor-2026-09.pdf",
+    "output/pdf/Jinwon-Lee-CV-Master-2026-11.pdf",
+    "output/pdf/Jinwon-Lee-CV-Platform-SRE-2026-11.pdf",
+    "output/pdf/Jinwon-Lee-CV-Applied-AI-2026-11.pdf",
+    "output/pdf/Jinwon-Lee-CV-Kor-2026-11.pdf",
 )
 
 
@@ -109,6 +109,29 @@ class PublicClaimsTest(unittest.TestCase):
                     self.assertIn(email, text.lower())
                     self.assertNotIn("Enterprise AI Assistant", text)
                     self.assertNotIn("projects/enterprise-ai-assistant", text)
+
+    def test_offernow_and_hackathon_appear_across_public_outputs(self):
+        for language, project, award in (
+            ("en", "OfferNow", "SK hynix AI Hackathon 2026"),
+            ("ko", "오퍼나우", "SK하이닉스 AI 해커톤 2026"),
+        ):
+            config = "portfolio-config.json" if language == "en" else "portfolio-config-ko.json"
+            data = json.loads((ROOT / config).read_text(encoding="utf-8"))
+            self.assertTrue(any(project in p["title"] for p in data["projects"]))
+            self.assertTrue(any(award in a["title"] for a in data["awards"]))
+            html = "index.html" if language == "en" else "index-ko.html"
+            content = (ROOT / html).read_text(encoding="utf-8")
+            self.assertIn(project, content)
+            self.assertIn(award, content)
+            outputs = (
+                ("CV-Eng.pdf", "CV-Applied-AI.pdf", "CV-Platform-SRE.pdf", "Portfolio-Eng.pdf")
+                if language == "en" else ("CV-Kor.pdf", "Portfolio-Kor.pdf")
+            )
+            for filename in outputs:
+                text = pdf_text(ROOT / filename)
+                with self.subTest(pdf=filename):
+                    self.assertIn(project, text)
+                    self.assertIn(award, text)
 
 
 if __name__ == "__main__":
