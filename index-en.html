@@ -20,9 +20,9 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/style.css?v=20261113-4">
+  <link rel="stylesheet" href="./assets/css/style.css?v=20261113-5">
   <script>document.documentElement.classList.add("js");</script>
-  <script src="./assets/js/script.js?v=20261113-4" defer></script>
+  <script src="./assets/js/script.js?v=20261113-5" defer></script>
 </head>
 <body id="top">
   <canvas id="field" aria-hidden="true"></canvas>
@@ -48,10 +48,10 @@
       </div>
       <div class="rail-actions">
         <div class="cv-links" aria-label="CV and portfolio downloads">
-            <a href="./CV-Eng.pdf?v=20261113-4" target="_blank" rel="noopener">English CV</a>
-            <a href="./CV-Kor.pdf?v=20261113-4" target="_blank" rel="noopener">Korean CV</a>
-            <a href="./Portfolio-Eng.pdf?v=20261113-4" target="_blank" rel="noopener">English portfolio</a>
-            <a href="./Portfolio-Kor.pdf?v=20261113-4" target="_blank" rel="noopener">Korean portfolio</a>
+            <a href="./CV-Eng.pdf?v=20261113-5" target="_blank" rel="noopener">English CV</a>
+            <a href="./CV-Kor.pdf?v=20261113-5" target="_blank" rel="noopener">Korean CV</a>
+            <a href="./Portfolio-Eng.pdf?v=20261113-5" target="_blank" rel="noopener">English portfolio</a>
+            <a href="./Portfolio-Kor.pdf?v=20261113-5" target="_blank" rel="noopener">Korean portfolio</a>
         </div>
         <div class="rail-links">
           <a href="https://github.com/JINwonLEE" target="_blank" rel="noopener">GitHub</a>
@@ -122,6 +122,7 @@
             <div class="project-meta"><span>2026</span><span>Samsung Electronics</span><span>Platform / Applied AI</span></div>
             <h3>Internal AX Agent Platform</h3>
             <p>Designed and built an AWS EKS platform that adapts an agent runtime to enterprise deployment standards. Developers can release AX applications, receive domains automatically, restrict access to authorized users, and consume an existing enterprise LLM Gateway API through the platform integration.</p>
+            <button type="button" class="card-open" data-open="ax-agent-platform" aria-haspopup="dialog" aria-label="View details: Internal AX Agent Platform">View details<span aria-hidden="true">→</span></button>
             <dl class="case-facts">
                 <div><dt>Ownership</dt><dd>Architecture, implementation, deployment, and operation</dd></div>
                 <div><dt>Controls</dt><dd>Authentication, authorization, security, and governance</dd></div>
@@ -135,6 +136,7 @@
             <div class="project-meta"><span>2024–2025</span><span>Samsung Research</span><span>30,000 employees</span></div>
             <h3>Company-wide AI Chatbot Platform</h3>
             <p>Led production delivery and application reliability for a company-wide AI chatbot serving 30,000 employees on internal Kubernetes clusters. Owned releases across development, staging, and production, connected them with security and operational requirements, and deployed the observability used for shared service visibility and operational diagnosis.</p>
+            <button type="button" class="card-open" data-open="chatbot-platform" aria-haspopup="dialog" aria-label="View details: Company-wide AI Chatbot Platform">View details<span aria-hidden="true">→</span></button>
             <dl class="case-facts">
                 <div><dt>Ownership</dt><dd>Production delivery, releases, and application reliability</dd></div>
                 <div><dt>Scale</dt><dd>30,000 employees on internal Kubernetes clusters</dd></div>
@@ -148,36 +150,42 @@
             <h3>Centralized Monitoring &amp; Observability</h3>
             <p>Built shared monitoring paths, dashboards, and alerts for system and container runtime health to support incident detection and production analysis.</p>
             <p class="tech-line">Grafana · Prometheus · OpenTelemetry · Loki</p>
+            <button type="button" class="card-open" data-open="observability" aria-haspopup="dialog" aria-label="View details: Centralized Monitoring &amp; Observability">View details<span aria-hidden="true">→</span></button>
           </article>
           <article class="project-card glow">
             <div class="project-meta"><span>Jan.–Jun. 2026</span><span>Global B2C</span></div>
             <h3>Generative AI Service UK Rollout</h3>
             <p>Collaborated with Microsoft on rollout readiness, initial production operations, incident response, and early stabilization for an Azure-based consumer service.</p>
             <p class="tech-line">Azure · Kubernetes · SRE · Incident response</p>
+            <button type="button" class="card-open" data-open="uk-rollout" aria-haspopup="dialog" aria-label="View details: Generative AI Service UK Rollout">View details<span aria-hidden="true">→</span></button>
           </article>
           <article class="project-card glow">
             <div class="project-meta"><span>Platform automation</span><span>Developer environments</span></div>
             <h3>One-click Kubernetes Provisioning</h3>
             <p>Designed and developed a Bash-based one-click Kubernetes cluster provisioning system for repeatable cloud developer environments.</p>
             <p class="tech-line">Bash · Kubernetes · Linux</p>
+            <button type="button" class="card-open" data-open="k8s-provisioning" aria-haspopup="dialog" aria-label="View details: One-click Kubernetes Provisioning">View details<span aria-hidden="true">→</span></button>
           </article>
           <article class="project-card glow">
             <div class="project-meta"><span>GitOps</span><span>Application delivery</span></div>
             <h3>GitOps CI/CD with ArgoCD</h3>
             <p>Built container delivery pipelines connecting source changes, application releases, and Kubernetes environments across development, staging, and production.</p>
             <p class="tech-line">GitHub Actions · ArgoCD · Helm/Helmfile · Kubernetes</p>
+            <button type="button" class="card-open" data-open="gitops" aria-haspopup="dialog" aria-label="View details: GitOps CI/CD with ArgoCD">View details<span aria-hidden="true">→</span></button>
           </article>
           <article class="project-card glow">
             <div class="project-meta"><span>Personal project</span><span>Cluster operations</span></div>
             <h3>LLM-Assisted Cluster Monitoring</h3>
             <p>Built a monitoring system for internal clusters that detects errors, uses an LLM to analyze issues, and emails problem summaries, analysis, and suggested remediation steps.</p>
             <p class="tech-line">LLM · Cluster Monitoring · Incident Analysis · Email Alerts</p>
+            <button type="button" class="card-open" data-open="cluster-monitoring" aria-haspopup="dialog" aria-label="View details: LLM-Assisted Cluster Monitoring">View details<span aria-hidden="true">→</span></button>
           </article>
           <article class="project-card glow offernow-case">
             <div class="project-meta"><span>Sep. 2026 – Present</span><span>Personal project</span></div>
             <h3>OfferNow</h3>
             <p>A CV-based job recommendation service for Korean IT roles. It turns an uploaded CV into an evidence-linked profile and shows the CV evidence behind every recommended official posting, collected from 50+ companies&#x27; career sites.</p>
             <p class="tech-line">Expo · FastAPI · PostgreSQL · LLM · Docker</p>
+            <button type="button" class="card-open" data-open="offernow" aria-haspopup="dialog" aria-label="View details: OfferNow">View details<span aria-hidden="true">→</span></button>
           </article>
         </div>
         <p class="additional-work">Additional experience: contributed to LLM evaluation work for machine translation. Internal work is described without confidential code or architecture.</p>
@@ -232,5 +240,153 @@
       </section>
     </main>
   </div>
+
+  <dialog class="project-dialog" id="project-dialog" aria-labelledby="project-dialog-title">
+    <div class="dialog-bar">
+      <span class="dialog-count" aria-live="polite"></span>
+      <div class="dialog-actions">
+        <button type="button" data-step="-1" aria-label="Previous project" title="Previous project">←</button>
+        <button type="button" data-step="1" aria-label="Next project" title="Next project">→</button>
+        <button type="button" class="dialog-close" data-close aria-label="Close" title="Close" autofocus>✕</button>
+      </div>
+    </div>
+    <div class="dialog-body"></div>
+  </dialog>
+    <template id="detail-ax-agent-platform">
+      <article class="detail">
+        <div class="detail-media"><img src="./assets/images/thumb-ax-agent-platform.svg?v=20260915-align1" alt="AX Agent Platform architecture overview" width="800" height="500"></div>
+        <div class="detail-text">
+          <div class="project-meta"><span>2026</span><span>Samsung Electronics</span><span>Platform / Applied AI</span></div>
+          <h2 id="project-dialog-title">Internal AX Agent Platform</h2>
+          <p class="detail-lead">Designed and built an internal AX Agent Platform on AWS EKS from July 2026, carrying the work from architecture and runtime adaptation through deployment and production operation. Translated enterprise deployment, access, security, and governance requirements into a self-service workflow where developers release AX applications, receive domains automatically, and restrict access to authorized users. The platform also enables applications to consume the existing enterprise LLM Gateway API through client-side compatibility and integration.</p>
+          <dl class="detail-facts">
+            <div><dt>Problem</dt><dd>Enable teams to deploy AX applications quickly while enforcing enterprise access control, security, and AI governance.</dd></div>
+            <div><dt>Role</dt><dd>Owned end-to-end platform delivery from architecture and implementation through deployment and operation, including authentication, authorization, security, and internal governance.</dd></div>
+            <div><dt>Engineering</dt><dd>AWS EKS, AX Agent runtime adaptation, automated domain provisioning, access control, policy enforcement, and client integration with the existing LLM Gateway.</dd></div>
+            <div><dt>Outcome</dt><dd>Created a self-service path for governed AX application deployment with automatic domains and authorized-only access.</dd></div>
+          </dl>
+          <ul class="chips"><li>AWS</li><li>EKS</li><li>Kubernetes</li><li>AuthN/AuthZ</li><li>Governance</li><li>LLM Gateway Integration</li></ul>
+        </div>
+      </article>
+    </template>
+    <template id="detail-chatbot-platform">
+      <article class="detail">
+        <div class="detail-media"><img src="./assets/images/thumb-enterprise-chatbot.svg?v=20260915-align1" alt="Enterprise AI chatbot platform overview" width="800" height="500"></div>
+        <div class="detail-text">
+          <div class="project-meta"><span>2024–2025</span><span>Samsung Research</span><span>30,000 employees</span></div>
+          <h2 id="project-dialog-title">Company-wide AI Chatbot Platform</h2>
+          <p class="detail-lead">Led the operation of a company-wide AI chatbot platform serving 30,000 employees on internal Kubernetes clusters. Responsibilities covered end-to-end infrastructure, platform, and application operations while meeting internal security, authentication, and data protection standards.</p>
+          <dl class="detail-facts">
+            <div><dt>Problem</dt><dd>Provide a reliable internal AI assistant platform for tens of thousands of employees.</dd></div>
+            <div><dt>Role</dt><dd>Led platform and application reliability across development, staging, and production, connecting releases with security and operational requirements.</dd></div>
+            <div><dt>Engineering</dt><dd>Kubernetes operations, Helm/Helmfile IaC, AI service delivery, authentication, and data protection compliance.</dd></div>
+            <div><dt>Outcome</dt><dd>Supported a company-wide AI service with production-grade operating standards.</dd></div>
+          </dl>
+          <ul class="chips"><li>Kubernetes</li><li>Internal Cluster</li><li>Application Delivery</li><li>ArgoCD</li><li>Helm</li><li>Helmfile</li></ul>
+        </div>
+      </article>
+    </template>
+    <template id="detail-observability">
+      <article class="detail">
+        <div class="detail-media"><img src="./assets/images/thumb-observability-stack.svg?v=20260915-align1" alt="Centralized Monitoring &amp; Observability diagram" width="800" height="500"></div>
+        <div class="detail-text">
+          <div class="project-meta"><span>Observability</span><span>Production reliability</span></div>
+          <h2 id="project-dialog-title">Centralized Monitoring &amp; Observability</h2>
+          <p class="detail-lead">Deployed a centralized monitoring environment using Grafana, Prometheus, and OpenTelemetry to gather system metrics and Docker runtime metrics. Implemented dashboards and alerting rules to support proactive incident management.</p>
+          <dl class="detail-facts">
+            <div><dt>Problem</dt><dd>Production services needed shared visibility into system behavior and container runtime health.</dd></div>
+            <div><dt>Role</dt><dd>Built the monitoring path and dashboards used for platform and service operations.</dd></div>
+            <div><dt>Engineering</dt><dd>Prometheus metrics, Grafana dashboards, OpenTelemetry signals, Loki logging, and alert rules.</dd></div>
+            <div><dt>Outcome</dt><dd>Improved operational visibility for incident detection and runtime analysis.</dd></div>
+          </dl>
+          <ul class="chips"><li>Grafana</li><li>Prometheus</li><li>OpenTelemetry</li><li>Loki</li></ul>
+        </div>
+      </article>
+    </template>
+    <template id="detail-uk-rollout">
+      <article class="detail">
+        <div class="detail-media"><img src="./assets/images/thumb-ai-serving-global.svg?v=20260915-align1" alt="Generative AI Service UK Rollout diagram" width="800" height="500"></div>
+        <div class="detail-text">
+          <div class="project-meta"><span>Jan.–Jun. 2026</span><span>Global B2C</span></div>
+          <h2 id="project-dialog-title">Generative AI Service UK Rollout</h2>
+          <p class="detail-lead">Collaborated with Microsoft on the UK expansion of a global B2C generative AI service on Azure. The work covered rollout readiness, initial production operations, incident response, and early service stabilization from January to June 2026.</p>
+          <dl class="detail-facts">
+            <div><dt>Problem</dt><dd>Expand a consumer-facing generative AI service to the UK and stabilize its initial production operations.</dd></div>
+            <div><dt>Role</dt><dd>Delivered platform/SRE responsibilities for UK rollout readiness, initial production operations, incident response, and early stabilization.</dd></div>
+            <div><dt>Engineering</dt><dd>Azure and Kubernetes operations, rollout readiness, production stabilization, and incident response.</dd></div>
+            <div><dt>Outcome</dt><dd>Delivered UK rollout readiness and early production stabilization, completing the engagement in June 2026.</dd></div>
+          </dl>
+          <ul class="chips"><li>Azure</li><li>Kubernetes</li><li>Generative AI</li><li>SRE</li><li>Incident Response</li></ul>
+        </div>
+      </article>
+    </template>
+    <template id="detail-k8s-provisioning">
+      <article class="detail">
+        <div class="detail-media"><img src="./assets/images/thumb-k8s-automation.svg?v=20260915-align1" alt="One-click Kubernetes Provisioning diagram" width="800" height="500"></div>
+        <div class="detail-text">
+          <div class="project-meta"><span>Platform automation</span><span>Developer environments</span></div>
+          <h2 id="project-dialog-title">One-click Kubernetes Provisioning</h2>
+          <p class="detail-lead">Developed an automated one-click provisioning system for Kubernetes clusters, providing cloud developers with streamlined, ready-to-use development environments. The work reduced manual setup and made cluster creation more repeatable for development and experimentation.</p>
+          <dl class="detail-facts">
+            <div><dt>Problem</dt><dd>Cloud developers needed repeatable Kubernetes environments without manual setup overhead.</dd></div>
+            <div><dt>Role</dt><dd>Designed and implemented provisioning automation for Kubernetes clusters and shared platform modules.</dd></div>
+            <div><dt>Engineering</dt><dd>Bash-based provisioning and automation, reusable cluster modules, and developer environment standardization.</dd></div>
+            <div><dt>Outcome</dt><dd>Reduced manual operations and improved environment consistency for cloud development workflows.</dd></div>
+          </dl>
+          <ul class="chips"><li>Kubernetes</li><li>Bash</li></ul>
+        </div>
+      </article>
+    </template>
+    <template id="detail-gitops">
+      <article class="detail">
+        <div class="detail-media"><img src="./assets/images/thumb-gitops-cicd.svg?v=20260915-align1" alt="GitOps CI/CD with ArgoCD diagram" width="800" height="500"></div>
+        <div class="detail-text">
+          <div class="project-meta"><span>GitOps</span><span>Application delivery</span></div>
+          <h2 id="project-dialog-title">GitOps CI/CD with ArgoCD</h2>
+          <p class="detail-lead">Engineered GitOps-based CI/CD pipelines using ArgoCD and Python, integrating automated security protocols such as static code analysis and container image scanning for secure software delivery.</p>
+          <dl class="detail-facts">
+            <div><dt>Problem</dt><dd>Containerized AI/platform services needed repeatable, auditable, and secure deployment workflows.</dd></div>
+            <div><dt>Role</dt><dd>Designed delivery automation and connected AI service deployment pipelines with security verification steps.</dd></div>
+            <div><dt>Engineering</dt><dd>ArgoCD GitOps, GitHub Actions, Docker image handling, Kubernetes deployment, and Python glue automation.</dd></div>
+            <div><dt>Outcome</dt><dd>Improved deployment consistency and reduced reliance on manual release operations.</dd></div>
+          </dl>
+          <ul class="chips"><li>ArgoCD</li><li>GitHub Actions</li><li>Docker</li><li>Kubernetes</li><li>Python</li></ul>
+        </div>
+      </article>
+    </template>
+    <template id="detail-cluster-monitoring">
+      <article class="detail">
+        <div class="detail-media"><img src="./assets/images/thumb-llm-cluster-monitoring.svg?v=20260915-align1" alt="LLM-Assisted Cluster Monitoring diagram" width="800" height="500"></div>
+        <div class="detail-text">
+          <div class="project-meta"><span>Personal project</span><span>Cluster operations</span></div>
+          <h2 id="project-dialog-title">LLM-Assisted Cluster Monitoring</h2>
+          <p class="detail-lead">Built a monitoring system for internal clusters that detects errors, uses an LLM to analyze issues, and emails problem summaries, analysis, and suggested remediation steps to the operator.</p>
+          <dl class="detail-facts">
+            <div><dt>Problem</dt><dd>Cluster errors need interpretation and practical troubleshooting guidance, beyond a basic alert.</dd></div>
+            <div><dt>Role</dt><dd>Built the monitoring and reporting workflow as a personal project for internal cluster operations.</dd></div>
+            <div><dt>Engineering</dt><dd>Connected error detection, LLM-based issue analysis, and email delivery of problem summaries and remediation suggestions.</dd></div>
+            <div><dt>Outcome</dt><dd>Delivered email reports containing the detected problem, LLM analysis, and suggested steps for the operator to review.</dd></div>
+          </dl>
+          <ul class="chips"><li>LLM</li><li>Cluster Monitoring</li><li>Email Alerts</li></ul>
+        </div>
+      </article>
+    </template>
+    <template id="detail-offernow">
+      <article class="detail">
+        <div class="detail-media"><img src="./assets/images/thumb-offernow.svg?v=20260915-align1" alt="OfferNow diagram" width="800" height="500"></div>
+        <div class="detail-text">
+          <div class="project-meta"><span>Sep. 2026 – Present</span><span>Personal project</span></div>
+          <h2 id="project-dialog-title">OfferNow</h2>
+          <p class="detail-lead">Building OfferNow (Korean: 오퍼나우) since September 2026 as a personal project. Job seekers upload a PDF or DOCX CV without signing up; the service turns it into an evidence-linked career profile, matches it against official postings collected from 50+ Korean companies, and shows each posting&#x27;s requirements next to the CV evidence that supports them. Collection reads robots.txt before every request and uses no LLM. CV structuring and on-demand interview questions go through a provider-neutral LLM layer with per-user daily limits and token and cost logging. Deployed on a single VM with Docker Compose, nginx, and Let&#x27;s Encrypt behind an operator-only gate ahead of a beta.</p>
+          <dl class="detail-facts">
+            <div><dt>Problem</dt><dd>Job seekers have to read many postings to see which ones actually fit their experience, and keyword matching gives no reason they can check.</dd></div>
+            <div><dt>Role</dt><dd>Personal project: product definition, backend, mobile and web client, data collection, and deployment.</dd></div>
+            <div><dt>Engineering</dt><dd>Expo/React Native client for web, iOS, and Android; FastAPI backend; PostgreSQL with row-level security and anonymous 24-hour sessions; a daily collector with a durable task queue; rule-based matching; provider-neutral LLM calls with usage limits and cost logging; GitHub Actions CI.</dd></div>
+            <div><dt>Outcome</dt><dd>Deployed at heyoffernow.ai behind an operator-only gate ahead of a beta; collects official postings from 50+ companies.</dd></div>
+          </dl>
+          <ul class="chips"><li>Expo</li><li>FastAPI</li><li>PostgreSQL</li><li>LLM</li><li>Docker</li></ul>
+        </div>
+      </article>
+    </template>
 </body>
 </html>

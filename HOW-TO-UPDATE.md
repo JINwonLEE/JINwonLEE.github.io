@@ -12,7 +12,7 @@ This repository publishes the bilingual portfolio at `jinwonlee.github.io`, gene
 - `tools/build_resume_pdfs.py`: content and layout for every CV variant
 - `tools/build_portfolio_pdf.py`: content and layout for the downloadable portfolio PDFs
 
-The website is intentionally static and does not fetch the JSON configs. When career facts change, update both HTML files, both config files, and the CV builder from the same verified evidence.
+The website is intentionally static and does not fetch the JSON configs. When career facts change, update both HTML files, both config files, and the CV builder from the same verified evidence. Each project appears twice in a page: its card in the Projects section and its `<template id="detail-…">` block near the end of the file, which fills the details window. Keep the two, and the matching config entry, in step.
 
 ## Public positioning
 

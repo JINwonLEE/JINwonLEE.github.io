@@ -112,3 +112,40 @@ for (const [name, width] of [['desktop', 1440], ['mobile', 390], ['small mobile'
     }
   });
 }
+
+for (const [name, width] of [['desktop', 1440], ['mobile', 390]]) {
+  test(`${name}: every project card opens a details dialog that fits`, async () => {
+    for (const filename of ['index.html', 'index-en.html']) {
+      const page = await browser.newPage({ viewport: { width, height: 900 } });
+      try {
+        await page.goto(`file://${root}/${filename}`, { waitUntil: 'load' });
+        const openers = page.locator('.project-feature .card-open, .project-card .card-open');
+        const count = await openers.count();
+        assert.equal(count, 8);
+        for (let index = 0; index < count; index += 1) {
+          const opener = openers.nth(index);
+          await opener.evaluate(el => el.closest('.glow').scrollIntoView({ block: 'center', behavior: 'instant' }));
+          const cardTitle = await opener.evaluate(el => el.closest('.glow').querySelector('h3').textContent);
+          await opener.click();
+          const state = await page.evaluate(() => {
+            const dialog = document.getElementById('project-dialog');
+            const box = dialog.getBoundingClientRect();
+            return {
+              open: dialog.open,
+              title: dialog.querySelector('h2').textContent,
+              facts: dialog.querySelectorAll('.detail-facts dd').length,
+              inside: box.left >= 0 && box.right <= window.innerWidth && box.top >= 0 && box.bottom <= window.innerHeight,
+              overflow: [...dialog.querySelectorAll('h2, p, dt, dd, li')].filter(el => el.scrollWidth > el.clientWidth + 1).map(el => el.textContent),
+            };
+          });
+          assert.deepEqual(state, { open: true, title: cardTitle, facts: 4, inside: true, overflow: [] }, `${filename}: ${cardTitle}`);
+          if (index === 2) await page.screenshot({ path: path.join(output, `${filename}-${width}-dialog.png`) });
+          await page.keyboard.press('Escape');
+          assert.equal(await page.evaluate(() => document.getElementById('project-dialog').open), false);
+        }
+      } finally {
+        await page.close();
+      }
+    }
+  });
+}
