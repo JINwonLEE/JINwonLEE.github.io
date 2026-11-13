@@ -4,8 +4,9 @@ This repository publishes the bilingual portfolio at `jinwonlee.github.io`, gene
 
 ## Source of truth
 
-- `index.html`: public English portfolio
-- `index-ko.html`: public Korean portfolio
+- `index.html`: public Korean portfolio (the default page)
+- `index-en.html`: public English portfolio
+- `index-ko.html`: redirect to `index.html`, kept so older links still work
 - `portfolio-config.json`: English project data used by the portfolio PDF builder
 - `portfolio-config-ko.json`: Korean project data used by the portfolio PDF builder
 - `tools/build_resume_pdfs.py`: content and layout for every CV variant
@@ -107,8 +108,8 @@ python3 -m http.server 4173 --bind 127.0.0.1
 
 Open:
 
-- English: `http://127.0.0.1:4173/`
-- Korean: `http://127.0.0.1:4173/index-ko.html`
+- Korean: `http://127.0.0.1:4173/`
+- English: `http://127.0.0.1:4173/index-en.html`
 - Public assistant: `http://127.0.0.1:4173/projects/enterprise-ai-assistant/web/`
 
 Check desktop and mobile widths. Confirm there is no horizontal overflow, every image loads, the left rail stays fixed on desktop while the right column scrolls, hover effects respond, and every CV/demo link returns successfully.

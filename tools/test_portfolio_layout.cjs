@@ -79,7 +79,7 @@ test('text-only diagram boxes vertically center their label groups', () => {
 
 for (const [name, width] of [['desktop', 1440], ['mobile', 390], ['small mobile', 320]]) {
   test(`${name}: bilingual page title, images, and text fit`, async () => {
-    for (const filename of ['index.html', 'index-ko.html']) {
+    for (const filename of ['index.html', 'index-en.html']) {
       const page = await browser.newPage({ viewport: { width, height: 1000 } });
       try {
         await page.goto(`file://${root}/${filename}`, { waitUntil: 'load' });
