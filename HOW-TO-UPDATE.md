@@ -111,7 +111,7 @@ Open:
 - Korean: `http://127.0.0.1:4173/index-ko.html`
 - Public assistant: `http://127.0.0.1:4173/projects/enterprise-ai-assistant/web/`
 
-Check desktop and mobile widths. Confirm there is no horizontal overflow, every image loads, the mobile navigation opens, and every CV/demo link returns successfully.
+Check desktop and mobile widths. Confirm there is no horizontal overflow, every image loads, the left rail stays fixed on desktop while the right column scrolls, hover effects respond, and every CV/demo link returns successfully.
 
 ## Publish
 

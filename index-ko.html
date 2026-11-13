@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="거버넌스형 Agent 플랫폼, 클라우드 네이티브 시스템 및 프로덕션 신뢰성을 구축하는 이진원의 포트폴리오입니다.">
+  <meta name="theme-color" content="#0b0e13">
   <meta property="og:title" content="이진원 | AI Platform &amp; Reliability Engineer">
   <meta property="og:description" content="Agent 플랫폼, 거버넌스형 배포, 프로덕션 신뢰성 및 클라우드 네이티브 엔지니어링.">
   <meta property="og:image" content="https://jinwonlee.github.io/assets/images/my-avatar.png">
@@ -12,170 +13,220 @@
   <link rel="icon" href="./assets/images/logo.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/style.css?v=20261113-2">
-  <script src="https://unpkg.com/lucide@latest" defer></script>
-  <script src="./assets/js/script.js?v=20260901" defer></script>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css?v=20261113-3">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="./assets/js/script.js?v=20261113-3" defer></script>
 </head>
-<body class="korean">
-  <header class="site-header" id="top">
-    <a class="site-brand" href="#top" aria-label="이진원 홈">
-      <span class="brand-initials">JL</span>
-      <span><strong>이진원</strong><small>AI Platform &amp; Reliability Engineer</small></span>
-    </a>
-    <button class="menu-button" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="site-navigation"><i data-lucide="menu"></i></button>
-    <nav class="site-navigation" id="site-navigation" aria-label="주요 메뉴">
-      <a href="#work">주요 작업</a>
-      <a href="#experience">경력</a>
-      <a href="#research">연구</a>
-      <a href="#contact">연락처</a>
-      <a class="language-link" href="./index.html" lang="en">English</a>
-      <a class="header-cv" href="./CV-Kor.pdf?v=20261113-2" target="_blank" rel="noopener"><i data-lucide="download"></i>Korean CV</a>
-    </nav>
-  </header>
+<body class="korean" id="top">
+  <canvas id="field" aria-hidden="true"></canvas>
+  <div class="spotlight" aria-hidden="true"></div>
+  <a class="skip-link" href="#content">본문으로 건너뛰기</a>
 
-  <main>
-    <section class="profile-band" aria-labelledby="profile-heading">
-      <div class="profile-inner">
-        <div class="profile-copy">
-          <p class="eyebrow">SEOUL · SELECTED APAC OPPORTUNITIES</p>
-          <h1 id="profile-heading">이진원</h1>
-          <p class="professional-title">AI Platform &amp; Reliability Engineer</p>
-          <p class="profile-summary">Agent App을 엔터프라이즈 요구사항에서 안정적인 프로덕션까지 전달하는 플랫폼을 만들고 운영합니다. 런타임 연동, 거버넌스형 배포, 접근 제어, 관측 및 장애 대응을 함께 다룹니다.</p>
-          <div class="profile-actions">
-            <a class="primary-action" href="#work">주요 작업 보기 <i data-lucide="arrow-down"></i></a>
-            <a class="secondary-action" href="./CV-Kor.pdf?v=20261113-2" target="_blank" rel="noopener"><i data-lucide="file-text"></i>Korean CV 다운로드</a>
+  <div class="shell">
+    <header class="rail">
+      <div class="rail-intro">
+        <img class="avatar" src="./assets/images/profile-avatar.jpg" alt="이진원 프로필 사진" width="64" height="64">
+        <p class="status"><span class="status-dot"></span>Seoul · Open to select APAC opportunities</p>
+        <h1 class="name" id="profile-heading">이진원</h1>
+        <p class="professional-title">AI Platform &amp; Reliability Engineer</p>
+        <p class="rail-summary">프로덕션에서 신뢰할 수 있는 Agent 플랫폼을 만듭니다.</p>
+        <nav class="rail-nav" aria-label="주요 메뉴">
+          <a href="#about"><span class="nav-line"></span>소개</a>
+          <a href="#experience"><span class="nav-line"></span>경력</a>
+          <a href="#projects"><span class="nav-line"></span>프로젝트</a>
+          <a href="#research"><span class="nav-line"></span>연구</a>
+          <a href="#awards"><span class="nav-line"></span>수상·활동</a>
+          <a href="#contact"><span class="nav-line"></span>연락처</a>
+        </nav>
+      </div>
+      <div class="rail-actions">
+        <div class="cv-links" aria-label="CV 및 포트폴리오 다운로드">
+            <a href="./CV-Eng.pdf?v=20261113-3" target="_blank" rel="noopener">English CV</a>
+            <a href="./CV-Kor.pdf?v=20261113-3" target="_blank" rel="noopener">Korean CV</a>
+            <a href="./Portfolio-Eng.pdf?v=20261113-3" target="_blank" rel="noopener">영문 포트폴리오</a>
+            <a href="./Portfolio-Kor.pdf?v=20261113-3" target="_blank" rel="noopener">국문 포트폴리오</a>
+        </div>
+        <div class="rail-links">
+          <a href="https://github.com/JINwonLEE" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/jwl1993" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:dlwlsdnjsehs1993@gmail.com">이메일</a>
+          <a class="language-link" href="./index.html" lang="en">English</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="section reveal" id="about" aria-labelledby="about-heading">
+        <h2 class="section-title" id="about-heading">소개</h2>
+        <div class="prose">
+          <p>약 8년 동안 Agent App, 클라우드 플랫폼, 사용자 대상 서비스를 프로덕션까지 전달해 왔습니다. 지금은 <strong>삼성전자</strong>에서 AWS EKS 기반 사내 <a href="#projects">AX Agent Platform</a>을 설계·구축하고 있고, Azure 기반 글로벌 B2C 생성형 AI 서비스의 UK 출시와 초기 안정화를 지원했습니다.</p>
+          <p>그 전에는 Samsung Research에서 <strong>30,000명의 임직원</strong>이 사용하는 전사 AI 챗봇의 프로덕션 전달과 애플리케이션 신뢰성을 리딩했습니다. 삼성전자 네트워크사업부에서는 Kubernetes 플랫폼과 초당 최대 <strong>130,000개 패킷</strong>을 처리하는 Linux 패킷 미러링 애플리케이션을 만들었고, TmaxOS에서는 OS 수준 AI 어시스턴트를 개발했습니다.</p>
+          <p>출발점은 연구였습니다. UNIST 석사 과정에서 <a href="#research">분산 CNN 학습</a>을 연구해 최대 2.3배의 학습 속도 향상을 보고했습니다. 업무 밖에서는 추천마다 CV 근거를 함께 보여주는 채용 추천 서비스 <a href="#projects">오퍼나우</a>를 만들고 있습니다.</p>
+        </div>
+      </section>
+
+      <section class="section reveal" id="experience" aria-labelledby="experience-heading">
+        <h2 class="section-title" id="experience-heading">경력</h2>
+        <ol class="rows">
+          <li class="row">
+            <div class="row-meta">2026 – 현재</div>
+            <div class="row-body">
+              <h3>삼성전자 · AX Development Group</h3>
+              <p class="row-role">SRE / AI 플랫폼 엔지니어</p>
+              <p>AWS EKS 기반 AX Agent Platform, 거버넌스형 셀프서비스 배포, 기존 LLM Gateway API 연동, 글로벌 B2C 생성형 AI 출시·안정화.</p>
+              <ul class="chips"><li>AWS EKS</li><li>Kubernetes</li><li>Azure</li><li>AuthN/AuthZ</li><li>LLM Gateway API</li></ul>
+            </div>
+          </li>
+          <li class="row">
+            <div class="row-meta">2024 – 2025</div>
+            <div class="row-body">
+              <h3>Samsung Research</h3>
+              <p class="row-role">SRE / AI 플랫폼 엔지니어</p>
+              <p>30,000명 대상 전사 AI 챗봇의 프로덕션 전달·신뢰성, 개발·스테이징·프로덕션 Kubernetes 배포 파이프라인과 관측 환경.</p>
+              <ul class="chips"><li>Kubernetes</li><li>ArgoCD</li><li>Helm/Helmfile</li><li>GitHub Actions</li><li>OpenTelemetry</li><li>Grafana</li><li>Prometheus</li></ul>
+            </div>
+          </li>
+          <li class="row">
+            <div class="row-meta">2021 – 2024</div>
+            <div class="row-body">
+              <h3>삼성전자 · 네트워크사업부</h3>
+              <p class="row-role">SRE &amp; 소프트웨어 엔지니어</p>
+              <p>컨테이너 애플리케이션, OpenShift/Kubernetes/EKS, Bash 기반 원클릭 Kubernetes 프로비저닝, 고처리량 Linux 패킷 처리.</p>
+              <ul class="chips"><li>OpenShift</li><li>Kubernetes</li><li>AWS EKS</li><li>Docker</li><li>Bash</li><li>Linux</li></ul>
+            </div>
+          </li>
+          <li class="row">
+            <div class="row-meta">2019 – 2020</div>
+            <div class="row-body">
+              <h3>TmaxOS &amp; TmaxCloud</h3>
+              <p class="row-role">소프트웨어 &amp; 플랫폼 엔지니어</p>
+              <p>OS 수준 AI 어시스턴트의 추론·연동·비동기 흐름, Kubernetes CI/CD 및 레지스트리 Operator.</p>
+              <ul class="chips"><li>Model inference</li><li>Kubernetes Operators</li><li>CI/CD</li><li>Container registry</li></ul>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section reveal" id="projects" aria-labelledby="projects-heading">
+        <h2 class="section-title" id="projects-heading">프로젝트</h2>
+        <article class="project-feature glow">
+          <div class="project-media"><img src="./assets/images/thumb-ax-agent-platform.svg?v=20260915-align1" alt="AX Agent Platform 아키텍처 개요" width="800" height="500" loading="lazy"></div>
+          <div class="project-body">
+            <div class="project-meta"><span>2026</span><span>Samsung Electronics</span><span>Platform / Applied AI</span></div>
+            <h3>사내 AX Agent Platform</h3>
+            <p>AWS EKS에서 에이전트 런타임을 사내 배포 표준에 맞게 조정하는 플랫폼을 설계·구축했습니다. 개발자는 AX App을 배포하면 도메인을 자동으로 발급받고, 인가된 사용자만 접근하도록 설정하며, 플랫폼 연동을 통해 기존 사내 LLM Gateway API를 사용할 수 있습니다.</p>
+            <dl class="case-facts">
+                <div><dt>담당</dt><dd>아키텍처, 구현, 배포 및 운영</dd></div>
+                <div><dt>통제</dt><dd>인증, 인가, 보안 및 거버넌스</dd></div>
+                <div><dt>기술</dt><dd>AWS EKS, Kubernetes, 런타임·API 연동</dd></div>
+            </dl>
           </div>
-        </div>
-        <figure class="profile-photo-wrap"><img src="./assets/images/profile-photo.jpg" alt="이진원 프로필 사진" width="300" height="385"></figure>
-      </div>
-      <div class="proof-strip" aria-label="핵심 엔지니어링 근거">
-        <div><strong>약 8년</strong><span>소프트웨어·플랫폼·신뢰성 엔지니어링</span></div>
-        <div><strong>30,000명</strong><span>전사 AI 서비스 프로덕션 신뢰성</span></div>
-        <div><strong>거버넌스 배포</strong><span>인증, 인가, 보안 및 플랫폼 거버넌스</span></div>
-      </div>
-    </section>
-
-    <section class="work-section" id="work" aria-labelledby="work-heading">
-      <div class="section-heading">
-        <div><p class="eyebrow">SELECTED WORK</p><h2 id="work-heading">실제 운영 제약을 견디는 시스템.</h2></div>
-        <p>검증된 실무 경험과 공개 레퍼런스 구현을 함께 보여드립니다. 사내 작업은 기밀 코드와 상세 아키텍처 없이 설명합니다.</p>
-      </div>
-
-      <article class="featured-case">
-        <div class="case-media"><img src="./assets/images/thumb-ax-agent-platform.svg?v=20260915-align1" alt="AX Agent Platform 아키텍처 개요" loading="lazy"></div>
-        <div class="case-content">
-          <div class="case-meta"><span>2026 · SAMSUNG ELECTRONICS</span><span>PLATFORM / APPLIED AI</span></div>
-          <h3>사내 AX Agent Platform</h3>
-          <p>AWS EKS에서 에이전트 런타임을 사내 배포 표준에 맞게 조정하는 플랫폼을 설계·구축했습니다. 개발자는 AX App을 배포하면 도메인을 자동으로 발급받고, 인가된 사용자만 접근하도록 설정하며, 플랫폼 연동을 통해 기존 사내 LLM Gateway API를 사용할 수 있습니다.</p>
-          <dl class="case-facts">
-            <div><dt>담당</dt><dd>아키텍처, 구현, 배포 및 운영</dd></div>
-            <div><dt>통제</dt><dd>인증, 인가, 보안 및 거버넌스</dd></div>
-            <div><dt>기술</dt><dd>AWS EKS, Kubernetes, 런타임·API 연동</dd></div>
-          </dl>
-        </div>
-      </article>
-
-      <div class="case-grid">
-        <article class="case-card">
-          <img src="./assets/images/thumb-observability-stack.svg?v=20260915-align1" alt="중앙 집중식 관측 환경 개요">
-          <div class="case-card-body"><div class="case-meta"><span>OBSERVABILITY</span><span>PRODUCTION RELIABILITY</span></div><h3>중앙 집중식 모니터링 & 관측성</h3><p>시스템과 컨테이너 런타임 상태를 확인하는 공통 모니터링 경로, 대시보드 및 알림을 구축해 장애 탐지와 프로덕션 분석을 지원했습니다.</p><p class="tech-line">Grafana · Prometheus · OpenTelemetry · Loki</p></div>
         </article>
-        <article class="case-card">
-          <img src="./assets/images/thumb-ai-serving-global.svg?v=20260915-align1" alt="글로벌 생성형 AI 서비스 출시 개요">
-          <div class="case-card-body"><div class="case-meta"><span>2026.01–06</span><span>GLOBAL B2C</span></div><h3>생성형 AI 서비스 UK 출시</h3><p>Microsoft와 협업해 Azure 기반 소비자 서비스의 출시 준비, 초기 프로덕션 운영, 장애 대응 및 안정화를 수행했습니다.</p><p class="tech-line">Azure · Kubernetes · SRE · 장애 대응</p></div>
+        <article class="project-feature glow offernow-case">
+          <div class="project-media"><img src="./assets/images/thumb-offernow.svg?v=20261113" alt="CV 업로드부터 근거 기반 공고 추천까지 이어지는 오퍼나우 흐름" width="800" height="500" loading="lazy"></div>
+          <div class="project-body">
+            <div class="project-meta"><span>2026.09 – 현재</span><span>개인 프로젝트</span></div>
+            <h3>오퍼나우 (OfferNow)</h3>
+            <p>CV 기반 IT 채용 추천 서비스입니다. 가입 없이 PDF나 DOCX CV를 올리면 근거 기반 경력 프로필로 바꾸고, 추천하는 공식 채용 공고마다 공고 요건과 그것을 뒷받침하는 CV 근거를 나란히 보여줍니다. 공고는 50여 개 기업의 공식 채용 사이트에서 매일 수집하며, 요청마다 robots.txt를 먼저 확인합니다.</p>
+            <dl class="case-facts">
+                <div><dt>담당</dt><dd>제품 정의, 백엔드, 모바일·웹 클라이언트, 데이터 수집, 배포</dd></div>
+                <div><dt>통제</dt><dd>PostgreSQL 행 수준 보안, 익명 세션, 사용자별 LLM 한도와 비용 기록</dd></div>
+                <div><dt>기술</dt><dd>Expo/React Native, FastAPI, PostgreSQL, Docker Compose, nginx</dd></div>
+            </dl>
+          </div>
         </article>
-        <article class="case-card">
-          <img src="./assets/images/thumb-enterprise-chatbot.svg?v=20260915-align1" alt="전사 AI 챗봇 플랫폼 개요">
-          <div class="case-card-body"><div class="case-meta"><span>2024–2025</span><span>30,000 EMPLOYEES</span></div><h3>전사 AI 챗봇 플랫폼</h3><p>개발·스테이징·프로덕션 Kubernetes 환경의 전달과 애플리케이션 신뢰성을 리딩하고 보안·운영 요구사항을 릴리스와 연결했습니다.</p><p class="tech-line">Kubernetes · ArgoCD · Helm/Helmfile · OpenTelemetry</p></div>
-        </article>
-        <article class="case-card">
-          <img src="./assets/images/thumb-k8s-automation.svg?v=20260915-align1" alt="Bash 기반 Kubernetes 클러스터 프로비저닝 개요">
-          <div class="case-card-body"><div class="case-meta"><span>PLATFORM AUTOMATION</span><span>DEVELOPER ENVIRONMENTS</span></div><h3>원클릭 Kubernetes 프로비저닝</h3><p>클라우드 개발자가 반복 가능한 환경을 구성할 수 있도록 Bash 기반 원클릭 Kubernetes 클러스터 프로비저닝 시스템을 설계·개발했습니다.</p><p class="tech-line">Bash · Kubernetes · Linux</p></div>
-        </article>
-        <article class="case-card">
-          <img src="./assets/images/thumb-gitops-cicd.svg?v=20260915-align1" alt="GitOps 애플리케이션 배포 개요">
-          <div class="case-card-body"><div class="case-meta"><span>GITOPS</span><span>APPLICATION DELIVERY</span></div><h3>ArgoCD 기반 GitOps CI/CD</h3><p>소스 변경과 애플리케이션 릴리스를 개발·스테이징·프로덕션 Kubernetes 환경으로 연결하는 컨테이너 배포 파이프라인을 구축했습니다.</p><p class="tech-line">GitHub Actions · ArgoCD · Helm/Helmfile · Kubernetes</p></div>
-        </article>
-        <article class="case-card">
-          <img src="./assets/images/thumb-llm-cluster-monitoring.svg?v=20260915-align1" alt="클러스터 오류 감지, LLM 분석, 이메일 보고 흐름" loading="lazy">
-          <div class="case-card-body">
-            <div class="case-meta"><span>개인 프로젝트</span><span>사내 클러스터 운영</span></div>
+        <div class="project-grid">
+          <article class="project-card glow">
+            <div class="project-meta"><span>Observability</span><span>Production reliability</span></div>
+            <h3>중앙 집중식 모니터링 &amp; 관측성</h3>
+            <p>시스템과 컨테이너 런타임 상태를 확인하는 공통 모니터링 경로, 대시보드 및 알림을 구축해 장애 탐지와 프로덕션 분석을 지원했습니다.</p>
+            <p class="tech-line">Grafana · Prometheus · OpenTelemetry · Loki</p>
+          </article>
+          <article class="project-card glow">
+            <div class="project-meta"><span>2026.01–06</span><span>Global B2C</span></div>
+            <h3>생성형 AI 서비스 UK 출시</h3>
+            <p>Microsoft와 협업해 Azure 기반 소비자 서비스의 출시 준비, 초기 프로덕션 운영, 장애 대응 및 안정화를 수행했습니다.</p>
+            <p class="tech-line">Azure · Kubernetes · SRE · 장애 대응</p>
+          </article>
+          <article class="project-card glow">
+            <div class="project-meta"><span>2024–2025</span><span>30,000 employees</span></div>
+            <h3>전사 AI 챗봇 플랫폼</h3>
+            <p>개발·스테이징·프로덕션 Kubernetes 환경의 전달과 애플리케이션 신뢰성을 리딩하고 보안·운영 요구사항을 릴리스와 연결했습니다.</p>
+            <p class="tech-line">Kubernetes · ArgoCD · Helm/Helmfile · OpenTelemetry</p>
+          </article>
+          <article class="project-card glow">
+            <div class="project-meta"><span>Platform automation</span><span>Developer environments</span></div>
+            <h3>원클릭 Kubernetes 프로비저닝</h3>
+            <p>클라우드 개발자가 반복 가능한 환경을 구성할 수 있도록 Bash 기반 원클릭 Kubernetes 클러스터 프로비저닝 시스템을 설계·개발했습니다.</p>
+            <p class="tech-line">Bash · Kubernetes · Linux</p>
+          </article>
+          <article class="project-card glow">
+            <div class="project-meta"><span>GitOps</span><span>Application delivery</span></div>
+            <h3>ArgoCD 기반 GitOps CI/CD</h3>
+            <p>소스 변경과 애플리케이션 릴리스를 개발·스테이징·프로덕션 Kubernetes 환경으로 연결하는 컨테이너 배포 파이프라인을 구축했습니다.</p>
+            <p class="tech-line">GitHub Actions · ArgoCD · Helm/Helmfile · Kubernetes</p>
+          </article>
+          <article class="project-card glow">
+            <div class="project-meta"><span>개인 프로젝트</span><span>사내 클러스터 운영</span></div>
             <h3>LLM 기반 클러스터 모니터링</h3>
             <p>사내 클러스터의 오류를 감지하고 LLM으로 분석해, 문제 요약·분석 내용·해결 방법을 이메일로 전달하는 모니터링 시스템을 만들었습니다.</p>
             <p class="tech-line">LLM · 클러스터 모니터링 · 오류 분석 · 이메일 알림</p>
-          </div>
+          </article>
+        </div>
+        <p class="additional-work">추가 경험: 기계 번역을 위한 LLM 평가 작업에 참여했습니다. 사내 작업은 기밀 코드와 상세 아키텍처 없이 설명합니다.</p>
+      </section>
+
+      <section class="section reveal" id="research" aria-labelledby="research-heading">
+        <h2 class="section-title" id="research-heading">학력 &amp; 연구</h2>
+        <div class="prose"><p>UNIST 컴퓨터공학 석사·학사, 수학 부전공. 분산 딥러닝의 네트워크 병목과 리소스 인지 레이어 배치를 연구했습니다.</p></div>
+        <article class="thesis glow" style="margin-top: 22px;">
+          <div class="project-meta"><span>석사 논문</span><span>2019</span></div>
+          <h3>Convergence Aware CNN Training</h3>
+          <p>리소스 인지 분산 CNN 학습과 네트워크 병목 완화 연구.</p>
+          <p class="thesis-result">발표 자료 기준 최대 <span>2.3배</span> 학습 속도 향상</p>
         </article>
-      </div>
-      <article class="featured-case offernow-case">
-        <div class="case-media"><img src="./assets/images/thumb-offernow.svg?v=20261113-2" alt="CV 업로드부터 근거 기반 공고 추천까지 이어지는 오퍼나우 흐름" loading="lazy"></div>
-        <div class="case-content">
-          <div class="case-meta"><span>2026.09 – 현재</span><span>개인 프로젝트</span></div>
-          <h3>오퍼나우 (OfferNow)</h3>
-          <p>CV 기반 IT 채용 추천 서비스입니다. 가입 없이 PDF나 DOCX CV를 올리면 근거 기반 경력 프로필로 바꾸고, 추천하는 공식 채용 공고마다 공고 요건과 그것을 뒷받침하는 CV 근거를 나란히 보여줍니다. 공고는 50여 개 기업의 공식 채용 사이트에서 매일 수집하며, 요청마다 robots.txt를 먼저 확인합니다.</p>
-          <dl class="case-facts">
-            <div><dt>담당</dt><dd>제품 정의, 백엔드, 모바일·웹 클라이언트, 데이터 수집, 배포</dd></div>
-            <div><dt>통제</dt><dd>PostgreSQL 행 수준 보안, 익명 세션, 사용자별 LLM 한도와 비용 기록</dd></div>
-            <div><dt>기술</dt><dd>Expo/React Native, FastAPI, PostgreSQL, Docker Compose, nginx</dd></div>
-          </dl>
+        <ul class="rows">
+          <li class="row">
+            <div class="row-meta">USENIX NSDI 2019<br>Poster</div>
+            <div class="row-body"><h3>Alleviating the Network Bottleneck for CNN Distributed Training through Automatic Resource-Aware Layer Placement</h3></div>
+          </li>
+          <li class="row">
+            <div class="row-meta">arXiv 2019<br>Paper</div>
+            <div class="row-body"><h3>Accelerated Training for CNN Distributed Deep Learning through Automatic Resource-Aware Layer Placement</h3></div>
+          </li>
+          <li class="row">
+            <div class="row-meta">ACM EuroSys 2018<br>Poster</div>
+            <div class="row-body"><h3>Improving Performance of Distributed TensorFlow using CNN Characteristics Exploiting Model Parallelism</h3></div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section reveal" id="awards" aria-labelledby="awards-heading">
+        <h2 class="section-title" id="awards-heading">수상 및 활동</h2>
+        <ul class="rows">
+          <li class="row">
+            <div class="row-meta">2026.11</div>
+            <div class="row-body">
+              <h3>SK하이닉스 AI 해커톤 2026</h3>
+              <p class="row-role row-note">본선 진출</p>
+              <p>온라인 1·2차 예선을 통과해 오프라인 본선에 개인 참가자로 진출했습니다.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section reveal" id="contact" aria-labelledby="contact-heading">
+        <h2 class="section-title" id="contact-heading">연락처</h2>
+        <div class="contact">
+          <p>서울을 기반으로 한국 및 APAC의 엔지니어링 기회를 검토하고 있습니다.</p>
+          <a class="contact-mail" href="mailto:dlwlsdnjsehs1993@gmail.com">dlwlsdnjsehs1993@gmail.com</a>
         </div>
-      </article>
-      <p class="additional-work">추가 경험: 기계 번역을 위한 LLM 평가 작업에 참여했습니다.</p>
-    </section>
-
-    <section class="experience-section" id="experience" aria-labelledby="experience-heading">
-      <div class="section-heading compact-heading"><div><p class="eyebrow">EXPERIENCE</p><h2 id="experience-heading">애플리케이션, 플랫폼, 프로덕션을 함께 책임집니다.</h2></div></div>
-      <div class="timeline">
-        <article><div class="timeline-period">2026 – 현재</div><div><h3>삼성전자 · AX Development Group</h3><p class="timeline-role">SRE / AI 플랫폼 엔지니어</p><p>AWS EKS 기반 AX Agent Platform, 거버넌스형 셀프서비스 배포, 기존 LLM Gateway API 연동, 글로벌 B2C 생성형 AI 출시·안정화.</p></div></article>
-        <article><div class="timeline-period">2024 – 2025</div><div><h3>Samsung Research</h3><p class="timeline-role">SRE / AI 플랫폼 엔지니어</p><p>30,000명 대상 전사 AI 챗봇의 프로덕션 전달·신뢰성, 개발·스테이징·프로덕션 Kubernetes 배포 파이프라인과 관측 환경.</p></div></article>
-        <article><div class="timeline-period">2021 – 2024</div><div><h3>삼성전자 · 네트워크사업부</h3><p class="timeline-role">SRE & 소프트웨어 엔지니어</p><p>컨테이너 애플리케이션, OpenShift/Kubernetes/EKS, Bash 기반 원클릭 Kubernetes 프로비저닝, 고처리량 Linux 패킷 처리.</p></div></article>
-        <article><div class="timeline-period">2019 – 2020</div><div><h3>TmaxOS & TmaxCloud</h3><p class="timeline-role">소프트웨어 & 플랫폼 엔지니어</p><p>OS 수준 AI 어시스턴트의 추론·연동·비동기 흐름, Kubernetes CI/CD 및 레지스트리 Operator.</p></div></article>
-      </div>
-      <div class="toolkit-band" aria-label="엔지니어링 기술">
-        <div><h3>Cloud & Runtime</h3><p>AWS EKS, Azure, Kubernetes, OpenShift, Docker, Helm/Helmfile</p></div>
-        <div><h3>Software & Delivery</h3><p>Python, Bash, Linux, Kubernetes Operators, ArgoCD, GitHub Actions, GitOps</p></div>
-        <div><h3>Reliability & Security</h3><p>Grafana, Prometheus, OpenTelemetry, 장애 대응, 인증, 인가, 거버넌스</p></div>
-      </div>
-    </section>
-
-    <section class="research-section" id="research" aria-labelledby="research-heading">
-      <div class="section-heading">
-        <div><p class="eyebrow">EDUCATION & RESEARCH</p><h2 id="research-heading">분산 AI 시스템을 연구에서 시작했습니다.</h2></div>
-        <p>UNIST 컴퓨터공학 석사·학사, 수학 부전공. 분산 딥러닝의 네트워크 병목과 리소스 인지 레이어 배치를 연구했습니다.</p>
-      </div>
-      <div class="research-grid">
-        <article class="thesis-panel"><span class="research-type">석사 논문 · 2019</span><h3>Convergence Aware CNN Training</h3><p>리소스 인지 분산 CNN 학습과 네트워크 병목 완화 연구.</p><strong>발표 자료 기준 최대 2.3배 학습 속도 향상</strong></article>
-        <div class="publication-list">
-          <article><span>USENIX NSDI 2019 · POSTER</span><h3>Alleviating the Network Bottleneck for CNN Distributed Training through Automatic Resource-Aware Layer Placement</h3></article>
-          <article><span>ARXIV 2019 · PAPER</span><h3>Accelerated Training for CNN Distributed Deep Learning through Automatic Resource-Aware Layer Placement</h3></article>
-          <article><span>ACM EUROSYS 2018 · POSTER</span><h3>Improving Performance of Distributed TensorFlow using CNN Characteristics Exploiting Model Parallelism</h3></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="awards-section" id="awards" aria-labelledby="awards-heading">
-      <div class="section-heading compact-heading"><div><p class="eyebrow">AWARDS & ACTIVITIES</p><h2 id="awards-heading">업무 밖에서도 도전합니다.</h2></div></div>
-      <div class="timeline">
-        <article><div class="timeline-period">2026.11</div><div><h3>SK하이닉스 AI 해커톤 2026</h3><p class="timeline-role">본선 진출</p><p>온라인 1·2차 예선을 통과해 오프라인 본선에 개인 참가자로 진출했습니다.</p></div></article>
-      </div>
-    </section>
-
-    <section class="contact-section" id="contact" aria-labelledby="contact-heading">
-      <div><p class="eyebrow">CONTACT</p><h2 id="contact-heading">프로덕션에서 신뢰할 수 있는 Agent 플랫폼을 만듭니다.</h2><p>서울을 기반으로 한국 및 APAC의 엔지니어링 기회를 검토하고 있습니다.</p></div>
-      <div class="contact-links">
-        <a href="mailto:dlwlsdnjsehs1993@gmail.com"><i data-lucide="mail"></i>이메일</a>
-        <a href="https://www.linkedin.com/in/jwl1993" target="_blank" rel="noopener"><i data-lucide="briefcase-business"></i>LinkedIn</a>
-        <a href="https://github.com/JINwonLEE" target="_blank" rel="noopener"><i data-lucide="code-2"></i>GitHub</a>
-      </div>
-      <div class="cv-links" aria-label="CV 및 포트폴리오 다운로드">
-        <a href="./CV-Eng.pdf?v=20261113-2" target="_blank" rel="noopener">English CV</a>
-        <a href="./CV-Kor.pdf?v=20261113-2" target="_blank" rel="noopener">Korean CV</a>
-        <a href="./Portfolio-Eng.pdf?v=20261113-2" target="_blank" rel="noopener">영문 포트폴리오</a>
-        <a href="./Portfolio-Kor.pdf?v=20261113-2" target="_blank" rel="noopener">국문 포트폴리오</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer"><span>© 2026 이진원</span><a href="#top">맨 위로 <i data-lucide="arrow-up"></i></a></footer>
+        <footer class="site-footer"><span>© 2026 이진원</span><a href="#top">맨 위로 ↑</a></footer>
+      </section>
+    </main>
+  </div>
 </body>
 </html>

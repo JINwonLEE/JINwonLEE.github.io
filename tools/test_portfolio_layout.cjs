@@ -95,17 +95,17 @@ for (const [name, width] of [['desktop', 1440], ['mobile', 390], ['small mobile'
         assert.deepEqual(await cvLinks.evaluateAll(links => links.map(a => new URL(a.href).pathname.split('/').pop())), ['CV-Eng.pdf', 'CV-Kor.pdf']);
         const overflow = await page.evaluate(() => ({
           page: document.documentElement.scrollWidth > window.innerWidth,
-          text: [...document.querySelectorAll('h1, h2, h3, p, .site-brand')].filter(el => {
+          text: [...document.querySelectorAll('h1, h2, h3, p, dd, li, .cv-links a, .contact-mail')].filter(el => {
             const clipsVertically = ['hidden', 'clip'].includes(getComputedStyle(el).overflowY);
             return el.clientWidth > 0 && (el.scrollWidth > el.clientWidth + 1 || (clipsVertically && el.scrollHeight > el.clientHeight + 1));
           }).map(el => el.textContent),
         }));
         assert.deepEqual(overflow, { page: false, text: [] });
         await page.screenshot({ path: path.join(output, `${filename}-${width}-hero.png`) });
-        await page.locator('.featured-case').first().screenshot({ path: path.join(output, `${filename}-${width}-ax.png`) });
-        await page.locator('.awards-section').screenshot({ path: path.join(output, `${filename}-${width}-awards.png`) });
+        await page.locator('.project-feature').first().screenshot({ path: path.join(output, `${filename}-${width}-ax.png`) });
+        await page.locator('#awards').screenshot({ path: path.join(output, `${filename}-${width}-awards.png`) });
         await page.locator('.offernow-case').screenshot({ path: path.join(output, `${filename}-${width}-offernow.png`) });
-        await page.locator('.case-grid').screenshot({ path: path.join(output, `${filename}-${width}-projects.png`) });
+        await page.locator('.project-grid').screenshot({ path: path.join(output, `${filename}-${width}-projects.png`) });
       } finally {
         await page.close();
       }
