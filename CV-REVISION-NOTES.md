@@ -73,7 +73,7 @@ The user clarified that their contribution to evaluation work was limited. Evalu
 - The user asked for a less template-like site with visible interaction. Both pages now use a dark two-column layout: a fixed left rail (name, title, section navigation, CV links) and a scrolling right column (about, experience, projects, research, awards, contact).
 - Interaction lives in `assets/js/script.js`: a spotlight that follows the cursor, drifting background points that link up near the cursor, rows that highlight while their siblings dim, project cards whose border glows at the cursor, a character-by-character name reveal, and sections that fade in on scroll. All of it is skipped under `prefers-reduced-motion`, and the cursor effects only run on devices with a mouse.
 - Copy was carried over from the previous pages. The About paragraphs restate existing verified claims in first person; no new claims were added.
-- Only the AX Agent Platform and OfferNow keep diagrams. Replace the OfferNow diagram with a real product screenshot when one is available.
+- The two featured cards are professional work only: AX Agent Platform and the company-wide AI chatbot platform. The user asked that OfferNow, a personal project, not be featured; it sits in the smaller card grid next to the other personal project.
 
 ## Default language | November 13
 
