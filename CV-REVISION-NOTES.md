@@ -4,7 +4,7 @@
 
 The shared portfolio position is:
 
-`AI Platform & Reliability Engineer`
+`AI Platform Engineer` (changed from `AI Platform & Reliability Engineer` on November 15)
 
 This preserves the strongest verified career signal, production platform engineering, while making direct Applied AI work easier to inspect.
 
@@ -88,6 +88,11 @@ The user clarified that their contribution to evaluation work was limited. Evalu
 
 - The user said the B2C generative AI service launched in Korea as well as the UK. Every mention of the UK rollout now reads Korea and UK (CVs, portfolio PDFs, website, configs). The 2026.01-06 window is unchanged.
 - The user named five core projects: the Tmax AI assistant, packet mirroring, the 30,000-user company chatbot, the B2C service (Korea and UK), and the AX Agent Platform. The user asked for newest first: AX Agent Platform, B2C Korea/UK, company chatbot, packet mirroring, Tmax AI assistant. They lead the CV `Selected Engineering Work` section (followed by OfferNow and cluster monitoring), the website Projects section as the five large cards, and the portfolio PDF as cases 01-05; the remaining portfolio cases follow, newest first. Their text reuses existing verified wording.
+
+## Title change | November 15
+
+- The user asked for the title `AI Platform Engineer` / `AI 플랫폼 엔지니어`, without reliability. It replaces `AI Platform & Reliability Engineer` on the website, the English and Korean CVs, the portfolio configs, and the portfolio PDF cover. The Platform/SRE and Applied AI variants keep their own titles.
+- The platform is named `AX Agent Platform` instead of being described as a self-service AX App delivery platform (CV evidence line and project text, portfolio project description).
 
 ## Claims to avoid
 

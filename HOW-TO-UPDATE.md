@@ -18,7 +18,7 @@ The website is intentionally static and does not fetch the JSON configs. When ca
 
 Keep the shared website position broad enough for both role families:
 
-`AI Platform & Reliability Engineer`
+`AI Platform Engineer`
 
 Use the role-specific CVs for application emphasis:
 

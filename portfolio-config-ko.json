@@ -1,13 +1,13 @@
 {
   "personal": {
     "name": "이진원",
-    "title": "AI Platform & Reliability Engineer",
+    "title": "AI Platform Engineer",
     "motto": "일단 만들고 그 다음에 생각하자.",
     "email": "dlwlsdnjsehs1993@gmail.com",
     "phone": "+82 10-2422-1429",
     "location": "서울, 대한민국",
     "avatar": "./assets/images/profile-photo.jpg",
-    "cv_file": "./CV-Kor.pdf?v=20261114-1"
+    "cv_file": "./CV-Kor.pdf?v=20261115-1"
   },
 
   "social": {
@@ -17,7 +17,7 @@
 
   "about": {
     "summary": [
-      "약 8년 동안 거버넌스형 Agent App, 클라우드 플랫폼 및 사용자 대상 서비스를 프로덕션까지 전달해 온 AI 플랫폼·신뢰성 엔지니어입니다. 삼성전자에서 AWS EKS 기반 사내 AX Agent Platform을 설계·구축하고 있으며 Azure 기반 B2C 생성형 AI 서비스의 한국·UK 출시와 초기 안정화를 지원했습니다.",
+      "약 8년 동안 거버넌스형 Agent App, 클라우드 플랫폼 및 사용자 대상 서비스를 프로덕션까지 전달해 온 AI 플랫폼 엔지니어입니다. 삼성전자에서 AWS EKS 기반 사내 AX Agent Platform을 설계·구축하고 있으며 Azure 기반 B2C 생성형 AI 서비스의 한국·UK 출시와 초기 안정화를 지원했습니다.",
       "Python, Kubernetes, 클라우드 네이티브 아키텍처, Agent 런타임·API 연동, 배포 자동화, 관측 가능성, 인증·인가 및 장애 대응을 다뤄왔습니다. 아키텍처와 구현부터 엔터프라이즈 연동, 출시 및 프로덕션 운영까지 전달 전 과정을 담당합니다."
     ]
   },
@@ -181,7 +181,7 @@
     {
       "title": "사내 AX Agent Platform",
       "category": "인프라",
-      "description": "자동 도메인, 접근 제어, 거버넌스, LLM Gateway 연동을 제공하는 AWS EKS 기반 AX App 배포·운영 플랫폼",
+      "description": "자동 도메인, 접근 제어, 거버넌스, LLM Gateway 연동을 제공하는 AWS EKS 기반 사내 AX Agent Platform",
       "detailedDescription": "2026년 7월부터 AWS EKS 기반 사내 AX Agent Platform의 아키텍처와 런타임 조정부터 배포 및 프로덕션 운영까지 담당했습니다. 사내 배포·접근·보안·거버넌스 요구사항을 개발자가 AX App을 배포하면 도메인이 자동 발급되고 인가된 사용자만 접근할 수 있는 셀프서비스 흐름으로 구현했습니다. 또한 기존 사내 LLM Gateway API를 사용할 수 있도록 클라이언트 측 호환성과 연동을 제공했습니다.",
       "problem": "개발팀이 AX App을 빠르게 배포하면서도 사내 접근 제어, 보안, AI 거버넌스를 일관되게 적용할 수 있어야 했습니다.",
       "role": "아키텍처와 구현부터 배포·운영까지 플랫폼 전달 전 과정을 담당하고 인증·인가·보안 및 사내 거버넌스를 책임졌습니다.",

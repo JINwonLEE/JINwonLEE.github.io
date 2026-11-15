@@ -366,7 +366,7 @@ def build_pdf(lang: str) -> None:
     pdf.text_at(
         x,
         y,
-        "Agent 플랫폼 · Applied AI · 신뢰성" if is_ko else "Agent Platforms · Applied AI · Reliability",
+        "AI 플랫폼 엔지니어 · Agent 플랫폼 · Applied AI" if is_ko else "AI Platform Engineer · Agent Platforms · Applied AI",
         11.5,
         pdf.body,
     )
@@ -377,9 +377,9 @@ def build_pdf(lang: str) -> None:
     pdf.c.linkURL(PORTFOLIO_URL, (x + 7 * mm, y - 24 * mm, x + 72 * mm, y - 14 * mm), relative=0)
     y -= 46 * mm
     summary = (
-        "이 포트폴리오는 Agent App을 엔터프라이즈 요구사항에서 안정적인 프로덕션까지 전달하는 플랫폼과 신뢰성 엔지니어링 경험을 정리한 문서입니다. 각 프로젝트는 문제 상황, 담당 역할, 설계와 전달 포인트, 결과를 중심으로 구성했습니다."
+        "이 포트폴리오는 Agent App을 엔터프라이즈 요구사항에서 안정적인 프로덕션까지 전달하는 AI 플랫폼 엔지니어링 경험을 정리한 문서입니다. 각 프로젝트는 문제 상황, 담당 역할, 설계와 전달 포인트, 결과를 중심으로 구성했습니다."
         if is_ko
-        else "This portfolio summarizes the agent platform and reliability engineering work that takes enterprise and user-facing applications from requirements through implementation, rollout, and production stabilization. Each project is organized around the problem context, my role, engineering and delivery focus, outcomes, and capability signals."
+        else "This portfolio summarizes the AI platform engineering work that takes enterprise and user-facing applications from requirements through implementation, rollout, and production stabilization. Each project is organized around the problem context, my role, engineering and delivery focus, outcomes, and capability signals."
     )
     pdf.paragraph(x, y, summary, 170 * mm, 11, 16, pdf.body)
     card_y = 65 * mm

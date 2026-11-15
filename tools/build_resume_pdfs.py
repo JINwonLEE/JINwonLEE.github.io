@@ -473,7 +473,7 @@ OFFERNOW_PROJECT_KO = Project(
 CORE_PROJECTS_EN = (
     Project(
         "Internal AX Agent Platform | Samsung Electronics, 2026 - Present",
-        "Built an AWS EKS platform for governed AX application delivery with runtime adaptation, automatic domains, authorized-only access, and integration with an existing enterprise LLM Gateway API.",
+        "Built the AX Agent Platform on AWS EKS with runtime adaptation, automatic domains, authorized-only access, and integration with an existing enterprise LLM Gateway API.",
     ),
     Project(
         "B2C Generative AI Service, Korea & UK | Samsung Electronics, Jan. - Jun. 2026",
@@ -496,7 +496,7 @@ CORE_PROJECTS_EN = (
 CORE_PROJECTS_KO = (
     Project(
         "사내 AX Agent Platform | 삼성전자, 2026 - 현재",
-        "AWS EKS에서 런타임 조정, 도메인 자동 발급, 인가된 사용자 전용 접근 및 기존 사내 LLM Gateway API 연동을 제공하는 거버넌스형 AX App 배포 플랫폼을 구축했습니다.",
+        "런타임 조정, 도메인 자동 발급, 인가된 사용자 전용 접근 및 기존 사내 LLM Gateway API 연동을 제공하는 AX Agent Platform을 AWS EKS 기반으로 구축했습니다.",
     ),
     Project(
         "B2C 생성형 AI 서비스 한국·UK 출시 | 삼성전자, 2026.01 - 06",
@@ -530,13 +530,13 @@ def variants() -> tuple[ResumeVariant, ...]:
             filename="Jinwon-Lee-CV-Master-2026-11.pdf",
             root_filename="CV-Eng.pdf",
             language="en",
-            professional_title="AI Platform & Reliability Engineer",
+            professional_title="AI Platform Engineer",
             summary=(
-                "AI platform and reliability engineer with about eight years of experience delivering governed agent applications, cloud platforms, and user-facing services into production.",
+                "AI platform engineer with about eight years of experience delivering governed agent applications, cloud platforms, and user-facing services into production.",
                 "Builds and operates systems across agent runtime integration, delivery automation, access control, observability, incident response, and production stabilization.",
             ),
             evidence=(
-                "AWS EKS platform for governed, self-service AX application delivery",
+                "AX Agent Platform on AWS EKS",
                 "Production reliability for an enterprise AI service used by 30,000 employees",
                 "Korea and UK launches, incident response, and stabilization for a B2C generative AI service",
             ),
@@ -587,7 +587,7 @@ def variants() -> tuple[ResumeVariant, ...]:
                 ),
                 Project(
                     "Internal AX Agent Platform",
-                    "Built an AWS EKS application platform with automatic domains, authorized-only access, enterprise security controls, and compatibility with an existing LLM Gateway API.",
+                    "Built the AX Agent Platform on AWS EKS with automatic domains, authorized-only access, enterprise security controls, and compatibility with an existing LLM Gateway API.",
                 ),
             ),
         ),
@@ -615,7 +615,7 @@ def variants() -> tuple[ResumeVariant, ...]:
             projects=(
                 Project(
                     "Internal AX Agent Platform",
-                    "Built an AWS EKS platform for governed AX application delivery with runtime adaptation, automatic domains, authorized-only access, and integration with an existing enterprise LLM Gateway API.",
+                    "Built the AX Agent Platform on AWS EKS with runtime adaptation, automatic domains, authorized-only access, and integration with an existing enterprise LLM Gateway API.",
                 ),
                 Project(
                     "TmaxOS AI Assistant",
@@ -629,13 +629,13 @@ def variants() -> tuple[ResumeVariant, ...]:
             filename="Jinwon-Lee-CV-Kor-2026-11.pdf",
             root_filename="CV-Kor.pdf",
             language="ko",
-            professional_title="AI 플랫폼 & 신뢰성 엔지니어",
+            professional_title="AI 플랫폼 엔지니어",
             summary=(
-                "약 8년 동안 거버넌스형 Agent App, 클라우드 플랫폼 및 사용자 대상 서비스를 프로덕션까지 전달해 온 AI 플랫폼·신뢰성 엔지니어입니다.",
+                "약 8년 동안 거버넌스형 Agent App, 클라우드 플랫폼 및 사용자 대상 서비스를 프로덕션까지 전달해 온 AI 플랫폼 엔지니어입니다.",
                 "Agent 런타임 연동, 배포 자동화, 접근 제어, 관측, 장애 대응 및 프로덕션 안정화를 설계부터 운영까지 직접 이어갑니다.",
             ),
             evidence=(
-                "AWS EKS 기반 거버넌스·셀프서비스 AX App 배포 플랫폼",
+                "AWS EKS 기반 사내 AX Agent Platform",
                 "30,000명 임직원 대상 전사 AI 서비스 프로덕션 신뢰성",
                 "B2C 생성형 AI 서비스 한국·UK 출시·장애 대응·초기 안정화",
             ),
