@@ -18,7 +18,7 @@ The website is intentionally static and does not fetch the JSON configs. When ca
 
 Keep the shared website position broad enough for both role families:
 
-`AI Platform & Reliability Engineer`
+`AI Platform Engineer`
 
 Use the role-specific CVs for application emphasis:
 
@@ -51,7 +51,7 @@ Use only verified claims. The currently supported evidence includes:
 - Self-service AX application deployment with automatic domains and authorized-only access
 - Authentication, authorization, security, and governance responsibility
 - Client integration with an existing enterprise LLM Gateway API
-- UK rollout readiness, initial operation, incident response, and stabilization for a Microsoft-collaborative B2C generative AI service
+- Korea and UK launch readiness, initial operation, incident response, and stabilization for a Microsoft-collaborative B2C generative AI service
 - Production reliability for an enterprise AI chatbot used by 30,000 employees
 - A Linux application measured at up to 130,000 packets per second
 - Distributed CNN training research reporting up to 2.3x speedup
