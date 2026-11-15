@@ -89,7 +89,7 @@ for (const [name, width] of [['desktop', 1440], ['mobile', 390], ['small mobile'
           await Promise.all([...document.images].map(img => img.decode()));
         });
         assert.equal(await page.locator('.professional-title').innerText(), 'AI Platform Engineer');
-        assert.match(await page.title(), /AI Platform & Reliability Engineer/);
+        assert.match(await page.title(), /AI Platform Engineer/);
         const cvLinks = page.locator('.cv-links a[href*="CV-"]');
         assert.deepEqual(await cvLinks.allTextContents(), ['English CV', 'Korean CV']);
         assert.deepEqual(await cvLinks.evaluateAll(links => links.map(a => new URL(a.href).pathname.split('/').pop())), ['CV-Eng.pdf', 'CV-Kor.pdf']);
